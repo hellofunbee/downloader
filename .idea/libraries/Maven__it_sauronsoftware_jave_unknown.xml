@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Maven: it.sauronsoftware:jave:unknown">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.m2/repositories/it/sauronsoftware/jave/unknown/jave-unknown.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/tool/jave_ffmpeg/jave-2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.m2/repositories/it/sauronsoftware/jave/unknown/jave-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.m2/repositories/it/sauronsoftware/jave/unknown/jave-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

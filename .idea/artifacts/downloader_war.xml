@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="downloader:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="xwf-com.war">
+      <element id="artifact" artifact-name="downloader:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="jave-2.0" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
