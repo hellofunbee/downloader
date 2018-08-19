@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.httpcomponents:httpmime:unknown">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.m2/repositories/org/apache/httpcomponents/httpmime/unknown/httpmime-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.m2/repositories/org/apache/httpcomponents/httpmime/unknown/httpmime-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.m2/repositories/org/apache/httpcomponents/httpmime/unknown/httpmime-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

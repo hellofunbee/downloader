@@ -1,7 +1,5 @@
 package subtitleFile;
 
-import java.io.*;
-
 /**
  * 
  * @author J. David
