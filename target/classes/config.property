@@ -1,6 +1,0 @@
-jdbcUrl = jdbc:mysql://localhost:3306/talk
-jdbcDriver = com.mysql.jdbc.Driver
-user = root
-password = root
-devMode = true
-showSql = true
