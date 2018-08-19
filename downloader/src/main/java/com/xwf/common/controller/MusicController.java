@@ -9,6 +9,7 @@ import com.xwf.common.utils.Searcher;
 import com.xwf.common.utils.ZipCompressor;
 
 import java.io.File;
+import java.util.*;
 
 /**
  * Created by weifengxu on 17/7/8.
@@ -42,10 +43,10 @@ public class MusicController extends Controller {
             for (String w : words) {
 
                 //查询
-                List<Map> videos = Searcher.search(".mp3", w, false, movie_path);
+                List<java.util.Map> videos = Searcher.search(".mp3", w, false, movie_path);
                 CommonUtils.sort(videos, "type", 1);
                 JSONArray ps = new JSONArray();
-                for (Map m : videos) {
+                for (java.util.Map m : videos) {
                     File file = ((File) m.get("file"));
 
                     String path = file.getAbsolutePath();

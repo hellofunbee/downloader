@@ -23,10 +23,12 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="downloader" />
+        <module name="subtitleConvert" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="downloader" target="1.5" />
+      <module name="subtitleConvert" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

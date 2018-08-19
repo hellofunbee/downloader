@@ -24,6 +24,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="jsoup-1.8.3" level="project" />
+    <orderEntry type="library" name="jave-2.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:3.8.1" level="project" />
     <orderEntry type="library" name="Maven: com.jfinal:jfinal:3.0" level="project" />
     <orderEntry type="library" name="Maven: cglib:cglib-nodep:3.1" level="project" />
@@ -50,7 +52,7 @@
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpasyncclient:unknown" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpmime:unknown" level="project" />
     <orderEntry type="library" name="Maven: it.sauronsoftware:jave:unknown" level="project" />
-    <orderEntry type="library" name="Maven: com.github.riccardove.easyjasub:subtitleConvert:1.0.2" level="project" />
+    <orderEntry type="module" module-name="subtitleConvert" />
     <orderEntry type="library" name="Maven: com.belerweb:pinyin4j:2.5.1" level="project" />
     <orderEntry type="library" name="Maven: com.jfinal:jetty-server:8.1.8" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-xml:8.1.8.v20121106" level="project" />
@@ -68,8 +70,5 @@
     <orderEntry type="library" scope="RUNTIME" name="Maven: mysql:mysql-connector-java:5.1.36" level="project" />
     <orderEntry type="library" name="Maven: com.mchange:c3p0:0.9.5.1" level="project" />
     <orderEntry type="library" name="Maven: com.mchange:mchange-commons-java:0.2.11" level="project" />
-    <orderEntry type="module" module-name="subtitleConverter-master" />
-    <orderEntry type="library" name="jsoup-1.8.3" level="project" />
-    <orderEntry type="library" name="jave-2.0" level="project" />
   </component>
 </module>

@@ -32,7 +32,9 @@
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpasyncclient:unknown" />
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpmime:unknown" />
           <element id="library" level="project" name="Maven: it.sauronsoftware:jave:unknown" />
-          <element id="library" level="project" name="Maven: com.github.riccardove.easyjasub:subtitleConvert:1.0.2" />
+          <element id="archive" name="subtitleConvert-1.0.2.jar">
+            <element id="module-output" name="subtitleConvert" />
+          </element>
           <element id="library" level="project" name="Maven: com.belerweb:pinyin4j:2.5.1" />
           <element id="library" level="project" name="Maven: com.jfinal:jetty-server:8.1.8" />
           <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-xml:8.1.8.v20121106" />

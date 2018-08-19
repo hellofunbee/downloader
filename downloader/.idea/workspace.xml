@@ -2,25 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa6af6cb-398c-4646-80b7-35d5a9480d0f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jave_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jsoup_1_8_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../subtitleConverter-master/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../subtitleConverter-master/.idea/modules/subtitleConverter-master.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../subtitleConverter-master/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_riccardove_easyjasub_subtitleConvert_1_0_2.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xwf-com.war" afterPath="$PROJECT_DIR$/target/xwf-com.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/crawler/AllCrawler.class" afterPath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/crawler/AllCrawler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/crawler/PhantomJSUtil.class" afterPath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/crawler/PhantomJSUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/http/DownMylike.class" afterPath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/http/DownMylike.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/http/DownMylike_hs.class" afterPath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/http/DownMylike_hs.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/http/DownMylike_ks.class" afterPath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/http/DownMylike_ks.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/http/DownloaderOne.class" afterPath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/http/DownloaderOne.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/http/HttpUtils$1.class" afterPath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/http/HttpUtils$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/http/HttpUtils$2.class" afterPath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/http/HttpUtils$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/http/HttpUtils.class" afterPath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/http/HttpUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/http/MIDIShowDownloader.class" afterPath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/http/MIDIShowDownloader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/utils/GetNames.class" afterPath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/utils/GetNames.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/utils/HanyuPinyinHelper.class" afterPath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/utils/HanyuPinyinHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/utils/Youtube_dl.class" afterPath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/utils/Youtube_dl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/utils/ZipCompressor.class" afterPath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/utils/ZipCompressor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/video/FileUtils$CompratorByLastModified.class" afterPath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/video/FileUtils$CompratorByLastModified.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/video/FileUtils.class" afterPath="$PROJECT_DIR$/target/xwf-com/WEB-INF/classes/com/xwf/common/video/FileUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xwf-com/WEB-INF/lib/subtitleConvert-1.0.2.jar" afterPath="$PROJECT_DIR$/target/xwf-com/WEB-INF/lib/subtitleConvert-1.0.2.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/downloader_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/downloader_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/downloader.iml" afterPath="$PROJECT_DIR$/.idea/modules/downloader.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/subtitleConverter-master.iml" afterPath="$PROJECT_DIR$/.idea/modules/subtitleConverter-master.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xwf/common/CommonConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/xwf/common/CommonConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xwf/common/controller/MusicController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xwf/common/controller/MusicController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xwf/common/crawler/AllCrawler.java" afterPath="$PROJECT_DIR$/src/main/java/com/xwf/common/crawler/AllCrawler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xwf/common/crawler/PhantomJSUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/xwf/common/crawler/PhantomJSUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xwf/common/http/DownloaderOne.java" afterPath="$PROJECT_DIR$/src/main/java/com/xwf/common/http/DownloaderOne.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xwf/common/http/HttpUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/xwf/common/http/HttpUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xwf/common/utils/HanyuPinyinHelper.java" afterPath="$PROJECT_DIR$/src/main/java/com/xwf/common/utils/HanyuPinyinHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xwf/common/utils/ZipCompressor.java" afterPath="$PROJECT_DIR$/src/main/java/com/xwf/common/utils/ZipCompressor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xwf/common/video/FileUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/xwf/common/video/FileUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../subtitleConverter-master/src/main/java/subtitleFile/IOClass.java" afterPath="$PROJECT_DIR$/../subtitleConverter-master/src/main/java/subtitleFile/IOClass.java" />
     </list>
     <ignored path="downloader.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,6 +39,7 @@
     <ignored path="$PROJECT_DIR$/../subtitleConverter-master/.gradle/" />
     <ignored path="$PROJECT_DIR$/../subtitleConverter-master/build/" />
     <ignored path=".idea/dataSources.local.xml" />
+    <ignored path="$PROJECT_DIR$/../subtitleConverter-master/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,9 +88,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="4000">
               <caret line="160" column="19" selection-start-line="160" selection-start-column="19" selection-end-line="160" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -95,7 +103,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Caption.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IOClass.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../subtitleConverter-master/src/main/java/subtitleFile/IOClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1322">
+              <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NetEaseCloudMusic.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/http/NetEaseCloudMusic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-250">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Caption.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../subtitleConverter-master/src/main/java/subtitleFile/Caption.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="275">
@@ -108,7 +136,15 @@
     </leaf>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="FORCE_PUSH_ALLOWED" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -523,6 +559,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xwf/common/video/FileUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xwf/common/utils/VideoCut.java" />
         <option value="$PROJECT_DIR$/../subtitleConverter-master/src/main/java/subtitleFile/Caption.java" />
+        <option value="$PROJECT_DIR$/../subtitleConverter-master/src/main/java/subtitleFile/IOClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xwf/common/controller/MusicController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xwf/common/http/NetEaseCloudMusic.java" />
       </list>
     </option>
   </component>
@@ -531,6 +570,13 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -549,6 +595,86 @@
     <option name="y" value="23" />
     <option name="width" value="1236" />
     <option name="height" value="777" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Correctness</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Internationalization &gt; Bidirectional Text</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Performance</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Usability &gt; Icons</id>
+          </State>
+          <State>
+            <id>Android Lint for Kotlin</id>
+          </State>
+          <State>
+            <id>Declaration redundancyJava</id>
+          </State>
+          <State>
+            <id>Google Web Toolkit issues</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript validity issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>Numeric issuesJava</id>
+          </State>
+          <State>
+            <id>Performance issuesJava</id>
+          </State>
+          <State>
+            <id>Probable bugsGroovy</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+          <State>
+            <id>Probable bugsJavaScript</id>
+          </State>
+          <State>
+            <id>Serialization issuesJava</id>
+          </State>
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring AOPSpring</id>
+          </State>
+          <State>
+            <id>Threading issuesJava</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -595,32 +721,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="downloader" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subtitleConverter-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subtitleFile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -628,7 +728,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../subtitleConverter-master" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -1171,7 +1271,7 @@
       <option name="presentableId" value="Default" />
       <updated>1534712004957</updated>
       <workItem from="1534712006353" duration="824000" />
-      <workItem from="1534712962705" duration="372000" />
+      <workItem from="1534712962705" duration="1525000" />
     </task>
     <task id="LOCAL-00001" summary="ee">
       <created>1534713306606</created>
@@ -1180,11 +1280,25 @@
       <option name="project" value="LOCAL" />
       <updated>1534713306606</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ee">
+      <created>1534713359897</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1534713359897</updated>
+    </task>
+    <task id="LOCAL-00003" summary="change">
+      <created>1534714420197</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1534714420197</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1196000" />
+    <option name="totallyTimeSpent" value="2349000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="44" y="23" width="1236" height="777" extended-state="6" />
@@ -1199,8 +1313,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998326" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1221,6 +1335,24 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
@@ -1234,7 +1366,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ee" />
-    <option name="LAST_COMMIT_MESSAGE" value="ee" />
+    <MESSAGE value="change" />
+    <option name="LAST_COMMIT_MESSAGE" value="change" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1259,9 +1392,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4000">
           <caret line="160" column="19" selection-start-line="160" selection-start-column="19" selection-end-line="160" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1286,9 +1417,9 @@
         <state relative-caret-position="448">
           <caret line="69" column="33" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2345#2346#0" expanded="true" />
-            <element signature="e#2409#2410#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2345#2346#0" expanded="false" />
+            <element signature="e#2409#2410#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1298,7 +1429,7 @@
         <state relative-caret-position="496">
           <caret line="126" column="71" selection-start-line="126" selection-start-column="71" selection-end-line="126" selection-end-column="71" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1333,9 +1464,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4000">
           <caret line="160" column="19" selection-start-line="160" selection-start-column="19" selection-end-line="160" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../subtitleConverter-master/src/main/java/subtitleFile/Caption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1347,10 +1484,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../subtitleConverter-master/src/main/java/subtitleFile/Caption.java">
+    <entry file="file://$PROJECT_DIR$/../subtitleConverter-master/src/main/java/subtitleFile/IOClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="1322">
+          <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/controller/MusicController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="82" column="69" selection-start-line="82" selection-start-column="69" selection-end-line="82" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/http/NetEaseCloudMusic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-250">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1420,7 +1575,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>subtitleConverter-master</last-edited>
+          <last-edited>downloader</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

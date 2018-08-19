@@ -1,0 +1,4103 @@
+{
+  "max_cursor": 1524148653000,
+  "aweme_list": [{
+    "risk_infos": {
+      "warn": false,
+      "content": "",
+      "risk_sink": false,
+      "type": 0
+    },
+    "label_top": {
+      "url_list": ["https://p1.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf"],
+      "uri": "729f0000ef991e85fccf"
+    },
+    "author_user_id": 3322863120,
+    "rate": 12,
+    "create_time": 1523947643,
+    "video": {
+      "ratio": "720p",
+      "origin_cover": {
+        "url_list": ["http://p1.pstatp.com/large/7b0b0000cb51d347aa4b.jpeg", "http://pb3.pstatp.com/large/7b0b0000cb51d347aa4b.jpeg", "http://pb3.pstatp.com/large/7b0b0000cb51d347aa4b.jpeg"],
+        "uri": "large/7b0b0000cb51d347aa4b"
+      },
+      "play_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=4aa7db1966c74a51bf99750041d3bdb0&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=4aa7db1966c74a51bf99750041d3bdb0&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=4aa7db1966c74a51bf99750041d3bdb0&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=4aa7db1966c74a51bf99750041d3bdb0&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "4aa7db1966c74a51bf99750041d3bdb0"
+      },
+      "cover": {
+        "url_list": ["https://p3.pstatp.com/aweme/300x400/7b090002d7ee9f456964.jpeg", "https://pb9.pstatp.com/aweme/300x400/7b090002d7ee9f456964.jpeg", "https://pb3.pstatp.com/aweme/300x400/7b090002d7ee9f456964.jpeg"],
+        "uri": "300x400/7b090002d7ee9f456964"
+      },
+      "height": 960,
+      "width": 540,
+      "bit_rate": [{
+        "bit_rate": 1800838,
+        "gear_name": "normal",
+        "quality_type": 0
+      }],
+      "download_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=4aa7db1966c74a51bf99750041d3bdb0&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=4aa7db1966c74a51bf99750041d3bdb0&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=4aa7db1966c74a51bf99750041d3bdb0&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=4aa7db1966c74a51bf99750041d3bdb0&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "4aa7db1966c74a51bf99750041d3bdb0"
+      },
+      "has_watermark": true,
+      "duration": 11970,
+      "play_addr_lowbr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=4aa7db1966c74a51bf99750041d3bdb0&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=4aa7db1966c74a51bf99750041d3bdb0&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=4aa7db1966c74a51bf99750041d3bdb0&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=4aa7db1966c74a51bf99750041d3bdb0&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "4aa7db1966c74a51bf99750041d3bdb0"
+      },
+      "dynamic_cover": {
+        "url_list": ["https://p1.pstatp.com/obj/7b0b0000cc0a34aeba2b", "https://pb3.pstatp.com/obj/7b0b0000cc0a34aeba2b", "https://pb3.pstatp.com/obj/7b0b0000cc0a34aeba2b"],
+        "uri": "7b0b0000cc0a34aeba2b"
+      }
+    },
+    "aweme_id": "6545305260712267015",
+    "video_labels": [],
+    "is_vr": false,
+    "vr_type": 0,
+    "statistics": {
+      "play_count": 29308744,
+      "aweme_id": "6545305260712267015",
+      "comment_count": 8307,
+      "share_count": 44836,
+      "digg_count": 707436
+    },
+    "author": {
+      "share_qrcode_uri": "46b900156b80f38d5afb",
+      "app_id": 1128,
+      "avatar_larger": {
+        "url_list": ["https://p3.pstatp.com/aweme/1080x1080/7bed000cd97e526eaec2.jpeg", "https://pb9.pstatp.com/aweme/1080x1080/7bed000cd97e526eaec2.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/7bed000cd97e526eaec2.jpeg"],
+        "uri": "7bed000cd97e526eaec2"
+      },
+      "enterprise_verify_reason": "",
+      "original_music_qrcode": null,
+      "story_open": false,
+      "live_verify": 0,
+      "short_id": "125026968",
+      "account_region": "",
+      "reflow_page_gid": 0,
+      "avatar_thumb": {
+        "url_list": ["https://p3.pstatp.com/aweme/100x100/7bed000cd97e526eaec2.jpeg", "https://pb9.pstatp.com/aweme/100x100/7bed000cd97e526eaec2.jpeg", "https://pb3.pstatp.com/aweme/100x100/7bed000cd97e526eaec2.jpeg"],
+        "uri": "7bed000cd97e526eaec2"
+      },
+      "is_binded_weibo": false,
+      "is_verified": true,
+      "hide_search": false,
+      "risk_flag": 0,
+      "with_commerce_entry": false,
+      "school_name": "",
+      "custom_verify": "",
+      "special_lock": 1,
+      "shield_comment_notice": 0,
+      "hide_location": false,
+      "gender": 1,
+      "star_use_new_download": false,
+      "school_poi_id": "",
+      "prevent_download": false,
+      "weibo_schema": "",
+      "uid": "3322863120",
+      "bind_phone": "",
+      "weibo_url": "",
+      "weibo_name": "",
+      "commerce_user_level": 0,
+      "create_time": 1510587461,
+      "verify_info": "",
+      "constellation": 9,
+      "community_discipline_status": 0,
+      "has_register_notice": 1,
+      "need_recommend": 1,
+      "shield_digg_notice": 0,
+      "update_before": 0,
+      "verification_type": 1,
+      "room_id": 0,
+      "avatar_medium": {
+        "url_list": ["https://p3.pstatp.com/aweme/720x720/7bed000cd97e526eaec2.jpeg", "https://pb9.pstatp.com/aweme/720x720/7bed000cd97e526eaec2.jpeg", "https://pb3.pstatp.com/aweme/720x720/7bed000cd97e526eaec2.jpeg"],
+        "uri": "7bed000cd97e526eaec2"
+      },
+      "authority_status": 0,
+      "enterprise_verify": false,
+      "live_rec_level": 0,
+      "reflow_page_uid": 0,
+      "birthday": "1992-12-15",
+      "is_ad_fake": false,
+      "nickname": "\u96be\u4ee5\u6297\u62d2",
+      "shield_follow_notice": 0,
+      "original_music_cover": null,
+      "follow_status": 0,
+      "language": "zh-Hans",
+      "region": "CN",
+      "nickname_lock": 0,
+      "school_type": 0,
+      "avatar_uri": "7bed000cd97e526eaec2",
+      "signature": "\u672c\u5b9d\u5b9d\u6682\u65f6\u8fd8\u6ca1\u60f3\u5230\u4e2a\u6027\u7b7e\u540d",
+      "weibo_verify": "",
+      "unique_id": ""
+    },
+    "cmt_swt": false,
+    "share_url": "https://www.douyin.com/share/video/6545305260712267015/?mid=6498552338862050061",
+    "is_ads": false,
+    "music": {
+      "status": 1,
+      "extra": "{\"has_edited\": 0}",
+      "is_original": false,
+      "offline_desc": "",
+      "source_platform": 31,
+      "cover_large": {
+        "url_list": ["http://p3.pstatp.com/live/720x720/6715001e9d3f3f7aa1ad.jpeg"],
+        "uri": "6715001e9d3f3f7aa1ad"
+      },
+      "duration": 122,
+      "id": 6498552338862050061,
+      "cover_thumb": {
+        "url_list": ["http://p3.pstatp.com/live/100x100/6715001e9d3f3f7aa1ad.jpeg"],
+        "uri": "6715001e9d3f3f7aa1ad"
+      },
+      "cover_hd": {
+        "url_list": ["http://p3.pstatp.com/live/1080x1080/6715001e9d3f3f7aa1ad.jpeg"],
+        "uri": "6715001e9d3f3f7aa1ad"
+      },
+      "user_count": 0,
+      "title": "\u4e0a\u4f20\u97f3\u4e50",
+      "play_url": {
+        "url_list": ["http://p1.pstatp.com/obj/4dfa00041900c4853de5", "http://p9.pstatp.com/obj/4dfa00041900c4853de5", "http://p3.pstatp.com/obj/4dfa00041900c4853de5"],
+        "uri": "4dfa00041900c4853de5"
+      },
+      "author": "\u7531qzuser\u4e0a\u4f20",
+      "mid": "6498552338862050061",
+      "cover_medium": {
+        "url_list": ["http://p3.pstatp.com/live/200x200/6715001e9d3f3f7aa1ad.jpeg"],
+        "uri": "6715001e9d3f3f7aa1ad"
+      },
+      "id_str": "6498552338862050061",
+      "schema_url": ""
+    },
+    "bodydance_score": 0,
+    "is_hash_tag": 0,
+    "status": {
+      "with_goods": false,
+      "is_delete": false,
+      "private_status": 0,
+      "allow_comment": true,
+      "allow_share": true,
+      "is_private": false
+    },
+    "sort_label": "",
+    "share_info": {
+      "share_weibo_desc": "#\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b#\u4eca\u665a\u5341\u4e8c\u70b9\u6211\u5f00\u6211\u7684\u4e94\u83f1\u5b8f\u5149\u7528\u60ef\u6027\u6f02\u79fb\u8d62\u4f60\u4eec",
+      "share_title": "\u4eca\u665a\u5341\u4e8c\u70b9\u6211\u5f00\u6211\u7684\u4e94\u83f1\u5b8f\u5149\u7528\u60ef\u6027\u6f02\u79fb\u8d62\u4f60\u4eec",
+      "share_url": "https://www.iesdouyin.com/share/video/6545305260712267015/?region=CN&mid=6498552338862050061&titleType=title",
+      "share_desc": "\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b"
+    },
+    "is_top": 0,
+    "aweme_type": 0,
+    "desc": "\u4eca\u665a\u5341\u4e8c\u70b9\u6211\u5f00\u6211\u7684\u4e94\u83f1\u5b8f\u5149\u7528\u60ef\u6027\u6f02\u79fb\u8d62\u4f60\u4eec",
+    "region": "CN",
+    "is_relieve": false,
+    "text_extra": [],
+    "user_digged": 0
+  }, {
+    "risk_infos": {
+      "warn": false,
+      "content": "",
+      "risk_sink": false,
+      "type": 0
+    },
+    "label_top": {
+      "url_list": ["https://p1.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf"],
+      "uri": "729f0000ef991e85fccf"
+    },
+    "author_user_id": 80819375399,
+    "rate": 12,
+    "create_time": 1523777667,
+    "video": {
+      "ratio": "720p",
+      "origin_cover": {
+        "url_list": ["http://p3.pstatp.com/large/7aaa0002e23eb4b5916d.jpeg", "http://pb9.pstatp.com/large/7aaa0002e23eb4b5916d.jpeg", "http://pb3.pstatp.com/large/7aaa0002e23eb4b5916d.jpeg"],
+        "uri": "large/7aaa0002e23eb4b5916d"
+      },
+      "play_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=4e1278c874ea4ac0945c67589e5b13ec&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=4e1278c874ea4ac0945c67589e5b13ec&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=4e1278c874ea4ac0945c67589e5b13ec&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=4e1278c874ea4ac0945c67589e5b13ec&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "4e1278c874ea4ac0945c67589e5b13ec"
+      },
+      "cover": {
+        "url_list": ["https://p1.pstatp.com/aweme/300x400/7aa90012fb9df1e8ebe5.jpeg", "https://pb3.pstatp.com/aweme/300x400/7aa90012fb9df1e8ebe5.jpeg", "https://pb3.pstatp.com/aweme/300x400/7aa90012fb9df1e8ebe5.jpeg"],
+        "uri": "300x400/7aa90012fb9df1e8ebe5"
+      },
+      "height": 960,
+      "width": 540,
+      "bit_rate": [{
+        "bit_rate": 2528222,
+        "gear_name": "normal",
+        "quality_type": 0
+      }],
+      "download_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=4e1278c874ea4ac0945c67589e5b13ec&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=4e1278c874ea4ac0945c67589e5b13ec&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=4e1278c874ea4ac0945c67589e5b13ec&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=4e1278c874ea4ac0945c67589e5b13ec&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "4e1278c874ea4ac0945c67589e5b13ec"
+      },
+      "has_watermark": true,
+      "duration": 15070,
+      "play_addr_lowbr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=4e1278c874ea4ac0945c67589e5b13ec&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=4e1278c874ea4ac0945c67589e5b13ec&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=4e1278c874ea4ac0945c67589e5b13ec&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=4e1278c874ea4ac0945c67589e5b13ec&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "4e1278c874ea4ac0945c67589e5b13ec"
+      },
+      "dynamic_cover": {
+        "url_list": ["https://p3.pstatp.com/obj/7aa90012fd7212e052dd", "https://pb9.pstatp.com/obj/7aa90012fd7212e052dd", "https://pb3.pstatp.com/obj/7aa90012fd7212e052dd"],
+        "uri": "7aa90012fd7212e052dd"
+      }
+    },
+    "aweme_id": "6544575217929293064",
+    "video_labels": [],
+    "is_vr": false,
+    "vr_type": 0,
+    "statistics": {
+      "play_count": 23592393,
+      "aweme_id": "6544575217929293064",
+      "comment_count": 2376,
+      "share_count": 58627,
+      "digg_count": 1263746
+    },
+    "author": {
+      "share_qrcode_uri": "5fdb0008e34c047a7b59",
+      "app_id": 1128,
+      "avatar_larger": {
+        "url_list": ["https://p1.pstatp.com/aweme/1080x1080/7beb002028fdb3f53d0a.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/7beb002028fdb3f53d0a.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/7beb002028fdb3f53d0a.jpeg"],
+        "uri": "7beb002028fdb3f53d0a"
+      },
+      "enterprise_verify_reason": "",
+      "original_music_qrcode": null,
+      "story_open": false,
+      "live_verify": 0,
+      "short_id": "325110881",
+      "account_region": "",
+      "reflow_page_gid": 0,
+      "avatar_thumb": {
+        "url_list": ["https://p1.pstatp.com/aweme/100x100/7beb002028fdb3f53d0a.jpeg", "https://pb3.pstatp.com/aweme/100x100/7beb002028fdb3f53d0a.jpeg", "https://pb3.pstatp.com/aweme/100x100/7beb002028fdb3f53d0a.jpeg"],
+        "uri": "7beb002028fdb3f53d0a"
+      },
+      "is_binded_weibo": false,
+      "is_verified": true,
+      "hide_search": false,
+      "risk_flag": 0,
+      "with_commerce_entry": false,
+      "school_name": "",
+      "custom_verify": "",
+      "special_lock": 1,
+      "shield_comment_notice": 0,
+      "hide_location": false,
+      "gender": 2,
+      "star_use_new_download": false,
+      "school_poi_id": "",
+      "prevent_download": false,
+      "weibo_schema": "",
+      "uid": "80819375399",
+      "bind_phone": "",
+      "weibo_url": "",
+      "weibo_name": "",
+      "commerce_user_level": 0,
+      "create_time": 1517879610,
+      "verify_info": "",
+      "constellation": 3,
+      "community_discipline_status": 0,
+      "has_register_notice": 0,
+      "need_recommend": 1,
+      "shield_digg_notice": 0,
+      "update_before": 0,
+      "verification_type": 1,
+      "room_id": 0,
+      "avatar_medium": {
+        "url_list": ["https://p1.pstatp.com/aweme/720x720/7beb002028fdb3f53d0a.jpeg", "https://pb3.pstatp.com/aweme/720x720/7beb002028fdb3f53d0a.jpeg", "https://pb3.pstatp.com/aweme/720x720/7beb002028fdb3f53d0a.jpeg"],
+        "uri": "7beb002028fdb3f53d0a"
+      },
+      "authority_status": 0,
+      "enterprise_verify": false,
+      "live_rec_level": 0,
+      "reflow_page_uid": 0,
+      "birthday": "1981-06-09",
+      "is_ad_fake": false,
+      "nickname": "\u6674\u7a7a",
+      "shield_follow_notice": 0,
+      "original_music_cover": null,
+      "follow_status": 0,
+      "language": "zh-Hans",
+      "region": "CN",
+      "nickname_lock": 0,
+      "school_type": 0,
+      "avatar_uri": "7beb002028fdb3f53d0a",
+      "signature": "\u8bb0\u5f55\u751f\u6d3b\u4e2d\u7684\u5c0f\u7f8e\u597d",
+      "weibo_verify": "",
+      "unique_id": ""
+    },
+    "cmt_swt": false,
+    "share_url": "https://www.douyin.com/share/video/6544575217929293064/?mid=6540570954622634756",
+    "is_ads": false,
+    "music": {
+      "status": 1,
+      "owner_nickname": "\u73af\u7403\u8fbe\u4eba\u00b7\u534e\u4ed4",
+      "extra": "{\"has_edited\": 0}",
+      "is_original": false,
+      "offline_desc": "",
+      "source_platform": 23,
+      "audio_track": {
+        "url_list": ["https://p1.pstatp.com/obj/75b20013cad37d84bfc0", "https://pb3.pstatp.com/obj/75b20013cad37d84bfc0", "https://pb3.pstatp.com/obj/75b20013cad37d84bfc0"],
+        "uri": "75b20013cad37d84bfc0"
+      },
+      "cover_large": {
+        "url_list": ["https://p3.pstatp.com/aweme/1080x1080/6710000d411d3d7ae31e.jpeg", "https://pb9.pstatp.com/aweme/1080x1080/6710000d411d3d7ae31e.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/6710000d411d3d7ae31e.jpeg"],
+        "uri": "6710000d411d3d7ae31e"
+      },
+      "duration": 15,
+      "id": 6540570954622634756,
+      "cover_thumb": {
+        "url_list": ["https://p3.pstatp.com/aweme/100x100/6710000d411d3d7ae31e.jpeg", "https://pb9.pstatp.com/aweme/100x100/6710000d411d3d7ae31e.jpeg", "https://pb3.pstatp.com/aweme/100x100/6710000d411d3d7ae31e.jpeg"],
+        "uri": "6710000d411d3d7ae31e"
+      },
+      "cover_hd": {
+        "url_list": ["https://p3.pstatp.com/aweme/1080x1080/6710000d411d3d7ae31e.jpeg", "https://pb9.pstatp.com/aweme/1080x1080/6710000d411d3d7ae31e.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/6710000d411d3d7ae31e.jpeg"],
+        "uri": "6710000d411d3d7ae31e"
+      },
+      "user_count": 0,
+      "title": "@\u73af\u7403\u8fbe\u4eba\u00b7\u534e\u4ed4\u521b\u4f5c\u7684\u539f\u58f0",
+      "play_url": {
+        "url_list": ["http://p1.pstatp.com/obj/75430004899fb3b071cd", "http://p9.pstatp.com/obj/75430004899fb3b071cd", "http://p3.pstatp.com/obj/75430004899fb3b071cd"],
+        "uri": "75430004899fb3b071cd"
+      },
+      "effects_data": {
+        "url_list": ["https://p1.pstatp.com/obj/75b40013c3e368aa47d8", "https://pb3.pstatp.com/obj/75b40013c3e368aa47d8", "https://pb3.pstatp.com/obj/75b40013c3e368aa47d8"],
+        "uri": "75b40013c3e368aa47d8"
+      },
+      "author": "\u73af\u7403\u8fbe\u4eba\u00b7\u534e\u4ed4",
+      "mid": "6540570954622634756",
+      "cover_medium": {
+        "url_list": ["https://p3.pstatp.com/aweme/720x720/6710000d411d3d7ae31e.jpeg", "https://pb9.pstatp.com/aweme/720x720/6710000d411d3d7ae31e.jpeg", "https://pb3.pstatp.com/aweme/720x720/6710000d411d3d7ae31e.jpeg"],
+        "uri": "6710000d411d3d7ae31e"
+      },
+      "id_str": "6540570954622634756",
+      "schema_url": "",
+      "owner_id": "84894086825"
+    },
+    "bodydance_score": 0,
+    "is_hash_tag": 0,
+    "status": {
+      "with_goods": false,
+      "is_delete": false,
+      "private_status": 0,
+      "allow_comment": true,
+      "allow_share": true,
+      "is_private": false
+    },
+    "sort_label": "",
+    "share_info": {
+      "share_weibo_desc": "#\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b#\u519c\u5bb6\u5c0f\u9662\u5076\u9047\u7efd\u653e\u7684\u6708\u5b63\uff0c\u5f53\u65f6\u5c31\u88ab\u60ca\u8273\u5230\u4e86\uff0c\u4f1a\u9001\u4e0a\u63a8\u8350\u5427\ud83d\ude43",
+      "share_title": "\u519c\u5bb6\u5c0f\u9662\u5076\u9047\u7efd\u653e\u7684\u6708\u5b63\uff0c\u5f53\u65f6\u5c31\u88ab\u60ca\u8273\u5230\u4e86\uff0c\u4f1a\u9001\u4e0a\u63a8\u8350\u5427\ud83d\ude43",
+      "share_url": "https://www.iesdouyin.com/share/video/6544575217929293064/?region=CN&mid=6540570954622634756&titleType=title",
+      "share_desc": "\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b"
+    },
+    "is_top": 0,
+    "aweme_type": 0,
+    "desc": "\u519c\u5bb6\u5c0f\u9662\u5076\u9047\u7efd\u653e\u7684\u6708\u5b63\uff0c\u5f53\u65f6\u5c31\u88ab\u60ca\u8273\u5230\u4e86\uff0c\u4f1a\u9001\u4e0a\u63a8\u8350\u5427\ud83d\ude43",
+    "region": "CN",
+    "is_relieve": false,
+    "text_extra": [],
+    "user_digged": 0
+  }, {
+    "risk_infos": {
+      "warn": false,
+      "content": "",
+      "risk_sink": false,
+      "type": 0
+    },
+    "label_top": {
+      "url_list": ["https://p1.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf"],
+      "uri": "729f0000ef991e85fccf"
+    },
+    "author_user_id": 63032191982,
+    "rate": 12,
+    "create_time": 1524066090,
+    "video": {
+      "ratio": "720p",
+      "origin_cover": {
+        "url_list": ["http://p1.pstatp.com/large/7c310007b0967860c88d.jpeg", "http://pb3.pstatp.com/large/7c310007b0967860c88d.jpeg", "http://pb3.pstatp.com/large/7c310007b0967860c88d.jpeg"],
+        "uri": "large/7c310007b0967860c88d"
+      },
+      "play_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=262c85d168c14dbbb94c3e0d48597c43&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=262c85d168c14dbbb94c3e0d48597c43&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=262c85d168c14dbbb94c3e0d48597c43&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=262c85d168c14dbbb94c3e0d48597c43&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "262c85d168c14dbbb94c3e0d48597c43"
+      },
+      "cover": {
+        "url_list": ["https://p3.pstatp.com/aweme/300x400/7c320005b68fac5d76be.jpeg", "https://pb9.pstatp.com/aweme/300x400/7c320005b68fac5d76be.jpeg", "https://pb3.pstatp.com/aweme/300x400/7c320005b68fac5d76be.jpeg"],
+        "uri": "300x400/7c320005b68fac5d76be"
+      },
+      "height": 960,
+      "width": 540,
+      "bit_rate": [{
+        "bit_rate": 803723,
+        "gear_name": "normal",
+        "quality_type": 0
+      }],
+      "download_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=262c85d168c14dbbb94c3e0d48597c43&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=262c85d168c14dbbb94c3e0d48597c43&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=262c85d168c14dbbb94c3e0d48597c43&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=262c85d168c14dbbb94c3e0d48597c43&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "262c85d168c14dbbb94c3e0d48597c43"
+      },
+      "has_watermark": true,
+      "duration": 10170,
+      "play_addr_lowbr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=262c85d168c14dbbb94c3e0d48597c43&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=262c85d168c14dbbb94c3e0d48597c43&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=262c85d168c14dbbb94c3e0d48597c43&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=262c85d168c14dbbb94c3e0d48597c43&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "262c85d168c14dbbb94c3e0d48597c43"
+      },
+      "dynamic_cover": {
+        "url_list": ["https://p1.pstatp.com/obj/7c33000404dd1335d200", "https://pb3.pstatp.com/obj/7c33000404dd1335d200", "https://pb3.pstatp.com/obj/7c33000404dd1335d200"],
+        "uri": "7c33000404dd1335d200"
+      }
+    },
+    "aweme_id": "6545813951421091079",
+    "video_labels": [],
+    "is_vr": false,
+    "vr_type": 0,
+    "statistics": {
+      "play_count": 23762385,
+      "aweme_id": "6545813951421091079",
+      "comment_count": 4516,
+      "share_count": 31754,
+      "digg_count": 937394
+    },
+    "author": {
+      "share_qrcode_uri": "4d550013175e0f002dd5",
+      "app_id": 1128,
+      "avatar_larger": {
+        "url_list": ["https://p1.pstatp.com/aweme/1080x1080/729d002aa0d2b0e1d510.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/729d002aa0d2b0e1d510.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/729d002aa0d2b0e1d510.jpeg"],
+        "uri": "729d002aa0d2b0e1d510"
+      },
+      "enterprise_verify_reason": "",
+      "original_music_qrcode": null,
+      "story_open": false,
+      "live_verify": 0,
+      "short_id": "152134212",
+      "account_region": "",
+      "reflow_page_gid": 0,
+      "avatar_thumb": {
+        "url_list": ["https://p1.pstatp.com/aweme/100x100/729d002aa0d2b0e1d510.jpeg", "https://pb3.pstatp.com/aweme/100x100/729d002aa0d2b0e1d510.jpeg", "https://pb3.pstatp.com/aweme/100x100/729d002aa0d2b0e1d510.jpeg"],
+        "uri": "729d002aa0d2b0e1d510"
+      },
+      "is_binded_weibo": false,
+      "is_verified": true,
+      "hide_search": false,
+      "risk_flag": 0,
+      "with_commerce_entry": false,
+      "school_name": "",
+      "custom_verify": "",
+      "special_lock": 1,
+      "shield_comment_notice": 0,
+      "hide_location": false,
+      "gender": 2,
+      "star_use_new_download": false,
+      "school_poi_id": "",
+      "prevent_download": false,
+      "weibo_schema": "",
+      "uid": "63032191982",
+      "bind_phone": "",
+      "weibo_url": "",
+      "weibo_name": "",
+      "commerce_user_level": 0,
+      "create_time": 1512926013,
+      "verify_info": "",
+      "constellation": 1,
+      "community_discipline_status": 0,
+      "has_register_notice": 1,
+      "need_recommend": 1,
+      "shield_digg_notice": 0,
+      "update_before": 0,
+      "verification_type": 1,
+      "room_id": 0,
+      "avatar_medium": {
+        "url_list": ["https://p1.pstatp.com/aweme/720x720/729d002aa0d2b0e1d510.jpeg", "https://pb3.pstatp.com/aweme/720x720/729d002aa0d2b0e1d510.jpeg", "https://pb3.pstatp.com/aweme/720x720/729d002aa0d2b0e1d510.jpeg"],
+        "uri": "729d002aa0d2b0e1d510"
+      },
+      "authority_status": 0,
+      "enterprise_verify": false,
+      "live_rec_level": 0,
+      "reflow_page_uid": 0,
+      "birthday": "1988-03-25",
+      "is_ad_fake": false,
+      "nickname": "\u5de7\u514b\u529b\u6241\u8138\u732b",
+      "shield_follow_notice": 0,
+      "original_music_cover": null,
+      "follow_status": 0,
+      "language": "zh-Hans",
+      "region": "CN",
+      "nickname_lock": 0,
+      "school_type": 0,
+      "avatar_uri": "729d002aa0d2b0e1d510",
+      "signature": "\u56fd\u5185\u9ad8\u7aef\u52a0\u83f2\u732b\u820d\u7e41\u80b2\u4eba\uff1adiayuebi",
+      "weibo_verify": "\u5fae\u535a\u8ba4\u8bc1: \u840c\u5ba0\u89c6\u9891\u81ea\u5a92\u4f53",
+      "unique_id": "ChocolateCattery"
+    },
+    "cmt_swt": false,
+    "share_url": "https://www.douyin.com/share/video/6545813951421091079/?mid=6499743036413577997",
+    "is_ads": false,
+    "music": {
+      "status": 1,
+      "owner_nickname": "\u8352\u57ce\u4ee5\u5317the1",
+      "extra": "{\"has_edited\": 0}",
+      "is_original": false,
+      "offline_desc": "",
+      "source_platform": 23,
+      "audio_track": {
+        "url_list": ["https://p3.pstatp.com/obj/4d5900019b7870ee9449", "https://pb9.pstatp.com/obj/4d5900019b7870ee9449", "https://pb3.pstatp.com/obj/4d5900019b7870ee9449"],
+        "uri": "4d5900019b7870ee9449"
+      },
+      "cover_large": {
+        "url_list": ["https://tva4.sinaimg.cn/crop.0.0.180.180.50/bdd78555jw1e8qgp5bmzyj2050050aa8.jpg"],
+        "uri": ""
+      },
+      "duration": 10,
+      "id": 6499743036413577997,
+      "cover_thumb": {
+        "url_list": ["https://tva4.sinaimg.cn/crop.0.0.180.180.50/bdd78555jw1e8qgp5bmzyj2050050aa8.jpg"],
+        "uri": ""
+      },
+      "cover_hd": {
+        "url_list": ["https://tva4.sinaimg.cn/crop.0.0.180.180.50/bdd78555jw1e8qgp5bmzyj2050050aa8.jpg"],
+        "uri": ""
+      },
+      "user_count": 0,
+      "title": "@\u8352\u57ce\u4ee5\u5317the1\u521b\u4f5c\u7684\u539f\u58f0",
+      "play_url": {
+        "url_list": ["http://p1.pstatp.com/obj/504d0002537d6fd6128e", "http://p9.pstatp.com/obj/504d0002537d6fd6128e", "http://p3.pstatp.com/obj/504d0002537d6fd6128e"],
+        "uri": "504d0002537d6fd6128e"
+      },
+      "effects_data": {
+        "url_list": ["https://p3.pstatp.com/obj/4d55002adbec2f883353", "https://pb9.pstatp.com/obj/4d55002adbec2f883353", "https://pb3.pstatp.com/obj/4d55002adbec2f883353"],
+        "uri": "4d55002adbec2f883353"
+      },
+      "author": "\u8352\u57ce\u4ee5\u5317the1",
+      "mid": "6499743036413577997",
+      "cover_medium": {
+        "url_list": ["https://tva4.sinaimg.cn/crop.0.0.180.180.50/bdd78555jw1e8qgp5bmzyj2050050aa8.jpg"],
+        "uri": ""
+      },
+      "id_str": "6499743036413577997",
+      "schema_url": "",
+      "owner_id": "74705444931"
+    },
+    "bodydance_score": 0,
+    "is_hash_tag": 0,
+    "status": {
+      "with_goods": false,
+      "is_delete": false,
+      "private_status": 0,
+      "allow_comment": true,
+      "allow_share": true,
+      "is_private": false
+    },
+    "sort_label": "",
+    "share_info": {
+      "share_weibo_desc": "#\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b#\u54c8\u54c8\u54c8\u54c8\u54c8",
+      "share_title": "\u54c8\u54c8\u54c8\u54c8\u54c8",
+      "share_url": "https://www.iesdouyin.com/share/video/6545813951421091079/?region=CN&mid=6499743036413577997&titleType=title",
+      "share_desc": "\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b"
+    },
+    "is_top": 0,
+    "aweme_type": 0,
+    "desc": "\u54c8\u54c8\u54c8\u54c8\u54c8",
+    "cha_list": [{
+      "schema": "aweme://aweme/challenge/detail?cid=1597981828539395",
+      "user_count": 0,
+      "author": {},
+      "cha_name": "\u624b\u7275\u624b\uff0c\u6211\u4eec\u4e00\u8d77\u8d70",
+      "cid": "1597981828539395",
+      "type": 0,
+      "desc": "\u7275\u624b\uff0c\u662f\u7231\u7684\u8bc1\u8a00\u3002\u4eb2\u60c5\u91cc\uff0c\u7275\u624b\u662f\u201c\u4f60\u966a\u6211\u957f\u5927\uff0c\u4eca\u540e\u6211\u4f34\u4f60\u53d8\u8001\u201d\u7684\u7f81\u7eca\uff1b\u7231\u60c5\u91cc\uff0c\u7275\u624b\u662f\u201c\u4ece\u5fc3\u52a8\u5230\u53e4\u7a00\u201d\u7684\u627f\u8bfa\uff1b\u53cb\u60c5\u91cc\uff0c\u7275\u624b\u662f\u201c\u5929\u6daf\u82e5\u6bd4\u90bb\u201d\u7684\u9ed8\u5951\u2026\u2026\n\u6709\u4e86\u7275\u624b\uff0c\u4fbf\u6709\u4e86\u4fe1\u4efb\u548c\u4f9d\u8d56\uff0c\u4e5f\u4e0d\u4f1a\u8f7b\u6613\u518d\u5b64\u5355\u548c\u5f77\u5fa8\uff5e\n\u6240\u4ee5\uff0c\u5c31\u8ba9\u6211\u4eec\u624b\u7275\u624b\uff0c\u4e00\u8d77\u5411\u524d\u8d70\uff01\n"
+    }],
+    "region": "CN",
+    "is_relieve": false,
+    "text_extra": [],
+    "user_digged": 0
+  }, {
+    "risk_infos": {
+      "warn": false,
+      "content": "",
+      "risk_sink": false,
+      "type": 0
+    },
+    "label_top": {
+      "url_list": ["https://p1.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf"],
+      "uri": "729f0000ef991e85fccf"
+    },
+    "author_user_id": 58998837608,
+    "rate": 12,
+    "create_time": 1524121713,
+    "video": {
+      "ratio": "720p",
+      "origin_cover": {
+        "url_list": ["http://p1.pstatp.com/large/7c480001838c44ac816e.jpeg", "http://pb3.pstatp.com/large/7c480001838c44ac816e.jpeg", "http://pb3.pstatp.com/large/7c480001838c44ac816e.jpeg"],
+        "uri": "large/7c480001838c44ac816e"
+      },
+      "play_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=30f1fb98ad1549afbc064c27b6c837b2&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=30f1fb98ad1549afbc064c27b6c837b2&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=30f1fb98ad1549afbc064c27b6c837b2&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=30f1fb98ad1549afbc064c27b6c837b2&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "30f1fb98ad1549afbc064c27b6c837b2"
+      },
+      "cover": {
+        "url_list": ["https://p3.pstatp.com/aweme/300x400/7c450004fd08cbeceb20.jpeg", "https://pb9.pstatp.com/aweme/300x400/7c450004fd08cbeceb20.jpeg", "https://pb3.pstatp.com/aweme/300x400/7c450004fd08cbeceb20.jpeg"],
+        "uri": "300x400/7c450004fd08cbeceb20"
+      },
+      "height": 960,
+      "width": 540,
+      "bit_rate": [{
+        "bit_rate": 1337980,
+        "gear_name": "normal",
+        "quality_type": 0
+      }],
+      "download_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=30f1fb98ad1549afbc064c27b6c837b2&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=30f1fb98ad1549afbc064c27b6c837b2&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=30f1fb98ad1549afbc064c27b6c837b2&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=30f1fb98ad1549afbc064c27b6c837b2&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "30f1fb98ad1549afbc064c27b6c837b2"
+      },
+      "has_watermark": true,
+      "duration": 15000,
+      "play_addr_lowbr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=30f1fb98ad1549afbc064c27b6c837b2&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=30f1fb98ad1549afbc064c27b6c837b2&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=30f1fb98ad1549afbc064c27b6c837b2&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=30f1fb98ad1549afbc064c27b6c837b2&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "30f1fb98ad1549afbc064c27b6c837b2"
+      },
+      "dynamic_cover": {
+        "url_list": ["https://p9.pstatp.com/obj/7c4600048920d6c2904d", "https://pb1.pstatp.com/obj/7c4600048920d6c2904d", "https://pb3.pstatp.com/obj/7c4600048920d6c2904d"],
+        "uri": "7c4600048920d6c2904d"
+      }
+    },
+    "aweme_id": "6546052835509800205",
+    "video_labels": [],
+    "is_vr": false,
+    "vr_type": 0,
+    "statistics": {
+      "play_count": 11926924,
+      "aweme_id": "6546052835509800205",
+      "comment_count": 6962,
+      "share_count": 11900,
+      "digg_count": 183257
+    },
+    "author": {
+      "share_qrcode_uri": "216a0065e7f72b1a30e5",
+      "app_id": 1128,
+      "avatar_larger": {
+        "url_list": ["https://p3.pstatp.com/aweme/1080x1080/75ba00103da9d8d61ff7.jpeg", "https://pb9.pstatp.com/aweme/1080x1080/75ba00103da9d8d61ff7.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/75ba00103da9d8d61ff7.jpeg"],
+        "uri": "75ba00103da9d8d61ff7"
+      },
+      "enterprise_verify_reason": "",
+      "original_music_qrcode": null,
+      "story_open": false,
+      "live_verify": 0,
+      "short_id": "8042986",
+      "account_region": "",
+      "reflow_page_gid": 0,
+      "avatar_thumb": {
+        "url_list": ["https://p3.pstatp.com/aweme/100x100/75ba00103da9d8d61ff7.jpeg", "https://pb9.pstatp.com/aweme/100x100/75ba00103da9d8d61ff7.jpeg", "https://pb3.pstatp.com/aweme/100x100/75ba00103da9d8d61ff7.jpeg"],
+        "uri": "75ba00103da9d8d61ff7"
+      },
+      "is_binded_weibo": false,
+      "is_verified": true,
+      "hide_search": true,
+      "risk_flag": 0,
+      "with_commerce_entry": false,
+      "school_name": "",
+      "custom_verify": "",
+      "special_lock": 1,
+      "shield_comment_notice": 0,
+      "hide_location": true,
+      "gender": 2,
+      "star_use_new_download": false,
+      "school_poi_id": "",
+      "prevent_download": false,
+      "weibo_schema": "",
+      "uid": "58998837608",
+      "bind_phone": "",
+      "weibo_url": "",
+      "weibo_name": "",
+      "commerce_user_level": 0,
+      "create_time": 1491860739,
+      "verify_info": "",
+      "constellation": 0,
+      "community_discipline_status": 0,
+      "has_register_notice": 0,
+      "need_recommend": 0,
+      "shield_digg_notice": 0,
+      "update_before": 0,
+      "verification_type": 1,
+      "room_id": 0,
+      "avatar_medium": {
+        "url_list": ["https://p3.pstatp.com/aweme/720x720/75ba00103da9d8d61ff7.jpeg", "https://pb9.pstatp.com/aweme/720x720/75ba00103da9d8d61ff7.jpeg", "https://pb3.pstatp.com/aweme/720x720/75ba00103da9d8d61ff7.jpeg"],
+        "uri": "75ba00103da9d8d61ff7"
+      },
+      "authority_status": 0,
+      "enterprise_verify": false,
+      "live_rec_level": 0,
+      "reflow_page_uid": 0,
+      "birthday": "",
+      "is_ad_fake": false,
+      "nickname": ".",
+      "shield_follow_notice": 0,
+      "original_music_cover": null,
+      "follow_status": 0,
+      "language": "zh-Hans",
+      "region": "CN",
+      "nickname_lock": 0,
+      "school_type": 0,
+      "avatar_uri": "75ba00103da9d8d61ff7",
+      "signature": "",
+      "weibo_verify": "",
+      "unique_id": ""
+    },
+    "cmt_swt": false,
+    "share_url": "https://www.douyin.com/share/video/6546052835509800205/?mid=6470023977330248462",
+    "is_ads": false,
+    "music": {
+      "status": 1,
+      "extra": "{\"has_edited\": 0}",
+      "is_original": false,
+      "offline_desc": "",
+      "source_platform": 22,
+      "audio_track": {
+        "url_list": ["https://p3.pstatp.com/obj/46b9005469363fea01b0", "https://pb9.pstatp.com/obj/46b9005469363fea01b0", "https://pb3.pstatp.com/obj/46b9005469363fea01b0"],
+        "uri": "46b9005469363fea01b0"
+      },
+      "cover_large": {
+        "url_list": ["http://p3.pstatp.com/live/720x720/3b5f000cc36d9e6a8be7.jpeg"],
+        "uri": "3b5f000cc36d9e6a8be7"
+      },
+      "duration": 38,
+      "id": 6470023977330248462,
+      "cover_thumb": {
+        "url_list": ["http://p3.pstatp.com/live/100x100/3b5f000cc36d9e6a8be7.jpeg"],
+        "uri": "3b5f000cc36d9e6a8be7"
+      },
+      "cover_hd": {
+        "url_list": ["http://p3.pstatp.com/live/1080x1080/3b5f000cc36d9e6a8be7.jpeg"],
+        "uri": "3b5f000cc36d9e6a8be7"
+      },
+      "user_count": 0,
+      "title": "\u62f3\u51fb\u821e",
+      "play_url": {
+        "url_list": ["http://p1.pstatp.com/obj/3c830003700cbff7e9f3", "http://p9.pstatp.com/obj/3c830003700cbff7e9f3", "http://p3.pstatp.com/obj/3c830003700cbff7e9f3"],
+        "uri": "3c830003700cbff7e9f3"
+      },
+      "effects_data": {
+        "url_list": ["https://p3.pstatp.com/obj/3b5f000cc39df28a2bfd", "https://pb9.pstatp.com/obj/3b5f000cc39df28a2bfd", "https://pb3.pstatp.com/obj/3b5f000cc39df28a2bfd"],
+        "uri": "3b5f000cc39df28a2bfd"
+      },
+      "author": "\u6296\u97f3\u5c0f\u52a9\u624b",
+      "mid": "6470023977330248462",
+      "cover_medium": {
+        "url_list": ["http://p3.pstatp.com/live/200x200/3b5f000cc36d9e6a8be7.jpeg"],
+        "uri": "3b5f000cc36d9e6a8be7"
+      },
+      "id_str": "6470023977330248462",
+      "schema_url": ""
+    },
+    "bodydance_score": 0,
+    "is_hash_tag": 0,
+    "status": {
+      "with_goods": false,
+      "is_delete": false,
+      "private_status": 0,
+      "allow_comment": true,
+      "allow_share": true,
+      "is_private": false
+    },
+    "sort_label": "",
+    "share_info": {
+      "share_weibo_desc": "#\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b#\u4e00\u5b9a\u8981\u770b\u5230\u6700\u540e\u624d\u77e5\u9053\u8c01\u662f\u771f\u6b63\u7684\u738b\u8005",
+      "share_title": "\u4e00\u5b9a\u8981\u770b\u5230\u6700\u540e\u624d\u77e5\u9053\u8c01\u662f\u771f\u6b63\u7684\u738b\u8005",
+      "share_url": "https://www.iesdouyin.com/share/video/6546052835509800205/?region=CN&mid=6470023977330248462&titleType=title",
+      "share_desc": "\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b"
+    },
+    "is_top": 0,
+    "aweme_type": 0,
+    "desc": "\u4e00\u5b9a\u8981\u770b\u5230\u6700\u540e\u624d\u77e5\u9053\u8c01\u662f\u771f\u6b63\u7684\u738b\u8005",
+    "region": "CN",
+    "is_relieve": false,
+    "text_extra": [],
+    "user_digged": 0
+  }, {
+    "risk_infos": {
+      "warn": false,
+      "content": "",
+      "risk_sink": false,
+      "type": 0
+    },
+    "label_top": {
+      "url_list": ["https://p1.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf"],
+      "uri": "729f0000ef991e85fccf"
+    },
+    "author_user_id": 21069503330,
+    "rate": 12,
+    "create_time": 1523939857,
+    "video": {
+      "ratio": "720p",
+      "origin_cover": {
+        "url_list": ["http://p3.pstatp.com/large/7b04000513d2b110b64b.jpeg", "http://pb9.pstatp.com/large/7b04000513d2b110b64b.jpeg", "http://pb3.pstatp.com/large/7b04000513d2b110b64b.jpeg"],
+        "uri": "large/7b04000513d2b110b64b"
+      },
+      "play_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=0921fbaf692c47afb81aac72013b9ed3&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=0921fbaf692c47afb81aac72013b9ed3&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=0921fbaf692c47afb81aac72013b9ed3&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=0921fbaf692c47afb81aac72013b9ed3&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "0921fbaf692c47afb81aac72013b9ed3"
+      },
+      "cover": {
+        "url_list": ["https://p9.pstatp.com/aweme/300x400/7b00001073d286fe6be5.jpeg", "https://pb1.pstatp.com/aweme/300x400/7b00001073d286fe6be5.jpeg", "https://pb3.pstatp.com/aweme/300x400/7b00001073d286fe6be5.jpeg"],
+        "uri": "300x400/7b00001073d286fe6be5"
+      },
+      "height": 960,
+      "width": 544,
+      "bit_rate": [{
+        "bit_rate": 1628804,
+        "gear_name": "normal",
+        "quality_type": 0
+      }],
+      "download_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=0921fbaf692c47afb81aac72013b9ed3&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=0921fbaf692c47afb81aac72013b9ed3&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=0921fbaf692c47afb81aac72013b9ed3&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=0921fbaf692c47afb81aac72013b9ed3&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "0921fbaf692c47afb81aac72013b9ed3"
+      },
+      "has_watermark": true,
+      "duration": 8900,
+      "play_addr_lowbr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=0921fbaf692c47afb81aac72013b9ed3&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=0921fbaf692c47afb81aac72013b9ed3&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=0921fbaf692c47afb81aac72013b9ed3&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=0921fbaf692c47afb81aac72013b9ed3&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "0921fbaf692c47afb81aac72013b9ed3"
+      },
+      "dynamic_cover": {
+        "url_list": ["https://p3.pstatp.com/obj/7b030006aff23b4b010b", "https://pb9.pstatp.com/obj/7b030006aff23b4b010b", "https://pb3.pstatp.com/obj/7b030006aff23b4b010b"],
+        "uri": "7b030006aff23b4b010b"
+      }
+    },
+    "aweme_id": "6545271810751991048",
+    "video_labels": [],
+    "is_vr": false,
+    "vr_type": 0,
+    "statistics": {
+      "play_count": 1606818,
+      "aweme_id": "6545271810751991048",
+      "comment_count": 1469,
+      "share_count": 1078,
+      "digg_count": 50656
+    },
+    "author": {
+      "share_qrcode_uri": "49ed005123865afb6aee",
+      "app_id": 1128,
+      "avatar_larger": {
+        "url_list": ["https://q.qlogo.cn/qqapp/1105602870/0C64EDFC68C04AC6E52AEF4D5955EA73/40"],
+        "uri": ""
+      },
+      "enterprise_verify_reason": "",
+      "original_music_qrcode": null,
+      "story_open": false,
+      "live_verify": 0,
+      "short_id": "138032114",
+      "account_region": "",
+      "reflow_page_gid": 0,
+      "avatar_thumb": {
+        "url_list": ["https://q.qlogo.cn/qqapp/1105602870/0C64EDFC68C04AC6E52AEF4D5955EA73/40"],
+        "uri": ""
+      },
+      "is_binded_weibo": false,
+      "is_verified": true,
+      "hide_search": false,
+      "risk_flag": 0,
+      "with_commerce_entry": false,
+      "school_name": "",
+      "custom_verify": "",
+      "special_lock": 1,
+      "shield_comment_notice": 0,
+      "hide_location": false,
+      "gender": 2,
+      "star_use_new_download": false,
+      "school_poi_id": "",
+      "prevent_download": false,
+      "weibo_schema": "",
+      "uid": "21069503330",
+      "bind_phone": "",
+      "weibo_url": "",
+      "weibo_name": "",
+      "commerce_user_level": 0,
+      "create_time": 1511761580,
+      "verify_info": "",
+      "constellation": 11,
+      "community_discipline_status": 0,
+      "has_register_notice": 1,
+      "need_recommend": 1,
+      "shield_digg_notice": 0,
+      "update_before": 0,
+      "verification_type": 1,
+      "room_id": 0,
+      "avatar_medium": {
+        "url_list": ["https://q.qlogo.cn/qqapp/1105602870/0C64EDFC68C04AC6E52AEF4D5955EA73/40"],
+        "uri": ""
+      },
+      "authority_status": 0,
+      "enterprise_verify": false,
+      "live_rec_level": 0,
+      "reflow_page_uid": 0,
+      "birthday": "1995-02-07",
+      "is_ad_fake": false,
+      "nickname": "\u51ac\u74dc\u513f",
+      "shield_follow_notice": 0,
+      "original_music_cover": null,
+      "follow_status": 0,
+      "language": "zh-Hans",
+      "region": "CN",
+      "nickname_lock": 0,
+      "school_type": 0,
+      "avatar_uri": "",
+      "signature": "",
+      "weibo_verify": "",
+      "unique_id": ""
+    },
+    "cmt_swt": false,
+    "share_url": "https://www.douyin.com/share/video/6545271810751991048/?mid=6545271847628475139",
+    "is_ads": false,
+    "music": {
+      "status": 1,
+      "owner_nickname": "\u51ac\u74dc\u513f",
+      "extra": "{\"has_edited\": 0}",
+      "is_original": false,
+      "offline_desc": "",
+      "source_platform": 23,
+      "audio_track": {
+        "url_list": ["https://p3.pstatp.com/obj/7be20020d9ce0ec6ad9c", "https://pb9.pstatp.com/obj/7be20020d9ce0ec6ad9c", "https://pb3.pstatp.com/obj/7be20020d9ce0ec6ad9c"],
+        "uri": "7be20020d9ce0ec6ad9c"
+      },
+      "cover_large": {
+        "url_list": ["https://q.qlogo.cn/qqapp/1105602870/0C64EDFC68C04AC6E52AEF4D5955EA73/40"],
+        "uri": ""
+      },
+      "duration": 8,
+      "id": 6545271847628475139,
+      "cover_thumb": {
+        "url_list": ["https://q.qlogo.cn/qqapp/1105602870/0C64EDFC68C04AC6E52AEF4D5955EA73/40"],
+        "uri": ""
+      },
+      "cover_hd": {
+        "url_list": ["https://q.qlogo.cn/qqapp/1105602870/0C64EDFC68C04AC6E52AEF4D5955EA73/40"],
+        "uri": ""
+      },
+      "user_count": 0,
+      "title": "@\u51ac\u74dc\u513f\u521b\u4f5c\u7684\u539f\u58f0",
+      "play_url": {
+        "url_list": ["http://p1.pstatp.com/obj/7bb500036956a6204c45", "http://p9.pstatp.com/obj/7bb500036956a6204c45", "http://p3.pstatp.com/obj/7bb500036956a6204c45"],
+        "uri": "7bb500036956a6204c45"
+      },
+      "effects_data": {
+        "url_list": ["https://p3.pstatp.com/obj/7be20020d9f65ed5560a", "https://pb9.pstatp.com/obj/7be20020d9f65ed5560a", "https://pb3.pstatp.com/obj/7be20020d9f65ed5560a"],
+        "uri": "7be20020d9f65ed5560a"
+      },
+      "author": "\u51ac\u74dc\u513f",
+      "mid": "6545271847628475139",
+      "cover_medium": {
+        "url_list": ["https://q.qlogo.cn/qqapp/1105602870/0C64EDFC68C04AC6E52AEF4D5955EA73/40"],
+        "uri": ""
+      },
+      "id_str": "6545271847628475139",
+      "schema_url": "",
+      "owner_id": "21069503330"
+    },
+    "bodydance_score": 0,
+    "is_hash_tag": 0,
+    "status": {
+      "with_goods": false,
+      "is_delete": false,
+      "private_status": 0,
+      "allow_comment": true,
+      "allow_share": true,
+      "is_private": false
+    },
+    "sort_label": "",
+    "share_info": {
+      "share_weibo_desc": "#\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b#\u5618\uff01\u6084\u6084\u70b9\u5f00@\u51ac\u74dc\u513f\u8fd9\u4e2a\u6296\u97f3\u77ed\u89c6\u9891\u5c31\u597d\u3002",
+      "share_title": "\u5618\uff01\u6084\u6084\u70b9\u5f00@\u51ac\u74dc\u513f\u8fd9\u4e2a\u6296\u97f3\u77ed\u89c6\u9891\u5c31\u597d\u3002",
+      "share_url": "https://www.iesdouyin.com/share/video/6545271810751991048/?region=CN&mid=6545271847628475139&titleType=title_CN_2",
+      "share_desc": "\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b"
+    },
+    "is_top": 0,
+    "aweme_type": 0,
+    "desc": "",
+    "region": "CN",
+    "is_relieve": false,
+    "text_extra": [],
+    "user_digged": 0
+  }, {
+    "risk_infos": {
+      "warn": false,
+      "content": "",
+      "risk_sink": false,
+      "type": 0
+    },
+    "label_top": {
+      "url_list": ["https://p1.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf"],
+      "uri": "729f0000ef991e85fccf"
+    },
+    "author_user_id": 61262358350,
+    "rate": 12,
+    "create_time": 1522731417,
+    "video": {
+      "ratio": "720p",
+      "origin_cover": {
+        "url_list": ["http://p9.pstatp.com/large/771a0001fb38a8f1010b.jpeg", "http://pb1.pstatp.com/large/771a0001fb38a8f1010b.jpeg", "http://pb3.pstatp.com/large/771a0001fb38a8f1010b.jpeg"],
+        "uri": "large/771a0001fb38a8f1010b"
+      },
+      "play_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=615437b7af534e4cba1fdde00ea1e077&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=615437b7af534e4cba1fdde00ea1e077&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=615437b7af534e4cba1fdde00ea1e077&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=615437b7af534e4cba1fdde00ea1e077&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "615437b7af534e4cba1fdde00ea1e077"
+      },
+      "cover": {
+        "url_list": ["https://p1.pstatp.com/aweme/300x400/7715000b0c9208cfcdb1.jpeg", "https://pb3.pstatp.com/aweme/300x400/7715000b0c9208cfcdb1.jpeg", "https://pb3.pstatp.com/aweme/300x400/7715000b0c9208cfcdb1.jpeg"],
+        "uri": "300x400/7715000b0c9208cfcdb1"
+      },
+      "height": 492,
+      "width": 276,
+      "bit_rate": [{
+        "bit_rate": 283823,
+        "gear_name": "normal",
+        "quality_type": 0
+      }],
+      "download_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=615437b7af534e4cba1fdde00ea1e077&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=615437b7af534e4cba1fdde00ea1e077&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=615437b7af534e4cba1fdde00ea1e077&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=615437b7af534e4cba1fdde00ea1e077&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "615437b7af534e4cba1fdde00ea1e077"
+      },
+      "has_watermark": true,
+      "duration": 10100,
+      "play_addr_lowbr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=615437b7af534e4cba1fdde00ea1e077&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=615437b7af534e4cba1fdde00ea1e077&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=615437b7af534e4cba1fdde00ea1e077&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=615437b7af534e4cba1fdde00ea1e077&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "615437b7af534e4cba1fdde00ea1e077"
+      },
+      "dynamic_cover": {
+        "url_list": ["https://p3.pstatp.com/obj/7716000ad918bde528db", "https://pb9.pstatp.com/obj/7716000ad918bde528db", "https://pb3.pstatp.com/obj/7716000ad918bde528db"],
+        "uri": "7716000ad918bde528db"
+      }
+    },
+    "aweme_id": "6540081284796910862",
+    "video_labels": [],
+    "is_vr": false,
+    "vr_type": 0,
+    "statistics": {
+      "play_count": 19984619,
+      "aweme_id": "6540081284796910862",
+      "comment_count": 4278,
+      "share_count": 27155,
+      "digg_count": 599451
+    },
+    "author": {
+      "share_qrcode_uri": "216a0062229437ea7074",
+      "app_id": 1128,
+      "avatar_larger": {
+        "url_list": ["https://p1.pstatp.com/aweme/1080x1080/75aa001dba2a73389824.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/75aa001dba2a73389824.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/75aa001dba2a73389824.jpeg"],
+        "uri": "75aa001dba2a73389824"
+      },
+      "enterprise_verify_reason": "",
+      "original_music_qrcode": null,
+      "story_open": false,
+      "live_verify": 0,
+      "short_id": "19386840",
+      "account_region": "",
+      "reflow_page_gid": 0,
+      "avatar_thumb": {
+        "url_list": ["https://p1.pstatp.com/aweme/100x100/75aa001dba2a73389824.jpeg", "https://pb3.pstatp.com/aweme/100x100/75aa001dba2a73389824.jpeg", "https://pb3.pstatp.com/aweme/100x100/75aa001dba2a73389824.jpeg"],
+        "uri": "75aa001dba2a73389824"
+      },
+      "is_binded_weibo": false,
+      "is_verified": true,
+      "hide_search": false,
+      "risk_flag": 0,
+      "with_commerce_entry": false,
+      "school_name": "",
+      "custom_verify": "",
+      "special_lock": 1,
+      "shield_comment_notice": 0,
+      "hide_location": true,
+      "gender": 2,
+      "star_use_new_download": false,
+      "school_poi_id": "",
+      "prevent_download": false,
+      "weibo_schema": "",
+      "uid": "61262358350",
+      "bind_phone": "",
+      "weibo_url": "",
+      "weibo_name": "",
+      "commerce_user_level": 0,
+      "create_time": 1496199799,
+      "verify_info": "",
+      "constellation": 7,
+      "community_discipline_status": 0,
+      "has_register_notice": 0,
+      "need_recommend": 1,
+      "shield_digg_notice": 0,
+      "update_before": 0,
+      "verification_type": 1,
+      "room_id": 0,
+      "avatar_medium": {
+        "url_list": ["https://p1.pstatp.com/aweme/720x720/75aa001dba2a73389824.jpeg", "https://pb3.pstatp.com/aweme/720x720/75aa001dba2a73389824.jpeg", "https://pb3.pstatp.com/aweme/720x720/75aa001dba2a73389824.jpeg"],
+        "uri": "75aa001dba2a73389824"
+      },
+      "authority_status": 0,
+      "enterprise_verify": false,
+      "live_rec_level": 0,
+      "reflow_page_uid": 0,
+      "birthday": "1988-10-01",
+      "is_ad_fake": false,
+      "nickname": "\u53e5\u53f7\ud83d\udc8d",
+      "shield_follow_notice": 0,
+      "original_music_cover": null,
+      "follow_status": 0,
+      "language": "zh-Hans",
+      "region": "CN",
+      "nickname_lock": 0,
+      "school_type": 0,
+      "avatar_uri": "75aa001dba2a73389824",
+      "signature": "\u611f\u8c22\u6296\u97f3\u5e73\u53f0\ud83d\ude18\uff0c\n\ud83c\udf42\u5206\u4eab\u5feb\u4e50\u548c\u611f\u52a8\uff5e\n\u4f20\u9012\u6b63\u80fd\u91cf\uff01\ud83d\udc95",
+      "weibo_verify": "",
+      "unique_id": ""
+    },
+    "cmt_swt": false,
+    "share_url": "https://www.douyin.com/share/video/6540081284796910862/?mid=6512306313685863175",
+    "is_ads": false,
+    "music": {
+      "status": 1,
+      "extra": "{\"has_edited\": 0}",
+      "is_original": false,
+      "offline_desc": "",
+      "source_platform": 22,
+      "audio_track": {
+        "url_list": ["https://p1.pstatp.com/obj/5acf00064ffcdca5edbe", "https://pb3.pstatp.com/obj/5acf00064ffcdca5edbe", "https://pb3.pstatp.com/obj/5acf00064ffcdca5edbe"],
+        "uri": "5acf00064ffcdca5edbe"
+      },
+      "cover_large": {
+        "url_list": ["http://p3.pstatp.com/live/720x720/5537002c3351db56aa14.jpeg"],
+        "uri": "5537002c3351db56aa14"
+      },
+      "duration": 15,
+      "id": 6512306313685863175,
+      "cover_thumb": {
+        "url_list": ["http://p3.pstatp.com/live/100x100/5537002c3351db56aa14.jpeg"],
+        "uri": "5537002c3351db56aa14"
+      },
+      "cover_hd": {
+        "url_list": ["http://p3.pstatp.com/live/1080x1080/5537002c3351db56aa14.jpeg"],
+        "uri": "5537002c3351db56aa14"
+      },
+      "user_count": 0,
+      "title": "\u6ca1\u5b8c\u6ca1\u4e86\u7684HA\uff01",
+      "play_url": {
+        "url_list": ["http://p1.pstatp.com/obj/59250008866dba987668", "http://p9.pstatp.com/obj/59250008866dba987668", "http://p3.pstatp.com/obj/59250008866dba987668"],
+        "uri": "59250008866dba987668"
+      },
+      "effects_data": {
+        "url_list": ["https://p3.pstatp.com/obj/5535002bf774a904d660", "https://pb9.pstatp.com/obj/5535002bf774a904d660", "https://pb3.pstatp.com/obj/5535002bf774a904d660"],
+        "uri": "5535002bf774a904d660"
+      },
+      "author": "\u6296\u97f3\u5c0f\u52a9\u624b",
+      "mid": "6512306313685863175",
+      "cover_medium": {
+        "url_list": ["http://p3.pstatp.com/live/200x200/5537002c3351db56aa14.jpeg"],
+        "uri": "5537002c3351db56aa14"
+      },
+      "id_str": "6512306313685863175",
+      "schema_url": ""
+    },
+    "bodydance_score": 0,
+    "is_hash_tag": 0,
+    "status": {
+      "with_goods": false,
+      "is_delete": false,
+      "private_status": 0,
+      "allow_comment": true,
+      "allow_share": true,
+      "is_private": false
+    },
+    "sort_label": "",
+    "share_info": {
+      "share_weibo_desc": "#\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b#\u8fd9\u6b4c\u548c\u8fd9\u718a\u6709\u6bd2\uff5e\u65e2\u7136\u5927\u5bb6\u90fd\u559c\u6b22\uff0c\u518d\u6765\u4e00\u6ce2\uff0c\u5e0c\u671b\u4f60\u4eec\u4eca\u5929\u5feb\u4e50\u5230\u5bb6\uff01\ud83d\ude02\ud83d\ude02",
+      "share_title": "\u8fd9\u6b4c\u548c\u8fd9\u718a\u6709\u6bd2\uff5e\u65e2\u7136\u5927\u5bb6\u90fd\u559c\u6b22\uff0c\u518d\u6765\u4e00\u6ce2\uff0c\u5e0c\u671b\u4f60\u4eec\u4eca\u5929\u5feb\u4e50\u5230\u5bb6\uff01\ud83d\ude02\ud83d\ude02",
+      "share_url": "https://www.iesdouyin.com/share/video/6540081284796910862/?region=CN&mid=6512306313685863175&titleType=title",
+      "share_desc": "\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b"
+    },
+    "is_top": 0,
+    "aweme_type": 0,
+    "desc": "\u8fd9\u6b4c\u548c\u8fd9\u718a\u6709\u6bd2\uff5e\u65e2\u7136\u5927\u5bb6\u90fd\u559c\u6b22\uff0c\u518d\u6765\u4e00\u6ce2\uff0c\u5e0c\u671b\u4f60\u4eec\u4eca\u5929\u5feb\u4e50\u5230\u5bb6\uff01\ud83d\ude02\ud83d\ude02",
+    "region": "CN",
+    "is_relieve": false,
+    "text_extra": [],
+    "user_digged": 0
+  }, {
+    "risk_infos": {
+      "warn": false,
+      "content": "",
+      "risk_sink": false,
+      "type": 0
+    },
+    "label_top": {
+      "url_list": ["https://p1.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf"],
+      "uri": "729f0000ef991e85fccf"
+    },
+    "author_user_id": 64238378462,
+    "rate": 12,
+    "create_time": 1521467205,
+    "video": {
+      "ratio": "720p",
+      "origin_cover": {
+        "url_list": ["http://p3.pstatp.com/large/702a0009b7fa96472f58.jpeg", "http://pb9.pstatp.com/large/702a0009b7fa96472f58.jpeg", "http://pb3.pstatp.com/large/702a0009b7fa96472f58.jpeg"],
+        "uri": "large/702a0009b7fa96472f58"
+      },
+      "play_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=eca22a40cb624dc8b687f73f35a6f079&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=eca22a40cb624dc8b687f73f35a6f079&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=eca22a40cb624dc8b687f73f35a6f079&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=eca22a40cb624dc8b687f73f35a6f079&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "eca22a40cb624dc8b687f73f35a6f079"
+      },
+      "cover": {
+        "url_list": ["https://p3.pstatp.com/aweme/300x400/7029000c80a5f30a6405.jpeg", "https://pb9.pstatp.com/aweme/300x400/7029000c80a5f30a6405.jpeg", "https://pb3.pstatp.com/aweme/300x400/7029000c80a5f30a6405.jpeg"],
+        "uri": "300x400/7029000c80a5f30a6405"
+      },
+      "height": 960,
+      "width": 540,
+      "bit_rate": [{
+        "bit_rate": 904890,
+        "gear_name": "normal",
+        "quality_type": 0
+      }],
+      "download_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=eca22a40cb624dc8b687f73f35a6f079&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=eca22a40cb624dc8b687f73f35a6f079&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=eca22a40cb624dc8b687f73f35a6f079&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=eca22a40cb624dc8b687f73f35a6f079&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "eca22a40cb624dc8b687f73f35a6f079"
+      },
+      "has_watermark": true,
+      "duration": 11300,
+      "play_addr_lowbr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=eca22a40cb624dc8b687f73f35a6f079&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=eca22a40cb624dc8b687f73f35a6f079&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=eca22a40cb624dc8b687f73f35a6f079&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=eca22a40cb624dc8b687f73f35a6f079&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "eca22a40cb624dc8b687f73f35a6f079"
+      },
+      "dynamic_cover": {
+        "url_list": ["https://p3.pstatp.com/obj/702a0009b83fc343a26a", "https://pb9.pstatp.com/obj/702a0009b83fc343a26a", "https://pb3.pstatp.com/obj/702a0009b83fc343a26a"],
+        "uri": "702a0009b83fc343a26a"
+      }
+    },
+    "aweme_id": "6534651823444200712",
+    "video_labels": [],
+    "is_vr": false,
+    "vr_type": 1,
+    "statistics": {
+      "play_count": 26804486,
+      "aweme_id": "6534651823444200712",
+      "comment_count": 10157,
+      "share_count": 91063,
+      "digg_count": 902881
+    },
+    "author": {
+      "share_qrcode_uri": "552f0003837e0d27bf04",
+      "app_id": 1128,
+      "avatar_larger": {
+        "url_list": ["https://p3.pstatp.com/aweme/1080x1080/6f90001483546bb057f5.jpeg", "https://pb9.pstatp.com/aweme/1080x1080/6f90001483546bb057f5.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/6f90001483546bb057f5.jpeg"],
+        "uri": "6f90001483546bb057f5"
+      },
+      "enterprise_verify_reason": "",
+      "original_music_qrcode": null,
+      "story_open": false,
+      "live_verify": 0,
+      "short_id": "190270418",
+      "account_region": "",
+      "reflow_page_gid": 0,
+      "avatar_thumb": {
+        "url_list": ["https://p3.pstatp.com/aweme/100x100/6f90001483546bb057f5.jpeg", "https://pb9.pstatp.com/aweme/100x100/6f90001483546bb057f5.jpeg", "https://pb3.pstatp.com/aweme/100x100/6f90001483546bb057f5.jpeg"],
+        "uri": "6f90001483546bb057f5"
+      },
+      "is_binded_weibo": false,
+      "is_verified": true,
+      "hide_search": false,
+      "risk_flag": 0,
+      "with_commerce_entry": false,
+      "school_name": "",
+      "custom_verify": "",
+      "special_lock": 1,
+      "shield_comment_notice": 0,
+      "hide_location": false,
+      "gender": 2,
+      "star_use_new_download": false,
+      "school_poi_id": "",
+      "prevent_download": false,
+      "weibo_schema": "",
+      "uid": "64238378462",
+      "bind_phone": "",
+      "weibo_url": "",
+      "weibo_name": "",
+      "commerce_user_level": 0,
+      "create_time": 1515332044,
+      "verify_info": "",
+      "constellation": 2,
+      "community_discipline_status": 0,
+      "has_register_notice": 0,
+      "need_recommend": 1,
+      "shield_digg_notice": 0,
+      "update_before": 0,
+      "verification_type": 1,
+      "room_id": 0,
+      "avatar_medium": {
+        "url_list": ["https://p3.pstatp.com/aweme/720x720/6f90001483546bb057f5.jpeg", "https://pb9.pstatp.com/aweme/720x720/6f90001483546bb057f5.jpeg", "https://pb3.pstatp.com/aweme/720x720/6f90001483546bb057f5.jpeg"],
+        "uri": "6f90001483546bb057f5"
+      },
+      "authority_status": 0,
+      "enterprise_verify": false,
+      "live_rec_level": 0,
+      "reflow_page_uid": 0,
+      "birthday": "1992-05-04",
+      "is_ad_fake": false,
+      "nickname": "\u7cd6\u7092\u6817\u5b50",
+      "shield_follow_notice": 0,
+      "original_music_cover": null,
+      "follow_status": 0,
+      "language": "zh-Hans",
+      "region": "CN",
+      "nickname_lock": 0,
+      "school_type": 0,
+      "avatar_uri": "6f90001483546bb057f5",
+      "signature": "\u5feb\u770b\uff0c\u8fd9\u91cc\u6709\u4e2a\u8001\u5b9e\u732b\uff0c\u5927\u5bb6\u5feb\u6765\u5173\u6ce8\u4ed6\uff01",
+      "weibo_verify": "",
+      "unique_id": ""
+    },
+    "cmt_swt": false,
+    "share_url": "https://www.douyin.com/share/video/6534651823444200712/?mid=6489328977697180429",
+    "is_ads": false,
+    "music": {
+      "status": 1,
+      "extra": "{\"has_edited\": 0}",
+      "is_original": false,
+      "offline_desc": "",
+      "source_platform": 22,
+      "audio_track": {
+        "url_list": ["https://p3.pstatp.com/obj/49ef0020979989aeeaf8", "https://pb9.pstatp.com/obj/49ef0020979989aeeaf8", "https://pb3.pstatp.com/obj/49ef0020979989aeeaf8"],
+        "uri": "49ef0020979989aeeaf8"
+      },
+      "cover_large": {
+        "url_list": ["http://p3.pstatp.com/live/720x720/49eb0009e4b8489f0a1d.jpeg"],
+        "uri": "49eb0009e4b8489f0a1d"
+      },
+      "duration": 15,
+      "id": 6489328977697180429,
+      "cover_thumb": {
+        "url_list": ["http://p3.pstatp.com/live/100x100/49eb0009e4b8489f0a1d.jpeg"],
+        "uri": "49eb0009e4b8489f0a1d"
+      },
+      "cover_hd": {
+        "url_list": ["http://p3.pstatp.com/live/1080x1080/49eb0009e4b8489f0a1d.jpeg"],
+        "uri": "49eb0009e4b8489f0a1d"
+      },
+      "user_count": 0,
+      "title": "\u5a03\u5a03\u547c\u547c",
+      "play_url": {
+        "url_list": ["http://p1.pstatp.com/obj/4a0d0004f289a68a1e2f", "http://p9.pstatp.com/obj/4a0d0004f289a68a1e2f", "http://p3.pstatp.com/obj/4a0d0004f289a68a1e2f"],
+        "uri": "4a0d0004f289a68a1e2f"
+      },
+      "effects_data": {
+        "url_list": ["https://p3.pstatp.com/obj/49ed00515558a490c8de", "https://pb9.pstatp.com/obj/49ed00515558a490c8de", "https://pb3.pstatp.com/obj/49ed00515558a490c8de"],
+        "uri": "49ed00515558a490c8de"
+      },
+      "author": "Mr.Bean\u6296\u97f3\u5c0f\u52a9\u624b",
+      "mid": "6489328977697180429",
+      "cover_medium": {
+        "url_list": ["http://p3.pstatp.com/live/200x200/49eb0009e4b8489f0a1d.jpeg"],
+        "uri": "49eb0009e4b8489f0a1d"
+      },
+      "id_str": "6489328977697180429",
+      "schema_url": ""
+    },
+    "bodydance_score": 0,
+    "is_hash_tag": 0,
+    "status": {
+      "with_goods": false,
+      "is_delete": false,
+      "private_status": 0,
+      "allow_comment": true,
+      "allow_share": true,
+      "is_private": false
+    },
+    "sort_label": "",
+    "share_info": {
+      "share_weibo_desc": "#\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b#\u6709\u8fd9\u4e48\u4e2a\u6bcd\u8001\u864e\u771f\u662f\u64cd\u788e\u4e86\u5fc3",
+      "share_title": "\u6709\u8fd9\u4e48\u4e2a\u6bcd\u8001\u864e\u771f\u662f\u64cd\u788e\u4e86\u5fc3",
+      "share_url": "https://www.iesdouyin.com/share/video/6534651823444200712/?region=CN&mid=6489328977697180429&titleType=title",
+      "share_desc": "\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b"
+    },
+    "is_top": 0,
+    "aweme_type": 0,
+    "desc": "\u6709\u8fd9\u4e48\u4e2a\u6bcd\u8001\u864e\u771f\u662f\u64cd\u788e\u4e86\u5fc3",
+    "cha_list": [{
+      "schema": "aweme://aweme/challenge/detail?cid=1594640481305603",
+      "user_count": 0,
+      "author": {},
+      "cha_name": "\u8fd9\u662f\u732b\u7684\u5c0a\u4e25\uff01",
+      "cid": "1594640481305603",
+      "type": 0,
+      "desc": "\u55b5\u661f\u4eba\u96c6\u4f53\u6297\u8bae\u5566\u2014\u2014\u201c\u51ed\u4ec0\u4e48\u53ea\u6709\u4eba\u8138\u624d\u80fd\u8bc6\u522b\u8d34\u7eb8\uff1f\uff01\u732b\u8138\u4e0d\u662f\u8138\u5417\uff1f\u55b5\u54aa\u4e5f\u8981\u6709\u4e13\u5c5e\u8d34\u7eb8\uff01\u732b\u8138\u5fc5\u987b\u88ab\u8bc6\u522b\uff01\u201d\n\u2014\u2014\u89c1\u8bc1\u5947\u8ff9\u7684\u65f6\u523b\u6765\u4e86\uff1a\u53ef\u4ee5\u8bc6\u522b\u732b\u8138\u7684\u732b\u54aa\u4e13\u7528\u8d34\u7eb8\u4e0a\u7ebf\u4e86\uff01\u5728\u62cd\u6444\u9875\u9762\uff0c\u9009\u62e9[\u9053\u5177]\u4e2d\u5e26\u6709\u7ea2\u8272\u3010\u62cd\u732b\u3011\u6807\u7b7e\u7684\u8d34\u7eb8\uff0c\u5c31\u53ef\u4ee5\u5c3d\u60c5\u62cd\u732b\u5566\uff01\n\u5404\u4f4d\u94f2\u5c4e\u5b98\u4eec\uff0c\u5feb\u6765\u8bd5\u8bd5\u7ed9\u81ea\u5bb6\u55b5\u661f\u4eba\u5e26\u4e0a\u5404\u5f0f\u8d34\u7eb8\u5427\uff0c\u6bd5\u7adf\u2014\u2014\u8fd9\u662f\u732b\u7684\u5c0a\u4e25\u5440\uff01"
+    }],
+    "region": "",
+    "is_relieve": false,
+    "text_extra": [],
+    "user_digged": 0
+  }, {
+    "risk_infos": {
+      "warn": false,
+      "content": "",
+      "risk_sink": false,
+      "type": 0
+    },
+    "label_top": {
+      "url_list": ["https://p1.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf"],
+      "uri": "729f0000ef991e85fccf"
+    },
+    "author_user_id": 59477805759,
+    "rate": 12,
+    "create_time": 1522324270,
+    "video": {
+      "ratio": "720p",
+      "origin_cover": {
+        "url_list": ["http://p1.pstatp.com/large/74350001b4f89755f0bd.jpeg", "http://pb3.pstatp.com/large/74350001b4f89755f0bd.jpeg", "http://pb3.pstatp.com/large/74350001b4f89755f0bd.jpeg"],
+        "uri": "large/74350001b4f89755f0bd"
+      },
+      "play_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=19abe74d1f424caa95c70b1bf77425c5&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=19abe74d1f424caa95c70b1bf77425c5&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=19abe74d1f424caa95c70b1bf77425c5&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=19abe74d1f424caa95c70b1bf77425c5&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "19abe74d1f424caa95c70b1bf77425c5"
+      },
+      "cover": {
+        "url_list": ["https://p3.pstatp.com/aweme/300x400/7432000e98ce3ccab339.jpeg", "https://pb9.pstatp.com/aweme/300x400/7432000e98ce3ccab339.jpeg", "https://pb3.pstatp.com/aweme/300x400/7432000e98ce3ccab339.jpeg"],
+        "uri": "300x400/7432000e98ce3ccab339"
+      },
+      "height": 960,
+      "width": 544,
+      "bit_rate": [{
+        "bit_rate": 709632,
+        "gear_name": "normal",
+        "quality_type": 0
+      }],
+      "download_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=19abe74d1f424caa95c70b1bf77425c5&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=19abe74d1f424caa95c70b1bf77425c5&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=19abe74d1f424caa95c70b1bf77425c5&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=19abe74d1f424caa95c70b1bf77425c5&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "19abe74d1f424caa95c70b1bf77425c5"
+      },
+      "has_watermark": true,
+      "duration": 10570,
+      "play_addr_lowbr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=19abe74d1f424caa95c70b1bf77425c5&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=19abe74d1f424caa95c70b1bf77425c5&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=19abe74d1f424caa95c70b1bf77425c5&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=19abe74d1f424caa95c70b1bf77425c5&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "19abe74d1f424caa95c70b1bf77425c5"
+      },
+      "dynamic_cover": {
+        "url_list": ["https://p9.pstatp.com/obj/74350001b628488c4995", "https://pb1.pstatp.com/obj/74350001b628488c4995", "https://pb3.pstatp.com/obj/74350001b628488c4995"],
+        "uri": "74350001b628488c4995"
+      }
+    },
+    "aweme_id": "6538332937631304974",
+    "video_labels": [],
+    "is_vr": false,
+    "vr_type": 1,
+    "statistics": {
+      "play_count": 2307269,
+      "aweme_id": "6538332937631304974",
+      "comment_count": 1618,
+      "share_count": 2295,
+      "digg_count": 78063
+    },
+    "author": {
+      "share_qrcode_uri": "3307000c0f26095df986",
+      "app_id": 1128,
+      "avatar_larger": {
+        "url_list": ["https://p3.pstatp.com/aweme/1080x1080/72a3002398fa23418cfd.jpeg", "https://pb9.pstatp.com/aweme/1080x1080/72a3002398fa23418cfd.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/72a3002398fa23418cfd.jpeg"],
+        "uri": "72a3002398fa23418cfd"
+      },
+      "enterprise_verify_reason": "",
+      "original_music_qrcode": null,
+      "story_open": false,
+      "live_verify": 0,
+      "short_id": "12208508",
+      "account_region": "",
+      "reflow_page_gid": 0,
+      "avatar_thumb": {
+        "url_list": ["https://p3.pstatp.com/aweme/100x100/72a3002398fa23418cfd.jpeg", "https://pb9.pstatp.com/aweme/100x100/72a3002398fa23418cfd.jpeg", "https://pb3.pstatp.com/aweme/100x100/72a3002398fa23418cfd.jpeg"],
+        "uri": "72a3002398fa23418cfd"
+      },
+      "is_binded_weibo": false,
+      "is_verified": true,
+      "hide_search": false,
+      "risk_flag": 0,
+      "with_commerce_entry": false,
+      "school_name": "",
+      "custom_verify": "",
+      "special_lock": 1,
+      "shield_comment_notice": 0,
+      "hide_location": false,
+      "gender": 2,
+      "star_use_new_download": false,
+      "school_poi_id": "",
+      "prevent_download": false,
+      "weibo_schema": "",
+      "uid": "59477805759",
+      "bind_phone": "",
+      "weibo_url": "",
+      "weibo_name": "",
+      "commerce_user_level": 0,
+      "create_time": 1493880520,
+      "verify_info": "",
+      "constellation": 5,
+      "community_discipline_status": 0,
+      "has_register_notice": 0,
+      "need_recommend": 0,
+      "shield_digg_notice": 0,
+      "update_before": 0,
+      "verification_type": 1,
+      "room_id": 0,
+      "avatar_medium": {
+        "url_list": ["https://p3.pstatp.com/aweme/720x720/72a3002398fa23418cfd.jpeg", "https://pb9.pstatp.com/aweme/720x720/72a3002398fa23418cfd.jpeg", "https://pb3.pstatp.com/aweme/720x720/72a3002398fa23418cfd.jpeg"],
+        "uri": "72a3002398fa23418cfd"
+      },
+      "authority_status": 0,
+      "enterprise_verify": false,
+      "live_rec_level": 0,
+      "reflow_page_uid": 0,
+      "birthday": "1990-07-28",
+      "is_ad_fake": false,
+      "nickname": "J 1 n g",
+      "shield_follow_notice": 0,
+      "original_music_cover": null,
+      "follow_status": 0,
+      "language": "zh-Hans",
+      "region": "CN",
+      "nickname_lock": 0,
+      "school_type": 0,
+      "avatar_uri": "72a3002398fa23418cfd",
+      "signature": "",
+      "weibo_verify": "",
+      "unique_id": ""
+    },
+    "cmt_swt": false,
+    "share_url": "https://www.douyin.com/share/video/6538332937631304974/?mid=6538332957256616707",
+    "is_ads": false,
+    "music": {
+      "status": 1,
+      "owner_nickname": "J 1 n g",
+      "extra": "{\"has_edited\": 0}",
+      "is_original": false,
+      "offline_desc": "",
+      "source_platform": 23,
+      "audio_track": {
+        "url_list": ["https://p1.pstatp.com/obj/72a00023f321118bbad9", "https://pb3.pstatp.com/obj/72a00023f321118bbad9", "https://pb3.pstatp.com/obj/72a00023f321118bbad9"],
+        "uri": "72a00023f321118bbad9"
+      },
+      "cover_large": {
+        "url_list": ["https://p3.pstatp.com/aweme/1080x1080/72a3002398fa23418cfd.jpeg", "https://pb9.pstatp.com/aweme/1080x1080/72a3002398fa23418cfd.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/72a3002398fa23418cfd.jpeg"],
+        "uri": "72a3002398fa23418cfd"
+      },
+      "duration": 10,
+      "id": 6538332957256616707,
+      "cover_thumb": {
+        "url_list": ["https://p3.pstatp.com/aweme/100x100/72a3002398fa23418cfd.jpeg", "https://pb9.pstatp.com/aweme/100x100/72a3002398fa23418cfd.jpeg", "https://pb3.pstatp.com/aweme/100x100/72a3002398fa23418cfd.jpeg"],
+        "uri": "72a3002398fa23418cfd"
+      },
+      "cover_hd": {
+        "url_list": ["https://p3.pstatp.com/aweme/1080x1080/72a3002398fa23418cfd.jpeg", "https://pb9.pstatp.com/aweme/1080x1080/72a3002398fa23418cfd.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/72a3002398fa23418cfd.jpeg"],
+        "uri": "72a3002398fa23418cfd"
+      },
+      "user_count": 0,
+      "title": "@J 1 n g\u521b\u4f5c\u7684\u539f\u58f0",
+      "play_url": {
+        "url_list": ["http://p1.pstatp.com/obj/751d0000fb4fcbcabb18", "http://p9.pstatp.com/obj/751d0000fb4fcbcabb18", "http://p3.pstatp.com/obj/751d0000fb4fcbcabb18"],
+        "uri": "751d0000fb4fcbcabb18"
+      },
+      "effects_data": {
+        "url_list": ["https://p9.pstatp.com/obj/729e002c2608fe80d1af", "https://pb1.pstatp.com/obj/729e002c2608fe80d1af", "https://pb3.pstatp.com/obj/729e002c2608fe80d1af"],
+        "uri": "729e002c2608fe80d1af"
+      },
+      "author": "J 1 n g",
+      "mid": "6538332957256616707",
+      "cover_medium": {
+        "url_list": ["https://p3.pstatp.com/aweme/720x720/72a3002398fa23418cfd.jpeg", "https://pb9.pstatp.com/aweme/720x720/72a3002398fa23418cfd.jpeg", "https://pb3.pstatp.com/aweme/720x720/72a3002398fa23418cfd.jpeg"],
+        "uri": "72a3002398fa23418cfd"
+      },
+      "id_str": "6538332957256616707",
+      "schema_url": "",
+      "owner_id": "59477805759"
+    },
+    "bodydance_score": 0,
+    "is_hash_tag": 0,
+    "status": {
+      "with_goods": false,
+      "is_delete": false,
+      "private_status": 0,
+      "allow_comment": true,
+      "allow_share": true,
+      "is_private": false
+    },
+    "sort_label": "",
+    "share_info": {
+      "share_weibo_desc": "#\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b#\u7ed3\u5c40\u592a\u8ba9\u4eba\u610f\u5916\u4e86\uff01",
+      "share_title": "\u7ed3\u5c40\u592a\u8ba9\u4eba\u610f\u5916\u4e86\uff01",
+      "share_url": "https://www.iesdouyin.com/share/video/6538332937631304974/?region=CN&mid=6538332957256616707&titleType=title",
+      "share_desc": "\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b"
+    },
+    "is_top": 0,
+    "aweme_type": 0,
+    "desc": "\u7ed3\u5c40\u592a\u8ba9\u4eba\u610f\u5916\u4e86\uff01",
+    "region": "",
+    "is_relieve": false,
+    "text_extra": [],
+    "user_digged": 0
+  }, {
+    "risk_infos": {
+      "warn": false,
+      "content": "",
+      "risk_sink": false,
+      "type": 0
+    },
+    "label_top": {
+      "url_list": ["https://p1.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf"],
+      "uri": "729f0000ef991e85fccf"
+    },
+    "author_user_id": 65692498117,
+    "rate": 12,
+    "create_time": 1523708885,
+    "video": {
+      "ratio": "720p",
+      "origin_cover": {
+        "url_list": ["http://p3.pstatp.com/large/7a8000153dc970271717.jpeg", "http://pb9.pstatp.com/large/7a8000153dc970271717.jpeg", "http://pb3.pstatp.com/large/7a8000153dc970271717.jpeg"],
+        "uri": "large/7a8000153dc970271717"
+      },
+      "play_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=15e37e7d7dc64e239238c144b5316c71&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=15e37e7d7dc64e239238c144b5316c71&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=15e37e7d7dc64e239238c144b5316c71&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=15e37e7d7dc64e239238c144b5316c71&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "15e37e7d7dc64e239238c144b5316c71"
+      },
+      "cover": {
+        "url_list": ["https://p1.pstatp.com/aweme/300x400/7a84000304f2416abc6c.jpeg", "https://pb3.pstatp.com/aweme/300x400/7a84000304f2416abc6c.jpeg", "https://pb3.pstatp.com/aweme/300x400/7a84000304f2416abc6c.jpeg"],
+        "uri": "300x400/7a84000304f2416abc6c"
+      },
+      "height": 960,
+      "width": 540,
+      "bit_rate": [{
+        "bit_rate": 1239980,
+        "gear_name": "normal",
+        "quality_type": 0
+      }],
+      "download_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=15e37e7d7dc64e239238c144b5316c71&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=15e37e7d7dc64e239238c144b5316c71&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=15e37e7d7dc64e239238c144b5316c71&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=15e37e7d7dc64e239238c144b5316c71&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "15e37e7d7dc64e239238c144b5316c71"
+      },
+      "has_watermark": true,
+      "duration": 15000,
+      "play_addr_lowbr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=15e37e7d7dc64e239238c144b5316c71&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=15e37e7d7dc64e239238c144b5316c71&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=15e37e7d7dc64e239238c144b5316c71&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=15e37e7d7dc64e239238c144b5316c71&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "15e37e7d7dc64e239238c144b5316c71"
+      },
+      "dynamic_cover": {
+        "url_list": ["https://p1.pstatp.com/obj/7a84000306a59198f785", "https://pb3.pstatp.com/obj/7a84000306a59198f785", "https://pb3.pstatp.com/obj/7a84000306a59198f785"],
+        "uri": "7a84000306a59198f785"
+      }
+    },
+    "aweme_id": "6544279723139140878",
+    "video_labels": [],
+    "is_vr": false,
+    "vr_type": 0,
+    "statistics": {
+      "play_count": 26020185,
+      "aweme_id": "6544279723139140878",
+      "comment_count": 2867,
+      "share_count": 25355,
+      "digg_count": 860764
+    },
+    "author": {
+      "share_qrcode_uri": "670e002b12a25e465751",
+      "app_id": 1128,
+      "avatar_larger": {
+        "url_list": ["https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIZMNEsoPhvIKQ6ic9hHa3kzibhtUVJqX8cmD4hlj6WBT33rl17RLlgVuU3C4IZC0vmiaqicpZ2lX817Q/132"],
+        "uri": ""
+      },
+      "enterprise_verify_reason": "",
+      "original_music_qrcode": null,
+      "story_open": false,
+      "live_verify": 0,
+      "short_id": "382609887",
+      "account_region": "",
+      "reflow_page_gid": 0,
+      "avatar_thumb": {
+        "url_list": ["https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIZMNEsoPhvIKQ6ic9hHa3kzibhtUVJqX8cmD4hlj6WBT33rl17RLlgVuU3C4IZC0vmiaqicpZ2lX817Q/132"],
+        "uri": ""
+      },
+      "is_binded_weibo": false,
+      "is_verified": true,
+      "hide_search": false,
+      "risk_flag": 0,
+      "with_commerce_entry": false,
+      "school_name": "",
+      "custom_verify": "",
+      "special_lock": 1,
+      "shield_comment_notice": 0,
+      "hide_location": false,
+      "gender": 2,
+      "star_use_new_download": true,
+      "school_poi_id": "",
+      "prevent_download": false,
+      "weibo_schema": "",
+      "uid": "65692498117",
+      "bind_phone": "",
+      "weibo_url": "",
+      "weibo_name": "",
+      "commerce_user_level": 0,
+      "create_time": 1519619690,
+      "verify_info": "",
+      "constellation": 3,
+      "community_discipline_status": 0,
+      "has_register_notice": 0,
+      "need_recommend": 1,
+      "shield_digg_notice": 0,
+      "update_before": 0,
+      "verification_type": 1,
+      "room_id": 0,
+      "avatar_medium": {
+        "url_list": ["https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIZMNEsoPhvIKQ6ic9hHa3kzibhtUVJqX8cmD4hlj6WBT33rl17RLlgVuU3C4IZC0vmiaqicpZ2lX817Q/132"],
+        "uri": ""
+      },
+      "authority_status": 0,
+      "enterprise_verify": false,
+      "live_rec_level": 0,
+      "reflow_page_uid": 0,
+      "birthday": "1993-05-30",
+      "is_ad_fake": false,
+      "nickname": "\ud83c\udf38\u5c0f\u9505\u5b50\ud83c\udf38",
+      "shield_follow_notice": 0,
+      "original_music_cover": null,
+      "follow_status": 0,
+      "language": "zh-Hans",
+      "region": "CN",
+      "nickname_lock": 0,
+      "school_type": 0,
+      "avatar_uri": "",
+      "signature": "",
+      "weibo_verify": "",
+      "unique_id": ""
+    },
+    "cmt_swt": false,
+    "share_url": "https://www.douyin.com/share/video/6544279723139140878/?mid=6544279834008161038",
+    "is_ads": false,
+    "music": {
+      "status": 1,
+      "owner_nickname": "\ud83c\udf38\u5c0f\u9505\u5b50\ud83c\udf38",
+      "extra": "{\"has_edited\": 0}",
+      "is_original": false,
+      "offline_desc": "",
+      "source_platform": 23,
+      "audio_track": {
+        "url_list": ["https://p3.pstatp.com/obj/7bdf000a2df4f75c6023", "https://pb9.pstatp.com/obj/7bdf000a2df4f75c6023", "https://pb3.pstatp.com/obj/7bdf000a2df4f75c6023"],
+        "uri": "7bdf000a2df4f75c6023"
+      },
+      "cover_large": {
+        "url_list": ["https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIZMNEsoPhvIKQ6ic9hHa3kzibhtUVJqX8cmD4hlj6WBT33rl17RLlgVuU3C4IZC0vmiaqicpZ2lX817Q/132"],
+        "uri": ""
+      },
+      "duration": 15,
+      "id": 6544279834008161038,
+      "cover_thumb": {
+        "url_list": ["https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIZMNEsoPhvIKQ6ic9hHa3kzibhtUVJqX8cmD4hlj6WBT33rl17RLlgVuU3C4IZC0vmiaqicpZ2lX817Q/132"],
+        "uri": ""
+      },
+      "cover_hd": {
+        "url_list": ["https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIZMNEsoPhvIKQ6ic9hHa3kzibhtUVJqX8cmD4hlj6WBT33rl17RLlgVuU3C4IZC0vmiaqicpZ2lX817Q/132"],
+        "uri": ""
+      },
+      "user_count": 0,
+      "title": "@\ud83c\udf38\u5c0f\u9505\u5b50\ud83c\udf38\u521b\u4f5c\u7684\u539f\u58f0",
+      "play_url": {
+        "url_list": ["http://p1.pstatp.com/obj/7ba500039b124308cffc", "http://p9.pstatp.com/obj/7ba500039b124308cffc", "http://p3.pstatp.com/obj/7ba500039b124308cffc"],
+        "uri": "7ba500039b124308cffc"
+      },
+      "effects_data": {
+        "url_list": ["https://p3.pstatp.com/obj/7bde000ab03506435b3c", "https://pb9.pstatp.com/obj/7bde000ab03506435b3c", "https://pb3.pstatp.com/obj/7bde000ab03506435b3c"],
+        "uri": "7bde000ab03506435b3c"
+      },
+      "author": "\ud83c\udf38\u5c0f\u9505\u5b50\ud83c\udf38",
+      "mid": "6544279834008161038",
+      "cover_medium": {
+        "url_list": ["https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIZMNEsoPhvIKQ6ic9hHa3kzibhtUVJqX8cmD4hlj6WBT33rl17RLlgVuU3C4IZC0vmiaqicpZ2lX817Q/132"],
+        "uri": ""
+      },
+      "id_str": "6544279834008161038",
+      "schema_url": "",
+      "owner_id": "65692498117"
+    },
+    "bodydance_score": 0,
+    "is_hash_tag": 0,
+    "status": {
+      "with_goods": false,
+      "is_delete": false,
+      "private_status": 0,
+      "allow_comment": true,
+      "allow_share": true,
+      "is_private": false
+    },
+    "sort_label": "",
+    "share_info": {
+      "share_weibo_desc": "#\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b#\u8001\u516c\u65e0\u8f9c\u4e2d\u62db\u4e86 \u2026\u54c8\u54c8\u54c8",
+      "share_title": "\u8001\u516c\u65e0\u8f9c\u4e2d\u62db\u4e86 \u2026\u54c8\u54c8\u54c8",
+      "share_url": "https://www.iesdouyin.com/share/video/6544279723139140878/?region=CN&mid=6544279834008161038&titleType=title",
+      "share_desc": "\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b"
+    },
+    "is_top": 0,
+    "aweme_type": 0,
+    "desc": "\u8001\u516c\u65e0\u8f9c\u4e2d\u62db\u4e86 \u2026\u54c8\u54c8\u54c8",
+    "region": "CN",
+    "is_relieve": false,
+    "text_extra": [],
+    "user_digged": 0
+  }, {
+    "risk_infos": {
+      "warn": false,
+      "content": "",
+      "risk_sink": false,
+      "type": 0
+    },
+    "label_top": {
+      "url_list": ["https://p1.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf"],
+      "uri": "729f0000ef991e85fccf"
+    },
+    "author_user_id": 59445436535,
+    "rate": 12,
+    "create_time": 1523787839,
+    "video": {
+      "ratio": "720p",
+      "origin_cover": {
+        "url_list": ["http://p1.pstatp.com/large/7ab7000bc93d851e06af.jpeg", "http://pb3.pstatp.com/large/7ab7000bc93d851e06af.jpeg", "http://pb3.pstatp.com/large/7ab7000bc93d851e06af.jpeg"],
+        "uri": "large/7ab7000bc93d851e06af"
+      },
+      "play_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=e14773bb97ba45abbf1b7cd259dcb44a&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=e14773bb97ba45abbf1b7cd259dcb44a&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=e14773bb97ba45abbf1b7cd259dcb44a&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=e14773bb97ba45abbf1b7cd259dcb44a&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "e14773bb97ba45abbf1b7cd259dcb44a"
+      },
+      "cover": {
+        "url_list": ["https://p3.pstatp.com/aweme/300x400/7ab4000eec710fcda585.jpeg", "https://pb9.pstatp.com/aweme/300x400/7ab4000eec710fcda585.jpeg", "https://pb3.pstatp.com/aweme/300x400/7ab4000eec710fcda585.jpeg"],
+        "uri": "300x400/7ab4000eec710fcda585"
+      },
+      "height": 960,
+      "width": 540,
+      "bit_rate": [{
+        "bit_rate": 737191,
+        "gear_name": "normal",
+        "quality_type": 0
+      }],
+      "download_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=e14773bb97ba45abbf1b7cd259dcb44a&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=e14773bb97ba45abbf1b7cd259dcb44a&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=e14773bb97ba45abbf1b7cd259dcb44a&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=e14773bb97ba45abbf1b7cd259dcb44a&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "e14773bb97ba45abbf1b7cd259dcb44a"
+      },
+      "has_watermark": true,
+      "duration": 10000,
+      "play_addr_lowbr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=e14773bb97ba45abbf1b7cd259dcb44a&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=e14773bb97ba45abbf1b7cd259dcb44a&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=e14773bb97ba45abbf1b7cd259dcb44a&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=e14773bb97ba45abbf1b7cd259dcb44a&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "e14773bb97ba45abbf1b7cd259dcb44a"
+      },
+      "dynamic_cover": {
+        "url_list": ["https://p3.pstatp.com/obj/7ab7000bca0695bf6db0", "https://pb9.pstatp.com/obj/7ab7000bca0695bf6db0", "https://pb3.pstatp.com/obj/7ab7000bca0695bf6db0"],
+        "uri": "7ab7000bca0695bf6db0"
+      }
+    },
+    "aweme_id": "6544618922769911054",
+    "video_labels": [],
+    "is_vr": false,
+    "vr_type": 1,
+    "statistics": {
+      "play_count": 2104207,
+      "aweme_id": "6544618922769911054",
+      "comment_count": 1027,
+      "share_count": 2936,
+      "digg_count": 62954
+    },
+    "author": {
+      "share_qrcode_uri": "c15000fa41bd52511a2",
+      "app_id": 1128,
+      "avatar_larger": {
+        "url_list": ["https://p3.pstatp.com/aweme/1080x1080/7bea0010f3939cbe839e.jpeg", "https://pb9.pstatp.com/aweme/1080x1080/7bea0010f3939cbe839e.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/7bea0010f3939cbe839e.jpeg"],
+        "uri": "7bea0010f3939cbe839e"
+      },
+      "enterprise_verify_reason": "",
+      "original_music_qrcode": null,
+      "story_open": false,
+      "live_verify": 0,
+      "short_id": "10495234",
+      "account_region": "",
+      "reflow_page_gid": 0,
+      "avatar_thumb": {
+        "url_list": ["https://p3.pstatp.com/aweme/100x100/7bea0010f3939cbe839e.jpeg", "https://pb9.pstatp.com/aweme/100x100/7bea0010f3939cbe839e.jpeg", "https://pb3.pstatp.com/aweme/100x100/7bea0010f3939cbe839e.jpeg"],
+        "uri": "7bea0010f3939cbe839e"
+      },
+      "is_binded_weibo": false,
+      "is_verified": true,
+      "hide_search": false,
+      "risk_flag": 0,
+      "with_commerce_entry": false,
+      "school_name": "",
+      "custom_verify": "",
+      "special_lock": 1,
+      "shield_comment_notice": 0,
+      "hide_location": false,
+      "gender": 0,
+      "star_use_new_download": false,
+      "school_poi_id": "",
+      "prevent_download": false,
+      "weibo_schema": "",
+      "uid": "59445436535",
+      "bind_phone": "",
+      "weibo_url": "",
+      "weibo_name": "",
+      "commerce_user_level": 0,
+      "create_time": 1493135556,
+      "verify_info": "",
+      "constellation": 0,
+      "community_discipline_status": 0,
+      "has_register_notice": 0,
+      "need_recommend": 0,
+      "shield_digg_notice": 0,
+      "update_before": 0,
+      "verification_type": 1,
+      "room_id": 0,
+      "avatar_medium": {
+        "url_list": ["https://p3.pstatp.com/aweme/720x720/7bea0010f3939cbe839e.jpeg", "https://pb9.pstatp.com/aweme/720x720/7bea0010f3939cbe839e.jpeg", "https://pb3.pstatp.com/aweme/720x720/7bea0010f3939cbe839e.jpeg"],
+        "uri": "7bea0010f3939cbe839e"
+      },
+      "authority_status": 0,
+      "enterprise_verify": false,
+      "live_rec_level": 0,
+      "reflow_page_uid": 0,
+      "birthday": "",
+      "is_ad_fake": false,
+      "nickname": "+.+",
+      "shield_follow_notice": 0,
+      "original_music_cover": null,
+      "follow_status": 0,
+      "language": "zh-Hans",
+      "region": "CN",
+      "nickname_lock": 0,
+      "school_type": 0,
+      "avatar_uri": "7bea0010f3939cbe839e",
+      "signature": "",
+      "weibo_verify": "",
+      "unique_id": ""
+    },
+    "cmt_swt": false,
+    "share_url": "https://www.douyin.com/share/video/6544618922769911054/?mid=6507521156777118472",
+    "is_ads": false,
+    "music": {
+      "status": 1,
+      "extra": "{\"has_edited\": 0}",
+      "is_original": false,
+      "offline_desc": "",
+      "source_platform": 22,
+      "audio_track": {
+        "url_list": ["https://p1.pstatp.com/obj/552800275703252001e9", "https://pb3.pstatp.com/obj/552800275703252001e9", "https://pb3.pstatp.com/obj/552800275703252001e9"],
+        "uri": "552800275703252001e9"
+      },
+      "cover_large": {
+        "url_list": ["http://p3.pstatp.com/live/720x720/5527003d90eeba4c5cf0.jpeg"],
+        "uri": "5527003d90eeba4c5cf0"
+      },
+      "duration": 17,
+      "id": 6507521156777118472,
+      "cover_thumb": {
+        "url_list": ["http://p3.pstatp.com/live/100x100/5527003d90eeba4c5cf0.jpeg"],
+        "uri": "5527003d90eeba4c5cf0"
+      },
+      "cover_hd": {
+        "url_list": ["http://p3.pstatp.com/live/1080x1080/5527003d90eeba4c5cf0.jpeg"],
+        "uri": "5527003d90eeba4c5cf0"
+      },
+      "user_count": 0,
+      "title": "\u8df3\u8df3\u8df3\uff01",
+      "play_url": {
+        "url_list": ["http://p1.pstatp.com/obj/5718000398ca93fb2c49", "http://p9.pstatp.com/obj/5718000398ca93fb2c49", "http://p3.pstatp.com/obj/5718000398ca93fb2c49"],
+        "uri": "5718000398ca93fb2c49"
+      },
+      "effects_data": {
+        "url_list": ["https://p1.pstatp.com/obj/552900275f14bef80b27", "https://pb3.pstatp.com/obj/552900275f14bef80b27", "https://pb3.pstatp.com/obj/552900275f14bef80b27"],
+        "uri": "552900275f14bef80b27"
+      },
+      "author": "\u6296\u97f3\u5c0f\u52a9\u624b",
+      "mid": "6507521156777118472",
+      "cover_medium": {
+        "url_list": ["http://p3.pstatp.com/live/200x200/5527003d90eeba4c5cf0.jpeg"],
+        "uri": "5527003d90eeba4c5cf0"
+      },
+      "id_str": "6507521156777118472",
+      "schema_url": ""
+    },
+    "bodydance_score": 0,
+    "is_hash_tag": 0,
+    "status": {
+      "with_goods": false,
+      "is_delete": false,
+      "private_status": 0,
+      "allow_comment": true,
+      "allow_share": true,
+      "is_private": false
+    },
+    "sort_label": "",
+    "share_info": {
+      "share_weibo_desc": "#\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b#\u4f60\u6709\u8fd9\u4e48\u8ba8\u538c\u6211\u78b0\u4f60\u5417\uff1f\ud83d\ude2d\ud83d\ude2d\ud83d\ude2d",
+      "share_title": "\u4f60\u6709\u8fd9\u4e48\u8ba8\u538c\u6211\u78b0\u4f60\u5417\uff1f\ud83d\ude2d\ud83d\ude2d\ud83d\ude2d",
+      "share_url": "https://www.iesdouyin.com/share/video/6544618922769911054/?region=CN&mid=6507521156777118472&titleType=title",
+      "share_desc": "\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b"
+    },
+    "is_top": 0,
+    "aweme_type": 0,
+    "desc": "\u4f60\u6709\u8fd9\u4e48\u8ba8\u538c\u6211\u78b0\u4f60\u5417\uff1f\ud83d\ude2d\ud83d\ude2d\ud83d\ude2d",
+    "region": "CN",
+    "is_relieve": false,
+    "text_extra": [],
+    "user_digged": 0
+  }, {
+    "risk_infos": {
+      "warn": false,
+      "content": "",
+      "risk_sink": false,
+      "type": 0
+    },
+    "label_top": {
+      "url_list": ["https://p1.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf"],
+      "uri": "729f0000ef991e85fccf"
+    },
+    "author_user_id": 95746944366,
+    "rate": 12,
+    "create_time": 1522068699,
+    "video": {
+      "ratio": "720p",
+      "origin_cover": {
+        "url_list": ["http://p1.pstatp.com/large/7369001143a1894ca23c.jpeg", "http://pb3.pstatp.com/large/7369001143a1894ca23c.jpeg", "http://pb3.pstatp.com/large/7369001143a1894ca23c.jpeg"],
+        "uri": "large/7369001143a1894ca23c"
+      },
+      "play_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=d481e36ceaee456993c8b2cfb80f2571&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=d481e36ceaee456993c8b2cfb80f2571&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=d481e36ceaee456993c8b2cfb80f2571&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=d481e36ceaee456993c8b2cfb80f2571&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "d481e36ceaee456993c8b2cfb80f2571"
+      },
+      "cover": {
+        "url_list": ["https://p3.pstatp.com/aweme/300x400/736d000c5bcedd3b2dee.jpeg", "https://pb9.pstatp.com/aweme/300x400/736d000c5bcedd3b2dee.jpeg", "https://pb3.pstatp.com/aweme/300x400/736d000c5bcedd3b2dee.jpeg"],
+        "uri": "300x400/736d000c5bcedd3b2dee"
+      },
+      "height": 960,
+      "width": 544,
+      "bit_rate": [{
+        "bit_rate": 708547,
+        "gear_name": "normal",
+        "quality_type": 0
+      }],
+      "download_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=d481e36ceaee456993c8b2cfb80f2571&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=d481e36ceaee456993c8b2cfb80f2571&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=d481e36ceaee456993c8b2cfb80f2571&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=d481e36ceaee456993c8b2cfb80f2571&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "d481e36ceaee456993c8b2cfb80f2571"
+      },
+      "has_watermark": true,
+      "duration": 15000,
+      "play_addr_lowbr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=d481e36ceaee456993c8b2cfb80f2571&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=d481e36ceaee456993c8b2cfb80f2571&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=d481e36ceaee456993c8b2cfb80f2571&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=d481e36ceaee456993c8b2cfb80f2571&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "d481e36ceaee456993c8b2cfb80f2571"
+      },
+      "dynamic_cover": {
+        "url_list": ["https://p3.pstatp.com/obj/736e0006fee27c81c79d", "https://pb9.pstatp.com/obj/736e0006fee27c81c79d", "https://pb3.pstatp.com/obj/736e0006fee27c81c79d"],
+        "uri": "736e0006fee27c81c79d"
+      }
+    },
+    "aweme_id": "6537235109349690627",
+    "video_labels": [],
+    "is_vr": false,
+    "vr_type": 1,
+    "statistics": {
+      "play_count": 2160565,
+      "aweme_id": "6537235109349690627",
+      "comment_count": 1002,
+      "share_count": 6767,
+      "digg_count": 69030
+    },
+    "author": {
+      "share_qrcode_uri": "6f940002ffc81096b780",
+      "app_id": 1128,
+      "avatar_larger": {
+        "url_list": ["https://p3.pstatp.com/aweme/1080x1080/6f91000cdba18e890bf8.jpeg", "https://pb9.pstatp.com/aweme/1080x1080/6f91000cdba18e890bf8.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/6f91000cdba18e890bf8.jpeg"],
+        "uri": "6f91000cdba18e890bf8"
+      },
+      "enterprise_verify_reason": "",
+      "original_music_qrcode": null,
+      "story_open": false,
+      "live_verify": 0,
+      "short_id": "609817319",
+      "account_region": "",
+      "reflow_page_gid": 0,
+      "avatar_thumb": {
+        "url_list": ["https://p3.pstatp.com/aweme/100x100/6f91000cdba18e890bf8.jpeg", "https://pb9.pstatp.com/aweme/100x100/6f91000cdba18e890bf8.jpeg", "https://pb3.pstatp.com/aweme/100x100/6f91000cdba18e890bf8.jpeg"],
+        "uri": "6f91000cdba18e890bf8"
+      },
+      "is_binded_weibo": false,
+      "is_verified": true,
+      "hide_search": false,
+      "risk_flag": 0,
+      "with_commerce_entry": false,
+      "school_name": "",
+      "custom_verify": "",
+      "special_lock": 1,
+      "shield_comment_notice": 0,
+      "hide_location": false,
+      "gender": 2,
+      "star_use_new_download": true,
+      "school_poi_id": "",
+      "prevent_download": false,
+      "weibo_schema": "",
+      "uid": "95746944366",
+      "bind_phone": "",
+      "weibo_url": "",
+      "weibo_name": "",
+      "commerce_user_level": 0,
+      "create_time": 1521558163,
+      "verify_info": "",
+      "constellation": 7,
+      "community_discipline_status": 0,
+      "has_register_notice": 0,
+      "need_recommend": 1,
+      "shield_digg_notice": 0,
+      "update_before": 0,
+      "verification_type": 1,
+      "room_id": 0,
+      "avatar_medium": {
+        "url_list": ["https://p3.pstatp.com/aweme/720x720/6f91000cdba18e890bf8.jpeg", "https://pb9.pstatp.com/aweme/720x720/6f91000cdba18e890bf8.jpeg", "https://pb3.pstatp.com/aweme/720x720/6f91000cdba18e890bf8.jpeg"],
+        "uri": "6f91000cdba18e890bf8"
+      },
+      "authority_status": 0,
+      "enterprise_verify": false,
+      "live_rec_level": 0,
+      "reflow_page_uid": 0,
+      "birthday": "1997-10-06",
+      "is_ad_fake": false,
+      "nickname": "\u840c\u840c\u5c0f\u4ed9\u5973",
+      "shield_follow_notice": 0,
+      "original_music_cover": null,
+      "follow_status": 0,
+      "language": "zh-Hans",
+      "region": "CN",
+      "nickname_lock": 0,
+      "school_type": 0,
+      "avatar_uri": "6f91000cdba18e890bf8",
+      "signature": "",
+      "weibo_verify": "",
+      "unique_id": ""
+    },
+    "cmt_swt": false,
+    "share_url": "https://www.douyin.com/share/video/6537235109349690627/?mid=6537235300220373767",
+    "is_ads": false,
+    "music": {
+      "status": 1,
+      "owner_nickname": "\u840c\u840c\u5c0f\u4ed9\u5973",
+      "extra": "{\"has_edited\": 0}",
+      "is_original": false,
+      "offline_desc": "",
+      "source_platform": 23,
+      "audio_track": {
+        "url_list": ["https://p3.pstatp.com/obj/7299001db5f44829b398", "https://pb9.pstatp.com/obj/7299001db5f44829b398", "https://pb3.pstatp.com/obj/7299001db5f44829b398"],
+        "uri": "7299001db5f44829b398"
+      },
+      "cover_large": {
+        "url_list": ["https://p3.pstatp.com/aweme/1080x1080/6f91000cdba18e890bf8.jpeg", "https://pb9.pstatp.com/aweme/1080x1080/6f91000cdba18e890bf8.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/6f91000cdba18e890bf8.jpeg"],
+        "uri": "6f91000cdba18e890bf8"
+      },
+      "duration": 15,
+      "id": 6537235300220373767,
+      "cover_thumb": {
+        "url_list": ["https://p3.pstatp.com/aweme/100x100/6f91000cdba18e890bf8.jpeg", "https://pb9.pstatp.com/aweme/100x100/6f91000cdba18e890bf8.jpeg", "https://pb3.pstatp.com/aweme/100x100/6f91000cdba18e890bf8.jpeg"],
+        "uri": "6f91000cdba18e890bf8"
+      },
+      "cover_hd": {
+        "url_list": ["https://p3.pstatp.com/aweme/1080x1080/6f91000cdba18e890bf8.jpeg", "https://pb9.pstatp.com/aweme/1080x1080/6f91000cdba18e890bf8.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/6f91000cdba18e890bf8.jpeg"],
+        "uri": "6f91000cdba18e890bf8"
+      },
+      "user_count": 0,
+      "title": "@\u840c\u840c\u5c0f\u4ed9\u5973\u521b\u4f5c\u7684\u539f\u58f0",
+      "play_url": {
+        "url_list": ["http://p1.pstatp.com/obj/7501000561cd71080d71", "http://p9.pstatp.com/obj/7501000561cd71080d71", "http://p3.pstatp.com/obj/7501000561cd71080d71"],
+        "uri": "7501000561cd71080d71"
+      },
+      "effects_data": {
+        "url_list": ["https://p3.pstatp.com/obj/729b001d798c4e40e0aa", "https://pb9.pstatp.com/obj/729b001d798c4e40e0aa", "https://pb3.pstatp.com/obj/729b001d798c4e40e0aa"],
+        "uri": "729b001d798c4e40e0aa"
+      },
+      "author": "\u840c\u840c\u5c0f\u4ed9\u5973",
+      "mid": "6537235300220373767",
+      "cover_medium": {
+        "url_list": ["https://p3.pstatp.com/aweme/720x720/6f91000cdba18e890bf8.jpeg", "https://pb9.pstatp.com/aweme/720x720/6f91000cdba18e890bf8.jpeg", "https://pb3.pstatp.com/aweme/720x720/6f91000cdba18e890bf8.jpeg"],
+        "uri": "6f91000cdba18e890bf8"
+      },
+      "id_str": "6537235300220373767",
+      "schema_url": "",
+      "owner_id": "95746944366"
+    },
+    "bodydance_score": 0,
+    "is_hash_tag": 0,
+    "status": {
+      "with_goods": false,
+      "is_delete": false,
+      "private_status": 0,
+      "allow_comment": true,
+      "allow_share": true,
+      "is_private": false
+    },
+    "sort_label": "",
+    "share_info": {
+      "share_weibo_desc": "#\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b#\u732b\u72d7\u5927\u6218\uff0c\u4e0d\u80fd\u504f\u5fc3\u554a",
+      "share_title": "\u732b\u72d7\u5927\u6218\uff0c\u4e0d\u80fd\u504f\u5fc3\u554a",
+      "share_url": "https://www.iesdouyin.com/share/video/6537235109349690627/?region=CN&mid=6537235300220373767&titleType=title",
+      "share_desc": "\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b"
+    },
+    "is_top": 0,
+    "aweme_type": 0,
+    "desc": "\u732b\u72d7\u5927\u6218\uff0c\u4e0d\u80fd\u504f\u5fc3\u554a",
+    "region": "",
+    "is_relieve": false,
+    "text_extra": [],
+    "user_digged": 0
+  }, {
+    "risk_infos": {
+      "warn": false,
+      "content": "",
+      "risk_sink": false,
+      "type": 0
+    },
+    "label_top": {
+      "url_list": ["https://p1.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf"],
+      "uri": "729f0000ef991e85fccf"
+    },
+    "author_user_id": 82171593229,
+    "rate": 12,
+    "create_time": 1522310118,
+    "video": {
+      "ratio": "720p",
+      "origin_cover": {
+        "url_list": ["http://p1.pstatp.com/large/74230009d534441a99a2.jpeg", "http://pb3.pstatp.com/large/74230009d534441a99a2.jpeg", "http://pb3.pstatp.com/large/74230009d534441a99a2.jpeg"],
+        "uri": "large/74230009d534441a99a2"
+      },
+      "play_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=3e1b7be328b04c068a83b38ddfc8f0c6&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=3e1b7be328b04c068a83b38ddfc8f0c6&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=3e1b7be328b04c068a83b38ddfc8f0c6&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=3e1b7be328b04c068a83b38ddfc8f0c6&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "3e1b7be328b04c068a83b38ddfc8f0c6"
+      },
+      "cover": {
+        "url_list": ["https://p1.pstatp.com/aweme/300x400/741f000da8fd4ff90ea5.jpeg", "https://pb3.pstatp.com/aweme/300x400/741f000da8fd4ff90ea5.jpeg", "https://pb3.pstatp.com/aweme/300x400/741f000da8fd4ff90ea5.jpeg"],
+        "uri": "300x400/741f000da8fd4ff90ea5"
+      },
+      "height": 544,
+      "width": 960,
+      "bit_rate": [{
+        "bit_rate": 776630,
+        "gear_name": "normal",
+        "quality_type": 0
+      }],
+      "download_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=3e1b7be328b04c068a83b38ddfc8f0c6&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=3e1b7be328b04c068a83b38ddfc8f0c6&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=3e1b7be328b04c068a83b38ddfc8f0c6&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=3e1b7be328b04c068a83b38ddfc8f0c6&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "3e1b7be328b04c068a83b38ddfc8f0c6"
+      },
+      "has_watermark": true,
+      "duration": 14500,
+      "play_addr_lowbr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=3e1b7be328b04c068a83b38ddfc8f0c6&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=3e1b7be328b04c068a83b38ddfc8f0c6&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=3e1b7be328b04c068a83b38ddfc8f0c6&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=3e1b7be328b04c068a83b38ddfc8f0c6&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "3e1b7be328b04c068a83b38ddfc8f0c6"
+      },
+      "dynamic_cover": {
+        "url_list": ["https://p3.pstatp.com/obj/7424000594def174ba5c", "https://pb9.pstatp.com/obj/7424000594def174ba5c", "https://pb3.pstatp.com/obj/7424000594def174ba5c"],
+        "uri": "7424000594def174ba5c"
+      }
+    },
+    "aweme_id": "6538271586733001991",
+    "video_labels": [],
+    "is_vr": false,
+    "vr_type": 1,
+    "statistics": {
+      "play_count": 985084,
+      "aweme_id": "6538271586733001991",
+      "comment_count": 526,
+      "share_count": 4090,
+      "digg_count": 62940
+    },
+    "author": {
+      "share_qrcode_uri": "530b000662e2ba40c768",
+      "app_id": 1128,
+      "avatar_larger": {
+        "url_list": ["https://p9.pstatp.com/thumb/5046000e4605d62a0fbc"],
+        "uri": ""
+      },
+      "enterprise_verify_reason": "",
+      "original_music_qrcode": null,
+      "story_open": false,
+      "live_verify": 0,
+      "short_id": "172816555",
+      "account_region": "",
+      "reflow_page_gid": 0,
+      "avatar_thumb": {
+        "url_list": ["https://p9.pstatp.com/thumb/5046000e4605d62a0fbc"],
+        "uri": ""
+      },
+      "is_binded_weibo": false,
+      "is_verified": true,
+      "hide_search": false,
+      "risk_flag": 0,
+      "with_commerce_entry": false,
+      "school_name": "",
+      "custom_verify": "",
+      "special_lock": 0,
+      "shield_comment_notice": 0,
+      "hide_location": false,
+      "gender": 2,
+      "star_use_new_download": false,
+      "school_poi_id": "",
+      "prevent_download": false,
+      "weibo_schema": "",
+      "uid": "82171593229",
+      "bind_phone": "",
+      "weibo_url": "",
+      "weibo_name": "",
+      "commerce_user_level": 0,
+      "create_time": 1514216258,
+      "verify_info": "",
+      "constellation": 0,
+      "community_discipline_status": 0,
+      "has_register_notice": 1,
+      "need_recommend": 1,
+      "shield_digg_notice": 0,
+      "update_before": 0,
+      "verification_type": 1,
+      "room_id": 0,
+      "avatar_medium": {
+        "url_list": ["https://p9.pstatp.com/thumb/5046000e4605d62a0fbc"],
+        "uri": ""
+      },
+      "authority_status": 0,
+      "enterprise_verify": false,
+      "live_rec_level": 0,
+      "reflow_page_uid": 0,
+      "birthday": "",
+      "is_ad_fake": false,
+      "nickname": "\u9646\u5947\u8ff9",
+      "shield_follow_notice": 0,
+      "original_music_cover": null,
+      "follow_status": 0,
+      "language": "zh-Hans",
+      "region": "CN",
+      "nickname_lock": 0,
+      "school_type": 0,
+      "avatar_uri": "",
+      "signature": "",
+      "weibo_verify": "",
+      "unique_id": ""
+    },
+    "cmt_swt": false,
+    "share_url": "https://www.douyin.com/share/video/6538271586733001991/?mid=6513773500656782084",
+    "is_ads": false,
+    "music": {
+      "status": 1,
+      "extra": "{\"has_edited\": 0}",
+      "is_original": false,
+      "offline_desc": "",
+      "source_platform": 22,
+      "audio_track": {
+        "url_list": ["https://p3.pstatp.com/obj/5acf002fd4b37930654e", "https://pb9.pstatp.com/obj/5acf002fd4b37930654e", "https://pb3.pstatp.com/obj/5acf002fd4b37930654e"],
+        "uri": "5acf002fd4b37930654e"
+      },
+      "cover_large": {
+        "url_list": ["http://p3.pstatp.com/live/720x720/5ad3001cf7e7b5ffdb8f.jpeg"],
+        "uri": "5ad3001cf7e7b5ffdb8f"
+      },
+      "duration": 23,
+      "id": 6513773500656782084,
+      "cover_thumb": {
+        "url_list": ["http://p3.pstatp.com/live/100x100/5ad3001cf7e7b5ffdb8f.jpeg"],
+        "uri": "5ad3001cf7e7b5ffdb8f"
+      },
+      "cover_hd": {
+        "url_list": ["http://p3.pstatp.com/live/1080x1080/5ad3001cf7e7b5ffdb8f.jpeg"],
+        "uri": "5ad3001cf7e7b5ffdb8f"
+      },
+      "user_count": 0,
+      "title": "One on One (Damien N-Drix Remix)\uff08\u610f\u60f3\u4e0d\u5230\u7248\uff09",
+      "play_url": {
+        "url_list": ["http://p1.pstatp.com/obj/5aec000737c2dc2a8f19", "http://p9.pstatp.com/obj/5aec000737c2dc2a8f19", "http://p3.pstatp.com/obj/5aec000737c2dc2a8f19"],
+        "uri": "5aec000737c2dc2a8f19"
+      },
+      "effects_data": {
+        "url_list": ["https://p3.pstatp.com/obj/5ad2002f2ba83a5882ed", "https://pb9.pstatp.com/obj/5ad2002f2ba83a5882ed", "https://pb3.pstatp.com/obj/5ad2002f2ba83a5882ed"],
+        "uri": "5ad2002f2ba83a5882ed"
+      },
+      "author": "Sorana;Tujamo;\u6296\u97f3\u5c0f\u52a9\u624b",
+      "mid": "6513773500656782084",
+      "cover_medium": {
+        "url_list": ["http://p3.pstatp.com/live/200x200/5ad3001cf7e7b5ffdb8f.jpeg"],
+        "uri": "5ad3001cf7e7b5ffdb8f"
+      },
+      "id_str": "6513773500656782084",
+      "schema_url": ""
+    },
+    "bodydance_score": 0,
+    "is_hash_tag": 0,
+    "status": {
+      "with_goods": false,
+      "is_delete": false,
+      "private_status": 0,
+      "allow_comment": true,
+      "allow_share": true,
+      "is_private": false
+    },
+    "sort_label": "",
+    "share_info": {
+      "share_weibo_desc": "#\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b#\u5144dei\u7edd\u671b\u4e0d",
+      "share_title": "\u5144dei\u7edd\u671b\u4e0d",
+      "share_url": "https://www.iesdouyin.com/share/video/6538271586733001991/?region=CN&mid=6513773500656782084&titleType=title",
+      "share_desc": "\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b"
+    },
+    "is_top": 0,
+    "aweme_type": 0,
+    "desc": "\u5144dei\u7edd\u671b\u4e0d",
+    "region": "",
+    "is_relieve": false,
+    "text_extra": [],
+    "user_digged": 0
+  }, {
+    "risk_infos": {
+      "warn": false,
+      "content": "",
+      "risk_sink": false,
+      "type": 0
+    },
+    "label_top": {
+      "url_list": ["https://p1.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf"],
+      "uri": "729f0000ef991e85fccf"
+    },
+    "author_user_id": 71238647665,
+    "rate": 12,
+    "create_time": 1523922689,
+    "video": {
+      "ratio": "720p",
+      "origin_cover": {
+        "url_list": ["http://p3.pstatp.com/large/7af9000b0f42fd336d8a.jpeg", "http://pb9.pstatp.com/large/7af9000b0f42fd336d8a.jpeg", "http://pb3.pstatp.com/large/7af9000b0f42fd336d8a.jpeg"],
+        "uri": "large/7af9000b0f42fd336d8a"
+      },
+      "play_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=dec16ad3ae48480d9acb8661fa3a2798&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=dec16ad3ae48480d9acb8661fa3a2798&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=dec16ad3ae48480d9acb8661fa3a2798&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=dec16ad3ae48480d9acb8661fa3a2798&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "dec16ad3ae48480d9acb8661fa3a2798"
+      },
+      "cover": {
+        "url_list": ["https://p3.pstatp.com/aweme/300x400/7af500143eaa04546cf9.jpeg", "https://pb9.pstatp.com/aweme/300x400/7af500143eaa04546cf9.jpeg", "https://pb3.pstatp.com/aweme/300x400/7af500143eaa04546cf9.jpeg"],
+        "uri": "300x400/7af500143eaa04546cf9"
+      },
+      "height": 864,
+      "width": 480,
+      "bit_rate": [{
+        "bit_rate": 600428,
+        "gear_name": "normal",
+        "quality_type": 0
+      }],
+      "download_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=dec16ad3ae48480d9acb8661fa3a2798&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=dec16ad3ae48480d9acb8661fa3a2798&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=dec16ad3ae48480d9acb8661fa3a2798&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=dec16ad3ae48480d9acb8661fa3a2798&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "dec16ad3ae48480d9acb8661fa3a2798"
+      },
+      "has_watermark": true,
+      "duration": 15050,
+      "play_addr_lowbr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=dec16ad3ae48480d9acb8661fa3a2798&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=dec16ad3ae48480d9acb8661fa3a2798&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=dec16ad3ae48480d9acb8661fa3a2798&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=dec16ad3ae48480d9acb8661fa3a2798&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "dec16ad3ae48480d9acb8661fa3a2798"
+      },
+      "dynamic_cover": {
+        "url_list": ["https://p3.pstatp.com/obj/7af9000b0f7057fbab17", "https://pb9.pstatp.com/obj/7af9000b0f7057fbab17", "https://pb3.pstatp.com/obj/7af9000b0f7057fbab17"],
+        "uri": "7af9000b0f7057fbab17"
+      }
+    },
+    "aweme_id": "6545198043694632200",
+    "video_labels": [],
+    "is_vr": false,
+    "vr_type": 0,
+    "statistics": {
+      "play_count": 19495850,
+      "aweme_id": "6545198043694632200",
+      "comment_count": 2173,
+      "share_count": 10626,
+      "digg_count": 714838
+    },
+    "author": {
+      "share_qrcode_uri": "670600010eb8aadc79a0",
+      "app_id": 1128,
+      "avatar_larger": {
+        "url_list": ["https://p3.pstatp.com/thumb/3ea80008ab9d99e8412b"],
+        "uri": ""
+      },
+      "enterprise_verify_reason": "",
+      "original_music_qrcode": null,
+      "story_open": false,
+      "live_verify": 0,
+      "short_id": "368040778",
+      "account_region": "",
+      "reflow_page_gid": 0,
+      "avatar_thumb": {
+        "url_list": ["https://p3.pstatp.com/thumb/3ea80008ab9d99e8412b"],
+        "uri": ""
+      },
+      "is_binded_weibo": false,
+      "is_verified": true,
+      "hide_search": false,
+      "risk_flag": 0,
+      "with_commerce_entry": false,
+      "school_name": "",
+      "custom_verify": "",
+      "special_lock": 1,
+      "shield_comment_notice": 0,
+      "hide_location": true,
+      "gender": 1,
+      "star_use_new_download": true,
+      "school_poi_id": "",
+      "prevent_download": false,
+      "weibo_schema": "",
+      "uid": "71238647665",
+      "bind_phone": "",
+      "weibo_url": "",
+      "weibo_name": "",
+      "commerce_user_level": 0,
+      "create_time": 1519067582,
+      "verify_info": "",
+      "constellation": 10,
+      "community_discipline_status": 0,
+      "has_register_notice": 0,
+      "need_recommend": 1,
+      "shield_digg_notice": 0,
+      "update_before": 0,
+      "verification_type": 1,
+      "room_id": 0,
+      "avatar_medium": {
+        "url_list": ["https://p3.pstatp.com/thumb/3ea80008ab9d99e8412b"],
+        "uri": ""
+      },
+      "authority_status": 0,
+      "enterprise_verify": false,
+      "live_rec_level": 0,
+      "reflow_page_uid": 0,
+      "birthday": "2015-12-31",
+      "is_ad_fake": false,
+      "nickname": "\u6444\u6076\u9b42",
+      "shield_follow_notice": 0,
+      "original_music_cover": null,
+      "follow_status": 0,
+      "language": "zh-Hans",
+      "region": "CN",
+      "nickname_lock": 0,
+      "school_type": 0,
+      "avatar_uri": "",
+      "signature": "",
+      "weibo_verify": "",
+      "unique_id": ""
+    },
+    "cmt_swt": false,
+    "share_url": "https://www.douyin.com/share/video/6545198043694632200/?mid=6545198111852071684",
+    "is_ads": false,
+    "music": {
+      "status": 1,
+      "owner_nickname": "\u6444\u6076\u9b42",
+      "extra": "{\"has_edited\": 1}",
+      "is_original": false,
+      "offline_desc": "",
+      "source_platform": 23,
+      "audio_track": {
+        "url_list": ["https://p9.pstatp.com/obj/7be2001d3668707f4483", "https://pb1.pstatp.com/obj/7be2001d3668707f4483", "https://pb3.pstatp.com/obj/7be2001d3668707f4483"],
+        "uri": "7be2001d3668707f4483"
+      },
+      "cover_large": {
+        "url_list": ["https://p3.pstatp.com/thumb/3ea80008ab9d99e8412b"],
+        "uri": ""
+      },
+      "duration": 15,
+      "id": 6545198111852071684,
+      "cover_thumb": {
+        "url_list": ["https://p3.pstatp.com/thumb/3ea80008ab9d99e8412b"],
+        "uri": ""
+      },
+      "cover_hd": {
+        "url_list": ["https://p3.pstatp.com/thumb/3ea80008ab9d99e8412b"],
+        "uri": ""
+      },
+      "user_count": 0,
+      "title": "\u54ce\u5440\u5440\u5440\u5440\u5440",
+      "play_url": {
+        "url_list": ["http://p1.pstatp.com/obj/7bb4000695132ea3ba98", "http://p9.pstatp.com/obj/7bb4000695132ea3ba98", "http://p3.pstatp.com/obj/7bb4000695132ea3ba98"],
+        "uri": "7bb4000695132ea3ba98"
+      },
+      "effects_data": {
+        "url_list": ["https://p3.pstatp.com/obj/7be2001d367cea7e2cd4", "https://pb9.pstatp.com/obj/7be2001d367cea7e2cd4", "https://pb3.pstatp.com/obj/7be2001d367cea7e2cd4"],
+        "uri": "7be2001d367cea7e2cd4"
+      },
+      "author": "\u6444\u6076\u9b42",
+      "mid": "6545198111852071684",
+      "cover_medium": {
+        "url_list": ["https://p3.pstatp.com/thumb/3ea80008ab9d99e8412b"],
+        "uri": ""
+      },
+      "id_str": "6545198111852071684",
+      "schema_url": "",
+      "owner_id": "71238647665"
+    },
+    "bodydance_score": 0,
+    "is_hash_tag": 0,
+    "status": {
+      "with_goods": false,
+      "is_delete": false,
+      "private_status": 0,
+      "allow_comment": true,
+      "allow_share": true,
+      "is_private": false
+    },
+    "sort_label": "",
+    "share_info": {
+      "share_weibo_desc": "#\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b#\u2026\u2026",
+      "share_title": "\u2026\u2026",
+      "share_url": "https://www.iesdouyin.com/share/video/6545198043694632200/?region=CN&mid=6545198111852071684&titleType=title",
+      "share_desc": "\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b"
+    },
+    "is_top": 0,
+    "aweme_type": 0,
+    "desc": "\u2026\u2026",
+    "region": "CN",
+    "is_relieve": false,
+    "text_extra": [],
+    "user_digged": 0
+  }, {
+    "risk_infos": {
+      "warn": false,
+      "content": "",
+      "risk_sink": true,
+      "type": 0
+    },
+    "label_top": {
+      "url_list": ["https://p1.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf"],
+      "uri": "729f0000ef991e85fccf"
+    },
+    "author_user_id": 88742566661,
+    "rate": 12,
+    "create_time": 1521262755,
+    "video": {
+      "ratio": "720p",
+      "origin_cover": {
+        "url_list": ["http://p3.pstatp.com/large/6ea600059ddc2288ebc6.jpeg", "http://pb9.pstatp.com/large/6ea600059ddc2288ebc6.jpeg", "http://pb3.pstatp.com/large/6ea600059ddc2288ebc6.jpeg"],
+        "uri": "large/6ea600059ddc2288ebc6"
+      },
+      "play_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=ab7b808ba30944b382e4ae29979f88f1&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=ab7b808ba30944b382e4ae29979f88f1&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=ab7b808ba30944b382e4ae29979f88f1&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=ab7b808ba30944b382e4ae29979f88f1&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "ab7b808ba30944b382e4ae29979f88f1"
+      },
+      "cover": {
+        "url_list": ["https://p3.pstatp.com/aweme/300x400/6ea7000554390c4c7fd1.jpeg", "https://pb9.pstatp.com/aweme/300x400/6ea7000554390c4c7fd1.jpeg", "https://pb3.pstatp.com/aweme/300x400/6ea7000554390c4c7fd1.jpeg"],
+        "uri": "300x400/6ea7000554390c4c7fd1"
+      },
+      "height": 960,
+      "width": 540,
+      "bit_rate": [{
+        "bit_rate": 2790279,
+        "gear_name": "normal",
+        "quality_type": 0
+      }],
+      "download_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=ab7b808ba30944b382e4ae29979f88f1&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=ab7b808ba30944b382e4ae29979f88f1&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=ab7b808ba30944b382e4ae29979f88f1&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=ab7b808ba30944b382e4ae29979f88f1&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "ab7b808ba30944b382e4ae29979f88f1"
+      },
+      "has_watermark": true,
+      "duration": 10000,
+      "play_addr_lowbr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=ab7b808ba30944b382e4ae29979f88f1&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=ab7b808ba30944b382e4ae29979f88f1&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=ab7b808ba30944b382e4ae29979f88f1&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=ab7b808ba30944b382e4ae29979f88f1&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "ab7b808ba30944b382e4ae29979f88f1"
+      },
+      "dynamic_cover": {
+        "url_list": ["https://p3.pstatp.com/obj/6ea200126cfd248b4a90", "https://pb9.pstatp.com/obj/6ea200126cfd248b4a90", "https://pb3.pstatp.com/obj/6ea200126cfd248b4a90"],
+        "uri": "6ea200126cfd248b4a90"
+      }
+    },
+    "aweme_id": "6533773714062839043",
+    "video_labels": [],
+    "is_vr": false,
+    "vr_type": 1,
+    "statistics": {
+      "play_count": 3763705,
+      "aweme_id": "6533773714062839043",
+      "comment_count": 1939,
+      "share_count": 3291,
+      "digg_count": 105425
+    },
+    "author": {
+      "share_qrcode_uri": "5ae1001a5ac6eab39f32",
+      "app_id": 1128,
+      "avatar_larger": {
+        "url_list": ["https://p1.pstatp.com/aweme/1080x1080/6f950027295d3d00810a.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/6f950027295d3d00810a.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/6f950027295d3d00810a.jpeg"],
+        "uri": "6f950027295d3d00810a"
+      },
+      "enterprise_verify_reason": "",
+      "original_music_qrcode": null,
+      "story_open": false,
+      "live_verify": 0,
+      "short_id": "277162919",
+      "account_region": "",
+      "reflow_page_gid": 0,
+      "avatar_thumb": {
+        "url_list": ["https://p1.pstatp.com/aweme/100x100/6f950027295d3d00810a.jpeg", "https://pb3.pstatp.com/aweme/100x100/6f950027295d3d00810a.jpeg", "https://pb3.pstatp.com/aweme/100x100/6f950027295d3d00810a.jpeg"],
+        "uri": "6f950027295d3d00810a"
+      },
+      "is_binded_weibo": false,
+      "is_verified": true,
+      "hide_search": false,
+      "risk_flag": 0,
+      "with_commerce_entry": false,
+      "school_name": "",
+      "custom_verify": "",
+      "special_lock": 1,
+      "shield_comment_notice": 0,
+      "hide_location": false,
+      "gender": 1,
+      "star_use_new_download": false,
+      "school_poi_id": "",
+      "prevent_download": false,
+      "weibo_schema": "",
+      "uid": "88742566661",
+      "bind_phone": "",
+      "weibo_url": "",
+      "weibo_name": "",
+      "commerce_user_level": 0,
+      "create_time": 1517272889,
+      "verify_info": "",
+      "constellation": 8,
+      "community_discipline_status": 0,
+      "has_register_notice": 0,
+      "need_recommend": 1,
+      "shield_digg_notice": 0,
+      "update_before": 0,
+      "verification_type": 1,
+      "room_id": 0,
+      "avatar_medium": {
+        "url_list": ["https://p1.pstatp.com/aweme/720x720/6f950027295d3d00810a.jpeg", "https://pb3.pstatp.com/aweme/720x720/6f950027295d3d00810a.jpeg", "https://pb3.pstatp.com/aweme/720x720/6f950027295d3d00810a.jpeg"],
+        "uri": "6f950027295d3d00810a"
+      },
+      "authority_status": 0,
+      "enterprise_verify": false,
+      "live_rec_level": 0,
+      "reflow_page_uid": 0,
+      "birthday": "1983-11-15",
+      "is_ad_fake": false,
+      "nickname": "\u65e0\u795e\u590d\u82cf",
+      "shield_follow_notice": 0,
+      "original_music_cover": null,
+      "follow_status": 0,
+      "language": "zh-Hans",
+      "region": "CN",
+      "nickname_lock": 0,
+      "school_type": 0,
+      "avatar_uri": "6f950027295d3d00810a",
+      "signature": "\u8001\u5b50\u9009\u7684\u8def\uff0c\u8dea\u7740\u4e5f\u8981\u8d70\u5b8c\uff01",
+      "weibo_verify": "",
+      "unique_id": ""
+    },
+    "cmt_swt": false,
+    "share_url": "https://www.douyin.com/share/video/6533773714062839043/?mid=6527192630210759432",
+    "is_ads": false,
+    "music": {
+      "status": 1,
+      "extra": "{\"has_edited\": 0}",
+      "is_original": false,
+      "offline_desc": "",
+      "source_platform": 22,
+      "audio_track": {
+        "url_list": ["https://p1.pstatp.com/obj/67140018abe7b7692612", "https://pb3.pstatp.com/obj/67140018abe7b7692612", "https://pb3.pstatp.com/obj/67140018abe7b7692612"],
+        "uri": "67140018abe7b7692612"
+      },
+      "cover_large": {
+        "url_list": ["http://p3.pstatp.com/live/720x720/671300192b156e1dc3cb.jpeg"],
+        "uri": "671300192b156e1dc3cb"
+      },
+      "duration": 31,
+      "id": 6527192630210759432,
+      "cover_thumb": {
+        "url_list": ["http://p3.pstatp.com/live/100x100/671300192b156e1dc3cb.jpeg"],
+        "uri": "671300192b156e1dc3cb"
+      },
+      "cover_hd": {
+        "url_list": ["http://p3.pstatp.com/live/1080x1080/671300192b156e1dc3cb.jpeg"],
+        "uri": "671300192b156e1dc3cb"
+      },
+      "user_count": 0,
+      "title": "Minute",
+      "play_url": {
+        "url_list": ["http://p1.pstatp.com/obj/6bc00002f19d80879056", "http://p9.pstatp.com/obj/6bc00002f19d80879056", "http://p3.pstatp.com/obj/6bc00002f19d80879056"],
+        "uri": "6bc00002f19d80879056"
+      },
+      "effects_data": {
+        "url_list": ["https://p9.pstatp.com/obj/671700117e4ff16eb999", "https://pb1.pstatp.com/obj/671700117e4ff16eb999", "https://pb3.pstatp.com/obj/671700117e4ff16eb999"],
+        "uri": "671700117e4ff16eb999"
+      },
+      "author": "NO WAY BACK,Sophia Black",
+      "mid": "6527192630210759432",
+      "cover_medium": {
+        "url_list": ["http://p3.pstatp.com/live/200x200/671300192b156e1dc3cb.jpeg"],
+        "uri": "671300192b156e1dc3cb"
+      },
+      "id_str": "6527192630210759432",
+      "schema_url": ""
+    },
+    "bodydance_score": 0,
+    "is_hash_tag": 0,
+    "status": {
+      "with_goods": false,
+      "is_delete": false,
+      "private_status": 0,
+      "allow_comment": true,
+      "allow_share": true,
+      "is_private": false
+    },
+    "sort_label": "",
+    "share_info": {
+      "share_weibo_desc": "#\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b#\u770b\u4e86\u8fd9\u4e48\u591a\u6296\u97f3\uff0c\u8fd8\u662f@\u65e0\u795e\u590d\u82cf\u7684\u6700\u597d\u73a9\u4e86",
+      "share_title": "\u770b\u4e86\u8fd9\u4e48\u591a\u6296\u97f3\uff0c\u8fd8\u662f@\u65e0\u795e\u590d\u82cf\u7684\u6700\u597d\u73a9\u4e86",
+      "share_url": "https://www.iesdouyin.com/share/video/6533773714062839043/?region=CN&mid=6527192630210759432&titleType=title_CN_1",
+      "share_desc": "\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b"
+    },
+    "is_top": 0,
+    "aweme_type": 0,
+    "desc": "",
+    "region": "",
+    "is_relieve": false,
+    "text_extra": [],
+    "user_digged": 0
+  }, {
+    "risk_infos": {
+      "warn": false,
+      "content": "",
+      "risk_sink": false,
+      "type": 0
+    },
+    "label_top": {
+      "url_list": ["https://p1.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf"],
+      "uri": "729f0000ef991e85fccf"
+    },
+    "author_user_id": 93013999248,
+    "rate": 12,
+    "create_time": 1520602852,
+    "video": {
+      "ratio": "720p",
+      "origin_cover": {
+        "url_list": ["http://p3.pstatp.com/large/6cdf0010d2881301da4a.jpeg", "http://pb9.pstatp.com/large/6cdf0010d2881301da4a.jpeg", "http://pb3.pstatp.com/large/6cdf0010d2881301da4a.jpeg"],
+        "uri": "large/6cdf0010d2881301da4a"
+      },
+      "play_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=d214af22102442979ef869216ff8de61&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=d214af22102442979ef869216ff8de61&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=d214af22102442979ef869216ff8de61&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=d214af22102442979ef869216ff8de61&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "d214af22102442979ef869216ff8de61"
+      },
+      "cover": {
+        "url_list": ["https://p3.pstatp.com/aweme/300x400/6cdc0014f58e54b7c673.jpeg", "https://pb9.pstatp.com/aweme/300x400/6cdc0014f58e54b7c673.jpeg", "https://pb3.pstatp.com/aweme/300x400/6cdc0014f58e54b7c673.jpeg"],
+        "uri": "300x400/6cdc0014f58e54b7c673"
+      },
+      "height": 960,
+      "width": 540,
+      "bit_rate": [{
+        "bit_rate": 862747,
+        "gear_name": "normal",
+        "quality_type": 0
+      }],
+      "download_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=d214af22102442979ef869216ff8de61&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=d214af22102442979ef869216ff8de61&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=d214af22102442979ef869216ff8de61&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=d214af22102442979ef869216ff8de61&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "d214af22102442979ef869216ff8de61"
+      },
+      "has_watermark": true,
+      "duration": 15040,
+      "play_addr_lowbr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=d214af22102442979ef869216ff8de61&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=d214af22102442979ef869216ff8de61&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=d214af22102442979ef869216ff8de61&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=d214af22102442979ef869216ff8de61&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "d214af22102442979ef869216ff8de61"
+      },
+      "dynamic_cover": {
+        "url_list": ["https://p3.pstatp.com/obj/6cdc0014f6eac13a61c9", "https://pb9.pstatp.com/obj/6cdc0014f6eac13a61c9", "https://pb3.pstatp.com/obj/6cdc0014f6eac13a61c9"],
+        "uri": "6cdc0014f6eac13a61c9"
+      }
+    },
+    "aweme_id": "6530939469556616461",
+    "video_labels": [],
+    "is_vr": false,
+    "vr_type": 1,
+    "statistics": {
+      "play_count": 1443193,
+      "aweme_id": "6530939469556616461",
+      "comment_count": 853,
+      "share_count": 3129,
+      "digg_count": 70552
+    },
+    "author": {
+      "share_qrcode_uri": "6715002f9d1954ae289e",
+      "app_id": 1128,
+      "avatar_larger": {
+        "url_list": ["https://p3.pstatp.com/thumb/658c003d76ca3982d56a"],
+        "uri": ""
+      },
+      "enterprise_verify_reason": "",
+      "original_music_qrcode": null,
+      "story_open": false,
+      "live_verify": 0,
+      "short_id": "389518047",
+      "account_region": "",
+      "reflow_page_gid": 0,
+      "avatar_thumb": {
+        "url_list": ["https://p3.pstatp.com/thumb/658c003d76ca3982d56a"],
+        "uri": ""
+      },
+      "is_binded_weibo": false,
+      "is_verified": true,
+      "hide_search": false,
+      "risk_flag": 0,
+      "with_commerce_entry": false,
+      "school_name": "",
+      "custom_verify": "",
+      "special_lock": 1,
+      "shield_comment_notice": 0,
+      "hide_location": false,
+      "gender": 2,
+      "star_use_new_download": true,
+      "school_poi_id": "",
+      "prevent_download": false,
+      "weibo_schema": "",
+      "uid": "93013999248",
+      "bind_phone": "",
+      "weibo_url": "",
+      "weibo_name": "",
+      "commerce_user_level": 0,
+      "create_time": 1519889930,
+      "verify_info": "",
+      "constellation": 0,
+      "community_discipline_status": 0,
+      "has_register_notice": 0,
+      "need_recommend": 1,
+      "shield_digg_notice": 0,
+      "update_before": 0,
+      "verification_type": 1,
+      "room_id": 0,
+      "avatar_medium": {
+        "url_list": ["https://p3.pstatp.com/thumb/658c003d76ca3982d56a"],
+        "uri": ""
+      },
+      "authority_status": 0,
+      "enterprise_verify": false,
+      "live_rec_level": 0,
+      "reflow_page_uid": 0,
+      "birthday": "",
+      "is_ad_fake": false,
+      "nickname": "\u84c9\u84c9 \ud83d\udc8e",
+      "shield_follow_notice": 0,
+      "original_music_cover": null,
+      "follow_status": 0,
+      "language": "zh-Hans",
+      "region": "CN",
+      "nickname_lock": 0,
+      "school_type": 0,
+      "avatar_uri": "",
+      "signature": "",
+      "weibo_verify": "",
+      "unique_id": ""
+    },
+    "cmt_swt": false,
+    "share_url": "https://www.douyin.com/share/video/6530939469556616461/?mid=6517500572076411651",
+    "is_ads": false,
+    "music": {
+      "status": 1,
+      "extra": "{\"has_edited\": 0}",
+      "is_original": false,
+      "offline_desc": "",
+      "source_platform": 22,
+      "audio_track": {
+        "url_list": ["https://p3.pstatp.com/obj/5fcf000d7e8c6c5188e6", "https://pb9.pstatp.com/obj/5fcf000d7e8c6c5188e6", "https://pb3.pstatp.com/obj/5fcf000d7e8c6c5188e6"],
+        "uri": "5fcf000d7e8c6c5188e6"
+      },
+      "cover_large": {
+        "url_list": ["http://p3.pstatp.com/live/720x720/5fd0000d7565af878acd.jpeg"],
+        "uri": "5fd0000d7565af878acd"
+      },
+      "duration": 20,
+      "id": 6517500572076411651,
+      "cover_thumb": {
+        "url_list": ["http://p3.pstatp.com/live/100x100/5fd0000d7565af878acd.jpeg"],
+        "uri": "5fd0000d7565af878acd"
+      },
+      "cover_hd": {
+        "url_list": ["http://p3.pstatp.com/live/1080x1080/5fd0000d7565af878acd.jpeg"],
+        "uri": "5fd0000d7565af878acd"
+      },
+      "user_count": 0,
+      "title": "Me Too\uff08\u610f\u60f3\u4e0d\u5230\u7248\uff09",
+      "play_url": {
+        "url_list": ["http://p1.pstatp.com/obj/5e6c00040582cb23dce9", "http://p9.pstatp.com/obj/5e6c00040582cb23dce9", "http://p3.pstatp.com/obj/5e6c00040582cb23dce9"],
+        "uri": "5e6c00040582cb23dce9"
+      },
+      "effects_data": {
+        "url_list": ["https://p1.pstatp.com/obj/5fd300056f0b2c2cf1ee", "https://pb3.pstatp.com/obj/5fd300056f0b2c2cf1ee", "https://pb3.pstatp.com/obj/5fd300056f0b2c2cf1ee"],
+        "uri": "5fd300056f0b2c2cf1ee"
+      },
+      "author": "Meghan Trainor;\u6296\u97f3\u5c0f\u52a9\u624b",
+      "mid": "6517500572076411651",
+      "cover_medium": {
+        "url_list": ["http://p3.pstatp.com/live/200x200/5fd0000d7565af878acd.jpeg"],
+        "uri": "5fd0000d7565af878acd"
+      },
+      "id_str": "6517500572076411651",
+      "schema_url": ""
+    },
+    "bodydance_score": 0,
+    "is_hash_tag": 0,
+    "status": {
+      "with_goods": false,
+      "is_delete": false,
+      "private_status": 0,
+      "allow_comment": true,
+      "allow_share": true,
+      "is_private": false
+    },
+    "sort_label": "",
+    "share_info": {
+      "share_weibo_desc": "#\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b#\u9f3b\u5b50\ud83d\udc43\u679c\u7136\u5f88\u7075\u654f\ud83d\ude0a",
+      "share_title": "\u9f3b\u5b50\ud83d\udc43\u679c\u7136\u5f88\u7075\u654f\ud83d\ude0a",
+      "share_url": "https://www.iesdouyin.com/share/video/6530939469556616461/?region=CN&mid=6517500572076411651&titleType=title",
+      "share_desc": "\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b"
+    },
+    "is_top": 0,
+    "aweme_type": 0,
+    "desc": "\u9f3b\u5b50\ud83d\udc43\u679c\u7136\u5f88\u7075\u654f\ud83d\ude0a",
+    "region": "",
+    "is_relieve": false,
+    "text_extra": [],
+    "user_digged": 0
+  }, {
+    "risk_infos": {
+      "warn": false,
+      "content": "",
+      "risk_sink": false,
+      "type": 0
+    },
+    "label_top": {
+      "url_list": ["https://p1.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf"],
+      "uri": "729f0000ef991e85fccf"
+    },
+    "author_user_id": 61213110000,
+    "rate": 12,
+    "create_time": 1522146947,
+    "video": {
+      "ratio": "720p",
+      "origin_cover": {
+        "url_list": ["http://p3.pstatp.com/large/73a7000df25a182b14d2.jpeg", "http://pb9.pstatp.com/large/73a7000df25a182b14d2.jpeg", "http://pb3.pstatp.com/large/73a7000df25a182b14d2.jpeg"],
+        "uri": "large/73a7000df25a182b14d2"
+      },
+      "play_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=c7f62b12b7fc4edab05145729a96a159&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=c7f62b12b7fc4edab05145729a96a159&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=c7f62b12b7fc4edab05145729a96a159&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=c7f62b12b7fc4edab05145729a96a159&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "c7f62b12b7fc4edab05145729a96a159"
+      },
+      "cover": {
+        "url_list": ["https://p1.pstatp.com/aweme/300x400/73ac00001dea70bfee7c.jpeg", "https://pb3.pstatp.com/aweme/300x400/73ac00001dea70bfee7c.jpeg", "https://pb3.pstatp.com/aweme/300x400/73ac00001dea70bfee7c.jpeg"],
+        "uri": "300x400/73ac00001dea70bfee7c"
+      },
+      "height": 960,
+      "width": 544,
+      "bit_rate": [{
+        "bit_rate": 1362272,
+        "gear_name": "normal",
+        "quality_type": 0
+      }],
+      "download_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=c7f62b12b7fc4edab05145729a96a159&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=c7f62b12b7fc4edab05145729a96a159&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=c7f62b12b7fc4edab05145729a96a159&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=c7f62b12b7fc4edab05145729a96a159&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "c7f62b12b7fc4edab05145729a96a159"
+      },
+      "has_watermark": true,
+      "duration": 10030,
+      "play_addr_lowbr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=c7f62b12b7fc4edab05145729a96a159&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=c7f62b12b7fc4edab05145729a96a159&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=c7f62b12b7fc4edab05145729a96a159&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=c7f62b12b7fc4edab05145729a96a159&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "c7f62b12b7fc4edab05145729a96a159"
+      },
+      "dynamic_cover": {
+        "url_list": ["https://p3.pstatp.com/obj/73a900038e985a29128c", "https://pb9.pstatp.com/obj/73a900038e985a29128c", "https://pb3.pstatp.com/obj/73a900038e985a29128c"],
+        "uri": "73a900038e985a29128c"
+      }
+    },
+    "aweme_id": "6537571314528423182",
+    "video_labels": [],
+    "is_vr": false,
+    "vr_type": 1,
+    "statistics": {
+      "play_count": 520530,
+      "aweme_id": "6537571314528423182",
+      "comment_count": 139,
+      "share_count": 987,
+      "digg_count": 12641
+    },
+    "author": {
+      "share_qrcode_uri": "216a005366d1acfebca4",
+      "app_id": 1128,
+      "avatar_larger": {
+        "url_list": ["https://p3.pstatp.com/aweme/1080x1080/7b780027a6237fa8a843.jpeg", "https://pb9.pstatp.com/aweme/1080x1080/7b780027a6237fa8a843.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/7b780027a6237fa8a843.jpeg"],
+        "uri": "7b780027a6237fa8a843"
+      },
+      "enterprise_verify_reason": "",
+      "original_music_qrcode": null,
+      "story_open": false,
+      "live_verify": 0,
+      "short_id": "18682768",
+      "account_region": "",
+      "reflow_page_gid": 0,
+      "avatar_thumb": {
+        "url_list": ["https://p3.pstatp.com/aweme/100x100/7b780027a6237fa8a843.jpeg", "https://pb9.pstatp.com/aweme/100x100/7b780027a6237fa8a843.jpeg", "https://pb3.pstatp.com/aweme/100x100/7b780027a6237fa8a843.jpeg"],
+        "uri": "7b780027a6237fa8a843"
+      },
+      "is_binded_weibo": false,
+      "is_verified": true,
+      "hide_search": false,
+      "risk_flag": 0,
+      "with_commerce_entry": false,
+      "school_name": "",
+      "custom_verify": "",
+      "special_lock": 1,
+      "shield_comment_notice": 0,
+      "hide_location": false,
+      "gender": 2,
+      "star_use_new_download": false,
+      "school_poi_id": "",
+      "prevent_download": false,
+      "weibo_schema": "",
+      "uid": "61213110000",
+      "bind_phone": "",
+      "weibo_url": "",
+      "weibo_name": "",
+      "commerce_user_level": 0,
+      "create_time": 1495998202,
+      "verify_info": "",
+      "constellation": 1,
+      "community_discipline_status": 0,
+      "has_register_notice": 0,
+      "need_recommend": 1,
+      "shield_digg_notice": 0,
+      "update_before": 0,
+      "verification_type": 1,
+      "room_id": 0,
+      "avatar_medium": {
+        "url_list": ["https://p3.pstatp.com/aweme/720x720/7b780027a6237fa8a843.jpeg", "https://pb9.pstatp.com/aweme/720x720/7b780027a6237fa8a843.jpeg", "https://pb3.pstatp.com/aweme/720x720/7b780027a6237fa8a843.jpeg"],
+        "uri": "7b780027a6237fa8a843"
+      },
+      "authority_status": 0,
+      "enterprise_verify": false,
+      "live_rec_level": 0,
+      "reflow_page_uid": 0,
+      "birthday": "1992-04-13",
+      "is_ad_fake": false,
+      "nickname": "\u53c8\u4e00",
+      "shield_follow_notice": 0,
+      "original_music_cover": null,
+      "follow_status": 0,
+      "language": "zh-Hans",
+      "region": "CN",
+      "nickname_lock": 0,
+      "school_type": 0,
+      "avatar_uri": "7b780027a6237fa8a843",
+      "signature": "\u54a6\uff0c\u6765\u5077\u770b\u6211\uff1f",
+      "weibo_verify": "",
+      "unique_id": "yoyeee"
+    },
+    "cmt_swt": false,
+    "share_url": "https://www.douyin.com/share/video/6537571314528423182/?mid=6537571358309059331",
+    "is_ads": false,
+    "music": {
+      "status": 1,
+      "owner_nickname": "\u53c8\u4e00",
+      "extra": "{\"has_edited\": 0}",
+      "is_original": false,
+      "offline_desc": "",
+      "source_platform": 23,
+      "audio_track": {
+        "url_list": ["https://p3.pstatp.com/obj/729e0001b943f5c39b52", "https://pb9.pstatp.com/obj/729e0001b943f5c39b52", "https://pb3.pstatp.com/obj/729e0001b943f5c39b52"],
+        "uri": "729e0001b943f5c39b52"
+      },
+      "cover_large": {
+        "url_list": ["https://p3.pstatp.com/aweme/1080x1080/7b780027a6237fa8a843.jpeg", "https://pb9.pstatp.com/aweme/1080x1080/7b780027a6237fa8a843.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/7b780027a6237fa8a843.jpeg"],
+        "uri": "7b780027a6237fa8a843"
+      },
+      "duration": 10,
+      "id": 6537571358309059331,
+      "cover_thumb": {
+        "url_list": ["https://p3.pstatp.com/aweme/100x100/7b780027a6237fa8a843.jpeg", "https://pb9.pstatp.com/aweme/100x100/7b780027a6237fa8a843.jpeg", "https://pb3.pstatp.com/aweme/100x100/7b780027a6237fa8a843.jpeg"],
+        "uri": "7b780027a6237fa8a843"
+      },
+      "cover_hd": {
+        "url_list": ["https://p3.pstatp.com/aweme/1080x1080/7b780027a6237fa8a843.jpeg", "https://pb9.pstatp.com/aweme/1080x1080/7b780027a6237fa8a843.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/7b780027a6237fa8a843.jpeg"],
+        "uri": "7b780027a6237fa8a843"
+      },
+      "user_count": 0,
+      "title": "@\u53c8\u4e00\u521b\u4f5c\u7684\u539f\u58f0",
+      "play_url": {
+        "url_list": ["http://p1.pstatp.com/obj/750f00002278fb15c411", "http://p9.pstatp.com/obj/750f00002278fb15c411", "http://p3.pstatp.com/obj/750f00002278fb15c411"],
+        "uri": "750f00002278fb15c411"
+      },
+      "effects_data": {
+        "url_list": ["https://p3.pstatp.com/obj/729a0031d1cf16f90a34", "https://pb9.pstatp.com/obj/729a0031d1cf16f90a34", "https://pb3.pstatp.com/obj/729a0031d1cf16f90a34"],
+        "uri": "729a0031d1cf16f90a34"
+      },
+      "author": "\u53c8\u4e00",
+      "mid": "6537571358309059331",
+      "cover_medium": {
+        "url_list": ["https://p3.pstatp.com/aweme/720x720/7b780027a6237fa8a843.jpeg", "https://pb9.pstatp.com/aweme/720x720/7b780027a6237fa8a843.jpeg", "https://pb3.pstatp.com/aweme/720x720/7b780027a6237fa8a843.jpeg"],
+        "uri": "7b780027a6237fa8a843"
+      },
+      "id_str": "6537571358309059331",
+      "schema_url": "",
+      "owner_id": "61213110000"
+    },
+    "bodydance_score": 0,
+    "is_hash_tag": 0,
+    "status": {
+      "with_goods": false,
+      "is_delete": false,
+      "private_status": 0,
+      "allow_comment": true,
+      "allow_share": true,
+      "is_private": false
+    },
+    "sort_label": "",
+    "share_info": {
+      "share_weibo_desc": "#\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b#\u4f60\u80fd\u4e0d\u80fd\u6e05\u9192\u70b9\u54c8\u54c8\u54c8\u554a\uff01",
+      "share_title": "\u4f60\u80fd\u4e0d\u80fd\u6e05\u9192\u70b9\u54c8\u54c8\u54c8\u554a\uff01",
+      "share_url": "https://www.iesdouyin.com/share/video/6537571314528423182/?region=CN&mid=6537571358309059331&titleType=title",
+      "share_desc": "\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b"
+    },
+    "is_top": 0,
+    "aweme_type": 0,
+    "desc": "\u4f60\u80fd\u4e0d\u80fd\u6e05\u9192\u70b9\u54c8\u54c8\u54c8\u554a\uff01",
+    "cha_list": [{
+      "schema": "aweme://aweme/challenge/detail?cid=1553304054213633",
+      "user_count": 0,
+      "author": {},
+      "cha_name": "\u732b",
+      "cid": "1553304054213633",
+      "type": 0,
+      "desc": "\u7231\u732b"
+    }],
+    "region": "",
+    "is_relieve": false,
+    "text_extra": [],
+    "user_digged": 0
+  }, {
+    "risk_infos": {
+      "warn": false,
+      "content": "",
+      "risk_sink": false,
+      "type": 0
+    },
+    "label_top": {
+      "url_list": ["https://p1.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf"],
+      "uri": "729f0000ef991e85fccf"
+    },
+    "author_user_id": 61685197801,
+    "rate": 12,
+    "create_time": 1521761350,
+    "video": {
+      "ratio": "720p",
+      "origin_cover": {
+        "url_list": ["http://p1.pstatp.com/large/70e900132661841eff19.jpeg", "http://pb3.pstatp.com/large/70e900132661841eff19.jpeg", "http://pb3.pstatp.com/large/70e900132661841eff19.jpeg"],
+        "uri": "large/70e900132661841eff19"
+      },
+      "play_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=57e6e741b3ed47b08e0919eb1d662404&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=57e6e741b3ed47b08e0919eb1d662404&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=57e6e741b3ed47b08e0919eb1d662404&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=57e6e741b3ed47b08e0919eb1d662404&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "57e6e741b3ed47b08e0919eb1d662404"
+      },
+      "cover": {
+        "url_list": ["https://p1.pstatp.com/aweme/300x400/70ee0004a31a66b885d4.jpeg", "https://pb3.pstatp.com/aweme/300x400/70ee0004a31a66b885d4.jpeg", "https://pb3.pstatp.com/aweme/300x400/70ee0004a31a66b885d4.jpeg"],
+        "uri": "300x400/70ee0004a31a66b885d4"
+      },
+      "height": 540,
+      "width": 960,
+      "bit_rate": [{
+        "bit_rate": 606758,
+        "gear_name": "normal",
+        "quality_type": 0
+      }],
+      "download_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=57e6e741b3ed47b08e0919eb1d662404&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=57e6e741b3ed47b08e0919eb1d662404&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=57e6e741b3ed47b08e0919eb1d662404&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=57e6e741b3ed47b08e0919eb1d662404&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "57e6e741b3ed47b08e0919eb1d662404"
+      },
+      "has_watermark": true,
+      "duration": 15000,
+      "play_addr_lowbr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=57e6e741b3ed47b08e0919eb1d662404&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=57e6e741b3ed47b08e0919eb1d662404&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=57e6e741b3ed47b08e0919eb1d662404&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=57e6e741b3ed47b08e0919eb1d662404&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "57e6e741b3ed47b08e0919eb1d662404"
+      },
+      "dynamic_cover": {
+        "url_list": ["https://p3.pstatp.com/obj/70e9001326e46b232fa7", "https://pb9.pstatp.com/obj/70e9001326e46b232fa7", "https://pb3.pstatp.com/obj/70e9001326e46b232fa7"],
+        "uri": "70e9001326e46b232fa7"
+      }
+    },
+    "aweme_id": "6535915209909865731",
+    "video_labels": [],
+    "is_vr": false,
+    "vr_type": 1,
+    "statistics": {
+      "play_count": 2353766,
+      "aweme_id": "6535915209909865731",
+      "comment_count": 1368,
+      "share_count": 8095,
+      "digg_count": 112327
+    },
+    "author": {
+      "share_qrcode_uri": "24a20015522f6e0e094c",
+      "app_id": 1128,
+      "avatar_larger": {
+        "url_list": ["https://p1.pstatp.com/aweme/1080x1080/6cc4000dda019fe19d45.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/6cc4000dda019fe19d45.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/6cc4000dda019fe19d45.jpeg"],
+        "uri": "6cc4000dda019fe19d45"
+      },
+      "enterprise_verify_reason": "",
+      "original_music_qrcode": null,
+      "story_open": false,
+      "live_verify": 0,
+      "short_id": "22009068",
+      "account_region": "",
+      "reflow_page_gid": 0,
+      "avatar_thumb": {
+        "url_list": ["https://p1.pstatp.com/aweme/100x100/6cc4000dda019fe19d45.jpeg", "https://pb3.pstatp.com/aweme/100x100/6cc4000dda019fe19d45.jpeg", "https://pb3.pstatp.com/aweme/100x100/6cc4000dda019fe19d45.jpeg"],
+        "uri": "6cc4000dda019fe19d45"
+      },
+      "is_binded_weibo": false,
+      "is_verified": true,
+      "hide_search": false,
+      "risk_flag": 0,
+      "with_commerce_entry": false,
+      "school_name": "",
+      "custom_verify": "",
+      "special_lock": 1,
+      "shield_comment_notice": 0,
+      "hide_location": true,
+      "gender": 1,
+      "star_use_new_download": false,
+      "school_poi_id": "",
+      "prevent_download": false,
+      "weibo_schema": "",
+      "uid": "61685197801",
+      "bind_phone": "",
+      "weibo_url": "",
+      "weibo_name": "",
+      "commerce_user_level": 0,
+      "create_time": 1496854078,
+      "verify_info": "",
+      "constellation": 0,
+      "community_discipline_status": 0,
+      "has_register_notice": 0,
+      "need_recommend": 1,
+      "shield_digg_notice": 0,
+      "update_before": 0,
+      "verification_type": 1,
+      "room_id": 0,
+      "avatar_medium": {
+        "url_list": ["https://p1.pstatp.com/aweme/720x720/6cc4000dda019fe19d45.jpeg", "https://pb3.pstatp.com/aweme/720x720/6cc4000dda019fe19d45.jpeg", "https://pb3.pstatp.com/aweme/720x720/6cc4000dda019fe19d45.jpeg"],
+        "uri": "6cc4000dda019fe19d45"
+      },
+      "authority_status": 0,
+      "enterprise_verify": false,
+      "live_rec_level": 0,
+      "reflow_page_uid": 0,
+      "birthday": "",
+      "is_ad_fake": false,
+      "nickname": "\u79c1\u60f3\u5bb6",
+      "shield_follow_notice": 0,
+      "original_music_cover": null,
+      "follow_status": 0,
+      "language": "zh-Hans",
+      "region": "CN",
+      "nickname_lock": 0,
+      "school_type": 0,
+      "avatar_uri": "6cc4000dda019fe19d45",
+      "signature": "\u5355\u7eaf\u7684\u50cf\u6761\u72d7.",
+      "weibo_verify": "",
+      "unique_id": ""
+    },
+    "cmt_swt": false,
+    "share_url": "https://www.douyin.com/share/video/6535915209909865731/?mid=6494164905556609805",
+    "is_ads": false,
+    "music": {
+      "status": 1,
+      "owner_nickname": "\u5f20\u601d\u654f\ud83e\udd5d",
+      "extra": "{\"has_edited\": 0}",
+      "is_original": false,
+      "offline_desc": "",
+      "source_platform": 23,
+      "cover_large": {
+        "url_list": ["https://p3.pstatp.com/thumb/3a1e0013835d2360a42b"],
+        "uri": ""
+      },
+      "duration": 15,
+      "id": 6494164905556609805,
+      "cover_thumb": {
+        "url_list": ["https://p3.pstatp.com/thumb/3a1e0013835d2360a42b"],
+        "uri": ""
+      },
+      "cover_hd": {
+        "url_list": ["https://p3.pstatp.com/thumb/3a1e0013835d2360a42b"],
+        "uri": ""
+      },
+      "user_count": 0,
+      "title": "@\u5f20\u601d\u654f\ud83e\udd5d\u521b\u4f5c\u7684\u539f\u58f0",
+      "play_url": {
+        "url_list": ["http://p1.pstatp.com/obj/4a1b00001c3cda10d5f7", "http://p9.pstatp.com/obj/4a1b00001c3cda10d5f7", "http://p3.pstatp.com/obj/4a1b00001c3cda10d5f7"],
+        "uri": "4a1b00001c3cda10d5f7"
+      },
+      "author": "\u5f20\u601d\u654f\ud83e\udd5d",
+      "mid": "6494164905556609805",
+      "cover_medium": {
+        "url_list": ["https://p3.pstatp.com/thumb/3a1e0013835d2360a42b"],
+        "uri": ""
+      },
+      "id_str": "6494164905556609805",
+      "schema_url": "",
+      "owner_id": "69706630834"
+    },
+    "bodydance_score": 0,
+    "is_hash_tag": 0,
+    "status": {
+      "with_goods": false,
+      "is_delete": false,
+      "private_status": 0,
+      "allow_comment": true,
+      "allow_share": true,
+      "is_private": false
+    },
+    "sort_label": "",
+    "share_info": {
+      "share_weibo_desc": "#\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b#\u6211\u4e0d\u8981\u9762\u5b50\u554a@\u6296\u97f3\u5c0f\u52a9\u624b",
+      "share_title": "\u6211\u4e0d\u8981\u9762\u5b50\u554a@\u6296\u97f3\u5c0f\u52a9\u624b",
+      "share_url": "https://www.iesdouyin.com/share/video/6535915209909865731/?region=CN&mid=6494164905556609805&titleType=title",
+      "share_desc": "\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b"
+    },
+    "is_top": 0,
+    "aweme_type": 0,
+    "desc": "\u6211\u4e0d\u8981\u9762\u5b50\u554a@\u6296\u97f3\u5c0f\u52a9\u624b",
+    "cha_list": [{
+      "schema": "aweme://aweme/challenge/detail?cid=1594640481305603",
+      "user_count": 0,
+      "author": {},
+      "cha_name": "\u8fd9\u662f\u732b\u7684\u5c0a\u4e25\uff01",
+      "cid": "1594640481305603",
+      "type": 0,
+      "desc": "\u55b5\u661f\u4eba\u96c6\u4f53\u6297\u8bae\u5566\u2014\u2014\u201c\u51ed\u4ec0\u4e48\u53ea\u6709\u4eba\u8138\u624d\u80fd\u8bc6\u522b\u8d34\u7eb8\uff1f\uff01\u732b\u8138\u4e0d\u662f\u8138\u5417\uff1f\u55b5\u54aa\u4e5f\u8981\u6709\u4e13\u5c5e\u8d34\u7eb8\uff01\u732b\u8138\u5fc5\u987b\u88ab\u8bc6\u522b\uff01\u201d\n\u2014\u2014\u89c1\u8bc1\u5947\u8ff9\u7684\u65f6\u523b\u6765\u4e86\uff1a\u53ef\u4ee5\u8bc6\u522b\u732b\u8138\u7684\u732b\u54aa\u4e13\u7528\u8d34\u7eb8\u4e0a\u7ebf\u4e86\uff01\u5728\u62cd\u6444\u9875\u9762\uff0c\u9009\u62e9[\u9053\u5177]\u4e2d\u5e26\u6709\u7ea2\u8272\u3010\u62cd\u732b\u3011\u6807\u7b7e\u7684\u8d34\u7eb8\uff0c\u5c31\u53ef\u4ee5\u5c3d\u60c5\u62cd\u732b\u5566\uff01\n\u5404\u4f4d\u94f2\u5c4e\u5b98\u4eec\uff0c\u5feb\u6765\u8bd5\u8bd5\u7ed9\u81ea\u5bb6\u55b5\u661f\u4eba\u5e26\u4e0a\u5404\u5f0f\u8d34\u7eb8\u5427\uff0c\u6bd5\u7adf\u2014\u2014\u8fd9\u662f\u732b\u7684\u5c0a\u4e25\u5440\uff01"
+    }],
+    "region": "",
+    "is_relieve": false,
+    "text_extra": [{
+      "start": 6,
+      "user_id": "6796248446",
+      "end": 12,
+      "type": 0
+    }],
+    "user_digged": 0
+  }, {
+    "risk_infos": {
+      "warn": false,
+      "content": "",
+      "risk_sink": false,
+      "type": 0
+    },
+    "label_top": {
+      "url_list": ["https://p1.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf"],
+      "uri": "729f0000ef991e85fccf"
+    },
+    "author_user_id": 61291807950,
+    "rate": 12,
+    "create_time": 1521826117,
+    "video": {
+      "ratio": "720p",
+      "origin_cover": {
+        "url_list": ["http://p9.pstatp.com/large/712700150a56f3fb8faf.jpeg", "http://pb1.pstatp.com/large/712700150a56f3fb8faf.jpeg", "http://pb3.pstatp.com/large/712700150a56f3fb8faf.jpeg"],
+        "uri": "large/712700150a56f3fb8faf"
+      },
+      "play_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=3d6fb948694943669e2c1074913ebbc2&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=3d6fb948694943669e2c1074913ebbc2&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=3d6fb948694943669e2c1074913ebbc2&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=3d6fb948694943669e2c1074913ebbc2&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "3d6fb948694943669e2c1074913ebbc2"
+      },
+      "cover": {
+        "url_list": ["https://p1.pstatp.com/aweme/300x400/712b0002f0d1f4e51fc5.jpeg", "https://pb3.pstatp.com/aweme/300x400/712b0002f0d1f4e51fc5.jpeg", "https://pb3.pstatp.com/aweme/300x400/712b0002f0d1f4e51fc5.jpeg"],
+        "uri": "300x400/712b0002f0d1f4e51fc5"
+      },
+      "height": 960,
+      "width": 540,
+      "bit_rate": [{
+        "bit_rate": 1373460,
+        "gear_name": "normal",
+        "quality_type": 0
+      }],
+      "download_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=3d6fb948694943669e2c1074913ebbc2&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=3d6fb948694943669e2c1074913ebbc2&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=3d6fb948694943669e2c1074913ebbc2&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=3d6fb948694943669e2c1074913ebbc2&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "3d6fb948694943669e2c1074913ebbc2"
+      },
+      "has_watermark": true,
+      "duration": 12930,
+      "play_addr_lowbr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=3d6fb948694943669e2c1074913ebbc2&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=3d6fb948694943669e2c1074913ebbc2&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=3d6fb948694943669e2c1074913ebbc2&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=3d6fb948694943669e2c1074913ebbc2&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "3d6fb948694943669e2c1074913ebbc2"
+      },
+      "dynamic_cover": {
+        "url_list": ["https://p3.pstatp.com/obj/712700150a7acd098999", "https://pb9.pstatp.com/obj/712700150a7acd098999", "https://pb3.pstatp.com/obj/712700150a7acd098999"],
+        "uri": "712700150a7acd098999"
+      }
+    },
+    "aweme_id": "6536193372820868355",
+    "video_labels": [],
+    "is_vr": false,
+    "vr_type": 1,
+    "statistics": {
+      "play_count": 1586230,
+      "aweme_id": "6536193372820868355",
+      "comment_count": 301,
+      "share_count": 1046,
+      "digg_count": 139691
+    },
+    "author": {
+      "share_qrcode_uri": "216a00617d7523ff4402",
+      "app_id": 1128,
+      "avatar_larger": {
+        "url_list": ["https://p1.pstatp.com/aweme/1080x1080/6f96002a092ba493f121.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/6f96002a092ba493f121.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/6f96002a092ba493f121.jpeg"],
+        "uri": "6f96002a092ba493f121"
+      },
+      "enterprise_verify_reason": "",
+      "original_music_qrcode": null,
+      "story_open": false,
+      "live_verify": 0,
+      "short_id": "19334246",
+      "account_region": "",
+      "reflow_page_gid": 0,
+      "avatar_thumb": {
+        "url_list": ["https://p1.pstatp.com/aweme/100x100/6f96002a092ba493f121.jpeg", "https://pb3.pstatp.com/aweme/100x100/6f96002a092ba493f121.jpeg", "https://pb3.pstatp.com/aweme/100x100/6f96002a092ba493f121.jpeg"],
+        "uri": "6f96002a092ba493f121"
+      },
+      "is_binded_weibo": false,
+      "is_verified": true,
+      "hide_search": false,
+      "risk_flag": 0,
+      "with_commerce_entry": false,
+      "school_name": "",
+      "custom_verify": "",
+      "special_lock": 1,
+      "shield_comment_notice": 0,
+      "hide_location": true,
+      "gender": 2,
+      "star_use_new_download": false,
+      "school_poi_id": "",
+      "prevent_download": false,
+      "weibo_schema": "",
+      "uid": "61291807950",
+      "bind_phone": "",
+      "weibo_url": "",
+      "weibo_name": "",
+      "commerce_user_level": 0,
+      "create_time": 1496160046,
+      "verify_info": "",
+      "constellation": 2,
+      "community_discipline_status": 0,
+      "has_register_notice": 0,
+      "need_recommend": 1,
+      "shield_digg_notice": 0,
+      "update_before": 0,
+      "verification_type": 1,
+      "room_id": 0,
+      "avatar_medium": {
+        "url_list": ["https://p1.pstatp.com/aweme/720x720/6f96002a092ba493f121.jpeg", "https://pb3.pstatp.com/aweme/720x720/6f96002a092ba493f121.jpeg", "https://pb3.pstatp.com/aweme/720x720/6f96002a092ba493f121.jpeg"],
+        "uri": "6f96002a092ba493f121"
+      },
+      "authority_status": 0,
+      "enterprise_verify": false,
+      "live_rec_level": 0,
+      "reflow_page_uid": 0,
+      "birthday": "1990-04-25",
+      "is_ad_fake": false,
+      "nickname": "\u7334\u54e5\u54e5\u54e5",
+      "shield_follow_notice": 0,
+      "original_music_cover": null,
+      "follow_status": 0,
+      "language": "zh-Hans",
+      "region": "CN",
+      "nickname_lock": 0,
+      "school_type": 0,
+      "avatar_uri": "6f96002a092ba493f121",
+      "signature": "",
+      "weibo_verify": "",
+      "unique_id": ""
+    },
+    "cmt_swt": false,
+    "share_url": "https://www.douyin.com/share/video/6536193372820868355/?mid=6532760453176068878",
+    "is_ads": false,
+    "music": {
+      "status": 1,
+      "extra": "{\"has_edited\": 0}",
+      "is_original": false,
+      "offline_desc": "",
+      "source_platform": 22,
+      "audio_track": {
+        "url_list": ["https://p3.pstatp.com/obj/6cbe0024b3d29d76409b", "https://pb9.pstatp.com/obj/6cbe0024b3d29d76409b", "https://pb3.pstatp.com/obj/6cbe0024b3d29d76409b"],
+        "uri": "6cbe0024b3d29d76409b"
+      },
+      "cover_large": {
+        "url_list": ["http://p3.pstatp.com/live/720x720/6cbd002a72a97b6b25cd.jpeg"],
+        "uri": "6cbd002a72a97b6b25cd"
+      },
+      "duration": 46,
+      "id": 6532760453176068878,
+      "cover_thumb": {
+        "url_list": ["http://p3.pstatp.com/live/100x100/6cbd002a72a97b6b25cd.jpeg"],
+        "uri": "6cbd002a72a97b6b25cd"
+      },
+      "cover_hd": {
+        "url_list": ["http://p3.pstatp.com/live/1080x1080/6cbd002a72a97b6b25cd.jpeg"],
+        "uri": "6cbd002a72a97b6b25cd"
+      },
+      "user_count": 0,
+      "title": "one two one\uff0c\u5f00\u59cb\u6296",
+      "play_url": {
+        "url_list": ["http://p1.pstatp.com/obj/6f6700021cc3a4c140ed", "http://p9.pstatp.com/obj/6f6700021cc3a4c140ed", "http://p3.pstatp.com/obj/6f6700021cc3a4c140ed"],
+        "uri": "6f6700021cc3a4c140ed"
+      },
+      "effects_data": {
+        "url_list": ["https://p3.pstatp.com/obj/6cbc002b5dc320edfcef", "https://pb9.pstatp.com/obj/6cbc002b5dc320edfcef", "https://pb3.pstatp.com/obj/6cbc002b5dc320edfcef"],
+        "uri": "6cbc002b5dc320edfcef"
+      },
+      "author": "Sunny Suwanmethanon,Ice Preechaya,\u0e19\u0e34\u0e27 & \u0e2b\u0e21\u0e27\u0e14\u0e41\u0e27\u0e19",
+      "mid": "6532760453176068878",
+      "cover_medium": {
+        "url_list": ["http://p3.pstatp.com/live/200x200/6cbd002a72a97b6b25cd.jpeg"],
+        "uri": "6cbd002a72a97b6b25cd"
+      },
+      "id_str": "6532760453176068878",
+      "schema_url": ""
+    },
+    "bodydance_score": 0,
+    "is_hash_tag": 0,
+    "status": {
+      "with_goods": false,
+      "is_delete": false,
+      "private_status": 0,
+      "allow_comment": true,
+      "allow_share": true,
+      "is_private": false
+    },
+    "sort_label": "",
+    "share_info": {
+      "share_weibo_desc": "#\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b#\u5c0f\u72d7\u5b50\uff0c\u5bb6\u5ead\u5730\u4f4d\u5f88\u660e\u663e\uff01",
+      "share_title": "\u5c0f\u72d7\u5b50\uff0c\u5bb6\u5ead\u5730\u4f4d\u5f88\u660e\u663e\uff01",
+      "share_url": "https://www.iesdouyin.com/share/video/6536193372820868355/?region=CN&mid=6532760453176068878&titleType=title",
+      "share_desc": "\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b"
+    },
+    "is_top": 0,
+    "aweme_type": 0,
+    "desc": "\u5c0f\u72d7\u5b50\uff0c\u5bb6\u5ead\u5730\u4f4d\u5f88\u660e\u663e\uff01",
+    "region": "",
+    "is_relieve": false,
+    "text_extra": [],
+    "user_digged": 0
+  }, {
+    "risk_infos": {
+      "warn": false,
+      "content": "",
+      "risk_sink": false,
+      "type": 0
+    },
+    "label_top": {
+      "url_list": ["https://p1.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf"],
+      "uri": "729f0000ef991e85fccf"
+    },
+    "author_user_id": 85235873197,
+    "rate": 12,
+    "create_time": 1523085012,
+    "video": {
+      "ratio": "720p",
+      "origin_cover": {
+        "url_list": ["http://p3.pstatp.com/large/784c0007571e0bd79b18.jpeg", "http://pb9.pstatp.com/large/784c0007571e0bd79b18.jpeg", "http://pb3.pstatp.com/large/784c0007571e0bd79b18.jpeg"],
+        "uri": "large/784c0007571e0bd79b18"
+      },
+      "play_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=af85a220e5584933b8d58d7a5280cd69&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=af85a220e5584933b8d58d7a5280cd69&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=af85a220e5584933b8d58d7a5280cd69&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=af85a220e5584933b8d58d7a5280cd69&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "af85a220e5584933b8d58d7a5280cd69"
+      },
+      "cover": {
+        "url_list": ["https://p3.pstatp.com/aweme/300x400/7849000a78d70bc684b4.jpeg", "https://pb9.pstatp.com/aweme/300x400/7849000a78d70bc684b4.jpeg", "https://pb3.pstatp.com/aweme/300x400/7849000a78d70bc684b4.jpeg"],
+        "uri": "300x400/7849000a78d70bc684b4"
+      },
+      "height": 1024,
+      "width": 576,
+      "bit_rate": [{
+        "bit_rate": 952780,
+        "gear_name": "normal",
+        "quality_type": 0
+      }],
+      "download_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=af85a220e5584933b8d58d7a5280cd69&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=af85a220e5584933b8d58d7a5280cd69&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=af85a220e5584933b8d58d7a5280cd69&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=af85a220e5584933b8d58d7a5280cd69&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "af85a220e5584933b8d58d7a5280cd69"
+      },
+      "has_watermark": true,
+      "duration": 11080,
+      "play_addr_lowbr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=af85a220e5584933b8d58d7a5280cd69&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=af85a220e5584933b8d58d7a5280cd69&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=af85a220e5584933b8d58d7a5280cd69&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=af85a220e5584933b8d58d7a5280cd69&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "af85a220e5584933b8d58d7a5280cd69"
+      },
+      "dynamic_cover": {
+        "url_list": ["https://p3.pstatp.com/obj/784e0001c99c367c3c70", "https://pb9.pstatp.com/obj/784e0001c99c367c3c70", "https://pb3.pstatp.com/obj/784e0001c99c367c3c70"],
+        "uri": "784e0001c99c367c3c70"
+      }
+    },
+    "aweme_id": "6541600286039870724",
+    "video_labels": [],
+    "is_vr": false,
+    "vr_type": 0,
+    "statistics": {
+      "play_count": 2060458,
+      "aweme_id": "6541600286039870724",
+      "comment_count": 74,
+      "share_count": 3109,
+      "digg_count": 53915
+    },
+    "author": {
+      "share_qrcode_uri": "552f00169cb61f22d114",
+      "app_id": 1128,
+      "avatar_larger": {
+        "url_list": ["https://p3.pstatp.com/aweme/1080x1080/75bd001c1987e86d0a89.jpeg", "https://pb9.pstatp.com/aweme/1080x1080/75bd001c1987e86d0a89.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/75bd001c1987e86d0a89.jpeg"],
+        "uri": "75bd001c1987e86d0a89"
+      },
+      "enterprise_verify_reason": "",
+      "original_music_qrcode": null,
+      "story_open": false,
+      "live_verify": 0,
+      "short_id": "193249232",
+      "account_region": "",
+      "reflow_page_gid": 0,
+      "avatar_thumb": {
+        "url_list": ["https://p3.pstatp.com/aweme/100x100/75bd001c1987e86d0a89.jpeg", "https://pb9.pstatp.com/aweme/100x100/75bd001c1987e86d0a89.jpeg", "https://pb3.pstatp.com/aweme/100x100/75bd001c1987e86d0a89.jpeg"],
+        "uri": "75bd001c1987e86d0a89"
+      },
+      "is_binded_weibo": false,
+      "is_verified": true,
+      "hide_search": true,
+      "risk_flag": 0,
+      "with_commerce_entry": false,
+      "school_name": "",
+      "custom_verify": "",
+      "special_lock": 1,
+      "shield_comment_notice": 0,
+      "hide_location": false,
+      "gender": 2,
+      "star_use_new_download": false,
+      "school_poi_id": "",
+      "prevent_download": false,
+      "weibo_schema": "",
+      "uid": "85235873197",
+      "bind_phone": "",
+      "weibo_url": "",
+      "weibo_name": "",
+      "commerce_user_level": 0,
+      "create_time": 1515557709,
+      "verify_info": "",
+      "constellation": 10,
+      "community_discipline_status": 0,
+      "has_register_notice": 0,
+      "need_recommend": 1,
+      "shield_digg_notice": 0,
+      "update_before": 0,
+      "verification_type": 1,
+      "room_id": 0,
+      "avatar_medium": {
+        "url_list": ["https://p3.pstatp.com/aweme/720x720/75bd001c1987e86d0a89.jpeg", "https://pb9.pstatp.com/aweme/720x720/75bd001c1987e86d0a89.jpeg", "https://pb3.pstatp.com/aweme/720x720/75bd001c1987e86d0a89.jpeg"],
+        "uri": "75bd001c1987e86d0a89"
+      },
+      "authority_status": 0,
+      "enterprise_verify": false,
+      "live_rec_level": 0,
+      "reflow_page_uid": 0,
+      "birthday": "2000-12-31",
+      "is_ad_fake": false,
+      "nickname": "\u62cd\u7167\u5c0f\u6280\u5de7",
+      "shield_follow_notice": 0,
+      "original_music_cover": null,
+      "follow_status": 0,
+      "language": "zh-Hans",
+      "region": "CN",
+      "nickname_lock": 0,
+      "school_type": 0,
+      "avatar_uri": "75bd001c1987e86d0a89",
+      "signature": "\u559c\u6b22\u5c31\u5173\u6ce8\u6211\u5427\uff0c\u6bcf\u5929\u66f4\u65b0\u3002\u3002\u3002\n\u2764 704333386\u8fdb\u7c89\u4e1d\u7fa4",
+      "weibo_verify": "",
+      "unique_id": ""
+    },
+    "cmt_swt": false,
+    "share_url": "https://www.douyin.com/share/video/6541600286039870724/?mid=6533505360412543757",
+    "is_ads": false,
+    "music": {
+      "status": 1,
+      "extra": "{\"has_edited\": 0}",
+      "is_original": false,
+      "offline_desc": "",
+      "source_platform": 22,
+      "cover_large": {
+        "url_list": ["http://p3.pstatp.com/live/720x720/6f850011ba6939f4379d.jpeg"],
+        "uri": "6f850011ba6939f4379d"
+      },
+      "duration": 54,
+      "id": 6533505360412543757,
+      "cover_thumb": {
+        "url_list": ["http://p3.pstatp.com/live/100x100/6f850011ba6939f4379d.jpeg"],
+        "uri": "6f850011ba6939f4379d"
+      },
+      "cover_hd": {
+        "url_list": ["http://p3.pstatp.com/live/1080x1080/6f850011ba6939f4379d.jpeg"],
+        "uri": "6f850011ba6939f4379d"
+      },
+      "user_count": 0,
+      "title": "Wild",
+      "play_url": {
+        "url_list": ["http://p1.pstatp.com/obj/6f6d000711ea0f36fd6b", "http://p9.pstatp.com/obj/6f6d000711ea0f36fd6b", "http://p3.pstatp.com/obj/6f6d000711ea0f36fd6b"],
+        "uri": "6f6d000711ea0f36fd6b"
+      },
+      "author": "Monogem",
+      "mid": "6533505360412543757",
+      "cover_medium": {
+        "url_list": ["http://p3.pstatp.com/live/200x200/6f850011ba6939f4379d.jpeg"],
+        "uri": "6f850011ba6939f4379d"
+      },
+      "id_str": "6533505360412543757",
+      "schema_url": ""
+    },
+    "bodydance_score": 0,
+    "is_hash_tag": 0,
+    "status": {
+      "with_goods": false,
+      "is_delete": false,
+      "private_status": 0,
+      "allow_comment": true,
+      "allow_share": true,
+      "is_private": false
+    },
+    "sort_label": "",
+    "share_info": {
+      "share_weibo_desc": "#\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b#\u65c5\u884c\u65f6\u62cd\u4e00\u7ec4\u521b\u610f\u7167\u5427@\u6296\u97f3\u5c0f\u52a9\u624b",
+      "share_title": "\u65c5\u884c\u65f6\u62cd\u4e00\u7ec4\u521b\u610f\u7167\u5427@\u6296\u97f3\u5c0f\u52a9\u624b",
+      "share_url": "https://www.iesdouyin.com/share/video/6541600286039870724/?region=CN&mid=6533505360412543757&titleType=title",
+      "share_desc": "\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b"
+    },
+    "is_top": 0,
+    "aweme_type": 0,
+    "desc": "\u65c5\u884c\u65f6\u62cd\u4e00\u7ec4\u521b\u610f\u7167\u5427@\u6296\u97f3\u5c0f\u52a9\u624b",
+    "cha_list": [{
+      "schema": "aweme://aweme/challenge/detail?cid=1554307229664257",
+      "user_count": 0,
+      "author": {},
+      "cha_name": "\u65c5\u884c",
+      "cid": "1554307229664257",
+      "type": 0,
+      "desc": "\u8bb0\u5f55\u65c5\u884c\u65f6\u8bb0\u5fc6\u7684\u788e\u7247\u5427\uff01"
+    }],
+    "region": "CN",
+    "is_relieve": false,
+    "text_extra": [{
+      "at_user_type": "",
+      "user_id": "6796248446",
+      "start": 10,
+      "isAddPosition": false,
+      "end": 16,
+      "type": 0
+    }],
+    "user_digged": 0
+  }, {
+    "risk_infos": {
+      "warn": false,
+      "content": "",
+      "risk_sink": false,
+      "type": 0
+    },
+    "label_top": {
+      "url_list": ["https://p1.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf", "https://pb3.pstatp.com/obj/729f0000ef991e85fccf"],
+      "uri": "729f0000ef991e85fccf"
+    },
+    "author_user_id": 92674965827,
+    "rate": 12,
+    "create_time": 1524059059,
+    "video": {
+      "ratio": "720p",
+      "origin_cover": {
+        "url_list": ["http://p1.pstatp.com/large/7c2a0010c6cdeb3fb43c.jpeg", "http://pb3.pstatp.com/large/7c2a0010c6cdeb3fb43c.jpeg", "http://pb3.pstatp.com/large/7c2a0010c6cdeb3fb43c.jpeg"],
+        "uri": "large/7c2a0010c6cdeb3fb43c"
+      },
+      "play_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=9edbb2de863840d1ba47ab9cd680e5b4&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=9edbb2de863840d1ba47ab9cd680e5b4&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=9edbb2de863840d1ba47ab9cd680e5b4&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=9edbb2de863840d1ba47ab9cd680e5b4&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "9edbb2de863840d1ba47ab9cd680e5b4"
+      },
+      "cover": {
+        "url_list": ["https://p3.pstatp.com/aweme/300x400/7c2d000781a72e5c0050.jpeg", "https://pb9.pstatp.com/aweme/300x400/7c2d000781a72e5c0050.jpeg", "https://pb3.pstatp.com/aweme/300x400/7c2d000781a72e5c0050.jpeg"],
+        "uri": "300x400/7c2d000781a72e5c0050"
+      },
+      "height": 960,
+      "width": 540,
+      "bit_rate": [{
+        "bit_rate": 181081,
+        "gear_name": "normal",
+        "quality_type": 0
+      }],
+      "download_addr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=9edbb2de863840d1ba47ab9cd680e5b4&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=9edbb2de863840d1ba47ab9cd680e5b4&line=0&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=9edbb2de863840d1ba47ab9cd680e5b4&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=9edbb2de863840d1ba47ab9cd680e5b4&line=1&ratio=720p&watermark=1&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "9edbb2de863840d1ba47ab9cd680e5b4"
+      },
+      "has_watermark": true,
+      "duration": 14800,
+      "play_addr_lowbr": {
+        "url_list": ["https://aweme.snssdk.com/aweme/v1/play/?video_id=9edbb2de863840d1ba47ab9cd680e5b4&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=9edbb2de863840d1ba47ab9cd680e5b4&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://aweme.snssdk.com/aweme/v1/play/?video_id=9edbb2de863840d1ba47ab9cd680e5b4&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0", "https://api.amemv.com/aweme/v1/play/?video_id=9edbb2de863840d1ba47ab9cd680e5b4&line=1&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0"],
+        "uri": "9edbb2de863840d1ba47ab9cd680e5b4"
+      },
+      "dynamic_cover": {
+        "url_list": ["https://p9.pstatp.com/obj/7c2800128f1c9ab741ed", "https://pb1.pstatp.com/obj/7c2800128f1c9ab741ed", "https://pb3.pstatp.com/obj/7c2800128f1c9ab741ed"],
+        "uri": "7c2800128f1c9ab741ed"
+      }
+    },
+    "aweme_id": "6545783736875617540",
+    "video_labels": [],
+    "is_vr": false,
+    "vr_type": 0,
+    "statistics": {
+      "play_count": 12374965,
+      "aweme_id": "6545783736875617540",
+      "comment_count": 565,
+      "share_count": 2712,
+      "digg_count": 467306
+    },
+    "author": {
+      "share_qrcode_uri": "72970001e0f661e7dda4",
+      "app_id": 1128,
+      "avatar_larger": {
+        "url_list": ["https://p3.pstatp.com/aweme/1080x1080/75ae000975772fafb747.jpeg", "https://pb9.pstatp.com/aweme/1080x1080/75ae000975772fafb747.jpeg", "https://pb3.pstatp.com/aweme/1080x1080/75ae000975772fafb747.jpeg"],
+        "uri": "75ae000975772fafb747"
+      },
+      "enterprise_verify_reason": "",
+      "original_music_qrcode": null,
+      "story_open": false,
+      "live_verify": 0,
+      "short_id": "622684067",
+      "account_region": "",
+      "reflow_page_gid": 0,
+      "avatar_thumb": {
+        "url_list": ["https://p3.pstatp.com/aweme/100x100/75ae000975772fafb747.jpeg", "https://pb9.pstatp.com/aweme/100x100/75ae000975772fafb747.jpeg", "https://pb3.pstatp.com/aweme/100x100/75ae000975772fafb747.jpeg"],
+        "uri": "75ae000975772fafb747"
+      },
+      "is_binded_weibo": false,
+      "is_verified": true,
+      "hide_search": false,
+      "risk_flag": 0,
+      "with_commerce_entry": false,
+      "school_name": "",
+      "custom_verify": "",
+      "special_lock": 1,
+      "shield_comment_notice": 0,
+      "hide_location": false,
+      "gender": 1,
+      "star_use_new_download": true,
+      "school_poi_id": "",
+      "prevent_download": false,
+      "weibo_schema": "",
+      "uid": "92674965827",
+      "bind_phone": "",
+      "weibo_url": "",
+      "weibo_name": "",
+      "commerce_user_level": 0,
+      "create_time": 1521956561,
+      "verify_info": "",
+      "constellation": 0,
+      "community_discipline_status": 0,
+      "has_register_notice": 0,
+      "need_recommend": 1,
+      "shield_digg_notice": 0,
+      "update_before": 0,
+      "verification_type": 1,
+      "room_id": 0,
+      "avatar_medium": {
+        "url_list": ["https://p3.pstatp.com/aweme/720x720/75ae000975772fafb747.jpeg", "https://pb9.pstatp.com/aweme/720x720/75ae000975772fafb747.jpeg", "https://pb3.pstatp.com/aweme/720x720/75ae000975772fafb747.jpeg"],
+        "uri": "75ae000975772fafb747"
+      },
+      "authority_status": 0,
+      "enterprise_verify": false,
+      "live_rec_level": 0,
+      "reflow_page_uid": 0,
+      "birthday": "",
+      "is_ad_fake": false,
+      "nickname": "BillCheng\ud83d\ude48",
+      "shield_follow_notice": 0,
+      "original_music_cover": null,
+      "follow_status": 0,
+      "language": "zh-Hans",
+      "region": "CN",
+      "nickname_lock": 0,
+      "school_type": 0,
+      "avatar_uri": "75ae000975772fafb747",
+      "signature": "",
+      "weibo_verify": "",
+      "unique_id": ""
+    },
+    "cmt_swt": false,
+    "share_url": "https://www.douyin.com/share/video/6545783736875617540/?mid=6514206127088438029",
+    "is_ads": false,
+    "music": {
+      "status": 1,
+      "extra": "{\"has_edited\": 0}",
+      "is_original": false,
+      "offline_desc": "",
+      "source_platform": 22,
+      "audio_track": {
+        "url_list": ["https://p3.pstatp.com/obj/5ad800041519b68e2053", "https://pb9.pstatp.com/obj/5ad800041519b68e2053", "https://pb3.pstatp.com/obj/5ad800041519b68e2053"],
+        "uri": "5ad800041519b68e2053"
+      },
+      "cover_large": {
+        "url_list": ["http://p3.pstatp.com/live/720x720/5ad500145337a34f14cd.jpeg"],
+        "uri": "5ad500145337a34f14cd"
+      },
+      "duration": 38,
+      "id": 6514206127088438029,
+      "cover_thumb": {
+        "url_list": ["http://p3.pstatp.com/live/100x100/5ad500145337a34f14cd.jpeg"],
+        "uri": "5ad500145337a34f14cd"
+      },
+      "cover_hd": {
+        "url_list": ["http://p3.pstatp.com/live/1080x1080/5ad500145337a34f14cd.jpeg"],
+        "uri": "5ad500145337a34f14cd"
+      },
+      "user_count": 0,
+      "title": "\u30c4\u30ad\u30a2\u30ab\u30ea\u306e\u30df\u30c1\u30b7\u30eb\u30d9 (TV size)",
+      "play_url": {
+        "url_list": ["http://p1.pstatp.com/obj/5af40004e7e5a0da9f48", "http://p9.pstatp.com/obj/5af40004e7e5a0da9f48", "http://p3.pstatp.com/obj/5af40004e7e5a0da9f48"],
+        "uri": "5af40004e7e5a0da9f48"
+      },
+      "effects_data": {
+        "url_list": ["https://p1.pstatp.com/obj/5ad800041542a7be756f", "https://pb3.pstatp.com/obj/5ad800041542a7be756f", "https://pb3.pstatp.com/obj/5ad800041542a7be756f"],
+        "uri": "5ad800041542a7be756f"
+      },
+      "author": "\u30b9\u30c6\u30ec\u30aa\u30dd\u30cb\u30fc",
+      "mid": "6514206127088438029",
+      "cover_medium": {
+        "url_list": ["http://p3.pstatp.com/live/200x200/5ad500145337a34f14cd.jpeg"],
+        "uri": "5ad500145337a34f14cd"
+      },
+      "id_str": "6514206127088438029",
+      "schema_url": ""
+    },
+    "bodydance_score": 0,
+    "is_hash_tag": 0,
+    "status": {
+      "with_goods": false,
+      "is_delete": false,
+      "private_status": 0,
+      "allow_comment": true,
+      "allow_share": true,
+      "is_private": false
+    },
+    "sort_label": "",
+    "share_info": {
+      "share_weibo_desc": "#\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b#\u6700\u79bb\u8c31\u7684\u51e0\u5f20\u9519\u89c9\u52a8\u56fe\uff0c\u611f\u89c9\u81ea\u5df1\u773c\u775b\u778e\u4e86\ud83d\ude48\uff0c\u60f3\u770b\u66f4\u591a\u9519\u89c9\u52a8\u56fe\uff0c\u70b9\u5173\u6ce8",
+      "share_title": "\u6700\u79bb\u8c31\u7684\u51e0\u5f20\u9519\u89c9\u52a8\u56fe\uff0c\u611f\u89c9\u81ea\u5df1\u773c\u775b\u778e\u4e86\ud83d\ude48\uff0c\u60f3\u770b\u66f4\u591a\u9519\u89c9\u52a8\u56fe\uff0c\u70b9\u5173\u6ce8",
+      "share_url": "https://www.iesdouyin.com/share/video/6545783736875617540/?region=CN&mid=6514206127088438029&titleType=title",
+      "share_desc": "\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b"
+    },
+    "is_top": 0,
+    "aweme_type": 0,
+    "desc": "\u6700\u79bb\u8c31\u7684\u51e0\u5f20\u9519\u89c9\u52a8\u56fe\uff0c\u611f\u89c9\u81ea\u5df1\u773c\u775b\u778e\u4e86\ud83d\ude48\uff0c\u60f3\u770b\u66f4\u591a\u9519\u89c9\u52a8\u56fe\uff0c\u70b9\u5173\u6ce8",
+    "region": "CN",
+    "is_relieve": false,
+    "text_extra": [],
+    "user_digged": 0
+  }],
+  "extra": {
+    "logid": "2018042011352501001501608763019E",
+    "now": 1524195325783,
+    "fatal_item_ids": []
+  },
+  "has_more": 1,
+  "status_code": 0,
+  "min_cursor": 1524185619000
+}
