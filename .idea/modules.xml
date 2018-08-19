@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/downloader.iml" filepath="$PROJECT_DIR$/.idea/modules/downloader.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/subtitleConverter-master.iml" filepath="$PROJECT_DIR$/.idea/modules/subtitleConverter-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tool.iml" filepath="$PROJECT_DIR$/.idea/modules/tool.iml" />
     </modules>
   </component>
 </project>
