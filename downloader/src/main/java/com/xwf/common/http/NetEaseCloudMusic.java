@@ -8,6 +8,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import subtitleFile.FormatSRT;
+import subtitleFile.IOClass;
 import subtitleFile.TimedTextObject;
 
 import java.io.File;
@@ -23,6 +24,7 @@ import java.util.Map;
  * Created by weifengxu on 2018/8/11.
  */
 public class NetEaseCloudMusic {
+    
     static String get_play_lists = "https://music.163.com/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=##";
 
     static String song_url = "http://music.163.com/song/media/outer/url?id=##.mp3";
