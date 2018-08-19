@@ -3,9 +3,9 @@ package com.xwf.common;
 import com.jfinal.config.*;
 import com.jfinal.render.ViewType;
 import com.jfinal.template.Engine;
+import com.xwf.common.controller.HomeController;
 import com.xwf.common.controller.MusicController;
 import com.xwf.common.controller.TaskController;
-import com.xwf.common.controller.HomeController;
 
 /**
  * Created by weifengxu on 17/7/8.

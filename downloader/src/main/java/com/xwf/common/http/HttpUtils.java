@@ -23,7 +23,6 @@ import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.ssl.SSLContextBuilder;
 import org.apache.http.util.EntityUtils;
-import org.jsoup.nodes.Element;
 
 import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.SSLContext;

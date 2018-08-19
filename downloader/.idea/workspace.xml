@@ -1,119 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7741d37e-d4f8-44cb-aab8-cbf9d53bbfbf" name="Default" comment="乱了">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subtitleConverter-master/src/main/java/subtitleFile/IOClass.java" afterPath="$PROJECT_DIR$/subtitleConverter-master/src/main/java/subtitleFile/IOClass.java" />
-    </list>
-    <list id="00664551-5883-4b1a-8edc-3059179daaf2" name="New changelist" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/downloader_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/downloader_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/weifengxu.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_nodep_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_37.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_belerweb_pinyin4j_2_5_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_riccardove_easyjasub_subtitleConvert_1_0_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_0_8_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jfinal_jetty_server_8_1_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jfinal_jfinal_3_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_c3p0_0_9_5_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__it_sauronsoftware_jave_unknown.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_36.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_1_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpasyncclient_unknown.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_unknown.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_1_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_1_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_continuation_8_1_8_v20121106.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_8_1_8_v20121106.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_8_1_8_v20121106.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_security_8_1_8_v20121106.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_server_8_1_8_v20121106.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_servlet_8_1_8_v20121106.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_8_1_8_v20121106.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_xml_8_1_8_v20121106.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_orbit_javax_servlet_3_0_0_v201112011016.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_20.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_8_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__us_codecraft_webmagic_core_0_7_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__us_codecraft_webmagic_extension_0_7_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__us_codecraft_xsoup_0_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/subtitleConverter-master.iml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/Callback/MCallback.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/CommonConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/ExceptionIntoLogInterceptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/controller/HomeController$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/controller/HomeController$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/controller/HomeController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/controller/MusicController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/controller/TaskController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/crawler/AllCrawler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/crawler/PhantomJSUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/crawler/PicCrawler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/crawler/VideoCrawler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/dao/MovieDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/dao/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/dao/VideoDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/http/DownMylike.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/http/DownMylike_hs.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/http/DownMylike_ks.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/http/Downloader$MyComparator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/http/Downloader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/http/DownloaderOne.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/http/HttpUtils$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/http/HttpUtils$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/http/HttpUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/http/MIDIShowDownloader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/http/NetEaseCloudMusic.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/http/ProxyCralwerUnusedVPN.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/http/ProxyInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/utils/Beans/MMap.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/utils/ChangeFileEncoding.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/utils/CommonUtils$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/utils/CommonUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/utils/DeDubble.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/utils/GetNames.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/utils/HanyuPinyinHelper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/utils/LevenShtein.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/utils/LrcUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/utils/MainExe.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/utils/PrintStream.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/utils/Searcher.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/utils/VideoCut.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/utils/VideoCutMain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/utils/Youtube_dl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/utils/ZipCompressor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/utils/utilLrc$Statement.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/utils/utilLrc.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/video/FileUtils$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/video/FileUtils$CompratorByLastModified.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/video/FileUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/video/MFFMPEGLocator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/video/VideoFileBean.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xwf/common/video/VideoRefresh.class" afterPath="" />
+    <list default="true" id="aa6af6cb-398c-4646-80b7-35d5a9480d0f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jave_2_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jsoup_1_8_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../subtitleConverter-master/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../subtitleConverter-master/.idea/modules/subtitleConverter-master.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../subtitleConverter-master/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/downloader.iml" afterPath="$PROJECT_DIR$/.idea/modules/downloader.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/subtitleConverter-master.iml" afterPath="$PROJECT_DIR$/.idea/modules/subtitleConverter-master.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xwf/common/CommonConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/xwf/common/CommonConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xwf/common/controller/MusicController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xwf/common/controller/MusicController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xwf/common/crawler/AllCrawler.java" afterPath="$PROJECT_DIR$/src/main/java/com/xwf/common/crawler/AllCrawler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xwf/common/crawler/PhantomJSUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/xwf/common/crawler/PhantomJSUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xwf/common/http/DownloaderOne.java" afterPath="$PROJECT_DIR$/src/main/java/com/xwf/common/http/DownloaderOne.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xwf/common/http/HttpUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/xwf/common/http/HttpUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xwf/common/utils/HanyuPinyinHelper.java" afterPath="$PROJECT_DIR$/src/main/java/com/xwf/common/utils/HanyuPinyinHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xwf/common/utils/ZipCompressor.java" afterPath="$PROJECT_DIR$/src/main/java/com/xwf/common/utils/ZipCompressor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xwf/common/video/FileUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/xwf/common/video/FileUtils.java" />
     </list>
     <ignored path="downloader.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/../subtitleConverter-master/.gradle/" />
+    <ignored path="$PROJECT_DIR$/../subtitleConverter-master/build/" />
     <ignored path=".idea/dataSources.local.xml" />
-    <ignored path="$PROJECT_DIR$/subtitleConverter-master/.gradle/" />
-    <ignored path="$PROJECT_DIR$/subtitleConverter-master/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +45,7 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
-    <projectState path="$PROJECT_DIR$/subtitleConverter-master">
+    <projectState path="$PROJECT_DIR$/../subtitleConverter-master">
       <ProjectState />
     </projectState>
   </component>
@@ -144,22 +60,12 @@
     <favorites_list name="downloader" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="CommonConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/CommonConfig.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="CommonUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/utils/CommonUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NetEaseCloudMusic.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/http/NetEaseCloudMusic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2386">
-              <caret line="183" column="16" selection-start-line="183" selection-start-column="16" selection-end-line="183" selection-end-column="16" />
+            <state relative-caret-position="3075">
+              <caret line="123" column="5" selection-start-line="123" selection-start-column="5" selection-end-line="123" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -167,21 +73,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Caption.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/subtitleConverter-master/src/main/java/subtitleFile/Caption.java">
+      <file leaf-file-name="VideoCut.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/utils/VideoCut.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="4000">
+              <caret line="160" column="19" selection-start-line="160" selection-start-column="19" selection-end-line="160" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/video/FileUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IOClass.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/subtitleConverter-master/src/main/java/subtitleFile/IOClass.java">
+      <file leaf-file-name="Caption.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../subtitleConverter-master/src/main/java/subtitleFile/Caption.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="275">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -190,19 +108,19 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="$PROJECT_DIR$/../gradle-4.10-rc-2" />
-        <entry key="$PROJECT_DIR$/subtitleConverter-master" value="$PROJECT_DIR$/../gradle-4.10-rc-2" />
+        <entry key="$PROJECT_DIR$" value="$PROJECT_DIR$/../../gradle-4.10-rc-2" />
+        <entry key="$PROJECT_DIR$/../subtitleConverter-master" value="$PROJECT_DIR$/../../gradle-4.10-rc-2" />
       </map>
     </option>
     <option name="myGradleVersions">
       <map>
         <entry key="$PROJECT_DIR$" value="4.10" />
-        <entry key="$PROJECT_DIR$/subtitleConverter-master" value="4.10" />
+        <entry key="$PROJECT_DIR$/../subtitleConverter-master" value="4.10" />
       </map>
     </option>
     <option name="availableProjects">
@@ -227,14 +145,14 @@
           <key>
             <ExternalProjectPojo>
               <option name="name" value="subtitleConverter-master" />
-              <option name="path" value="$PROJECT_DIR$/subtitleConverter-master" />
+              <option name="path" value="$PROJECT_DIR$/../subtitleConverter-master" />
             </ExternalProjectPojo>
           </key>
           <value>
             <list>
               <ExternalProjectPojo>
                 <option name="name" value="subtitleConverter-master" />
-                <option name="path" value="$PROJECT_DIR$/subtitleConverter-master" />
+                <option name="path" value="$PROJECT_DIR$/../subtitleConverter-master" />
               </ExternalProjectPojo>
             </list>
           </value>
@@ -309,67 +227,67 @@
             </list>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/subtitleConverter-master">
+        <entry key="$PROJECT_DIR$/../subtitleConverter-master">
           <value>
             <list>
               <ExternalTaskPojo>
                 <option name="description" value="Initializes a new Gradle build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/subtitleConverter-master" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../subtitleConverter-master" />
                 <option name="name" value="init" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the components produced by root project 'subtitleConverter-master'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/subtitleConverter-master" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../subtitleConverter-master" />
                 <option name="name" value="components" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the sub-projects of root project 'subtitleConverter-master'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/subtitleConverter-master" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../subtitleConverter-master" />
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the dependent components of components in root project 'subtitleConverter-master'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/subtitleConverter-master" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../subtitleConverter-master" />
                 <option name="name" value="dependentComponents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays all buildscript dependencies declared in root project 'subtitleConverter-master'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/subtitleConverter-master" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../subtitleConverter-master" />
                 <option name="name" value="buildEnvironment" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the insight into a specific dependency in root project 'subtitleConverter-master'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/subtitleConverter-master" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../subtitleConverter-master" />
                 <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates Gradle wrapper files." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/subtitleConverter-master" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../subtitleConverter-master" />
                 <option name="name" value="wrapper" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays all dependencies declared in root project 'subtitleConverter-master'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/subtitleConverter-master" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../subtitleConverter-master" />
                 <option name="name" value="dependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/subtitleConverter-master" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../subtitleConverter-master" />
                 <option name="name" value="help" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the configuration model of root project 'subtitleConverter-master'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/subtitleConverter-master" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../subtitleConverter-master" />
                 <option name="name" value="model" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the properties of root project 'subtitleConverter-master'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/subtitleConverter-master" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../subtitleConverter-master" />
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the tasks runnable from root project 'subtitleConverter-master'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/subtitleConverter-master" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../subtitleConverter-master" />
                 <option name="name" value="tasks" />
               </ExternalTaskPojo>
             </list>
@@ -401,84 +319,84 @@
               <option name="name" value="downloader" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/ant-1.9.11.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/ant-launcher-1.9.11.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-api-metadata-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-base-services-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-base-services-groovy-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-build-cache-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-build-option-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-cli-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-core-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-core-api-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-docs-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-installation-beacon-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-jvm-services-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-kotlin-dsl-1.0-rc-3.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-kotlin-dsl-provider-plugins-1.0-rc-3.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-kotlin-dsl-tooling-builders-1.0-rc-3.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-kotlin-dsl-tooling-models-1.0-rc-3.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-launcher-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-logging-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-messaging-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-model-core-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-model-groovy-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-native-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-persistent-cache-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-process-services-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-resources-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-runtime-api-info-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-tooling-api-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-wrapper-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/groovy-all-2.4.15.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-announce-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-antlr-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-build-cache-http-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-build-comparison-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-build-init-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-code-quality-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-composite-builds-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-dependency-management-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-diagnostics-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-ear-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-ide-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-ide-native-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-ide-play-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-ivy-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-jacoco-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-javascript-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-language-groovy-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-language-java-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-language-jvm-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-language-native-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-language-scala-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-maven-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-osgi-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-platform-base-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-platform-jvm-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-platform-native-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-platform-play-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-plugin-development-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-plugin-use-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-plugins-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-publish-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-reporting-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-resources-gcs-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-resources-http-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-resources-s3-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-resources-sftp-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-scala-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-signing-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-test-kit-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-testing-base-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-testing-junit-platform-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-testing-jvm-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-testing-native-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-tooling-api-builders-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-tooling-native-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-version-control-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-workers-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/ant-1.9.11.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/ant-launcher-1.9.11.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-api-metadata-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-base-services-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-base-services-groovy-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-build-cache-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-build-option-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-cli-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-core-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-core-api-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-docs-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-installation-beacon-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-jvm-services-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-kotlin-dsl-1.0-rc-3.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-kotlin-dsl-provider-plugins-1.0-rc-3.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-kotlin-dsl-tooling-builders-1.0-rc-3.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-kotlin-dsl-tooling-models-1.0-rc-3.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-launcher-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-logging-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-messaging-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-model-core-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-model-groovy-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-native-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-persistent-cache-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-process-services-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-resources-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-runtime-api-info-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-tooling-api-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-wrapper-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/groovy-all-2.4.15.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-announce-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-antlr-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-build-cache-http-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-build-comparison-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-build-init-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-code-quality-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-composite-builds-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-dependency-management-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-diagnostics-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-ear-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-ide-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-ide-native-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-ide-play-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-ivy-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-jacoco-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-javascript-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-language-groovy-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-language-java-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-language-jvm-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-language-native-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-language-scala-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-maven-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-osgi-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-platform-base-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-platform-jvm-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-platform-native-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-platform-play-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-plugin-development-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-plugin-use-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-plugins-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-publish-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-reporting-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-resources-gcs-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-resources-http-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-resources-s3-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-resources-sftp-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-scala-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-signing-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-test-kit-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-testing-base-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-testing-junit-platform-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-testing-jvm-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-testing-native-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-tooling-api-builders-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-tooling-native-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-version-control-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-workers-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/ivy-2.2.0.jar" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
@@ -486,15 +404,15 @@
             </ExternalProjectBuildClasspathPojo>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/subtitleConverter-master">
+        <entry key="$PROJECT_DIR$/../subtitleConverter-master">
           <value>
             <ExternalProjectBuildClasspathPojo>
               <option name="modulesBuildClasspath">
                 <map>
-                  <entry key="$PROJECT_DIR$/subtitleConverter-master">
+                  <entry key="$PROJECT_DIR$/../subtitleConverter-master">
                     <value>
                       <ExternalModuleBuildClasspathPojo>
-                        <option name="path" value="$PROJECT_DIR$/subtitleConverter-master" />
+                        <option name="path" value="$PROJECT_DIR$/../subtitleConverter-master" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
@@ -503,86 +421,86 @@
               <option name="name" value="subtitleConverter-master" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/ant-1.9.11.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/ant-launcher-1.9.11.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-api-metadata-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-base-services-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-base-services-groovy-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-build-cache-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-build-option-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-cli-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-core-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-core-api-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-docs-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-installation-beacon-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-jvm-services-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-kotlin-dsl-1.0-rc-3.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-kotlin-dsl-provider-plugins-1.0-rc-3.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-kotlin-dsl-tooling-builders-1.0-rc-3.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-kotlin-dsl-tooling-models-1.0-rc-3.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-launcher-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-logging-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-messaging-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-model-core-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-model-groovy-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-native-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-persistent-cache-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-process-services-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-resources-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-runtime-api-info-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-tooling-api-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/gradle-wrapper-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/groovy-all-2.4.15.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-announce-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-antlr-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-build-cache-http-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-build-comparison-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-build-init-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-code-quality-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-composite-builds-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-dependency-management-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-diagnostics-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-ear-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-ide-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-ide-native-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-ide-play-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-ivy-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-jacoco-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-javascript-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-language-groovy-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-language-java-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-language-jvm-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-language-native-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-language-scala-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-maven-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-osgi-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-platform-base-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-platform-jvm-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-platform-native-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-platform-play-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-plugin-development-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-plugin-use-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-plugins-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-publish-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-reporting-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-resources-gcs-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-resources-http-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-resources-s3-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-resources-sftp-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-scala-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-signing-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-test-kit-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-testing-base-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-testing-junit-platform-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-testing-jvm-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-testing-native-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-tooling-api-builders-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-tooling-native-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-version-control-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/gradle-workers-4.10.jar" />
-                  <option value="$PROJECT_DIR$/../gradle-4.10-rc-2/lib/plugins/ivy-2.2.0.jar" />
-                  <option value="$PROJECT_DIR$/subtitleConverter-master/buildSrc/src/main/java" />
-                  <option value="$PROJECT_DIR$/subtitleConverter-master/buildSrc/src/main/groovy" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/ant-1.9.11.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/ant-launcher-1.9.11.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-api-metadata-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-base-services-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-base-services-groovy-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-build-cache-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-build-option-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-cli-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-core-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-core-api-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-docs-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-installation-beacon-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-jvm-services-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-kotlin-dsl-1.0-rc-3.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-kotlin-dsl-provider-plugins-1.0-rc-3.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-kotlin-dsl-tooling-builders-1.0-rc-3.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-kotlin-dsl-tooling-models-1.0-rc-3.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-launcher-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-logging-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-messaging-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-model-core-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-model-groovy-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-native-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-persistent-cache-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-process-services-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-resources-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-runtime-api-info-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-tooling-api-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/gradle-wrapper-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/groovy-all-2.4.15.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-announce-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-antlr-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-build-cache-http-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-build-comparison-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-build-init-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-code-quality-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-composite-builds-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-dependency-management-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-diagnostics-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-ear-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-ide-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-ide-native-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-ide-play-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-ivy-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-jacoco-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-javascript-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-language-groovy-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-language-java-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-language-jvm-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-language-native-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-language-scala-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-maven-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-osgi-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-platform-base-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-platform-jvm-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-platform-native-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-platform-play-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-plugin-development-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-plugin-use-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-plugins-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-publish-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-reporting-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-resources-gcs-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-resources-http-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-resources-s3-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-resources-sftp-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-scala-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-signing-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-test-kit-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-testing-base-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-testing-junit-platform-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-testing-jvm-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-testing-native-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-tooling-api-builders-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-tooling-native-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-version-control-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/gradle-workers-4.10.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.10-rc-2/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$PROJECT_DIR$/../subtitleConverter-master/buildSrc/src/main/java" />
+                  <option value="$PROJECT_DIR$/../subtitleConverter-master/buildSrc/src/main/groovy" />
                 </list>
               </option>
             </ExternalProjectBuildClasspathPojo>
@@ -597,8 +515,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/xwf/common/http/NetEaseCloudMusic.java" />
-        <option value="$PROJECT_DIR$/subtitleConverter-master/src/main/java/subtitleFile/IOClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xwf/common/utils/CommonUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xwf/common/crawler/PhantomJSUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xwf/common/controller/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xwf/common/http/HttpUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xwf/common/utils/ChangeFileEncoding.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xwf/common/video/FileUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xwf/common/utils/VideoCut.java" />
+        <option value="$PROJECT_DIR$/../subtitleConverter-master/src/main/java/subtitleFile/Caption.java" />
       </list>
     </option>
   </component>
@@ -617,8 +541,11 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="82" />
+    <option name="x" value="44" />
     <option name="y" value="23" />
     <option name="width" value="1236" />
     <option name="height" value="777" />
@@ -664,7 +591,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="subtitleConverter-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="downloader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subtitleConverter-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subtitleFile" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -674,22 +627,28 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/subtitleConverter-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../subtitleConverter-master" />
     <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/lib" />
-    </key>
-  </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Unnamed">
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -917,6 +876,7 @@
       <setting name="cmdLine" value="run-app" />
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
+      <setting name="depsClasspath" value="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
@@ -1102,6 +1062,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -1117,71 +1083,130 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
+    <configuration default="false" name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.61" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="downloader:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_downloader_2" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="58935" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="downloader:war exploded" />
+          <artifact name="downloader:war" />
+        </option>
+      </method>
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7741d37e-d4f8-44cb-aab8-cbf9d53bbfbf" name="Default" comment="" />
-      <changelist id="00664551-5883-4b1a-8edc-3059179daaf2" name="New changelist" comment="" />
-      <created>1534709500326</created>
+      <changelist id="aa6af6cb-398c-4646-80b7-35d5a9480d0f" name="Default" comment="" />
+      <created>1534712004957</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1534709500326</updated>
-      <workItem from="1534709501857" duration="18000" />
-      <workItem from="1534710330822" duration="983000" />
+      <updated>1534712004957</updated>
+      <workItem from="1534712006353" duration="824000" />
+      <workItem from="1534712962705" duration="372000" />
     </task>
-    <task id="LOCAL-00001" summary="乱了">
-      <created>1534710938502</created>
+    <task id="LOCAL-00001" summary="ee">
+      <created>1534713306606</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1534710938502</updated>
+      <updated>1534713306606</updated>
     </task>
-    <task id="LOCAL-00002" summary="乱了">
-      <created>1534711092712</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1534711092712</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1001000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="1196000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="82" y="23" width="1236" height="777" extended-state="0" />
+    <frame x="44" y="23" width="1236" height="777" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998326" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09051095" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24958123" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1193,25 +1218,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1225,9 +1233,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="乱了" />
-    <option name="LAST_COMMIT_MESSAGE" value="乱了" />
-    <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
+    <MESSAGE value="ee" />
+    <option name="LAST_COMMIT_MESSAGE" value="ee" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1238,43 +1245,27 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/all.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/utils/CommonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/CommonConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/http/NetEaseCloudMusic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2386">
-          <caret line="183" column="16" selection-start-line="183" selection-start-column="16" selection-end-line="183" selection-end-column="16" />
+        <state relative-caret-position="3075">
+          <caret line="123" column="5" selection-start-line="123" selection-start-column="5" selection-end-line="123" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/subtitleConverter-master/src/main/java/subtitleFile/Caption.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/utils/VideoCut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4000">
+          <caret line="160" column="19" selection-start-line="160" selection-start-column="19" selection-end-line="160" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/video/FileUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1282,10 +1273,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/subtitleConverter-master/src/main/java/subtitleFile/IOClass.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/crawler/PhantomJSUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="173">
+          <caret line="89" column="19" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/http/HttpUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="69" column="33" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2345#2346#0" expanded="true" />
+            <element signature="e#2409#2410#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="126" column="71" selection-start-line="126" selection-start-column="71" selection-end-line="126" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/utils/ChangeFileEncoding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/utils/CommonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3075">
+          <caret line="123" column="5" selection-start-line="123" selection-start-column="5" selection-end-line="123" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repositories/com/github/riccardove/easyjasub/subtitleConvert/1.0.2/subtitleConvert-1.0.2.jar!/subtitleFile/Caption.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/utils/VideoCut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4000">
+          <caret line="160" column="19" selection-start-line="160" selection-start-column="19" selection-end-line="160" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/video/FileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../subtitleConverter-master/src/main/java/subtitleFile/Caption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1360,7 +1425,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1380,7 +1444,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: cglib:cglib-nodep:3.1</last-edited>
+          <last-edited>jave-2.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -9,7 +9,6 @@ import com.xwf.common.utils.Searcher;
 import com.xwf.common.utils.ZipCompressor;
 
 import java.io.File;
-import java.util.*;
 
 /**
  * Created by weifengxu on 17/7/8.

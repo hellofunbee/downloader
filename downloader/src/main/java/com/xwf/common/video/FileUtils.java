@@ -7,7 +7,9 @@ import subtitleFile.FormatSRT;
 import subtitleFile.IOClass;
 import subtitleFile.TimedTextObject;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;

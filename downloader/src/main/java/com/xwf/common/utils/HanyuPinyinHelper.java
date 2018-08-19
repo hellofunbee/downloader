@@ -4,7 +4,6 @@ package com.xwf.common.utils;
  * Created by weifengxu on 2018/8/3.
  */
 
-import com.jfinal.template.ext.directive.Str;
 import net.sourceforge.pinyin4j.PinyinHelper;
 import net.sourceforge.pinyin4j.format.HanyuPinyinCaseType;
 import net.sourceforge.pinyin4j.format.HanyuPinyinOutputFormat;

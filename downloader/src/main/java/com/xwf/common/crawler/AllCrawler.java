@@ -3,7 +3,6 @@ package com.xwf.common.crawler;
 import com.xwf.common.Callback.MCallback;
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;
-import us.codecraft.webmagic.Spider;
 import us.codecraft.webmagic.processor.PageProcessor;
 
 /**
