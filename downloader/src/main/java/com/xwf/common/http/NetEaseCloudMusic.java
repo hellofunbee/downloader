@@ -34,6 +34,7 @@ public class NetEaseCloudMusic {
     static String temp = save_path + "temp.txt";
 
     static Map allMp3 = null;
+    static Map allLrc = null;
 
 
     public static void main(String arg[]) throws Exception {
@@ -106,6 +107,15 @@ public class NetEaseCloudMusic {
         }
         String dir = save_path + title_ + "/";
 
+
+
+        if(new File(dir).exists()){
+            System.out.println("exist-播单..." + dir);
+            return;
+        }
+
+
+
         CommonUtils.mkDirectory(dir);
         CommonUtils.mkDirectory(dir + "lrc");
         CommonUtils.mkDirectory(dir + "srt");
@@ -124,18 +134,23 @@ public class NetEaseCloudMusic {
             String baseName = name + "--" + id;
 
 
-
             String outPath = dir + baseName + ".mp3";
             String l_outPath = dir + "lrc/" + baseName + ".lrc";
             String srt_outPath = dir + "srt/" + baseName + ".srt";
 
 
+
 //            如果已存在则继续查找
-            if (new File(outPath).exists() || isExist(id)) {
-                System.out.println("exist..." + outPath);
+            if (new File(outPath).exists() || isExist(id, ".mp3")) {
+                System.out.println("exist-mp3..." + outPath);
                 continue;
             }
-//
+
+            //            如果已存在则继续查找
+            if (new File(l_outPath).exists() || isExist(id, ".lrc")) {
+                System.out.println("exist-lrc..." + outPath);
+                continue;
+            }
 
 
             //歌词
@@ -148,7 +163,7 @@ public class NetEaseCloudMusic {
                 if (writeSrt(lyric, baseName, srt_outPath)) {
                     //下载音乐
                     System.out.println("downloading..." + baseName);
-                    HttpUtils.downLoad(song_url.replace("##", id), outPath);
+//                    HttpUtils.downLoad(song_url.replace("##", id), outPath);
                 } else {
                     System.out.println("歌词格式错误：" + lyric);
                 }
@@ -157,7 +172,9 @@ public class NetEaseCloudMusic {
                 //文件已经存在
                 if (new File(outPath).exists())
                     allMp3.put(id, outPath);
-
+                //文件已经存在
+                if (new File(l_outPath).exists())
+                    allLrc.put(id, outPath);
 
             } else {
                 System.out.println("no liric...." + baseName);
@@ -192,25 +209,40 @@ public class NetEaseCloudMusic {
     }
 
 
-    private static boolean isExist(String id) {
-        if (allMp3 == null) {
-            allMp3 = new HashMap();
-            List<File> files = CommonUtils.getMp4FileList(CommonUtils.getPathByKey("audioPath"), new ArrayList<File>(), ".mp3");
+    private static boolean isExist(String id, String match) {
 
-            for (File file : files) {
-                String name = file.getName();
-                name = name.substring(name.indexOf("--") + 2, name.length() - 4);
-
-                allMp3.put(name, file.getAbsolutePath());
-
+        if (match.equals(".lrc")) {
+            if (allLrc == null) {
+                allLrc = new HashMap();
+                List<File> files = CommonUtils.getMp4FileList(CommonUtils.getPathByKey("audioPath"), new ArrayList<File>(), match);
+                for (File file : files) {
+                    String name = file.getName();
+                    name = name.substring(name.indexOf("--") + 2, name.length() - 4);
+                    allLrc.put(name, file.getAbsolutePath());
+                }
             }
+            if (allLrc.get(id) != null) {
 
-        }
-        if (allMp3.get(id) != null) {
-
-            return true;
+                return true;
+            } else {
+                return false;
+            }
         } else {
-            return false;
+            if (allMp3 == null) {
+                allMp3 = new HashMap();
+                List<File> files = CommonUtils.getMp4FileList(CommonUtils.getPathByKey("audioPath"), new ArrayList<File>(), match);
+                for (File file : files) {
+                    String name = file.getName();
+                    name = name.substring(name.indexOf("--") + 2, name.length() - 4);
+                    allMp3.put(name, file.getAbsolutePath());
+                }
+            }
+            if (allMp3.get(id) != null) {
+
+                return true;
+            } else {
+                return false;
+            }
         }
 
 

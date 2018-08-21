@@ -1,5 +1,6 @@
 package com.xwf.common.utils;
 
+import com.xwf.common.http.HttpUtils;
 import com.xwf.common.video.MFFMPEGLocator;
 import it.sauronsoftware.jave.Encoder;
 import it.sauronsoftware.jave.MultimediaInfo;
@@ -177,14 +178,14 @@ public class CommonUtils {
      * @param fileList
      * @return
      */
-    public static List<File> getMp4FileList(String strPath, List<File> fileList,String end) {
+    public static List<File> getMp4FileList(String strPath, List<File> fileList, String end) {
         File dir = new File(strPath);
         File[] files = dir.listFiles(); // 该文件目录下文件全部放入数组
         if (files != null) {
             for (int i = 0; i < files.length; i++) {
                 String fileName = files[i].getName();
                 if (files[i].isDirectory()) {
-                    getMp4FileList(files[i].getAbsolutePath(), fileList,end); // 获取文件绝对路径
+                    getMp4FileList(files[i].getAbsolutePath(), fileList, end); // 获取文件绝对路径
                 } else if (fileName.endsWith(end)) {
                     fileList.add(files[i]);
                 } else {
@@ -287,6 +288,36 @@ public class CommonUtils {
         });
     }
 
+    /**
+     * 获取代理
+     *
+     * @param count 请求次数
+     * @return
+     */
+
+    public static Map<String, String> getProxy(int count) {
+
+
+        for (int i = 0; i < count; i++) {
+            String ip = HttpUtils.sendGet("http://123.207.35.36:5010/get?key=thankyou", new HashMap<String, String>());
+            if (ip != null) {
+                String ip_port[] = ip.split(":");
+                Map<String, String> m = new HashMap();
+
+                if (ip_port.length > 1) {
+                    m.put("ip", ip_port[0]);
+                    m.put("port", ip_port[1]);
+                    return m;
+                }
+
+            }
+
+        }
+
+        return null;
+
+
+    }
 }
 
 
