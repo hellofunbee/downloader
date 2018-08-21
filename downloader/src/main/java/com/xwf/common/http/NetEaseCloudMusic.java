@@ -25,7 +25,7 @@ import java.util.Map;
  */
 public class NetEaseCloudMusic {
 
-    static String get_play_lists = "https://music.163.com/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=##";
+    static String get_play_lists = "https://music.163.com/discover/playlist/?order=hot&cat=%E5%8D%8E%E8%AF%AD&limit=35&offset=##";
 
     static String song_url = "http://music.163.com/song/media/outer/url?id=##.mp3";
     static String lrc_url = "http://music.163.com/api/song/lyric?os=pc&id=##&lv=-1&kv=-1&tv=-1";
@@ -40,14 +40,14 @@ public class NetEaseCloudMusic {
     public static void main(String arg[]) throws Exception {
         //312734124
 //        getAllFromList("312734124");
-        getPlay_lists(120);
+        getPlay_lists(35);
 
 
     }
 
-    public static void getPlay_lists(int count) throws Exception {
+    public static void getPlay_lists(int page) throws Exception {
 
-        for (int i = 0; i < count; i++) {
+        for (int i = 0; i < page; i++) {
             String url = get_play_lists.replace("##", String.valueOf(i * 35));
             String html = HttpUtils.sendGet(url, getHeader());
             Document doc = Jsoup.parse(html);
@@ -62,7 +62,7 @@ public class NetEaseCloudMusic {
 
                 String visitCount = e.parent().select("div.bottom span.nb").text();
                 System.out.println("***********************************");
-                System.out.println(id + "--" + visitCount + "--" + name);
+                System.out.println("【第"+i+"页共"+page+"页】"+id + "--" + visitCount + "--" + name);
                 System.out.println("***********************************");
 
                 getAllFromList(id);
