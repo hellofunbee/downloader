@@ -23,7 +23,7 @@ public class MainExe {
 //        copyAndZipTopBottom();
 //        takeCover();
 //        search();
-//        musicCheck();
+        musicCheck();
 
     }
 
@@ -104,7 +104,7 @@ public class MainExe {
 
             String[] cmd = {"ffmpeg", "-ss", ss, "-i", i, "-f", "image2", /*"-y",*/ o};
             Process process = new ProcessBuilder(Arrays.asList(cmd)).redirectErrorStream(true).start();
-            new PrintStream(process.getInputStream(),false).start();
+            new PrintStream(process.getInputStream(), false).start();
             process.waitFor();
             System.out.println("cover：" + o);
         }
@@ -140,9 +140,18 @@ public class MainExe {
      */
     public static void musicCheck() throws IOException {
 
-        List<File> fileList = CommonUtils.getMp4FileList(path_music, new ArrayList<File>(), ".lrc");
+        List<File> fileList = CommonUtils.getMp4FileList(path_music, new ArrayList<File>(), ".srt");
+//        List<File> fileList =  Arrays.asList(new File(path_music).listFiles());
 
+
+        System.out.println("共计【" + fileList.size() + "】srt歌词");
         for (File file : fileList) {
+            File[] fs= file.listFiles();
+            if(fs!= null &&fs.length == 0){
+                System.out.println(file);
+                file.delete();
+            }
+
             /*String strLine = null;
 
             //删除坏的字幕文件
@@ -189,7 +198,6 @@ public class MainExe {
         }
 
     }
-
 
 
 }

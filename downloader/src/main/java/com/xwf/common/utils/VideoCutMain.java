@@ -12,14 +12,25 @@ public class VideoCutMain {
      * @throws Exception
      */
     public static void main(String[] args) throws Exception {
-       /* System.out.println(CommonUtils.getPathByKey("videoPath"));
+        video();
+
+
+
+//        audio();
+
+
+    }
+
+    private static void video() throws Exception {
+        System.out.println(CommonUtils.getPathByKey("videoPath"));
         System.out.println(CommonUtils.getPathByKey("outPath"));
         System.out.println(CommonUtils.getPathByKey("srtPath"));
 
         VideoCut videoCut = new VideoCut();
-        videoCut.videoCut(".mp4", ".avi", CommonUtils.getPathByKey("videoPath"), CommonUtils.getPathByKey("outPath"), CommonUtils.getPathByKey("srtPath"));
-*/
+        videoCut.videoCut(".mp4", ".mp4", CommonUtils.getPathByKey("videoPath"), CommonUtils.getPathByKey("outPath"), CommonUtils.getPathByKey("srtPath"));
+    }
 
+    private static void audio() {
         String audiopath = CommonUtils.getPathByKey("audioPath");
         String a_outPath = CommonUtils.getPathByKey("a_outPath");
 
@@ -45,8 +56,6 @@ public class VideoCutMain {
             }
 
         }
-
-
     }
 
 

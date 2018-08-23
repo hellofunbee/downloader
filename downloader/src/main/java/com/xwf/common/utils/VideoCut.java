@@ -1,8 +1,6 @@
 package com.xwf.common.utils;
 
-import subtitleFile.Caption;
-import subtitleFile.FormatSRT;
-import subtitleFile.TimedTextObject;
+import subtitleFile.*;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -37,7 +35,7 @@ public class VideoCut {
                     outPath
 
             };
-        }else {
+        } else {
             cmd = new String[]{
                     ffmpegPath,
                     "-ss", String.valueOf(startTime),
@@ -52,12 +50,10 @@ public class VideoCut {
         }
 
 
-
-
 //        commandId.add("-avoid_negative_ts");//
 //        commandId.add("1");//
         Process process = new ProcessBuilder(Arrays.asList(cmd)).redirectErrorStream(true).start();
-        new PrintStream(process.getInputStream(),false).start();
+        new PrintStream(process.getInputStream(), false).start();
         process.waitFor();
     }
 
@@ -91,42 +87,20 @@ public class VideoCut {
         System.out.println(files);
         if (files != null && files.length > 0) {
             for (File file : files) {
-                if (file.getName().endsWith(".srt")) {
+                if (CommonUtils.isSrt(file)) {
                     ttff = readSrt(file.getAbsolutePath());
-                    String o = outPath + file.getName().replace(".srt", "") + "/";
-                    String v = videoPath + file.getName().replace(".srt", "") + src_video_type;
+                    String name = file.getName().substring(0,file.getName().lastIndexOf("."));
+
+
+                    String o = outPath + name + "/";
+                    String v = videoPath + name + src_video_type;
+                    System.out.println(o);
                     if (!new File(v).exists()) {
                         System.out.println("文件(" + v + "不存在)");
                         continue;
                     }
-//                    addKeyFrams(v);
                     preCut(ttff, o, v);
-
-
-                    /*if (ttff != null && ttff.captions != null) {
-                        StringBuffer temp = new StringBuffer();
-
-                        Set<Map.Entry<Integer, Caption>> set = ttff.captions.entrySet();
-                        Iterator iterator = set.iterator();
-
-
-                        while (iterator.hasNext()) {
-                            Map.Entry<Integer, Caption> enty = (Map.Entry<Integer, Caption>) iterator.next();
-                            Caption cp = enty.getValue();
-                            String content = strFormat(cp.content);
-                            int start = cp.start.mseconds;
-                            int end = cp.end.mseconds;
-
-                            temp.append(content);
-                            words.add(content);
-                        }
-
-                        sb.append(DeDubble.deDubble(temp.toString()));
-
-                    }*/
-
                 }
-
 
             }
 
@@ -191,10 +165,18 @@ public class VideoCut {
      * @throws IOException
      */
     public static TimedTextObject readSrt(String srtPath) throws IOException {
-        FormatSRT ttff = new FormatSRT();
         File file = new File(srtPath);
         InputStream is = new FileInputStream(file);
-        return ttff.parseFile(file.getName(), is);
+        if (srtPath.indexOf(".srt") != -1) {
+            FormatSRT ttff = new FormatSRT();
+
+            return ttff.parseFile(file.getName(), is);
+        } else if (srtPath.indexOf(".ssa") != -1) {
+            FormatASS ttff = new FormatASS();
+            return ttff.parseFile(file.getName(), is);
+
+        }
+        return null;
 
     }
 

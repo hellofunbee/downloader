@@ -1,8 +1,13 @@
 package com.xwf.common.http;
 
 import com.alibaba.fastjson.JSONObject;
+import com.gargoylesoftware.htmlunit.BrowserVersion;
+import com.gargoylesoftware.htmlunit.ProxyConfig;
+import com.gargoylesoftware.htmlunit.WebClient;
+import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import com.xwf.common.utils.CommonUtils;
 import com.xwf.common.utils.LrcUtil;
+import org.apache.commons.logging.LogFactory;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -19,13 +24,15 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Level;
+
 
 /**
  * Created by weifengxu on 2018/8/11.
  */
 public class NetEaseCloudMusic {
 
-    static String get_play_lists = "https://music.163.com/discover/playlist/?order=hot&cat=%E5%8D%8E%E8%AF%AD&limit=35&offset=##";
+    static String get_play_lists = "https://music.163.com/discover/playlist/?order=hot&cat=%%&limit=35&offset=##";
 
     static String song_url = "http://music.163.com/song/media/outer/url?id=##.mp3";
     static String lrc_url = "http://music.163.com/api/song/lyric?os=pc&id=##&lv=-1&kv=-1&tv=-1";
@@ -35,21 +42,87 @@ public class NetEaseCloudMusic {
 
     static Map allMp3 = null;
     static Map allLrc = null;
+    static Map alldir = null;
+
+    static int tryCount = 4;
 
 
     public static void main(String arg[]) throws Exception {
-        //312734124
-//        getAllFromList("312734124");
-        getPlay_lists(35);
+        HttpUtils.setProxy(CommonUtils.getProxy(3));
+        String target = "";
+        String path = NetEaseCloudMusic.class.getClassLoader().getResource("test.html").getPath();
+        String html = org.apache.commons.io.FileUtils.readFileToString(new File(path));
+        Document doc = Jsoup.parse(html);
+        Elements elements = doc.select("a.s-fc1");
+        Integer index = -1;
+        for (Element e : elements) {
+            try {
+                String word = e.attr("href");
+                if ((index = word.indexOf("=")) != -1) {
+                    word = word.substring(index + 1);
+                    target = get_play_lists.replace("%%", word);
+
+
+                    //构造一个webClient 模拟Chrome 浏览器
+                    WebClient webClient = new WebClient(BrowserVersion.CHROME);
+                    //屏蔽日志信息
+                    LogFactory.getFactory().setAttribute("org.apache.commons.logging.Log",
+                            "org.apache.commons.logging.impl.NoOpLog");
+
+                    java.util.logging.Logger.getLogger("com.gargoylesoftware.htmlunit")
+                            .setLevel(Level.OFF);
+
+                    java.util.logging.Logger.getLogger("org.apache.commons.httpclient")
+                            .setLevel(Level.OFF);
+                    //支持JavaScript
+                    webClient.getOptions().setJavaScriptEnabled(false);
+                    webClient.getOptions().setCssEnabled(false);
+                    webClient.getOptions().setActiveXNative(false);
+                    webClient.getOptions().setCssEnabled(false);
+                    webClient.getOptions().setThrowExceptionOnScriptError(false);
+                    webClient.getOptions().setThrowExceptionOnFailingStatusCode(false);
+                    webClient.getOptions().setTimeout(10000);
+                    HtmlPage rootPage = webClient.getPage(target.replace("##", "0"));
+
+                    if (HttpUtils.proxy_ip != null) {
+                        String ip = (String) HttpUtils.proxy_ip.get("ip");
+                        Integer port = Integer.parseInt((String) HttpUtils.proxy_ip.get("port"));
+                        webClient.getOptions().setProxyConfig(new ProxyConfig(ip, port));
+
+                    }
+                    //设置一个运行JavaScript的时间
+//                webClient.waitForBackgroundJavaScript(5000);
+                    webClient.getOptions().setJavaScriptEnabled(true);
+                    Document page = Jsoup.parse(rootPage.asXml());
+
+
+                    Elements p = page.select("div.u-page a.zpgi");
+                    int max_page = 0;
+                    if (p != null && p.size() > 0) {
+                        max_page = Integer.parseInt(p.get(p.size() - 1).text());
+
+                    }
+
+
+                    if (max_page > 0)
+                        getPlay_lists(max_page, word);
+
+                }
+            } catch (Exception ee) {
+                ee.printStackTrace();
+            }
+
+        }
 
 
     }
 
-    public static void getPlay_lists(int page) throws Exception {
+    public static void getPlay_lists(int page, String keyword) throws Exception {
 
         for (int i = 0; i < page; i++) {
-            String url = get_play_lists.replace("##", String.valueOf(i * 35));
-            String html = HttpUtils.sendGet(url, getHeader());
+            String url = get_play_lists.replace("##", String.valueOf(i * 35)).replace("%%", keyword);
+
+            String html = HttpUtils.sendGetProxy(url, getHeader());
             Document doc = Jsoup.parse(html);
 
             Elements elements = doc.select("li div.u-cover a.msk");
@@ -62,10 +135,22 @@ public class NetEaseCloudMusic {
 
                 String visitCount = e.parent().select("div.bottom span.nb").text();
                 System.out.println("***********************************");
-                System.out.println("【第"+i+"页共"+page+"页】"+id + "--" + visitCount + "--" + name);
+                System.out.println("【第" + i + "页共" + page + "页】" + id + "--" + visitCount + "--" + name);
                 System.out.println("***********************************");
 
-                getAllFromList(id);
+
+                if (isExist(id, "dir")) {
+                    System.out.println("exist-播单..." + name + "--" + id);
+                    continue;
+                }
+
+                try {
+                    getAllFromList(id);
+                } catch (Exception ecp) {
+                    ecp.printStackTrace();
+                }
+
+
             }
         }
 
@@ -88,16 +173,36 @@ public class NetEaseCloudMusic {
      * @throws Exception
      */
     public static void getAllFromList(String play_list_id) throws Exception {
+
+        if (tryCount < 0) {
+            return;
+        }
+        tryCount--;
         String url = play_list.replace("##", play_list_id);
 
-        String html = HttpUtils.sendGet(url, getHeader());
-        jsoup(html, url);
+        String html = null;
+
+        try {
+            html = HttpUtils.sendGetProxy(url, getHeader());
+        } catch (Exception e) {
+
+            HttpUtils.setProxy(CommonUtils.getProxy(3));
+
+            getAllFromList(play_list_id);
+
+        }
+
+
+        if (html != null)
+            jsoup(html, play_list_id, url);
+
+        tryCount = 4;
     }
 
     /*
     * 使用jsoup解析网页信息
     */
-    private static void jsoup(String html, String url) throws Exception {
+    private static void jsoup(String html, String play_list_id, String url) throws Exception {
         Document doc = Jsoup.parse(html);
         Element title = doc.select("div.tit h2.f-ff2").first();
         String title_ = title.text();
@@ -105,18 +210,21 @@ public class NetEaseCloudMusic {
             System.out.println("未能获取标题：" + url);
             return;
         }
+
         String dir = save_path + title_ + "/";
+        String dir_new = save_path + title_.replace("--", "") + "--" + play_list_id + "/";
 
 
+        if (new File(dir).exists()) {
 
-        if(new File(dir).exists()){
+            new File(dir).renameTo(new File(dir_new));
+            alldir.put(play_list_id, dir);//添加
             System.out.println("exist-播单..." + dir);
             return;
         }
 
-
-
-        CommonUtils.mkDirectory(dir);
+        CommonUtils.mkDirectory(dir_new);
+        alldir.put(play_list_id, dir_new);//添加
         CommonUtils.mkDirectory(dir + "lrc");
         CommonUtils.mkDirectory(dir + "srt");
 
@@ -137,7 +245,6 @@ public class NetEaseCloudMusic {
             String outPath = dir + baseName + ".mp3";
             String l_outPath = dir + "lrc/" + baseName + ".lrc";
             String srt_outPath = dir + "srt/" + baseName + ".srt";
-
 
 
 //            如果已存在则继续查找
@@ -227,7 +334,7 @@ public class NetEaseCloudMusic {
             } else {
                 return false;
             }
-        } else {
+        } else if (match.equals(".mp3")) {
             if (allMp3 == null) {
                 allMp3 = new HashMap();
                 List<File> files = CommonUtils.getMp4FileList(CommonUtils.getPathByKey("audioPath"), new ArrayList<File>(), match);
@@ -238,6 +345,25 @@ public class NetEaseCloudMusic {
                 }
             }
             if (allMp3.get(id) != null) {
+
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            if (alldir == null) {
+                alldir = new HashMap();
+                File[] files = new File(CommonUtils.getPathByKey("audioPath")).listFiles();
+                for (File file : files) {
+                    if (file.isDirectory() && file.getName().indexOf("--") != -1) {
+                        String name = file.getName();
+                        name = name.substring(name.indexOf("--") + 2, name.length());
+                        alldir.put(name, file.getAbsolutePath());
+                    }
+
+                }
+            }
+            if (alldir.get(id) != null) {
 
                 return true;
             } else {

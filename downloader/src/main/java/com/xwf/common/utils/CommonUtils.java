@@ -16,7 +16,6 @@ import java.util.regex.Pattern;
  * Created by weifengxu on 2018/8/6.
  */
 public class CommonUtils {
-    public static Properties pathProp = null;
 
     /**
      * 毫秒转换成分秒
@@ -127,7 +126,7 @@ public class CommonUtils {
     public static String getPathByKey(String key) {
 
         String path = CommonUtils.class.getClassLoader().getResource("path.property").getPath();
-        pathProp = new Properties();
+        Properties pathProp = new Properties();
 
         try {
             BufferedReader e = new BufferedReader(new InputStreamReader(new FileInputStream(path)));
@@ -299,7 +298,8 @@ public class CommonUtils {
 
 
         for (int i = 0; i < count; i++) {
-            String ip = HttpUtils.sendGet("http://123.207.35.36:5010/get?key=thankyou", new HashMap<String, String>());
+            //http://123.207.35.36:5010/get?key=thankyou
+            String ip = HttpUtils.sendGet("http://127.0.0.1:5010/get?key=thankyou", new HashMap<String, String>());
             if (ip != null) {
                 String ip_port[] = ip.split(":");
                 Map<String, String> m = new HashMap();
@@ -316,6 +316,21 @@ public class CommonUtils {
 
         return null;
 
+
+    }
+
+    static String srts = "srt,ssa";
+
+    public static boolean isSrt(File file) {
+        if (file == null || file.isDirectory())
+            return false;
+        String filename = file.getName();
+
+
+        if (srts.indexOf(filename.substring(filename.lastIndexOf(".") + 1)) != -1)
+
+            return true;
+        return false;
 
     }
 }

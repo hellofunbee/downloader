@@ -39,7 +39,8 @@ import java.util.*;
 public class HttpUtils {
     private static PoolingHttpClientConnectionManager connMgr;
     private static RequestConfig requestConfig;
-    private static final int MAX_TIMEOUT = 7000;
+    private static final int MAX_TIMEOUT = 10000;
+    public static Map proxy_ip = null;
 
     static {
         // 设置连接池
@@ -338,8 +339,8 @@ public class HttpUtils {
         try {
             URL realUrl = new URL(url);
             URLConnection connection = realUrl.openConnection();
-            connection.setConnectTimeout(2000);
-            connection.setReadTimeout(2000);
+            connection.setConnectTimeout(MAX_TIMEOUT);
+            connection.setReadTimeout(MAX_TIMEOUT);
             Iterator iterator = header.keySet().iterator();
             while (iterator.hasNext()) {
                 String key = (String) iterator.next();
@@ -393,7 +394,7 @@ public class HttpUtils {
 
 
         HttpGet httpGet = new HttpGet(apiUrl);
-        RequestConfig.Builder build = RequestConfig.custom().setSocketTimeout(2000).setConnectTimeout(2000);
+        RequestConfig.Builder build = RequestConfig.custom().setSocketTimeout(MAX_TIMEOUT).setConnectTimeout(MAX_TIMEOUT);
 
         if (proxy_map != null) {
             HttpHost proxy = new HttpHost(proxy_map.get("ip"), Integer.parseInt(proxy_map.get("port")));
@@ -463,4 +464,117 @@ public class HttpUtils {
     }
 
 
+    /**
+     * 发送 GET 请求（HTTP），K-V形式
+     *
+     * @param url
+     * @return
+     */
+    public static void downLoadProxy(String url, Map<String, String> proxy_map, String path) throws IOException {
+        String apiUrl = url;
+        HttpClient httpClient = null;
+        if (apiUrl.startsWith("https")) {
+            httpClient = HttpClients.custom().setSSLSocketFactory(createSSLConnSocketFactory())
+                    .setConnectionManager(connMgr).setDefaultRequestConfig(requestConfig).build();
+        } else {
+            httpClient = HttpClients.createDefault();
+        }
+
+
+        HttpGet httpGet = new HttpGet(apiUrl);
+        RequestConfig.Builder build = RequestConfig.custom().setSocketTimeout(MAX_TIMEOUT).setConnectTimeout(MAX_TIMEOUT);
+
+        if (proxy_map != null) {
+            HttpHost proxy = new HttpHost(proxy_map.get("ip"), Integer.parseInt(proxy_map.get("port")));
+            build.setProxy(proxy);
+        }
+
+        RequestConfig requestConfig = build.build();
+
+        httpGet.setConfig(requestConfig);
+        httpGet.setHeader("User-Agent", "Mozilla/5.1 (Windows NT 6.2; Win64; x86; rv:50.0) Gecko/22101191 Firefox/50.1");
+        HttpResponse response = httpClient.execute(httpGet);
+        HttpEntity entity = response.getEntity();
+
+        if (entity != null) {
+            InputStream ips = entity.getContent();
+            BufferedInputStream bis = new BufferedInputStream(ips);
+            BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(path));
+            byte[] b = new byte[1024];
+            int len = 0;
+            while ((len = bis.read(b)) != -1) {
+                bos.write(b, 0, len);
+                bos.flush();
+            }
+            bos.close();
+            bis.close();
+            ips.close();
+        }
+
+    }
+
+
+    /**
+     * 向指定URL发送GET方法的请求
+     *
+     * @param url   发送请求的URL
+     * @param param 请求参数，请求参数应该是 name1=value1&name2=value2 的形式。
+     * @return URL 所代表远程资源的响应结果
+     */
+
+
+    public static String sendGetProxy(String url, Map<String, String> header) {
+        StringBuffer result = new StringBuffer();
+        BufferedReader in = null;
+
+        try {
+            String apiUrl = url;
+            HttpClient httpClient = null;
+            if (apiUrl.startsWith("https")) {
+                httpClient = HttpClients.custom().setSSLSocketFactory(createSSLConnSocketFactory())
+                        .setConnectionManager(connMgr).setDefaultRequestConfig(requestConfig).build();
+            } else {
+                httpClient = HttpClients.createDefault();
+            }
+
+
+            HttpGet httpGet = new HttpGet(apiUrl);
+            RequestConfig.Builder build = RequestConfig.custom().setSocketTimeout(MAX_TIMEOUT).setConnectTimeout(MAX_TIMEOUT);
+
+            if (proxy_ip != null) {
+                HttpHost proxy = new HttpHost((String) proxy_ip.get("ip"), Integer.parseInt((String) proxy_ip.get("port")));
+                build.setProxy(proxy);
+            }
+
+            RequestConfig requestConfig = build.build();
+
+            httpGet.setConfig(requestConfig);
+            httpGet.setHeader("User-Agent", "Mozilla/5.1 (Windows NT 6.2; Win64; x86; rv:50.0) Gecko/22101191 Firefox/50.1");
+            HttpResponse response = httpClient.execute(httpGet);
+
+            in = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
+            String line;
+            while ((line = in.readLine()) != null) {
+                result.append(line);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        // 使用finally块来关闭输入流
+        finally {
+            try {
+                if (in != null) {
+                    in.close();
+                }
+            } catch (Exception e2) {
+                e2.printStackTrace();
+            }
+        }
+        return result.toString();
+    }
+
+
+    public static void setProxy(Map<String, String> proxy) {
+        HttpUtils.proxy_ip = proxy;
+    }
 }
