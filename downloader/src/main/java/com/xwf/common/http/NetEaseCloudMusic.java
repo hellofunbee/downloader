@@ -46,9 +46,21 @@ public class NetEaseCloudMusic {
 
     static int tryCount = 4;
 
+    private static void setProxy() {
+
+        try {
+            HttpUtils.setProxy(CommonUtils.getProxy(3));
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("获取代理ip失败！");
+        }
+
+    }
 
     public static void main(String arg[]) throws Exception {
-        HttpUtils.setProxy(CommonUtils.getProxy(3));
+
+        setProxy();
+
         String target = "";
         String path = NetEaseCloudMusic.class.getClassLoader().getResource("test.html").getPath();
         String html = org.apache.commons.io.FileUtils.readFileToString(new File(path));
@@ -186,7 +198,7 @@ public class NetEaseCloudMusic {
             html = HttpUtils.sendGetProxy(url, getHeader());
         } catch (Exception e) {
 
-            HttpUtils.setProxy(CommonUtils.getProxy(3));
+            setProxy();
 
             getAllFromList(play_list_id);
 

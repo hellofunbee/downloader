@@ -97,6 +97,11 @@ public class HomeController extends Controller {
                 //查询
                 List<Map> videos = Searcher.search2(w, false, tv);
                 CommonUtils.sort(videos, "type", 1);
+                //TODO
+                //过滤
+                if (videos.size() > 100) {
+                    videos = videos.subList(0, 100);
+                }
                 JSONArray ps = new JSONArray();
                 for (Map m : videos) {
 

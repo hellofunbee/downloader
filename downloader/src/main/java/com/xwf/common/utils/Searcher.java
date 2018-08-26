@@ -39,7 +39,7 @@ public class Searcher {
 
         List<Map> result = new ArrayList<Map>();
 
-        List<Record> clips = ClipsDao.selectByTv(tv == null ? null : tv.getStr("tv_id"));
+        List<Record> clips = ClipsDao.selectByTv(tv == null ? null : tv.getStr("tv_id"),content);
 
         for (Record clip : clips) {
             String word = "";

@@ -26,7 +26,7 @@ public class ClipsDao {
                 "inner join video v " +
                 "on c.video_id = v.video_id and v.tv_id = '" + tv_id + "'";
         System.out.println(sql);
-        List<Record> records = Db.find(sql);
+        List<Record> records = Db.find(sql );
         return records;
     }
 
@@ -77,7 +77,7 @@ public class ClipsDao {
     }
 
 
-    public static List<Record> selectByTv(String tv_id) {
+    public static List<Record> selectByTv(String tv_id,String content) {
 
         if (tv_id == null) {
             return listAll();

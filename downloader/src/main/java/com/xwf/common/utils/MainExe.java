@@ -84,7 +84,6 @@ public class MainExe {
     public static void takeCover() throws Exception {
         List<File> fileList = CommonUtils.getMp4FileList(CommonUtils.getPathByKey("base_path"), new ArrayList<File>(), ".mp4");
 
-
         for (File file : fileList) {
 
             if (file == null || !file.getName().endsWith(".mp4")) {

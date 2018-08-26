@@ -12,6 +12,7 @@ public class VideoCutMain {
      * @throws Exception
      */
     public static void main(String[] args) throws Exception {
+
         video();
 
 
