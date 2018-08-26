@@ -3,28 +3,29 @@ package com.xwf.common.dao;
 import com.jfinal.plugin.activerecord.Db;
 import com.jfinal.plugin.activerecord.Record;
 
-import java.util.List;
 import java.util.UUID;
 
 /**
  * Created by weifengxu on 2018/8/9.
+ * 电影电视 关系表
  */
 public class VideoDao {
-    /**
-     * @return
-     */
-    public static List<Record> listAll() {
-        List<Record> records = Db.find("select * from video");
-        return records;
+    static final String table_name = "video";
+
+    public static String save(Record video) {
+
+        Record back = Db.findFirst("select * from video where tv_id = '" + video.get("tv_id") + "' && video_name = '" + video.get("video_name")+"'");
+
+        if (back != null && back.get("video_id") != null) {
+
+            return back.get("video_id");
+        }
+
+
+        String video_id = UUID.randomUUID().toString().replace("-", "");
+        video.set("video_id", video_id);
+        Db.save(table_name, video);
+        return video_id;
+
     }
-
-
-
-    public static void save(Record re){
-
-        re.set("video_id", UUID.randomUUID().toString().replace("-",""));
-        Db.save("video",re);
-    }
-
-
 }

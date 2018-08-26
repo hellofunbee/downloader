@@ -17,7 +17,6 @@ public class VideoCut {
     private static String outPath = "";
 
     private static String srtPath = "";
-    private static String src_video_type = ".mp4";
     private static String out_type = ".mp4";//有可能是MP3
 
 
@@ -65,12 +64,11 @@ public class VideoCut {
      * @throws IOException
      * @throws InterruptedException
      */
-    public void videoCut(String out_type_, String src_video_type_, String videoPath_, String outPath_, String srtPath_) throws Exception {
+    public void videoCut(String out_type_,  String videoPath_, String outPath_, String srtPath_) throws Exception {
         TimedTextObject ttff = null;
         videoPath = videoPath_;
         outPath = outPath_;
         srtPath = srtPath_;
-        src_video_type = src_video_type_;
         out_type = out_type_;
 
 
@@ -89,14 +87,14 @@ public class VideoCut {
             for (File file : files) {
                 if (CommonUtils.isSrt(file)) {
                     ttff = readSrt(file.getAbsolutePath());
-                    String name = file.getName().substring(0,file.getName().lastIndexOf("."));
+                    String name = file.getName().substring(0, file.getName().lastIndexOf("."));
 
 
                     String o = outPath + name + "/";
-                    String v = videoPath + name + src_video_type;
-                    System.out.println(o);
-                    if (!new File(v).exists()) {
-                        System.out.println("文件(" + v + "不存在)");
+                    String v = CommonUtils.getVideo(videoPath + name);
+                    System.out.println("out path" + o);
+                    if (v == null) {
+                        System.out.println("文件(" + videoPath + name + "不存在)");
                         continue;
                     }
                     preCut(ttff, o, v);
@@ -134,7 +132,7 @@ public class VideoCut {
                 Map.Entry<Integer, Caption> enty = (Map.Entry<Integer, Caption>) iterator.next();
                 Caption cp = enty.getValue();
 
-                String content = strFormat(cp.content);
+                String content = CommonUtils.v(strFormat(cp.content));
 
                 String st = CommonUtils.ms2mmss(cp.start.mseconds);
                 String et = CommonUtils.ms2mmss(cp.end.mseconds);
@@ -172,6 +170,10 @@ public class VideoCut {
 
             return ttff.parseFile(file.getName(), is);
         } else if (srtPath.indexOf(".ssa") != -1) {
+            FormatASS ttff = new FormatASS();
+            return ttff.parseFile(file.getName(), is);
+
+        } else if (srtPath.indexOf(".ass") != -1) {
             FormatASS ttff = new FormatASS();
             return ttff.parseFile(file.getName(), is);
 

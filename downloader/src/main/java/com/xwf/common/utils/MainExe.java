@@ -4,10 +4,7 @@ import it.sauronsoftware.jave.MultimediaInfo;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 
 /**
  * Created by weifengxu on 2018/8/10.
@@ -24,6 +21,7 @@ public class MainExe {
 //        takeCover();
 //        search();
         musicCheck();
+
 
     }
 
@@ -140,17 +138,26 @@ public class MainExe {
      */
     public static void musicCheck() throws IOException {
 
-        List<File> fileList = CommonUtils.getMp4FileList(path_music, new ArrayList<File>(), ".srt");
+        List<File> fileList = CommonUtils.getMp4FileList(CommonUtils.getPathByKey("base_path"), new ArrayList<File>(), ".mp4");
 //        List<File> fileList =  Arrays.asList(new File(path_music).listFiles());
 
 
         System.out.println("共计【" + fileList.size() + "】srt歌词");
         for (File file : fileList) {
-            File[] fs= file.listFiles();
-            if(fs!= null &&fs.length == 0){
-                System.out.println(file);
-                file.delete();
+
+            if (file.exists()) {
+//                String name = CommonUtils.v(file.getName());
+//                file.renameTo(new File(file.getParent() + "/" + name));
+
+                System.out.println(CommonUtils.backMD5(file.getName()));
+//                System.out.println(CommonUtils.v(file.getName()));
             }
+
+//            File[] fs= file.listFiles();
+//            if(fs!= null &&fs.length == 0){
+//                System.out.println(file);
+//                file.delete();
+//            }
 
             /*String strLine = null;
 
@@ -198,6 +205,7 @@ public class MainExe {
         }
 
     }
+
 
 
 }

@@ -49,14 +49,13 @@ function getDirs() {
             url: "/getDirs",
             data: {name: "getDir"},
             success: function (data) {
-                console.log(data)
                 if ('00' == data.returnCode) {
                     var str = '';
                     str += '<input  style="margin: 10px" type="radio" name="dir" >全部';
                     var dirs = data.data;
                     for (var j = 0; j < dirs.length; j++) {
                         var dir = dirs[j];
-                        str += '<input style="margin: 10px" type="radio" url = "' + dir.path + '"name="dir">' + dir.name;
+                        str += '<input style="margin: 10px" type="radio" url = "' + dir.tv_id + '"name="dir">' + dir.name;
 
                     }
 
@@ -83,7 +82,7 @@ function search() {
         url: "/getWords",
         data: {
             word: $('#word').val(),
-            path: $(input_ck).attr('url')
+            tv_id: $(input_ck).attr('url')
         },
         success: function (data) {
 

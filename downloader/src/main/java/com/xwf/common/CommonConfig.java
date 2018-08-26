@@ -1,17 +1,23 @@
 package com.xwf.common;
 
 import com.jfinal.config.*;
+import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
+import com.jfinal.plugin.druid.DruidPlugin;
 import com.jfinal.render.ViewType;
 import com.jfinal.template.Engine;
 import com.xwf.common.controller.HomeController;
 import com.xwf.common.controller.MusicController;
 import com.xwf.common.controller.TaskController;
+import com.xwf.common.dao.User;
+
+import java.sql.Connection;
 
 /**
  * Created by weifengxu on 17/7/8.
  */
 public class CommonConfig extends JFinalConfig {
     public void configConstant(Constants constants) {
+        constants.setEncoding("utf-8");
         constants.setDevMode(true);
         loadPropertyFile("config.property");
         constants.setViewType(ViewType.FREE_MARKER);
@@ -39,12 +45,20 @@ public class CommonConfig extends JFinalConfig {
     @Override
     public void configPlugin(Plugins arg0) {
 
-//        C3p0Plugin c3p0 = new C3p0Plugin(getProperty("jdbcUrl"), getProperty("user"), getProperty("password").trim(), getProperty("jdbcDriver"));
-//        arg0.add(c3p0);
-//
-//        ActiveRecordPlugin activeRecord = new ActiveRecordPlugin(c3p0);
-//        activeRecord.addMapping("user", User.class).setShowSql(Boolean.parseBoolean(getProperty("showSql")));
-//        arg0.add(activeRecord);
+        DruidPlugin druidPlugin = new DruidPlugin(getProperty("jdbcUrl"), getProperty("user"), getProperty("password"));
+        druidPlugin.start();
+        ActiveRecordPlugin arp = new ActiveRecordPlugin(druidPlugin);
+        arp.setTransactionLevel(Connection.TRANSACTION_REPEATABLE_READ);
+
+//        arp.start();
+
+
+//        C3p0Plugin c3p0 = new C3p0Plugin(jdbcUrl, "talk", "talk", getProperty("jdbcDriver"));
+        arg0.add(druidPlugin);
+
+        ActiveRecordPlugin activeRecord = new ActiveRecordPlugin(druidPlugin);
+        activeRecord.addMapping("user", User.class).setShowSql(Boolean.parseBoolean(getProperty("showSql")));
+        arg0.add(arp);
     }
 
     @Override

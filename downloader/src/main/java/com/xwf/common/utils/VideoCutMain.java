@@ -27,7 +27,7 @@ public class VideoCutMain {
         System.out.println(CommonUtils.getPathByKey("srtPath"));
 
         VideoCut videoCut = new VideoCut();
-        videoCut.videoCut(".mp4", ".mp4", CommonUtils.getPathByKey("videoPath"), CommonUtils.getPathByKey("outPath"), CommonUtils.getPathByKey("srtPath"));
+        videoCut.videoCut(".mp4", CommonUtils.getPathByKey("videoPath"), CommonUtils.getPathByKey("outPath"), CommonUtils.getPathByKey("srtPath"));
     }
 
     private static void audio() {
@@ -45,7 +45,7 @@ public class VideoCutMain {
 
                     VideoCut vc = new VideoCut();
                     try {
-                        vc.videoCut(".mp3", ".mp3", file.getAbsolutePath() + "/", out_path, srt_path);
+                        vc.videoCut(".mp3", file.getAbsolutePath() + "/", out_path, srt_path);
 
                     } catch (Exception e) {
                         e.printStackTrace();

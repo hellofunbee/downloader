@@ -22,13 +22,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="downloader" />
         <module name="subtitleConvert" />
+        <module name="xwf-com" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="downloader" target="1.5" />
       <module name="subtitleConvert" target="1.7" />
+      <module name="xwf-com" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

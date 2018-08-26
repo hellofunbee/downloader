@@ -5,10 +5,12 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.jfinal.core.ActionKey;
 import com.jfinal.core.Controller;
+import com.jfinal.plugin.activerecord.Record;
 import com.xwf.common.Callback.MCallback;
 import com.xwf.common.crawler.PhantomJSUtil;
 import com.xwf.common.crawler.PicCrawler;
 import com.xwf.common.crawler.VideoCrawler;
+import com.xwf.common.dao.TvDao;
 import com.xwf.common.utils.CommonUtils;
 import com.xwf.common.utils.Searcher;
 import com.xwf.common.utils.ZipCompressor;
@@ -74,9 +76,10 @@ public class HomeController extends Controller {
         JSONObject jo = new JSONObject();
 
         String word = getPara("word");//要查询的话
-        String movie_path = getPara("path");//要查询的话
-        if (movie_path == null) {
-            movie_path = CommonUtils.getPathByKey("base_path");
+        String tv_id = getPara("tv_id");//要查询的话
+        Record tv = null;
+        if (tv_id != null) {
+            tv = TvDao.findById(tv_id);
         }
 
         if (word == null || word == "") {
@@ -92,15 +95,15 @@ public class HomeController extends Controller {
             for (String w : words) {
 
                 //查询
-                List<Map> videos = Searcher.search(".mp4",w, false, movie_path);
-                CommonUtils.sort(videos,"type",1);
-              JSONArray ps = new JSONArray();
+                List<Map> videos = Searcher.search2(w, false, tv);
+                CommonUtils.sort(videos, "type", 1);
+                JSONArray ps = new JSONArray();
                 for (Map m : videos) {
-                    String path = ((File) m.get("file")).getAbsolutePath();
-                    path = CommonUtils.toWebUrl(path);
+
+                    String path = (String) m.get("file");
                     JSONObject o = new JSONObject();
-                    o.put("path",path);
-                    o.put("type",(300-(Integer) m.get("type"))/2);
+                    o.put("path", CommonUtils.toWebUrl(path));
+                    o.put("type", (300 - (Integer) m.get("type")) / 2);
                     ps.add(o);
 
                 }
@@ -152,19 +155,18 @@ public class HomeController extends Controller {
     public void getDirs() {
         JSONObject jo = new JSONObject();
 
-        String base_path = CommonUtils.getPathByKey("base_path");
+
         List<Map> result = new ArrayList<Map>();
-        File[] files = new File(base_path).listFiles();
+        List<Record> tvs = TvDao.findAll();
 
-        for (File f : files) {
+        for (Record tv : tvs) {
 
-            if (f.isDirectory() && f.getName().indexOf("ziptemp") == -1&&f.getName().indexOf("music") == -1) {
-                Map m = new HashMap();
-                m.put("path", f.getAbsolutePath());
-                m.put("name", f.getName());
+            Map m = new HashMap();
+            m.put("tv_id", tv.get("tv_id"));
+            m.put("name", tv.get("tv_name"));
 
-                result.add(m);
-            }
+            result.add(m);
+
 
         }
 
