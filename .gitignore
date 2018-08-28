@@ -1,1 +1,10 @@
+# Lines that start with '#' are comments.
+# IntelliJ IDEA Project files
+.idea
+.gradle
+*.iml
+*.ipr
+*.iws
 
+ 
+dowwnloader/target

@@ -19,7 +19,7 @@ public class MainExe {
 //        reName(path, path_video);
 //        copyAndZipTopBottom();
 //        takeCover();
-//        search();
+//        search();return str.getBytes().length == str.length();
         musicCheck();
 
 
@@ -137,26 +137,42 @@ public class MainExe {
      */
     public static void musicCheck() throws IOException {
 
-        List<File> fileList = CommonUtils.getMp4FileList(CommonUtils.getPathByKey("base_path"), new ArrayList<File>(), ".mp4");
-//        List<File> fileList =  Arrays.asList(new File(path_music).listFiles());
+//        List<File> fileList = CommonUtils.getMp4FileList(CommonUtils.getPathByKey("audioPath"), new ArrayList<File>(), ".lrc");
+        List<File> fileList = Arrays.asList(new File(path_music).listFiles());
 
 
         System.out.println("共计【" + fileList.size() + "】srt歌词");
         for (File file : fileList) {
 
             if (file.exists()) {
+
+                List<File> ff = CommonUtils.getMp4FileList(file.getAbsolutePath(), new ArrayList<File>(), ".lrc");
+
+                if (ff.size() == 0) {
+                    System.out.println(file);
+//                    CommonUtils.deleteFile(file);
+                }
+
+
 //                String name = CommonUtils.v(file.getName());
+//                name=name.replaceAll(" lrc",".lrc");
+//
+//                System.out.println(file.getName());
+//                System.out.println(CommonUtils.v(file.getName()));
 //                file.renameTo(new File(file.getParent() + "/" + name));
 
-                System.out.println(CommonUtils.backMD5(file.getName()));
-//                System.out.println(CommonUtils.v(file.getName()));
+//
+//                System.out.println(file.getName());
+//                System.out.println(name);
             }
 
-//            File[] fs= file.listFiles();
-//            if(fs!= null &&fs.length == 0){
-//                System.out.println(file);
-//                file.delete();
-//            }
+           /* File[] fs = file.listFiles();
+            if (fs == null || fs.length == 0) {
+                file.delete();
+                continue;
+            */
+
+
 
             /*String strLine = null;
 
@@ -204,7 +220,6 @@ public class MainExe {
         }
 
     }
-
 
 
 }

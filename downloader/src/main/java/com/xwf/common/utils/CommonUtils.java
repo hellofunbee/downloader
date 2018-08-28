@@ -349,19 +349,37 @@ public class CommonUtils {
     }
 
     public static String v(String str) {
-        /*String regEx = "[`~!@#$%^&*()+=|{}':;',\\[\\].<>/?~！@#￥%……&*（）——+|{}【】‘；：”“’。，、？]";
-        Pattern p = Pattern.compile(regEx);
-        Matcher m = p.matcher(str);
-        return m.replaceAll("").trim();*/
+        boolean isMp4 = false;
+        boolean isJpg = false;
 
-        str = str.replaceAll(";", "");
-//        str = str.replaceAll("&", "&amp;");
-        str = str.replaceAll("<", "&lt;");
-        str = str.replaceAll(">", "&gt;");
+        if (str.endsWith(".mp4")) {
+            isMp4 = true;
+            str = str.substring(0, str.length() - 4);
+        }
+
+        if (str.endsWith(".jpg")) {
+            isJpg = true;
+            str = str.substring(0, str.length() - 4);
+        }
+
         str = str.replaceAll("'", "");
-        str = str.replaceAll("/", "");
-        str = str.replaceAll("%", "");
-        return str;
+        //自定义的文件名称关键字段
+        int index = str.indexOf("--");
+        if (index != -1) {
+            String s1 = str.substring(0, index + 2);
+            String s2 = str.substring(index + 2, str.length());
+            str = s1 + s2.replaceAll("[^\\u4e00-\\u9fa5a-zA-Z^0-9]", " ");
+
+        } else
+
+            str = str.replaceAll("[^\\u4e00-\\u9fa5a-zA-Z^0-9]", " ");
+
+        if (isMp4)
+            str += ".mp4";
+        if (isJpg)
+            str += ".jpg";
+
+        return str.replaceAll(" +", " ");
 
 
     }
@@ -399,6 +417,67 @@ public class CommonUtils {
 
         return hexValue.toString();
 
+    }
+
+
+    /**
+     * 是否是英文
+     *
+     * @param c
+     * @return
+     */
+
+    private static boolean isEn(String str) {
+
+        return str.getBytes().length == str.length();
+
+    }
+
+    private static boolean isCn(String str) {
+        str = str.replaceAll(" ", "");
+
+        return str.getBytes().length == 3 * str.length();
+
+    }
+
+    /**
+     * 1:0:2  英文：中文：其他（中英结合，中文和数字）
+     *
+     * @param str
+     * @return
+     */
+    public static int strType(String str) {
+        if (isEn(str))
+            return 1;
+        if (isCn(str))
+            return 0;
+        else
+            return 2;
+
+    }
+
+    /**
+     * 先根遍历序递归删除文件夹
+     *
+     * @param dirFile 要被删除的文件或者目录
+     * @return 删除成功返回true, 否则返回false
+     */
+    public static boolean deleteFile(File dirFile) {
+        // 如果dir对应的文件不存在，则退出
+        if (!dirFile.exists()) {
+            return false;
+        }
+
+        if (dirFile.isFile()) {
+            return dirFile.delete();
+        } else {
+
+            for (File file : dirFile.listFiles()) {
+                deleteFile(file);
+            }
+        }
+
+        return dirFile.delete();
     }
 
 

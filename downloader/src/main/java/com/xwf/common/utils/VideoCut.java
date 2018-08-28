@@ -19,6 +19,8 @@ public class VideoCut {
     private static String srtPath = "";
     private static String out_type = ".mp4";//有可能是MP3
 
+    private static int ajust = 940;//ms
+
 
     public static void exe(String path, String outPath, String startTime, String lastTime) throws IOException, InterruptedException {
         String[] cmd;
@@ -133,14 +135,19 @@ public class VideoCut {
                 Caption cp = enty.getValue();
 
                 String content = CommonUtils.v(strFormat(cp.content));
+                content = content.replaceAll("--"," ");//-- 为我们命名的关键字段
 
                 String st = CommonUtils.ms2mmss(cp.start.mseconds);
                 String et = CommonUtils.ms2mmss(cp.end.mseconds);
 
+
+                int s = cp.start.mseconds +ajust;
+                int e = cp.end.mseconds +ajust;
+
                 String clips = o + st + "&" + et + "--" + content + out_type;
                 File outFile = new File(clips);
                 if (!outFile.exists()) {
-                    exe(v, clips, CommonUtils.ms2hhmmss(cp.start.mseconds - 500), CommonUtils.ms2hhmmss(cp.end.mseconds - cp.start.mseconds + 1000));
+                    exe(v, clips, CommonUtils.ms2hhmmss(s - 500), CommonUtils.ms2hhmmss(e - s + 1000));
 //                    Thread.sleep(100);
                     System.out.println("切出:" + clips);
                 } else {

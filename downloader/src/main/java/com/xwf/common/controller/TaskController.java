@@ -1,16 +1,10 @@
 package com.xwf.common.controller;
 
 import com.jfinal.core.Controller;
-import com.jfinal.plugin.activerecord.Db;
-import com.jfinal.plugin.activerecord.IAtom;
+import com.xwf.common.dao.DbRefresh;
 import com.xwf.common.http.NetEaseCloudMusic;
-import com.xwf.common.utils.CommonUtils;
 import com.xwf.common.utils.MainExe;
 import com.xwf.common.utils.VideoCutMain;
-import com.xwf.common.video.VideoRefresh;
-
-import java.io.File;
-import java.sql.SQLException;
 
 /**
  * Created by weifengxu on 2018/8/9.
@@ -31,42 +25,7 @@ public class TaskController extends Controller {
 
         String tv_name = getAttrForStr("tv_name");
 
-        File[] files = new File(CommonUtils.getPathByKey("base_path")).listFiles();
-
-        long count_1 = Db.queryLong("select count(*) from clips");
-        System.out.println("执行前共计:" + count_1 + "条数据");
-
-        for (final File file : files) {
-
-            if (!file.isDirectory())
-                continue;
-            if ("ziptemp,music".indexOf(file.getName()) != -1)
-                continue;
-            //要插入的电视剧
-            if (tv_name != null && tv_name != "")
-                if (tv_name.indexOf(file.getName()) == -1) {
-                    continue;
-                }
-
-            Db.tx(new IAtom() {
-                public boolean run() throws SQLException {
-                    int lang_type = 0;
-                    if ("异形,阿甘正传".indexOf(file.getName()) != -1)
-                        lang_type = 1;
-                    //demo
-                    VideoRefresh.refresh(file.getPath(), lang_type);
-                    return true;
-                }
-            });
-        }
-
-        long count_2 = Db.queryLong("select count(*) from clips");
-
-        System.out.println("执行之后共计:" + count_2 + "条数据");
-
-        System.out.println("本次共计插入：" + (count_2 - count_1));
-
-
+        DbRefresh.insert(tv_name, true);
         render("ok");
 
     }

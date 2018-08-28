@@ -32,25 +32,20 @@ public class Searcher {
      */
 
     public static List<Map> search2(String content, boolean isperfect, Record tv) {
-        content = content.replace(" ", "");
+        content = content.replaceAll("[^\\u4e00-\\u9fa5a-zA-Z^0-9]", " ").replaceAll(" +", " ");
+        int str_type = CommonUtils.strType(content);
         int lang_type = 0;
         if (tv != null)
             lang_type = tv.getInt("lang_type");
 
         List<Map> result = new ArrayList<Map>();
 
-        List<Record> clips = ClipsDao.selectByTv(tv == null ? null : tv.getStr("tv_id"),content);
+        List<Record> clips = ClipsDao.selectByTv(tv == null ? null : tv.getStr("tv_id"), content);
 
         for (Record clip : clips) {
-            String word = "";
-            if (lang_type == 0)
-                word = clip.get("cn");
-            else word = clip.getStr("en");
+            or(lang_type, result, clip, content, str_type, isperfect);
 
-            if (word == null)
-                continue;
-
-            //匹配算法
+            /*//匹配算法
             Map m = null;
             if (lang_type == 0)
                 m = match(content, word, isperfect);
@@ -60,9 +55,59 @@ public class Searcher {
                 m.put("file", clip.get("clips_addr"));
                 result.add(m);
 
-            }
+            }*/
         }
         return result;
+    }
+
+    /**
+     * @param lang_type 电视剧的语言
+     * @param maps      匹配到的结果数组
+     * @param clip      剪辑
+     * @param content   关键词
+     * @param c         关键词的中英文
+     * @param isperfect 是否完全匹配
+     */
+
+    private static void or(int lang_type, List<Map> maps, Record clip, String content, int c, boolean isperfect) {
+        String word = null;
+        if(clip.getInt("lang_type") == 1){
+            word = clip.getStr("en");
+        }else {
+            word = clip.getStr("cn");
+        }
+
+        if (word == null || word.length() == 0)
+            return;
+
+
+        int w = CommonUtils.strType(word);
+        Map m = null;
+
+        //英文中招汉语 pass掉
+        if (lang_type == 1 && c == 0) {
+            return;
+        }
+
+        //汉字
+        if (c == 0 && w == 0) {
+            doAdd(maps, match(content, word, isperfect), clip);
+            //英文
+        } else if (c == 1 && w == 1) {
+            doAdd(maps, match2(content, word, isperfect), clip);
+        } else {
+            doAdd(maps, match(content, word, isperfect), clip);
+            doAdd(maps, match2(content, word, isperfect), clip);
+
+        }
+
+    }
+
+    private static void doAdd(List<Map> maps, Map m, Record clip) {
+        if (m != null) {
+            m.put("file", clip.get("clips_addr"));
+            maps.add(m);
+        }
     }
 
 
@@ -202,8 +247,8 @@ public class Searcher {
         List<String> lw = new ArrayList<String>();
         List<String> lc = new ArrayList<String>();
 
-        String[] words = word.split("[^\\u4e00-\\u9fa5a-zA-Z^0-9]");
-        String contents[] = content.split("[^\\u4e00-\\u9fa5a-zA-Z^0-9]");
+        String[] words = word.replaceAll("[^\\u4e00-\\u9fa5a-zA-Z^0-9]", " ").replaceAll(" +", " ").split(" ");
+        String contents[] = content.split(" ");
 
         word = "";
         content = "";
