@@ -137,22 +137,26 @@ public class MainExe {
      */
     public static void musicCheck() throws IOException {
 
-//        List<File> fileList = CommonUtils.getMp4FileList(CommonUtils.getPathByKey("audioPath"), new ArrayList<File>(), ".lrc");
-        List<File> fileList = Arrays.asList(new File(path_music).listFiles());
+        List<File> fileList = CommonUtils.getMp4FileList(CommonUtils.getPathByKey("audioPath"), new ArrayList<File>(), ".mp3" +
+                "");
+//        List<File> fileList = Arrays.asList(new File(path_music).listFiles());
 
 
         System.out.println("共计【" + fileList.size() + "】srt歌词");
+
         for (File file : fileList) {
 
             if (file.exists()) {
+                file.delete();
+                System.out.println(file.getAbsolutePath());
 
-                List<File> ff = CommonUtils.getMp4FileList(file.getAbsolutePath(), new ArrayList<File>(), ".lrc");
+               /* List<File> ff = CommonUtils.getMp4FileList(file.getAbsolutePath(), new ArrayList<File>(), ".lrc");
 
                 if (ff.size() == 0) {
                     System.out.println(file);
-//                    CommonUtils.deleteFile(file);
+                    CommonUtils.deleteFile(file);
                 }
-
+               */
 
 //                String name = CommonUtils.v(file.getName());
 //                name=name.replaceAll(" lrc",".lrc");

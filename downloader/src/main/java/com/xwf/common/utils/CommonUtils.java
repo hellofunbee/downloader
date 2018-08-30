@@ -137,6 +137,21 @@ public class CommonUtils {
         return -1;
     }
 
+
+    public static Properties getPro(String fileName) throws Exception {
+
+        String path = CommonUtils.class.getClassLoader().getResource(fileName).getPath();
+        Properties pathProp = new Properties();
+
+        BufferedReader e = new BufferedReader(new InputStreamReader(new FileInputStream(path)));
+        pathProp.load(e);
+        e.close();
+
+        return pathProp;
+
+
+    }
+
     public static String getPathByKey(String key) {
 
         String path = CommonUtils.class.getClassLoader().getResource("path.property").getPath();
