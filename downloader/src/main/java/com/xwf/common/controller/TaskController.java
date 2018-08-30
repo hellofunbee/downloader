@@ -2,7 +2,7 @@ package com.xwf.common.controller;
 
 import com.jfinal.core.Controller;
 import com.xwf.common.dao.DbRefresh;
-import com.xwf.common.http.NetEaseCloudMusic;
+import com.xwf.common.http.MusicDownload;
 import com.xwf.common.utils.MainExe;
 import com.xwf.common.utils.VideoCutMain;
 
@@ -31,7 +31,8 @@ public class TaskController extends Controller {
     }
 
     public void musicDownload() throws Exception {
-        NetEaseCloudMusic.main(null);
+//        NetEaseCloudMusic.main(null);
+        MusicDownload.main(null);
     }
 
     public void videoCut() throws Exception {
@@ -41,4 +42,6 @@ public class TaskController extends Controller {
     public void coverTake() throws Exception {
         MainExe.takeCover();
     }
+
+
 }

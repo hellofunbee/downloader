@@ -27,6 +27,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ssdb4j (1)" target="1.5" />
+      <module name="ssdb4j (2)" target="1.5" />
       <module name="subtitleConvert" target="1.7" />
       <module name="xwf-com" target="1.5" />
     </bytecodeTargetLevel>

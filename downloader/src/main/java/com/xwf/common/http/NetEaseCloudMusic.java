@@ -8,6 +8,7 @@ import com.xwf.common.dao.MusicDao;
 import com.xwf.common.dao.PlaylistDao;
 import com.xwf.common.utils.CommonUtils;
 import com.xwf.common.utils.LrcUtil;
+import com.xwf.common.utils.ThreadPoolUtils;
 import com.xwf.common.utils.WebClientUtil;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -42,7 +43,8 @@ public class NetEaseCloudMusic {
     static String temp = save_path + "temp.txt";
 
 
-    static WebClientUtil wb;
+     static WebClientUtil wb = new WebClientUtil();
+    static ThreadPoolUtils poo = new ThreadPoolUtils(0, 10);
 
 
     private static Map getProxy() {
@@ -61,7 +63,6 @@ public class NetEaseCloudMusic {
 
     public static void main(String arg[]) throws Exception {
 
-        wb = new WebClientUtil();
         wb.setProxy(getProxy());
 
 
@@ -104,16 +105,19 @@ public class NetEaseCloudMusic {
     }
 
     //获取播放列表列表
-    public static void getPlay_lists(int page, String keyword) throws Exception {
+    public static void getPlay_lists(int page,  String keyword) throws Exception {
 
         for (int i = 0; i < page; i++) {
-            String url = get_play_lists.replace("##", String.valueOf(i * 35)).replace("%%", keyword);
+             String url = get_play_lists.replace("##", String.valueOf(i * 35)).replace("%%", keyword);
 
 
             Document doc = Jsoup.parse(wb.getHtml(url));
 
             Elements elements = doc.select("li div.u-cover a.msk");
-            for (Element e : elements) {
+
+            for ( Element e : elements) {
+
+
                 String name = e.attr("title");
                 name = CommonUtils.filterStr(name);
                 name = CommonUtils.v(name);
@@ -123,12 +127,12 @@ public class NetEaseCloudMusic {
                 String id = href.substring(href.indexOf("id=") + 3);
 
                 String visitCount = e.parent().select("div.bottom span.nb").text();
-                System.out.println("【"+ URLDecoder.decode(keyword,"utf-8")+"】【第" + i + "页共" + page + "页】" + id + "--" + visitCount + "--" + name);
+                System.out.println("【" + URLDecoder.decode(keyword, "utf-8") + "】【第" + i + "页共" + page + "页】" + id + "--" + visitCount + "--" + name);
 
 
                 if (CommonUtils.strType(id) != 1) {
                     System.out.println("playlist_id 错误：" + name + "--" + id);
-                    continue;
+                    return;
                 }
 
                 Record re = new Record();
@@ -143,11 +147,12 @@ public class NetEaseCloudMusic {
                 if (html != null)
                     jsoup(html, id, url, re);
 
-            }
+
         }
-
-
     }
+
+
+}
 
 
     /*
@@ -231,7 +236,7 @@ public class NetEaseCloudMusic {
 
                 } else {
                     music.set("has_srt", 0);
-                    System.out.println("歌词格式错误："+baseName);
+                    System.out.println("歌词格式错误：" + baseName);
                 }
 
 

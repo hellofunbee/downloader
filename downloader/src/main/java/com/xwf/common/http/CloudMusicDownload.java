@@ -8,7 +8,6 @@ import com.xwf.common.dao.MusicDao;
 import com.xwf.common.dao.PlaylistDao;
 import com.xwf.common.utils.CommonUtils;
 import com.xwf.common.utils.LrcUtil;
-import com.xwf.common.utils.ThreadPoolUtils;
 import com.xwf.common.utils.WebClientUtil;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -32,7 +31,7 @@ import java.util.Map;
 /**
  * Created by weifengxu on 2018/8/11.
  */
-public class NetEaseCloudMusic {
+public class CloudMusicDownload implements Runnable {
 
     static String get_play_lists = "https://music.163.com/discover/playlist/?order=hot&cat=%%&limit=35&offset=##";
 
@@ -43,79 +42,64 @@ public class NetEaseCloudMusic {
     static String temp = save_path + "temp.txt";
 
 
-     static WebClientUtil wb = new WebClientUtil();
-    static ThreadPoolUtils poo = new ThreadPoolUtils(0, 10);
+    WebClientUtil wb = null;
+    Element e = null;
 
+    public CloudMusicDownload(WebClientUtil wb, Element e, Map proxy) {
+        this.wb = wb;
+        this.e = e;
 
-    private static Map getProxy() {
-        return null;
-
-//        try {
-//            return CommonUtils.getProxy(3);
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//            System.out.println("获取代理ip失败！");
-//            return null;
-//        }
+        if (proxy != null)
+            wb.setProxy(proxy);
 
     }
 
-
-    public static void main(String arg[]) throws Exception {
-
-        wb.setProxy(getProxy());
-
+    public void run() {
 
         String target = "";
-        String path = NetEaseCloudMusic.class.getClassLoader().getResource("test.html").getPath();
-        String html = org.apache.commons.io.FileUtils.readFileToString(new File(path));
-        Document doc = Jsoup.parse(html);
-        Elements elements = doc.select("a.s-fc1");
-
-
         Integer index = -1;
-        for (Element e : elements) {
-            try {
-                String word = e.attr("href");
-                if ((index = word.indexOf("=")) != -1) {
-                    word = word.substring(index + 1);
-                    target = get_play_lists.replace("%%", word).replace("##", "0");
 
-                    //家在网页
-                    Document page = Jsoup.parse(wb.getHtml(target));
+        try {
+            String word = e.attr("href");
+            if ((index = word.indexOf("=")) != -1) {
+                word = word.substring(index + 1);
+                target = get_play_lists.replace("%%", word).replace("##", "0");
 
-                    Elements p = page.select("div.u-page a.zpgi");
-                    int max_page = 0;
-                    if (p != null && p.size() > 0) {
-                        max_page = Integer.parseInt(p.get(p.size() - 1).text());
+                //家在网页
+                Document page = Jsoup.parse(wb.getHtml(target));
 
-                    }
-
-                    if (max_page > 0)
-                        getPlay_lists(max_page, word);
+                Elements p = page.select("div.u-page a.zpgi");
+                int max_page = 0;
+                if (p != null && p.size() > 0) {
+                    max_page = Integer.parseInt(p.get(p.size() - 1).text());
 
                 }
-            } catch (Exception ee) {
-                ee.printStackTrace();
-            }
 
+                if (max_page > 0)
+                    getPlay_lists(max_page, word);
+
+            }
+        } catch (Exception ee) {
+            ee.printStackTrace();
         }
+
+        PooledClientFactory.getInstance().returnClient(wb.webClient);
 
 
     }
 
     //获取播放列表列表
-    public static void getPlay_lists(int page,  String keyword) throws Exception {
+    public void getPlay_lists(int page, String keyword) throws Exception {
 
         for (int i = 0; i < page; i++) {
-             String url = get_play_lists.replace("##", String.valueOf(i * 35)).replace("%%", keyword);
+            String url = get_play_lists.replace("##", String.valueOf(i * 35)).replace("%%", keyword);
 
 
             Document doc = Jsoup.parse(wb.getHtml(url));
 
             Elements elements = doc.select("li div.u-cover a.msk");
 
-            for ( Element e : elements) {
+            for (Element e : elements) {
 
 
                 String name = e.attr("title");
@@ -131,7 +115,7 @@ public class NetEaseCloudMusic {
 
 
                 if (CommonUtils.strType(id) != 1) {
-                    System.out.println("playlist_id 错误：" + name + "--" + id);
+                    log("playlist_id 错误：" + name + "--" + id);
                     return;
                 }
 
@@ -148,23 +132,23 @@ public class NetEaseCloudMusic {
                     jsoup(html, id, url, re);
 
 
+            }
         }
+
+
     }
-
-
-}
 
 
     /*
     * 使用jsoup解析网页信息
     */
-    private static void jsoup(String html, String play_list_id, String url, Record playlist) throws Exception {
+    private void jsoup(String html, String play_list_id, String url, Record playlist) throws Exception {
         Document doc = Jsoup.parse(html);
         Element title = doc.select("div.tit h2.f-ff2").first();
         String title_ = title.text();
         title_ = CommonUtils.v(title_);//=====
         if (title_ == null || title_ == "") {
-            System.out.println("未能获取标题：" + url);
+            log("未能获取标题：" + url);
             return;
         }
 
@@ -179,31 +163,47 @@ public class NetEaseCloudMusic {
 
 
         Elements elements = doc.select("ul.f-hide li a");
+        List<String> ids = new ArrayList<String>();
+
+        for (int i = 0; i < elements.size(); i++) {
+
+            Element e = elements.get(i);
+            String href = e.attr("href");
+            String id = href.substring(href.indexOf("id=") + 3);
+            if (CommonUtils.strType(id) != 1) {
+                log("music id错误：" + id);
+                continue;
+            }
+            ids.add(id);
+        }
+
+        if (ids.size() == 0)
+            return;
+
+        List<String> exist_ids = MusicDao.isIn(ids);
+
 
         for (int i = 0; i < elements.size(); i++) {
             Element e = elements.get(i);
             String href = e.attr("href");
+            String id = href.substring(href.indexOf("id=") + 3);
+            if (CommonUtils.strType(id) != 1) {
+                log("music id错误：" + id);
+                continue;
+            }
+
+            if (exist_ids.indexOf(id) != -1) {
+                continue;
+            }
+
+
             String name = e.text();
-
-
             name = CommonUtils.filterStr(name);
             name = name.replaceAll("--", " ");//--自定义关键字段
             name = CommonUtils.v(name);
 
 
-            String id = href.substring(href.indexOf("id=") + 3);
-
             String baseName = name + "--" + id;
-
-            if (CommonUtils.strType(id) != 1) {
-                System.out.println("music id错误：" + id);
-                continue;
-            }
-            //            如果已存在则继续查找
-            if (MusicDao.isExit(id)) {
-//                System.out.println("exist-lrc：" + baseName);
-                continue;
-            }
 
 
             String outPath = dir_new + baseName + ".mp3";
@@ -212,9 +212,12 @@ public class NetEaseCloudMusic {
 
 
             //歌词
+            JSONObject lrc = null;
             JSONObject jo = HttpUtils.doGet(lrc_url.replace("##", id));
 
-            JSONObject lrc = jo.getJSONObject("lrc");
+
+            if (jo != null)
+                lrc = jo.getJSONObject("lrc");
 
             Record music = new Record();
             music.set("music_id", id);
@@ -227,7 +230,7 @@ public class NetEaseCloudMusic {
                 CommonUtils.writeString(lyric, l_outPath);
                 if (writeSrt(lyric, baseName, srt_outPath)) {
                     //下载音乐
-                    System.out.println("downloading..." + baseName);
+                    log("downloading..." + baseName);
 //                    HttpUtils.downLoad(song_url.replace("##", id), outPath);
 
                     music.set("has_srt", 1);
@@ -236,13 +239,13 @@ public class NetEaseCloudMusic {
 
                 } else {
                     music.set("has_srt", 0);
-                    System.out.println("歌词格式错误：" + baseName);
+                    log("歌词格式错误：" + baseName);
                 }
 
 
             } else {
                 music.set("has_srt", 0);
-                System.out.println("no liric...." + baseName);
+                log("no liric...." + baseName);
             }
 
             musics.add(music);
@@ -256,14 +259,14 @@ public class NetEaseCloudMusic {
     }
 
 
-    public static boolean writeSrt(String lyric, String baseName, String srt_outPath) throws IOException {
+    public boolean writeSrt(String lyric, String baseName, String srt_outPath) throws IOException {
 
         List<String> time_content = new ArrayList<String>();
         for (String s : lyric.split("\n")) {
             time_content.add(s);
         }
         List<String> sb = LrcUtil.parse(time_content);
-//        System.out.println(sb + "****" + sb.size() + "*****");
+//        log(sb + "****" + sb.size() + "*****");
         if (sb != null && sb.size() > 0) {
 
             CommonUtils.writeAsLine(temp, sb);
@@ -280,15 +283,52 @@ public class NetEaseCloudMusic {
 
     }
 
-    private static void save(final Record playlist, final List<Record> musics) {
+    private synchronized void save(final Record playlist, final List<Record> musics) {
+
 
         Db.tx(new IAtom() {
             public boolean run() throws SQLException {
+                //再次去重
+                List<Record> ids = MusicDao.isexist(musics);
+                String path = null;
+                for (Record id : ids) {
+                    for (int i = 0; i < musics.size(); i++) {
+                        Record music = musics.get(i);
+                        if (music.get("music_id").equals(id.get("music_id"))) {
+
+                            //新加入的存在文件
+                            if ((path = music.get("srt_path")) != null && new File(path).exists()) {
+                                //数据库中不存在文件
+                                if (id.get("srt_path") == null || !new File(id.getStr("srt_path")).exists()) {
+                                    MusicDao.deletByid(id.getStr("music_id"));
+                                } else {
+                                    //路径不相同则删除文件
+                                    if (!path.equals(id.get("srt_path"))) {
+                                        new File(path).delete();
+                                        new File(path.replace(".srt", ".lrc").replace("/srt/", "/lrc/")).delete();
+                                    }
+
+                                    musics.remove(music);
+                                }
+                            } else
+                                musics.remove(music);
+                            i--;
+                        }
+                    }
+                }
+
+
                 PlaylistDao.save(playlist);
                 MusicDao.batchSave(musics);
                 return true;
             }
         });
+
+
+    }
+
+    static void log(String info){
+        System.out.println(info);
     }
 
 

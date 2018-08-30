@@ -11,6 +11,7 @@ import com.xwf.common.video.Refresh;
 import java.io.File;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class DbRefresh {
@@ -23,6 +24,25 @@ public class DbRefresh {
 
 
         insert_music("", false);
+
+//        test(false);
+
+
+    }
+
+    static void test(boolean isWeb) {
+
+        ActiveRecordPlugin arp = null;
+        arp = getActiveRecordPlugin(isWeb, arp);
+
+        List<String> records = MusicDao.isIn(Arrays.asList(new String[]{"348804151", "10769156"}));
+
+        System.out.println(records.size());
+
+
+        if (!isWeb) {
+            arp.stop();
+        }
 
 
     }
