@@ -36,7 +36,7 @@ public class TaskController extends Controller {
     }
 
     public void videoCut() throws Exception {
-        VideoCutMain.main(null);
+        VideoCutMain.main(new String[]{getPara("delay")});
     }
 
     public void coverTake() throws Exception {

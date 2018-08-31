@@ -327,8 +327,9 @@ public class CommonUtils {
 
 
         for (int i = 0; i < count; i++) {
-            //http://123.207.35.36:5010/get?key=thankyou
-            String ip = HttpUtils.sendGet("http://127.0.0.1:5010/get?key=thankyou", new HashMap<String, String>());
+//            String url = "http://123.207.35.36:5010/get?key=thankyou";
+            String url = "http://127.0.0.1:5010/get?key=thankyou";
+            String ip = HttpUtils.sendGet(url, new HashMap<String, String>());
             if (ip != null) {
                 String ip_port[] = ip.split(":");
                 Map<String, String> m = new HashMap();

@@ -92,7 +92,7 @@ public class PooledClientFactory {
         //借出对象达到最大值的最大等待时间,5s等待时间过后抛出异常
         //clientPool.setMaxWait(5000);
         //设置最大可借出数量,默认为8
-        clientPool.setMaxActive(10);
+        clientPool.setMaxActive(40);
     }
 
 

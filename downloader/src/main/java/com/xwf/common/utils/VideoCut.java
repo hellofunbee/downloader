@@ -19,7 +19,7 @@ public class VideoCut {
     private static String srtPath = "";
     private static String out_type = ".mp4";//有可能是MP3
 
-    private static int ajust = 940;//ms
+    public static int ajust = 940;//ms
 
 
     public static void exe(String path, String outPath, String startTime, String lastTime) throws IOException, InterruptedException {

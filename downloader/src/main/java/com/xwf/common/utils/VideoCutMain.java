@@ -13,8 +13,8 @@ public class VideoCutMain {
      */
     public static void main(String[] args) throws Exception {
 
+        VideoCut.ajust = (args[0] == null ? 0 : Integer.parseInt(args[0]));
         video();
-
 
 
 //        audio();
