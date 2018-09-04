@@ -1,8 +1,8 @@
 //videopath 相当于后面加上srt的名字 再加上 ".mp4"
 base_path=/Users/weifengxu/Desktop/clips/
-videoPath=/Users/weifengxu/Downloads/电视/甄嬛传/
-srtPath=/Users/weifengxu/Downloads/电视/甄嬛传/srt/
-outPath=/Users/weifengxu/Desktop/clips/甄嬛传/
+videoPath=/Users/weifengxu/Downloads/电视/obama/
+srtPath=/Users/weifengxu/Downloads/电视/obama/srt/
+outPath=/Users/weifengxu/Desktop/clips/obama/
 
 ffmpegPath=/Users/weifengxu/Desktop/tool/jave_ffmpeg/ffmpeg
 zip_path=/Users/weifengxu/Desktop/clips/ziptemp/

@@ -1,10 +1,13 @@
 package com.xwf.common.utils;
 
 import it.sauronsoftware.jave.MultimediaInfo;
+import org.junit.Test;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.*;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.UUID;
 
 /**
  * Created by weifengxu on 2018/8/10.
@@ -158,16 +161,16 @@ public class MainExe {
                 }
                */
 
-//                String name = CommonUtils.v(file.getName());
-//                name=name.replaceAll(" lrc",".lrc");
-//
-//                System.out.println(file.getName());
-//                System.out.println(CommonUtils.v(file.getName()));
-//                file.renameTo(new File(file.getParent() + "/" + name));
+                String name = CommonUtils.v(file.getName());
+                name=name.replaceAll(" lrc",".lrc");
 
-//
-//                System.out.println(file.getName());
-//                System.out.println(name);
+                System.out.println(file.getName());
+                System.out.println(CommonUtils.v(file.getName()));
+                file.renameTo(new File(file.getParent() + "/" + name));
+
+
+                System.out.println(file.getName());
+                System.out.println(name);
             }
 
            /* File[] fs = file.listFiles();
@@ -215,13 +218,72 @@ public class MainExe {
 
             /*if (file.isFile()) {
                 String liyric = org.apache.commons.io.FileUtils.readFileToString(file);
-                String outPath = (file.getAbsolutePath().replace("/lrc/", "/srt/")).replace(".lrc", ".srt");
+                String outPath = (file.getAbsolutePath().replace("/lrc/", "/srt/")).replace(".lrc", ".pmk");
                 NetEaseCloudMusic.writeSrt(liyric, file.getName().replace(".lrc", ""), outPath);
 
             }*/
 
 
         }
+
+    }
+
+
+    @Test
+    public void changeName() throws UnsupportedEncodingException {
+        String path = "/Users/weifengxu/Downloads/音源/窃格瓦拉1.0/";
+        List<File> fs = CommonUtils.getMp4FileList(path, new ArrayList<File>(), ".uspec");
+
+        HanyuPinyinHelper hp = new HanyuPinyinHelper();
+        for (File f : fs) {
+            String name = f.getName();
+            String o_name = name.substring(1);
+
+            name = name.substring(0, 1);
+            name = hp.toHanyuPinyin(name).get(0);
+            f.renameTo(new File(f.getParent() + "/" + name + o_name));
+
+
+            System.out.println(f.getName());
+
+        }
+
+
+    }
+
+
+    @Test
+    public void changeFile() throws Exception {
+        String path = "/Users/weifengxu/Downloads/音源/窃格瓦拉1.0/oto.ini";
+        InputStreamReader isr = new InputStreamReader(new FileInputStream(path));
+        BufferedReader br = new BufferedReader(isr);
+        StringBuffer sb = new StringBuffer();
+        String line = null;
+        while ((line = br.readLine()) != null) {
+            // 注意写入换行符
+//            line = URLEncoder.encode(line, "utf-8");
+            sb.append(line + "\r\n");//windows 平台下 换行符为 \r\n
+
+        }
+        br.close();
+        isr.close();
+        HanyuPinyinHelper hp = new HanyuPinyinHelper();
+        String str = sb.toString();
+        for (int i = 0; i < str.length(); i++) {
+            String c = str.substring(i, i + 1);
+            if (CommonUtils.isCn(c) && c.length() > 0) {
+
+
+                List<String> pys = hp.toHanyuPinyin(c);
+                if (pys != null && pys.size() > 0)
+//
+                    str = str.replaceAll(c, pys.get(0));
+            }
+
+        }
+
+
+        System.out.println(str);
 
     }
 

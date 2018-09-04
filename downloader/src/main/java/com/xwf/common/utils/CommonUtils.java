@@ -226,12 +226,40 @@ public class CommonUtils {
     }
 
     /**
+     * 获取所有的MP4文件
+     *
+     * @param strPath
+     * @param fileList
+     * @return
+     */
+    public static List<File> getAllfiles(String strPath, List<File> fileList) {
+        File dir = new File(strPath);
+        File[] files = dir.listFiles(); // 该文件目录下文件全部放入数组
+        if (files != null) {
+            for (int i = 0; i < files.length; i++) {
+                String fileName = files[i].getName();
+                if (files[i].isDirectory()) {
+                    getAllfiles(files[i].getAbsolutePath(), fileList); // 获取文件绝对路径
+                    fileList.add(files[i]);
+                } else {
+                    fileList.add(files[i]);
+                    continue;
+                }
+            }
+
+        }
+        return fileList;
+    }
+
+
+    /**
      * 写出文本文件
      *
      * @param content
      * @param outPath
      * @throws IOException
      */
+
     public static void writeString(String content, String outPath) throws IOException {
 
         Writer out = new FileWriter(new File(outPath));
@@ -443,13 +471,13 @@ public class CommonUtils {
      * @return
      */
 
-    private static boolean isEn(String str) {
+    public static boolean isEn(String str) {
 
         return str.getBytes().length == str.length();
 
     }
 
-    private static boolean isCn(String str) {
+    public static boolean isCn(String str) {
         str = str.replaceAll(" ", "");
 
         return str.getBytes().length == 3 * str.length();

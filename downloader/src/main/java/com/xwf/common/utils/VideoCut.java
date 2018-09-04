@@ -20,6 +20,7 @@ public class VideoCut {
     private static String out_type = ".mp4";//有可能是MP3
 
     public static int ajust = 940;//ms
+    public static String threads = "2";//ms
 
 
     public static void exe(String path, String outPath, String startTime, String lastTime) throws IOException, InterruptedException {
@@ -32,7 +33,7 @@ public class VideoCut {
                     "-accurate_seek",
                     "-i", path,
                     "-acodec", "copy",
-                    "-threads", "1",
+                    "-threads", threads,
                     outPath
 
             };
@@ -44,7 +45,7 @@ public class VideoCut {
                     "-accurate_seek",
                     "-i", path,
                     "-vcodec", "h264", "-acodec", "aac",
-                    "-threads", "1",
+                    "-threads", threads,
                     outPath
 
             };

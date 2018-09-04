@@ -8,11 +8,15 @@ import com.jfinal.plugin.druid.DruidPlugin;
 import com.xwf.common.utils.CommonUtils;
 import com.xwf.common.video.Refresh;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Properties;
 
 public class DbRefresh {
     static int m = 0;//此变量是为了切换数据源
@@ -85,8 +89,23 @@ public class DbRefresh {
             Db.tx(new IAtom() {
                 public boolean run() throws SQLException {
                     int lang_type = 0;
+                    try {
+
+
+                        Properties conf = new Properties();
+                        BufferedReader e = new BufferedReader(new InputStreamReader(new FileInputStream(file.getAbsolutePath() + "/conf.txt")));
+                        conf.load(e);
+                        e.close();
+                        String lt = (String) conf.get("lang_type");
+                        if (lt != null && lt != "")
+                            lang_type = Integer.parseInt(lt);
+
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                     if ("异形,阿甘正传".indexOf(file.getName()) != -1)
                         lang_type = 1;
+                    System.out.println(file.getName()+"--lang_type:"+lang_type);
 
 
                     //demo
