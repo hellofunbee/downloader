@@ -14,6 +14,11 @@ import java.util.*;
  * Created by weifengxu on 17/7/8.
  */
 public class MusicController extends Controller {
+
+    final static int MAX_QUEUE = 200;
+    final static int MAX_RESULT_BATCH = 30;
+    final static int MAX_RESULT = 100;
+
     public void index() throws Exception {
         render("sercher/searchAudio.html");
     }
@@ -22,7 +27,16 @@ public class MusicController extends Controller {
         render("sercher/searchAudio1.html");
     }
 
-    public void batchKeys() throws Exception {
+    public void localSerch1() throws Exception {
+        render("sercher/searchAudio1_batch.html");
+    }
+
+    /**
+     * 批量下载
+     *
+     * @throws Exception
+     */
+    public void batchDownload() throws Exception {
         JSONArray aar = (JSONArray) JSONArray.parse(getPara("data"));
         for (int i = 0; i < aar.size(); i++) {
             JSONObject obj = aar.getJSONObject(i);
@@ -34,7 +48,8 @@ public class MusicController extends Controller {
                 String key = obj.getString("key");
                 String word = obj.getString("word");
 
-                name = name.substring(name.length()-18,name.length()-7);
+                name = getybid(name);
+
                 VideoCut_Stream.cut(name, s, e, key, word);
             } catch (Exception e) {
                 e.printStackTrace();
@@ -59,11 +74,14 @@ public class MusicController extends Controller {
         } else {
 
             //查询
-            List<java.util.Map> videos = Searcher.search_subs(".srt", word, false, movie_path);
+            List<java.util.Map> videos = Searcher.search_subs(".srt", word, false, movie_path, MAX_QUEUE);
 
             CommonUtils.sort(videos, "type", 1);
             JSONArray ps = new JSONArray();
+
+            int i = 0;
             for (java.util.Map m : videos) {
+                if (i++ > MAX_RESULT) break;
                 File file = ((File) m.get("file"));
 
                 String path = file.getAbsolutePath();
@@ -80,17 +98,13 @@ public class MusicController extends Controller {
                 o.put("path", path);
                 o.put("type", (300 - (Integer) m.get("type")) / 2);
                 ps.add(o);
-
             }
-
             Map m = new HashMap();
             m.put("word", word);
             m.put("videos", ps.toString());
             data.add(m);
-
-
-            jo.put("returnCode", "00");
         }
+        jo.put("returnCode", "00");
         jo.put("data", data);
 
         renderJson(jo);
@@ -110,13 +124,95 @@ public class MusicController extends Controller {
             String key = getPara("key");
             String word = getPara("word");
 
-            name = name.substring(name.length()-18,name.length()-7);
+            name = getybid(name);
             VideoCut_Stream.cut(name, s, e, key, word);
         } catch (Exception e) {
             e.printStackTrace();
         }
 
 
+    }
+
+    /**
+     * 截取youtube视频片段
+     * 多个关键词直接下载
+     */
+    public void batchKeys() throws Exception {
+
+        String download = getPara("download");
+
+        List<Map> data = new ArrayList<Map>();
+        JSONObject jo = new JSONObject();
+
+        String word = getPara("word");//要查询的话
+        String movie_path = getPara("path");//要查询的话
+        if (movie_path == null) {
+            movie_path = CommonUtils.getPathByKey("srt_path");
+        }
+
+        if (word == null || word == "") {
+            jo.put("returnCode", "01");
+        } else {
+
+            String[] words;
+            if (word.indexOf(",") != -1 || word.indexOf("，") != -1) {
+                word = word.replace("，", ",");
+                words = word.split(",");
+            } else {
+                words = new String[]{word};
+            }
+
+            List<List<Map>> vvss = Searcher.search_subs_batch(".srt", words, false, movie_path, MAX_QUEUE);
+
+            for (int j = 0; j < words.length; j++) {
+                String w = words[j];
+                //查询
+                List<Map> videos = vvss.get(j);
+                CommonUtils.sort(videos, "type", 1);
+                JSONArray ps = new JSONArray();
+                int i = 0;
+
+                for (Map m : videos) {
+
+                    if (i++ > MAX_RESULT_BATCH) break;
+                    File file = ((File) m.get("file"));
+                    String name = file.getName();
+                    String word_ = (String) m.get("word");
+                    String s = (String) m.get("s");
+                    String e = (String) m.get("e");
+                    String key = w;
+
+                    if ("1".equals(download))
+                        VideoCut_Stream.cut(getybid(name), s, e, key, word_);
+
+                    JSONObject o = new JSONObject();
+                    o.put("name", name);
+                    o.put("word", m.get("word"));
+                    o.put("s", m.get("s"));
+                    o.put("e", m.get("e"));
+                    o.put("key", w);
+                    o.put("path", file.getAbsolutePath());
+                    o.put("type", (300 - (Integer) m.get("type")) / 2);
+                    ps.add(o);
+
+
+                }
+
+                Map m = new HashMap();
+                m.put("word", w);
+                m.put("videos", ps.toString());
+                data.add(m);
+            }
+        }
+        jo.put("data", data);
+        jo.put("returnCode", "00");
+        renderJson(jo);
+
+    }
+
+    private String getybid(String name) {
+        name = name.substring(name.length() - 18, name.length() - 7);
+        return name;
     }
 
     public void getWords() {
@@ -167,8 +263,9 @@ public class MusicController extends Controller {
                 data.add(m);
             }
 
-            jo.put("returnCode", "00");
         }
+
+        jo.put("returnCode", "00");
         jo.put("data", data);
 
         renderJson(jo);

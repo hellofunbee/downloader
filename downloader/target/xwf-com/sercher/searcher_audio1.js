@@ -43,7 +43,7 @@ $(function () {
 
         $.ajax({
             type: 'POST',
-            url: "/music/batchKeys",
+            url: "/music/batchDownload",
             data: {data: JSON.stringify(result)},
             success: function (data) {
             }
@@ -149,7 +149,7 @@ function search() {
                     first.attr('checked', 'checked');
                 });
 
-                $('button').on('click', function () {
+                $('table button').on('click', function () {
                     var s = $(this).attr('s');
                     var e = $(this).attr('e');
                     var name = $(this).attr('name');

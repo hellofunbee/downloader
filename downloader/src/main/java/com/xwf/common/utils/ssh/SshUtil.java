@@ -14,7 +14,7 @@ public class SshUtil {
     private Session session = null;
     private int timeout = 10000;
 
-    private static LinkedBlockingQueue queue = new LinkedBlockingQueue<String>(1000);
+    private static LinkedBlockingQueue queue = new LinkedBlockingQueue<String>(3000);
 
 
     private boolean start = true;
@@ -48,7 +48,7 @@ public class SshUtil {
 
                     System.out.println("run");
                     try {
-                        Thread.sleep(1000);
+                        Thread.sleep(500);
 
 
                         String cmd = (String) queue.take();

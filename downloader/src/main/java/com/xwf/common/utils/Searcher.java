@@ -234,8 +234,8 @@ public class Searcher {
     }
 
     /**
-     *
      * english
+     *
      * @param content   要查询的内容
      * @param isperfect 是否完全匹配
      * @param word      数据源
@@ -310,12 +310,13 @@ public class Searcher {
      * @return
      */
 
-    public static List<Map> search_subs(String type, String content, boolean isperfect, String path) throws IOException {
+    public static List<Map> search_subs(String type, String content, boolean isperfect, String path, int top) throws IOException {
         content = content.replaceAll("[^\\u4e00-\\u9fa5a-zA-Z^0-9]", " ").replaceAll(" +", " ");
         List<Map> result = new ArrayList<Map>();
         if (fileList == null)
             fileList = CommonUtils.getMp4FileList(path, new ArrayList<File>(), type);
 
+        int count = 0;
 
         for (File file : fileList) {
             TimedTextObject ttff = CommonUtils.readSrt(file.getAbsolutePath());
@@ -328,19 +329,85 @@ public class Searcher {
                 Iterator iterator = set.iterator();
 
                 while (iterator.hasNext()) {
-
+                    if (count > top)
+                        return result;
                     Map.Entry<Integer, Caption> enty = (Map.Entry<Integer, Caption>) iterator.next();
                     Caption cp = enty.getValue();
                     String word = CommonUtils.v(cp.content);
                     //匹配算法
                     Map m = match2(content, word, isperfect);
                     if (m != null) {
+                        count++;
                         m.put("file", file);
                         m.put("word", word);
-                        m.put("s",CommonUtils.ms2hhmmss(cp.start.mseconds -500));
-                        m.put("e",CommonUtils.ms2hhmmss(cp.end.mseconds +500));
+                        m.put("s", CommonUtils.ms2hhmmss(cp.start.mseconds - 500));
+                        m.put("e", CommonUtils.ms2hhmmss(cp.end.mseconds + 500));
                         result.add(m);
                     }
+                }
+
+            }
+
+        }
+        return result;
+    }
+
+
+    /**
+     * 关键词查找 完全匹配 包含 关系 [文件]
+     *
+     * @param type      字幕类型 srt，ass ，ssa，。。。
+     * @param isperfect 完全匹配
+     * @return
+     */
+
+    public static List<List<Map>> search_subs_batch(String type, String[] contents, boolean isperfect, String path, int top) throws IOException {
+
+        List<List<Map>> result = new ArrayList<List<Map>>();
+        for (int i = 0; i < contents.length; i++) {
+            result.add(new ArrayList<Map>());
+        }
+        if (fileList == null)
+            fileList = CommonUtils.getMp4FileList(path, new ArrayList<File>(), type);
+
+        int count = 0;
+
+        for (File file : fileList) {
+            TimedTextObject ttff = CommonUtils.readSrt(file.getAbsolutePath());
+
+            if (ttff == null || ttff.captions == null || ttff.captions.size() == 0) {
+                System.out.println(ttff.fileName + "***************:some thing goes wrong!");
+            } else {
+                Set<Map.Entry<Integer, Caption>> set = ttff.captions.entrySet();
+                Iterator iterator = set.iterator();
+
+                while (iterator.hasNext()) {
+                    Map.Entry<Integer, Caption> enty = (Map.Entry<Integer, Caption>) iterator.next();
+                    Caption cp = enty.getValue();
+                    String word = CommonUtils.v(cp.content);
+
+                    boolean ready = true;
+                    //匹配算法
+                    for (int c = 0; c < contents.length; c++) {
+                        if (result.get(c).size() > top) continue;
+                        ready = false;
+
+                        String content = contents[c];
+                        content = content.replaceAll("[^\\u4e00-\\u9fa5a-zA-Z^0-9]", " ").replaceAll(" +", " ");
+
+                        Map m = match2(content, word, isperfect);
+                        if (m != null) {
+                            count++;
+                            m.put("file", file);
+                            m.put("word", word);
+                            m.put("s", CommonUtils.ms2hhmmss(cp.start.mseconds - 500));
+                            m.put("e", CommonUtils.ms2hhmmss(cp.end.mseconds + 500));
+                            result.get(c).add(m);
+                        }
+                    }
+
+                    if (ready)
+                        return result;
                 }
 
             }
