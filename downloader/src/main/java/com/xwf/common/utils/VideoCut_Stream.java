@@ -3,7 +3,6 @@ package com.xwf.common.utils;
 import com.xwf.common.utils.ssh.SshUtil;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
@@ -70,7 +69,6 @@ public class VideoCut_Stream {
                 + "$(" + youtube_dl + " -f 22 --get-url " + path + ") " + "-vcodec h264 -acodec aac -threads " + threads + " " + outPath;
         System.out.println(cmd);
 
-         String dir = new File(outPath).getParent();
         sshUtil.exe(cmd);
 
 //      sshUtil.close();

@@ -17,10 +17,10 @@ import java.util.concurrent.*;
 public class SshUtil {
     private ChannelExec openChannel;
     private Session session = null;
-    private int timeout = 60000;
+    private int timeout = 10000;
 
-    private LinkedBlockingQueue queue;
-    private ExecutorService service;
+    private static LinkedBlockingQueue queue = new LinkedBlockingQueue<String>();
+
 
     private boolean start = true;
 
@@ -41,15 +41,11 @@ public class SshUtil {
         config.put("StrictHostKeyChecking", "no");
         session.setConfig(config);//为Session对象设置properties
         session.setTimeout(timeout);//设置超时
-        session.connect();//设置连接的超时时间
+        session.connect(10000);//设置连接的超时时间
 
-
-        queue = new LinkedBlockingQueue<String>();
-
-        service = Executors.newCachedThreadPool();
         start = true;
 
-        service.submit(new Runnable() {
+        new Thread(new Runnable() {
             public void run() {
 
                 while (start)
@@ -86,11 +82,24 @@ public class SshUtil {
 
                     } catch (Exception e) {
                         e.printStackTrace();
+                        if ("session is down".equals(e.getMessage())) {
+                            System.out.println("********session is down******");
+                            close();
+
+
+                            try {
+                                getInstance();
+                            } catch (JSchException e1) {
+                                e1.printStackTrace();
+                            }
+                        }
                     }
 
             }
-        });
+        }).start();
 
+
+        System.out.println("started************88888***");
 
     }
 
@@ -138,10 +147,10 @@ public class SshUtil {
 
     public void close() {
         session.disconnect();
-        service.shutdown();
-        queue.clear();
         start = false;
         uniqueInstance = null;
+        System.out.println("********closed******");
+
 
     }
 

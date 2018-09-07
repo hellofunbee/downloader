@@ -36,26 +36,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SshUtil.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SshUtil.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/utils/ssh/SshUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="943">
-              <caret line="67" column="50" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="50" />
+            <state relative-caret-position="393">
+              <caret line="98" column="19" selection-start-line="98" selection-start-column="19" selection-end-line="98" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1510#2922#0" expanded="true" />
-                <element signature="e#2921#2922#0" expanded="true" />
+                <element signature="e#1414#3266#0" expanded="true" />
+                <element signature="e#3265#3266#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="path.property" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/path.property">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -73,8 +63,8 @@
       <file leaf-file-name="VideoCut_Stream.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/utils/VideoCut_Stream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="84" column="44" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="44" />
+            <state relative-caret-position="298">
+              <caret line="71" column="17" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -95,8 +85,8 @@
       <file leaf-file-name="MusicController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/controller/MusicController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1104">
-              <caret line="79" column="35" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
+            <state relative-caret-position="54">
+              <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,7 +94,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searcher_audio1.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="searcher_audio1.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/sercher/searcher_audio1.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1125">
@@ -209,11 +199,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xwf/common/utils/ssh/SSHHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xwf/common/utils/Searcher.java" />
         <option value="$PROJECT_DIR$/src/main/resources/path.property" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xwf/common/utils/ssh/SshUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xwf/common/utils/VideoCut_Stream.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/sercher/searchAudio1.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/sercher/searcher_audio1.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/xwf/common/controller/MusicController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xwf/common/utils/VideoCut_Stream.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xwf/common/utils/ssh/SshUtil.java" />
       </list>
     </option>
   </component>
@@ -998,7 +988,7 @@
       <workItem from="1536220022828" duration="87000" />
       <workItem from="1536220114251" duration="2217000" />
       <workItem from="1536223745474" duration="16732000" />
-      <workItem from="1536267858974" duration="16848000" />
+      <workItem from="1536267858974" duration="18809000" />
     </task>
     <servers />
   </component>
@@ -1035,7 +1025,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164140000" />
+    <option name="totallyTimeSpent" value="166101000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1048,11 +1038,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32465753" sideWeight="0.4911147" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6178082" sideWeight="0.4911147" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1060,7 +1050,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.66849315" sideWeight="0.49030694" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.69452053" sideWeight="0.49030694" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1457,14 +1447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/utils/Searcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2843">
-          <caret line="338" column="42" selection-start-line="338" selection-start-column="42" selection-end-line="338" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.m2/repositories/com/jcraft/jsch/0.1.54/jsch-0.1.54.jar!/com/jcraft/jsch/Session.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
@@ -1505,26 +1487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/utils/ssh/SshUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="943">
-          <caret line="67" column="50" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1510#2922#0" expanded="true" />
-            <element signature="e#2921#2922#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/utils/VideoCut_Stream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="84" column="44" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/sercher/searchAudio1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
@@ -1547,16 +1509,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/controller/MusicController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
-          <caret line="79" column="35" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/sercher/searcher_audio1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1125">
@@ -1573,6 +1525,44 @@
             <marker date="1536302522000" expanded="true" signature="3711:3751" ph="..." />
             <marker date="1536302522000" expanded="true" signature="3920:3944" ph="..." />
             <marker date="1536302522000" expanded="true" signature="5184:5199" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/controller/MusicController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/utils/Searcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2843">
+          <caret line="338" column="42" selection-start-line="338" selection-start-column="42" selection-end-line="338" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/utils/VideoCut_Stream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="71" column="17" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xwf/common/utils/ssh/SshUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="98" column="19" selection-start-line="98" selection-start-column="19" selection-end-line="98" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1414#3266#0" expanded="true" />
+            <element signature="e#3265#3266#0" expanded="true" />
           </folding>
         </state>
       </provider>
