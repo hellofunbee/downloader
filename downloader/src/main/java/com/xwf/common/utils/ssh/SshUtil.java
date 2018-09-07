@@ -1,8 +1,13 @@
 package com.xwf.common.utils.ssh;
 
-import com.jcraft.jsch.*;
+import com.jcraft.jsch.ChannelExec;
+import com.jcraft.jsch.JSch;
+import com.jcraft.jsch.JSchException;
+import com.jcraft.jsch.Session;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.Properties;
 import java.util.concurrent.LinkedBlockingQueue;
 
@@ -22,7 +27,7 @@ public class SshUtil {
 
     private static volatile SshUtil uniqueInstance;
 
-    private SshUtil() throws JSchException {
+    private void getSession() throws JSchException {
         SshConfiguration conf = new SshConfiguration();
         conf.setHost("66.42.74.204");
         conf.setUserName("root");
@@ -38,9 +43,11 @@ public class SshUtil {
         session.setTimeout(timeout);//设置超时
         session.connect(10000);//设置连接的超时时间
 
+    }
+
+    private SshUtil() throws JSchException {
+        getSession();
         start = true;
-
-
         thread = new Thread(new Runnable() {
             public void run() {
 
@@ -87,12 +94,9 @@ public class SshUtil {
                         e.printStackTrace();
                         if ("session is down".equals(e.getMessage())) {
                             System.out.println("********session is down******");
-                            close();
-
-
                             try {
-                                getInstance();
-                            } catch (JSchException e1) {
+                                getSession();
+                            } catch (Exception e1) {
                                 e1.printStackTrace();
                             }
                         }

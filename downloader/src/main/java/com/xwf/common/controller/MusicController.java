@@ -38,25 +38,28 @@ public class MusicController extends Controller {
      */
     public void batchDownload() throws Exception {
         JSONArray aar = (JSONArray) JSONArray.parse(getPara("data"));
+        List<Map> list = new ArrayList<Map>();
         for (int i = 0; i < aar.size(); i++) {
             JSONObject obj = aar.getJSONObject(i);
 
-            try {
-                String s = obj.getString("s");
-                String e = obj.getString("e");
-                String name = obj.getString("name");
-                String key = obj.getString("key");
-                String word = obj.getString("word");
+            String s = obj.getString("s");
+            String e = obj.getString("e");
+            String name = obj.getString("name");
+            String key = obj.getString("key");
+            String word = obj.getString("word");
+            name = getybid(name);
 
-                name = getybid(name);
-
-                VideoCut_Stream.cut(name, s, e, key, word);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-
+            Map m = new HashMap();
+            m.put("youtube_id", name);
+            m.put("key_word", key);
+            m.put("word", word);
+            m.put("s", s);
+            m.put("e", e);
+            list.add(m);
 
         }
+
+        VideoCut_Stream.cut(list);
     }
 
     public void getWords1() throws IOException {
@@ -172,18 +175,13 @@ public class MusicController extends Controller {
                 JSONArray ps = new JSONArray();
                 int i = 0;
 
+
+
                 for (Map m : videos) {
 
                     if (i++ > MAX_RESULT_BATCH) break;
                     File file = ((File) m.get("file"));
                     String name = file.getName();
-                    String word_ = (String) m.get("word");
-                    String s = (String) m.get("s");
-                    String e = (String) m.get("e");
-                    String key = w;
-
-                    if ("1".equals(download))
-                        VideoCut_Stream.cut(getybid(name), s, e, key, word_);
 
                     JSONObject o = new JSONObject();
                     o.put("name", name);
@@ -195,8 +193,8 @@ public class MusicController extends Controller {
                     o.put("type", (300 - (Integer) m.get("type")) / 2);
                     ps.add(o);
 
-
                 }
+
 
                 Map m = new HashMap();
                 m.put("word", w);
