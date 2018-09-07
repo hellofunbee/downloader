@@ -337,8 +337,8 @@ public class Searcher {
                     if (m != null) {
                         m.put("file", file);
                         m.put("word", word);
-                        m.put("s",CommonUtils.ms2hhmmss(cp.start.mseconds));
-                        m.put("e",CommonUtils.ms2hhmmss(cp.end.mseconds));
+                        m.put("s",CommonUtils.ms2hhmmss(cp.start.mseconds -500));
+                        m.put("e",CommonUtils.ms2hhmmss(cp.end.mseconds +500));
                         result.add(m);
                     }
                 }

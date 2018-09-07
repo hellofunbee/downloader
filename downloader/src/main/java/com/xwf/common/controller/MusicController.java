@@ -34,8 +34,7 @@ public class MusicController extends Controller {
                 String key = obj.getString("key");
                 String word = obj.getString("word");
 
-                name = name.substring(name.lastIndexOf("-") + 1);
-                name = name.substring(0, name.indexOf("."));
+                name = name.substring(name.length()-18,name.length()-7);
                 VideoCut_Stream.cut(name, s, e, key, word);
             } catch (Exception e) {
                 e.printStackTrace();
@@ -111,8 +110,7 @@ public class MusicController extends Controller {
             String key = getPara("key");
             String word = getPara("word");
 
-            name = name.substring(name.lastIndexOf("-") + 1);
-            name = name.substring(0, name.indexOf("."));
+            name = name.substring(name.length()-18,name.length()-7);
             VideoCut_Stream.cut(name, s, e, key, word);
         } catch (Exception e) {
             e.printStackTrace();

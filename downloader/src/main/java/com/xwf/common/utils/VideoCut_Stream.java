@@ -65,7 +65,7 @@ public class VideoCut_Stream {
         System.out.println(outPath);
         sshUtil = SshUtil.getInstance();
 
-        String cmd = ffmpegPath + " -ss " + startTime + " -to " + lastTime + " -accurate_seek " + "-i "
+        String cmd = ffmpegPath + " -n -ss " + startTime + " -to " + lastTime + " -accurate_seek " + "-i "
                 + "$(" + youtube_dl + " -f 22 --get-url " + path + ") " + "-vcodec h264 -acodec aac -threads " + threads + " " + outPath;
         System.out.println(cmd);
 
@@ -80,7 +80,8 @@ public class VideoCut_Stream {
         String url = "https://www.youtube.com/watch?v=" + youtube_id;
 
 
-        String out_path = "\'" + stream_out + key_word + "--" + word + "-" + youtube_id + ".mp4\'";
+//        String id = UUID.randomUUID().toString().replaceAll("-","");
+        String out_path = "\'" + stream_out + key_word + "--" + word + "-"+ youtube_id + ".mp4\'";
         exe2(url, out_path, s, e);
 
     }

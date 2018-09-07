@@ -1,15 +1,10 @@
 package com.xwf.common.utils.ssh;
 
-import com.jcraft.jsch.ChannelExec;
-import com.jcraft.jsch.JSch;
-import com.jcraft.jsch.JSchException;
-import com.jcraft.jsch.Session;
+import com.jcraft.jsch.*;
 
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.Properties;
-import java.util.concurrent.*;
+import java.util.concurrent.LinkedBlockingQueue;
 
 /**
  * Created by 15600 on 2017/9/6.
@@ -19,11 +14,11 @@ public class SshUtil {
     private Session session = null;
     private int timeout = 10000;
 
-    private static LinkedBlockingQueue queue = new LinkedBlockingQueue<String>();
+    private static LinkedBlockingQueue queue = new LinkedBlockingQueue<String>(1000);
 
 
     private boolean start = true;
-
+    Thread thread;
 
     private static volatile SshUtil uniqueInstance;
 
@@ -45,15 +40,18 @@ public class SshUtil {
 
         start = true;
 
-        new Thread(new Runnable() {
+
+        thread = new Thread(new Runnable() {
             public void run() {
 
-                while (start)
+                while (start) {
 
+                    System.out.println("run");
                     try {
                         Thread.sleep(1000);
 
-                        String cmd = (String) queue.poll();
+
+                        String cmd = (String) queue.take();
                         if (cmd == null) {
                             Thread.sleep(1000);
                             continue;
@@ -63,22 +61,27 @@ public class SshUtil {
                         StringBuffer sb = new StringBuffer();
                         openChannel = (ChannelExec) session.openChannel("exec");
                         openChannel.setCommand(cmd); //执行命令
-                        openChannel.setPty(true);//虚拟终端？？？
+                        openChannel.setPty(true);//虚拟终端
 
-
-                        int exitStatus = openChannel.getExitStatus(); //退出状态为-1，直到通道关闭
-                        System.out.println(exitStatus);
 
                         // 下面是得到输出的内容
                         openChannel.connect();
                         InputStream in = openChannel.getInputStream();
                         BufferedReader reader = new BufferedReader(new InputStreamReader(in));
                         String buf = null;
+
                         while ((buf = reader.readLine()) != null) {
                             sb.append(buf + "\n");
+                            if (openChannel.getExitStatus() != -1) {
+                                break;
+                            }
+
+                            System.out.println(buf);
+//                            System.out.println(openChannel.getExitStatus());
                         }
 
-                        System.out.println(sb.toString());
+//                        System.out.println(sb.toString());
+
 
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -95,8 +98,11 @@ public class SshUtil {
                         }
                     }
 
+                }
+
             }
-        }).start();
+        });
+        thread.start();
 
 
         System.out.println("started************88888***");
@@ -116,7 +122,6 @@ public class SshUtil {
 
 
     public void exe(String command) throws Exception {
-
         queue.add(command);
 
 
