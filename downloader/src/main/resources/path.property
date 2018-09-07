@@ -4,8 +4,13 @@ videoPath=/Users/weifengxu/Downloads/电视/obama/
 srtPath=/Users/weifengxu/Downloads/电视/obama/srt/
 outPath=/Users/weifengxu/Desktop/clips/obama/
 
-ffmpegPath=/Users/weifengxu/Desktop/tool/jave_ffmpeg/ffmpeg
+ffmpegPath=/root/ffmpeg/ffmpeg
+youtube-dl=youtube-dl
+stream_out=/root/clips/
+
+
 zip_path=/Users/weifengxu/Desktop/clips/ziptemp/
+srt_path=/Users/weifengxu/Desktop/srt/
 
 
 

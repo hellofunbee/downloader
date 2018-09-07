@@ -4,6 +4,9 @@ import com.xwf.common.http.HttpUtils;
 import com.xwf.common.video.MFFMPEGLocator;
 import it.sauronsoftware.jave.Encoder;
 import it.sauronsoftware.jave.MultimediaInfo;
+import subtitleFile.FormatASS;
+import subtitleFile.FormatSRT;
+import subtitleFile.TimedTextObject;
 
 import java.io.*;
 import java.security.MessageDigest;
@@ -172,12 +175,12 @@ public class CommonUtils {
 
     public static String toWebUrl(String path) {
 
-        return path.replace("/Users/weifengxu/Desktop/clips/", "/usr/");
+        return path.replace(CommonUtils.getPathByKey("base_path"), "/usr/");
     }
 
     public static String tolocalUrl(String path) {
 
-        return path.replace("/usr/", "/Users/weifengxu/Desktop/clips/");
+        return path.replace("/usr/", CommonUtils.getPathByKey("base_path"));
     }
 
     /**
@@ -522,6 +525,32 @@ public class CommonUtils {
         }
 
         return dirFile.delete();
+    }
+
+    /**
+     * 读取字幕文件srt
+     *
+     * @param srtPath
+     * @throws IOException
+     */
+    public static TimedTextObject readSrt(String srtPath) throws IOException {
+        File file = new File(srtPath);
+        InputStream is = new FileInputStream(file);
+        if (srtPath.indexOf(".srt") != -1) {
+            FormatSRT ttff = new FormatSRT();
+
+            return ttff.parseFile(file.getName(), is);
+        } else if (srtPath.indexOf(".ssa") != -1) {
+            FormatASS ttff = new FormatASS();
+            return ttff.parseFile(file.getName(), is);
+
+        } else if (srtPath.indexOf(".ass") != -1) {
+            FormatASS ttff = new FormatASS();
+            return ttff.parseFile(file.getName(), is);
+
+        }
+        return null;
+
     }
 
 

@@ -2,6 +2,8 @@ package com.xwf.common.utils;
 
 import com.jfinal.plugin.activerecord.Record;
 import com.xwf.common.dao.ClipsDao;
+import subtitleFile.Caption;
+import subtitleFile.TimedTextObject;
 
 import java.io.*;
 import java.util.*;
@@ -10,6 +12,8 @@ import java.util.*;
  * Created by weifengxu on 2018/8/8.
  */
 public class Searcher {
+
+    static List<File> fileList = null;
 
     public static void main(String[] args) throws IOException {
 
@@ -71,9 +75,9 @@ public class Searcher {
 
     private static void or(int lang_type, List<Map> maps, Record clip, String content, int c, boolean isperfect) {
         String word = null;
-        if(clip.getInt("lang_type") == 1){
+        if (clip.getInt("lang_type") == 1) {
             word = clip.getStr("en");
-        }else {
+        } else {
             word = clip.getStr("cn");
         }
 
@@ -191,7 +195,6 @@ public class Searcher {
     }
 
 
-
     /**
      * @param content   要查询的内容
      * @param isperfect 是否完全匹配
@@ -231,6 +234,8 @@ public class Searcher {
     }
 
     /**
+     *
+     * english
      * @param content   要查询的内容
      * @param isperfect 是否完全匹配
      * @param word      数据源
@@ -293,6 +298,55 @@ public class Searcher {
 
 
         return m;
+    }
+
+
+    /**
+     * 关键词查找 完全匹配 包含 关系 [文件]
+     *
+     * @param content
+     * @param type      字幕类型 srt，ass ，ssa，。。。
+     * @param isperfect 完全匹配
+     * @return
+     */
+
+    public static List<Map> search_subs(String type, String content, boolean isperfect, String path) throws IOException {
+        content = content.replaceAll("[^\\u4e00-\\u9fa5a-zA-Z^0-9]", " ").replaceAll(" +", " ");
+        List<Map> result = new ArrayList<Map>();
+        if (fileList == null)
+            fileList = CommonUtils.getMp4FileList(path, new ArrayList<File>(), type);
+
+
+        for (File file : fileList) {
+            TimedTextObject ttff = CommonUtils.readSrt(file.getAbsolutePath());
+
+
+            if (ttff == null || ttff.captions == null || ttff.captions.size() == 0) {
+                System.out.println(ttff.fileName + "***************:some thing goes wrong!");
+            } else {
+                Set<Map.Entry<Integer, Caption>> set = ttff.captions.entrySet();
+                Iterator iterator = set.iterator();
+
+                while (iterator.hasNext()) {
+
+                    Map.Entry<Integer, Caption> enty = (Map.Entry<Integer, Caption>) iterator.next();
+                    Caption cp = enty.getValue();
+                    String word = CommonUtils.v(cp.content);
+                    //匹配算法
+                    Map m = match2(content, word, isperfect);
+                    if (m != null) {
+                        m.put("file", file);
+                        m.put("word", word);
+                        m.put("s",CommonUtils.ms2hhmmss(cp.start.mseconds));
+                        m.put("e",CommonUtils.ms2hhmmss(cp.end.mseconds));
+                        result.add(m);
+                    }
+                }
+
+            }
+
+        }
+        return result;
     }
 
 

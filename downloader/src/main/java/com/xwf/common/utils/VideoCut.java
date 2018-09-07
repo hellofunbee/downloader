@@ -1,11 +1,10 @@
 package com.xwf.common.utils;
 
-import subtitleFile.*;
+import subtitleFile.Caption;
+import subtitleFile.TimedTextObject;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.*;
 
 /**
@@ -89,7 +88,7 @@ public class VideoCut {
         if (files != null && files.length > 0) {
             for (File file : files) {
                 if (CommonUtils.isSrt(file)) {
-                    ttff = readSrt(file.getAbsolutePath());
+                    ttff = CommonUtils.readSrt(file.getAbsolutePath());
                     String name = file.getName().substring(0, file.getName().lastIndexOf("."));
 
 
@@ -164,31 +163,7 @@ public class VideoCut {
     }
 
 
-    /**
-     * 读取字幕文件srt
-     *
-     * @param srtPath
-     * @throws IOException
-     */
-    public static TimedTextObject readSrt(String srtPath) throws IOException {
-        File file = new File(srtPath);
-        InputStream is = new FileInputStream(file);
-        if (srtPath.indexOf(".srt") != -1) {
-            FormatSRT ttff = new FormatSRT();
 
-            return ttff.parseFile(file.getName(), is);
-        } else if (srtPath.indexOf(".ssa") != -1) {
-            FormatASS ttff = new FormatASS();
-            return ttff.parseFile(file.getName(), is);
-
-        } else if (srtPath.indexOf(".ass") != -1) {
-            FormatASS ttff = new FormatASS();
-            return ttff.parseFile(file.getName(), is);
-
-        }
-        return null;
-
-    }
 
 
     /**
