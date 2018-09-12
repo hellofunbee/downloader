@@ -333,6 +333,10 @@ public class Searcher {
                         return result;
                     Map.Entry<Integer, Caption> enty = (Map.Entry<Integer, Caption>) iterator.next();
                     Caption cp = enty.getValue();
+
+                    if (pass(cp))
+                        continue;
+
                     String word = CommonUtils.v(cp.content);
                     //匹配算法
                     Map m = match2(content, word, isperfect);
@@ -384,6 +388,11 @@ public class Searcher {
                 while (iterator.hasNext()) {
                     Map.Entry<Integer, Caption> enty = (Map.Entry<Integer, Caption>) iterator.next();
                     Caption cp = enty.getValue();
+
+                    if (pass(cp))
+                        continue;
+
+
                     String word = CommonUtils.v(cp.content);
 
                     boolean ready = true;
@@ -414,6 +423,12 @@ public class Searcher {
 
         }
         return result;
+    }
+
+    private static boolean pass(Caption cp) {
+        if (cp.end.mseconds - cp.start.mseconds < 50)
+            return true;
+        return false;
     }
 
 

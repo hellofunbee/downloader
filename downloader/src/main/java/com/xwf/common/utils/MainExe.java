@@ -1,6 +1,11 @@
 package com.xwf.common.utils;
 
 import it.sauronsoftware.jave.MultimediaInfo;
+import org.apache.commons.io.FileUtils;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 import org.junit.Test;
 
 import java.io.*;
@@ -162,7 +167,7 @@ public class MainExe {
                */
 
                 String name = CommonUtils.v(file.getName());
-                name=name.replaceAll(" lrc",".lrc");
+                name = name.replaceAll(" lrc", ".lrc");
 
                 System.out.println(file.getName());
                 System.out.println(CommonUtils.v(file.getName()));
@@ -285,6 +290,33 @@ public class MainExe {
 
         System.out.println(str);
 
+    }
+
+
+    @Test
+    public void parseUrl() throws IOException {
+        String path_1 = "/Users/weifengxu/Desktop/youtube";
+        String exist = FileUtils.readFileToString(new File(path_1));
+        List<String> urls = Arrays.asList(exist.split("\n"));
+
+
+        String path = "/Users/weifengxu/Desktop/president obama speeches - YouTube.html";
+        String html = FileUtils.readFileToString(new File(path));
+        Document doc = Jsoup.parse(html);
+        Elements dls = doc.select("div h3 a");
+
+        System.out.println();
+        for (Element e : dls) {
+            String url = e.attr("href");
+            if (urls.indexOf(url) != -1) {
+//                System.out.println("exist:" + url);
+                continue;
+            }
+
+            System.out.println(e.attr("href"));
+
+
+        }
     }
 
 

@@ -15,9 +15,11 @@ import java.util.*;
  */
 public class MusicController extends Controller {
 
-    final static int MAX_QUEUE = 200;
+    final static int MAX_QUEUE_BATCH = 200;
     final static int MAX_RESULT_BATCH = 30;
-    final static int MAX_RESULT = 100;
+
+    final static int MAX_QUEUE = 10000;
+    final static int MAX_RESULT = 1000;
 
     public void index() throws Exception {
         render("sercher/searchAudio.html");
@@ -165,7 +167,7 @@ public class MusicController extends Controller {
                 words = new String[]{word};
             }
 
-            List<List<Map>> vvss = Searcher.search_subs_batch(".srt", words, false, movie_path, MAX_QUEUE);
+            List<List<Map>> vvss = Searcher.search_subs_batch(".srt", words, false, movie_path, MAX_QUEUE_BATCH);
 
             for (int j = 0; j < words.length; j++) {
                 String w = words[j];
