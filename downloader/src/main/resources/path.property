@@ -1,12 +1,13 @@
-//videopath 相当于后面加上srt的名字 再加上 ".mp4"
+//videopath \u76F8\u5F53\u4E8E\u540E\u9762\u52A0\u4E0Asrt\u7684\u540D\u5B57 \u518D\u52A0\u4E0A ".mp4"
 base_path=/Users/weifengxu/Desktop/clips/
-videoPath=/Users/weifengxu/Downloads/电视/obama/
-srtPath=/Users/weifengxu/Downloads/电视/obama/srt/
+videoPath=/Users/weifengxu/Downloads/\u7535\u89C6/obama/
+srtPath=/Users/weifengxu/Downloads/\u7535\u89C6/obama/srt/
 outPath=/Users/weifengxu/Desktop/clips/obama/
 
-ffmpegPath=/root/ffmpeg/ffmpeg
+ffmpegPath=/Users/weifengxu/Desktop/tool/jave_ffmpeg/ffmpeg
 youtube-dl=youtube-dl
-stream_out=/root/clips/
+stream_out=/Users/weifengxu/Desktop/clips/
+
 
 
 zip_path=/Users/weifengxu/Desktop/clips/ziptemp/
