@@ -1,5 +1,6 @@
 package com.xwf.common.utils;
 
+import org.apache.commons.io.FileUtils;
 import org.junit.Test;
 import subtitleFile.FormatSRT;
 import subtitleFile.IOClass;
@@ -14,8 +15,8 @@ import java.util.List;
  * Created by weifengxu on 2018/9/6.
  */
 public class VTToSrt {
-//    static String path = "/Users/weifengxu/Desktop/srt/";
-   static String path = "/Users/weifengxu/Downloads/srt";
+    //    static String path = "/Users/weifengxu/Desktop/srt/";
+    static String path = "/Users/weifengxu/Downloads/srt";
     ;
     static String ffmpeg = CommonUtils.getPathByKey("ffmpeg");
     static String temp = CommonUtils.getPathByKey("srt_path") + "temp.srt";
@@ -142,6 +143,62 @@ public class VTToSrt {
 
 
     @Test
+    public void format() throws IOException {
+
+        path = "/Users/weifengxu/Downloads/voice src/服务器代码/vradata-结构.sql";
+
+        String sql = FileUtils.readFileToString(new File(path));
+        String[] sqls = sql.split("\n");
+
+        List tables = new ArrayList<Table>();
+
+        StringBuffer sb = new StringBuffer();
+        Table t=null ;
+        for (String srt : sqls) {
+            if (srt == null || srt.length() <= 1)
+                continue;
+            if (srt.indexOf("PRIMARY") != -1)
+                continue;
+            if (srt.indexOf("`id`") != -1)
+                continue;
+
+            if (srt.startsWith("CREATE")) {
+                srt = srt.replace("CREATE TABLE", "").replace(" (", "").replace("`","").replace(" ","");
+                sb.append("\n" + srt + "\n");
+                t = new Table();
+                t.table = srt;
+                tables.add(t);
+            }
+
+            if (srt.toLowerCase().indexOf("id") != -1) {
+
+                sb.append(srt + "\n");
+                t.ids.add(srt);
+            }
+
+
+        }
+
+        System.out.println(sb.toString());
+        System.out.println(tables.toString());
+
+    }
+
+    class Table {
+        String table;
+        List<String> ids = new ArrayList<String>();
+
+        @Override
+        public String toString() {
+            return "Table{" +
+                    "table='" + table + '\'' +
+                    ", ids=" + ids +
+                    "}\n";
+        }
+    }
+
+
+    @Test
     public void dele() {
 
         path = "/Users/weifengxu/Downloads/srt";
@@ -149,31 +206,31 @@ public class VTToSrt {
         List<File> srts = CommonUtils.getMp4FileList(path, new ArrayList<File>(), "vtt");
         String srt_name = null;
 
-            boolean isIn;
-            for (File srt : srts) {
-                isIn = false;
-                srt_name = srt.getName().replace(".vtt", "");
-                if (srt_name.indexOf(".") == -1)
-                    continue;
+        boolean isIn;
+        for (File srt : srts) {
+            isIn = false;
+            srt_name = srt.getName().replace(".vtt", "");
+            if (srt_name.indexOf(".") == -1)
+                continue;
 
-                srt_name = srt_name.substring(0, srt_name.lastIndexOf("."));
+            srt_name = srt_name.substring(0, srt_name.lastIndexOf("."));
 
-                for (File jpg : jpgs) {
-                    String jpg_name = jpg.getName().replace(".jpg", "");
+            for (File jpg : jpgs) {
+                String jpg_name = jpg.getName().replace(".jpg", "");
 
-                    if (srt_name.equals(jpg_name)) {
-                        isIn = true;
-                        break;
-                    }
+                if (srt_name.equals(jpg_name)) {
+                    isIn = true;
+                    break;
                 }
+            }
 
-                if (!isIn) {
+            if (!isIn) {
                 srt.delete();
 
-                    System.out.println(srt_name);
-                }
-
+                System.out.println(srt_name);
             }
+
+        }
 
     }
 

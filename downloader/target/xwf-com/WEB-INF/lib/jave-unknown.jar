@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="description">
+        <meta content="" name="author">
+        <title fieldname="pagetitle">上网认证系统</title>
+        <script type="text/javascript">
+            (function(u) {
+                if (u.match(/AppleWebKit.*Mobile.*/) || u.indexOf('Android') > -1 || u.indexOf('iPhone') > -1) {
+                    window.location.href = "mobile.html";
+                }
+            })(navigator.userAgent);
+        </script>
+        <link href="css/pc.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="css/countryCode.css" rel="stylesheet" type="text/css" media="screen">
+        <script type="text/javascript">
+            var disableAdLoop = false;
+            var PAGECONFIG = {
+                hasRemember:true,
+                chText:{"accountTabTitle":"\u8d26\u53f7\u8ba4\u8bc1","accountTabDesc":"","smsTabTitle":"\u77ed\u4fe1\u8ba4\u8bc1","smsTabDesc":"","guestTabTitle":"\u4e34\u65f6\u8d26\u53f7","guestTabDesc":"","submitBtnText":"","getSmsCodeBtnText":"\u83b7\u53d6\u9a8c\u8bc1\u7801","copyright":"","qrCodeTabDesc":"\u8bf7\u8054\u7cfb\u5185\u90e8\u5458\u5de5\u626b\u63cf\u4e8c\u7ef4\u7801\u901a\u8fc7\u8ba4\u8bc1\u3002","qrCodeTabInfo":"","qrCodeTabTitle":"\u4e8c\u7ef4\u7801\u8ba4\u8bc1","qrcode_check_desc":{"content":"\u60a8\u6b63\u5728\u5bf9\u7ec8\u7aef<MAC>\u8fdb\u884c\u6388\u6743\uff0c\u8bf7\u786e\u8ba4\u662f\u5426\u7ee7\u7eed\u8fdb\u884c\u6388\u6743?"},"required":"","qrcode_check_info":"optional","wxTabDesc":"","wxAccount":"Test_A","wxTabTitle":"\u5fae\u4fe1\u8ba4\u8bc1","nouserTabDesc":"","nouserTabTitle":"\u514d\u7528\u6237\u8ba4\u8bc1","srufing":"\u6211\u8981\u8ba4\u8bc1\u4e0a\u7f51","disclaimer_link_text":"\u514d\u8d23\u58f0\u660e\u6761\u6b3e","other_desc":"\u5176\u4ed6\u65b9\u5f0f","sms_icon":"\u77ed\u4fe1","wx_icon":"\u5fae\u4fe1","db_tmp_icon":"\u4e34\u65f6\u8d26\u53f7","qrcode_icon":"\u4e8c\u7ef4\u7801","no_verify_icon":"\u514d\u8ba4\u8bc1","acnt_icon":"\u8d26\u53f7","account_btn_text":"\u767b\u5f55","sms_btn_text":"\u767b\u5f55","guest_btn_text":"\u767b\u5f55","nouser_btn_text":"\u767b\u5f55","facebook_tab_title":"Facebook\u8ba4\u8bc1","facebook_tab_desc":"\u8ba4\u8bc1\u4e0a\u7f51","facebook_desc_text":"Facebook","iwant_enable":"1","iwant_des_text":"\u5fae\u4fe1\u626b\u63cf\u201c\u6211\u8981\u4e0a\u7f51\u201d\u4e8c\u7ef4\u7801\n\u4e8c\u7ef4\u7801\u6d77\u62a5\u901a\u5e38\u7c98\u8d34\u5728\u53ef\u89c1\u5904","attention_enable":"1","attention_des_text":"\u901a\u8fc7\u5173\u6ce8\u516c\u4f17\u53f7\u4e0a\u7f51","pagetitle":"\u4e0a\u7f51\u8ba4\u8bc1\u7cfb\u7edf","content":"<div><font face=\"tahoma, arial, helvetica, sans-serif\">\u5c0a\u656c\u7684\u7528\u6237:<\/font><\/div><div><font face=\"tahoma, arial, helvetica, sans-serif\">\u6b22\u8fce\u60a8\u4f7f\u7528XXXXXX(\u4e0b\u79f0\u201c\u6211\u5355\u4f4d\u201d)\u63d0\u4f9b\u7684\u65e0\u7ebf\u7f51\u7edc\uff0c\u73b0\u5c06\u6709\u5173\u6ce8\u610f\u4e8b\u9879\u6e29\u99a8\u63d0\u793a\u5982\u4e0b\uff1a<\/font><\/div><div><font face=\"tahoma, arial, helvetica, sans-serif\">1\u3001\u4f7f\u7528\u8fc7\u7a0b\u4e2d\uff0c\u8bf7\u6ce8\u610f\u81ea\u884c\u7504\u522b\u975e\u6cd5\u94fe\u63a5\u3001\u9493\u9c7c\u7f51\u7ad9\u548c\u5176\u4ed6\u8bc8\u9a97\u4fe1\u606f\uff0c\u59a5\u5584\u4fdd\u7ba1\u4e2a\u4eba\u4fe1\u606f\uff0c\u786e\u4fdd\u4e2a\u4eba\u4fe1\u606f\u5b89\u5168\u548c\u8d22\u4ea7\u5b89\u5168\uff0c\u56e0\u6b64\u906d\u53d7\u7684\u4efb\u4f55\u635f\u5931\u4e0e\u6211\u5355\u4f4d\u65e0\u5173\uff1b<\/font><\/div><div><font face=\"tahoma, arial, helvetica, sans-serif\">2\u3001\u4f7f\u7528\u8fc7\u7a0b\u4e2d\uff0c\u8bf7\u52a1\u5fc5\u9075\u5b88\u56fd\u5bb6\u76f8\u5173\u6cd5\u5f8b\u6cd5\u89c4\u548c\u516c\u5171\u9053\u5fb7\uff0c\u52ff\u53d1\u5e03\u3001\u4f20\u64ad\u6709\u8fdd\u6cd5\u5f8b\u6cd5\u89c4\u548c\u793e\u4f1a\u516c\u5fb7\u7684\u8a00\u8bba\u548c\u4fe1\u606f\uff0c\u60a8\u6240\u53d1\u5e03\u548c\u4f20\u64ad\u7684\u4e00\u5207\u8a00\u8bba\u548c\u4fe1\u606f\u7531\u60a8\u81ea\u884c\u62c5\u8d23\uff1b<\/font><\/div><div><font face=\"tahoma, arial, helvetica, sans-serif\">3\u3001\u56e0\u901a\u8baf\u7ebf\u8def\u6545\u969c\u3001\u8ba1\u7b97\u673a\u75c5\u6bd2\u3001\u9ed1\u5ba2\u653b\u51fb\u53ca\u5176\u4ed6\u5404\u79cd\u4e0d\u53ef\u6297\u529b\u539f\u56e0\u800c\u5bfc\u81f4\u60a8\u906d\u53d7\u7684\u4e00\u5207\u635f\u5931\uff0c\u60a8\u987b\u81ea\u884c\u627f\u62c5\u5982\u60a8\u5df2\u5f00\u59cb\u4f7f\u7528\u6211\u5355\u4f4d\u7684\u65e0\u7ebf\u7f51\u7edc\uff0c\u5219\u610f\u5473\u7740\u5df2\u4ed4\u7ec6\u9605\u8bfb\u5e76\u5df2\u63a5\u53d7\u4e0a\u8ff0\u63d0\u793a\u5185\u5bb9\u3002<\/font><\/div>","content_name":"\u514d\u8d23\u58f0\u660e","disclaimer_allow":true,"disclaimer_enable":true,"notice_type":"disclaimer","bgcolor":"#E6F8FE","attention_desImg":"res\/img\/attention_desImg.png","attention_gzImg":"res\/img\/attention_gzImg.png","iwant_desImg":"res\/img\/iwant_desImg.png","iwant_iwImg":"res\/img\/iwant_iwImg.png"},
+                enText:{"accountTabTitle":"User Authentication","accountTabDesc":"","smsTabTitle":"SMS Authentication","smsTabDesc":"","guestTabTitle":"Guest Account","guestTabDesc":"","submitBtnText":"","getSmsCodeBtnText":"Get SMS PWD","copyright":"","qrCodeTabDesc":"Use any QR code reader on receptionist's smart device to scan the QR code.","qrCodeTabInfo":"","qrCodeTabTitle":"QR Code","qrcode_check_desc":{"content":"You are to authorize the guest (<MAC>). Would you like to proceed?"},"required":"","qrcode_check_info":"optional","wxTabDesc":"","wxAccount":"Test_A","wxTabTitle":"WeChat authentication","nouserTabDesc":"","nouserTabTitle":"Free Access to WLAN","srufing":"Start Now","disclaimer_link_text":"","other_desc":"Other method","sms_icon":"SMS","wx_icon":"WeChat","db_tmp_icon":"Guest","qrcode_icon":"QR Code","no_verify_icon":"Free","acnt_icon":"Account","account_btn_text":"Login","sms_btn_text":"Login","guest_btn_text":"Login","nouser_btn_text":"Login","facebook_tab_title":"Facebook","facebook_tab_desc":"Authentication","facebook_desc_text":"Facebook","iwant_enable":"1","iwant_des_text":"WeChat scanning \"I want to surf the Internet\"","attention_enable":"1","attention_des_text":"The Internet by the public account","pagetitle":"\u4e0a\u7f51\u8ba4\u8bc1\u7cfb\u7edf","content":"<div><font face=\"tahoma, arial, helvetica, sans-serif\">Dear User:<\/font><\/div><div><font face=\"tahoma, arial, helvetica, sans-serif\">You are about to access the Internet through a wireless hotspot(the \"Service\") operated by XXX. By using the Service, you agree with all terms in this Terms of Use and that you do so solely at your own risk.<\/font><\/div><div><font face=\"tahoma, arial, helvetica, sans-serif\">1. It is the users sole responsibility to protect her\/his information from all risks associated with Internet usage, including but not limited to any exposure, damage, injury, loss, or theft that may occur as a result of access to malicious links, phishing websites and fraud information.<\/font><\/div><div><font face=\"tahoma, arial, helvetica, sans-serif\">2. Your use of the Service and any activities conducted online through the Service shall not violate any applicable law, regulation or ethic. XXX shall not accept responsibility resulting from any inaccurate, unsuitable, offensive or illegal Internet communications of the users.<\/font><\/div><div><font face=\"tahoma, arial, helvetica, sans-serif\">3. The Service is provided on an as available basis without warranties of any kind, including but not limited to network interruption, computer viruses, security attacks and acts of God.<\/font><\/div>","content_en":"<div><font face=\"tahoma, arial, helvetica, sans-serif\">Dear User:<\/font><\/div><div><font face=\"tahoma, arial, helvetica, sans-serif\">You are about to access the Internet through a wireless hotspot(the \"Service\") operated by XXX. By using the Service, you agree with all terms in this Terms of Use and that you do so solely at your own risk.<\/font><\/div><div><font face=\"tahoma, arial, helvetica, sans-serif\">1. It is the users sole responsibility to protect her\/his information from all risks associated with Internet usage, including but not limited to any exposure, damage, injury, loss, or theft that may occur as a result of access to malicious links, phishing websites and fraud information.<\/font><\/div><div><font face=\"tahoma, arial, helvetica, sans-serif\">2. Your use of the Service and any activities conducted online through the Service shall not violate any applicable law, regulation or ethic. XXX shall not accept responsibility resulting from any inaccurate, unsuitable, offensive or illegal Internet communications of the users.<\/font><\/div><div><font face=\"tahoma, arial, helvetica, sans-serif\">3. The Service is provided on an as available basis without warranties of any kind, including but not limited to network interruption, computer viruses, security attacks and acts of God.<\/font><\/div>","content_name":"Terms of Use","disclaimer_allow":true,"disclaimer_enable":true,"notice_type":"disclaimer","bgcolor":"#E6F8FE","attention_desImg":"res\/img\/attention_desImg_en.png","attention_gzImg":"res\/img\/attention_gzImg_en.png","iwant_desImg":"res\/img\/iwant_desImg_en.png","iwant_iwImg":"res\/img\/iwant_iwImg_en.png"},    
+                adtype:'0',
+                qrcode_icon:'',
+                adUrl:'',
+                forceAd:'1',
+                ref_time:'10',
+                delay_time:'2', //每页播放时间
+                defLang:'zh',
+                mode:'pc'
+            };
+            PAGECONFIG.chText.fb_icon = "Facebook";
+            PAGECONFIG.enText.fb_icon = "Facebook";
+            PAGECONFIG.chText.fbTabTitle = "Facebook";
+            PAGECONFIG.enText.fbTabTitle = "Facebook";
+            if(!PAGECONFIG.chText.facebook_tab_title){
+            	PAGECONFIG.chText.facebook_tab_title='Facebook认证';
+            	PAGECONFIG.enText.facebook_tab_title='Facebook Authenfication';
+            }
+            if(!PAGECONFIG.chText.facebook_tab_desc){
+            	PAGECONFIG.chText.facebook_tab_desc='认证上网';
+            	PAGECONFIG.enText.facebook_tab_desc='Authenfication';
+            }
+            if(!PAGECONFIG.chText.facebook_desc_text){
+            	PAGECONFIG.chText.facebook_desc_text='Facebook';
+            	PAGECONFIG.enText.facebook_desc_text='Facebook';
+            }
+            if(!PAGECONFIG.chText.submitBtnText){
+            	PAGECONFIG.chText.submitBtnText='登录';
+            	PAGECONFIG.enText.submitBtnText='Login';
+            }
+            PAGECONFIG.qrCodeTabInfo = PAGECONFIG.chText.qrCodeTabInfo;
+            PAGECONFIG.hasDisclaimer = PAGECONFIG.chText.disclaimer_enable;
+            PAGECONFIG.disclaimerChecked = PAGECONFIG.chText.disclaimer_allow;
+        </script>
+        <script src="../share/res/js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/jquery.abox.js" type="text/javascript"></script>
+        <script src="js/pc.js" type="text/javascript"></script>
+    </head>
+   <body id="login" class="no-asense" data-default="#sign_psw" data-sign="wechat|sms|temp|any" data-wechat="qrscan|public">
+        <span id="version" version="2.0"></span>
+        <input id="rsa_public_key" type="text" style="display:none" value="EA4CE8611698DC2933635EC093340C9F74CCAF911742FD8732B374FF4A0DACF9FF41F64BF9717F881B0F4F20686765A3BBCA427E8E1779EE2C31F61079D7EF544C01145799C8ED5AECFE369A0AA3883704ABB92FD919F5BC50E6C62B0472D24444559EBC0DDAF9292AD7344079E36D779886E59E6F13005A3DC4EF8F5C97EFA7"/>
+        <input id="rsa_public_key_exponent" type="text" style="display:none" value="10001"/>
+        <input id="sms_mac_loged" type="text" style="display:none" value="<%sms_mac_loged%>"/>
+       <div class="header">
+            <div class="inner">
+                <div class="logo"> 
+                	<div id='logoimg'> <img src="res/img/logo.png" ></div>
+                    <dl><dt><a id="lang_button" href="#lang" data-tap="drop"><span class="icon24 en" fieldname="language"></span><strong></strong></a></dt>
+                        <dd class="dropmenu">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li data-target="sign_psw" class="lnk-psw"><a href="#sign_psw" data-tap="go"><span class="dt psw"></span><strong fieldname="acnt_icon"></strong></a></li>
+                        <li data-target="sign_sms" class="lnk-sms"><a href="#sign_sms" data-tap="go"><span class="dt sms"></span><strong fieldname="sms_icon"></strong></a></li>
+                        <li data-target="sign_wechat" class="lnk-wechat"><a href="#sign_wechat" data-tap="go"><span class="dt wechat"></span><strong fieldname="wx_icon"></strong></a></li>
+                        <li data-target="sign_swx" class="lnk-wechat"><a href="#sign_swx" data-tap="go"><span class="dt sms"></span><strong fieldname="sms_wx"></strong></a></li>
+                        <li data-target="sign_qr" class="lnk-qr"><a href="#sign_qr" data-tap="go"><span class="dt qr"></span><strong fieldname="qrcode_icon"></strong></a></li>
+                        <li data-target="sign_temp" class="lnk-temp"><a href="#sign_temp" data-tap="go"><span class="dt temp"></span><strong fieldname="db_tmp_icon"></strong></a></li>
+                        <li data-target="sign_any" class="lnk-any"><a href="#sign_any" data-tap="go"><span class="dt any"></span><strong fieldname="no_verify_icon"></strong></a></li>
+                    	<li data-target="sign_fb" class="lnk-fb"><a href="#sign_fb" data-tap="go"><span class="dt fb"></span><strong fieldname="facebook_desc_text"></strong></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="sign_psw"  class="section">
+            <div class="inner" id="account_form" >
+                <div class="sec-header">
+                    <div class="mid-region">
+                        <h2 fieldname="accountTabTitle"></h2>
+                    </div>
+                </div>
+                <div class="form">
+                    <p fieldname="accountTabDesc"></p>
+                    <p>
+                        <input type="text" id="account_form_name" firstclear class="text ico-user" name="user" value=""/>
+                    </p>
+                    <p>
+                        <input type="password" id="account_form_pwd" firstclear class="text ico-pwd" name="user" value=""/>
+                    </p>
+                    <dl class="login_box_msg" style="display:none">
+                        <dt></dt>
+                        <dd></dd>
+                    </dl>
+                    <p>
+                        <input type="checkbox" id="account_form_remember" name="remember">
+                        <label for="account_form_remember" fieldname="remember_pwd_templat" class='f15'></label>
+                        <a href="#modi_psw" id='modi_link' data-tap="go" class="mody f15" fieldname="change_pwd_get_pwd_back"></a>
+                        <a href="#modi_psw2" id='active_link' data-tap="go" class="mody f15" fieldname="account_active"></a>
+                   		<a href="#get_pwd" id='get_pwd_link' style='display:none;' data-tap="go" class="mody f15" fieldname="get_pwd"></a>
+                    </p>
+                    <p class="login_disclaimer">
+                        <input id="account_form_disclaimer" type="checkbox" name="legal">
+                        <label for="account_form_disclaimer" fieldname="disclaimer_link_text_view"></label>
+                        <span>《<span  data-tap="drop" fieldname="content_name"></span>》</span>
+                    </p>
+                    <p>
+                        <button class="large-btn round-corner" id="account_form_submitBtn" fieldname="account_btn_text"></button>
+                    </p>
+                     <p id='active_tip' style="display:none; color: brown;font-size: 13px;" fieldname="active_tip">
+                        	首次登录用户请先激活账号
+                    </p>
+                </div>
+            </div>
+        </div>
+ 		<div id="modi_psw" class="section">
+            <div class="inner">
+                <div class="sec-header">
+                    <div class="mid-region">
+                        <h2 fieldname="change_pwd_default"></h2>
+                    </div>
+                </div>
+                <div class="form" id="changePwd_form">
+                    <p id='change_pwd_desc' fieldname="want_change_pwd_default"></p>
+                    <div class="login_box_title login_box_msg" >
+                        <p></p>
+                        <dl class="login_box_msg" style="display:none">
+                            <dt></dt>
+                            <dd></dd>
+                        </dl>
+                    </div>
+                    <p><label id='change_pwd_account_active' fieldname="user_value_default"></label>
+                        <input id="changePwd_form_name" type="text" class="text ico-user"name="user" value="" />
+                    </p>
+                    <p>
+                        <button id="changePwd_form_submitBtn" class="large-btn round-corner" fieldname="next_step"></button>
+                    </p>
+                    <p>
+                        <!-- <button class="large-btn round-corner" data-tap="go" data-target="#sign_psw" fieldname="cancel_default"></button> -->
+                   		<a class="hd-btn" href="#sign_psw" data-tap="go" data-target="#sign_psw" fieldname="back_templet"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="modi_psw2" class="section">
+            <div class="inner">
+                <div class="sec-header">
+                    <div class="mid-region">
+                        <h2 fieldname="account_active"></h2>
+                    </div>
+                </div>
+                <div class="form" id="changePwd2_form">
+                    <p id='change_pwd_desc' fieldname="want_active_default"></p>
+                    <div class="login_box_title login_box_msg" >
+                        <p></p>
+                        <dl class="login_box_msg" style="display:none">
+                            <dt></dt>
+                            <dd></dd>
+                        </dl>
+                    </div>
+                    <p><label fieldname="default_phone"></label>
+                        <input id="changePwd2_form_name" type="text" class="text ico-phone" name="user" value="" />
+                    </p>
+                    <p>
+                        <button id="changePwd2_form_submitBtn" class="large-btn round-corner" fieldname="next_step"></button>
+                    </p>
+                    <p>
+                        <!-- <button class="large-btn round-corner" data-tap="go" data-target="#sign_psw" fieldname="cancel_default"></button> -->
+                   		<a class="hd-btn" href="#sign_psw" data-tap="go" data-target="#sign_psw" fieldname="back_templet"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="get_pwd" class="section">
+            <div class="inner">
+                <div class="sec-header">
+                    <div class="mid-region">
+                        <h2 fieldname="get_pwd"></h2>
+                    </div>
+                </div>
+                <div class="form" id="getPwd_form">
+                    <p fieldname="want_get_pwd_default"></p>
+                    <div class="login_box_title login_box_msg" >
+                        <p></p>
+                        <dl class="login_box_msg" style="display:none">
+                            <dt></dt>
+                            <dd></dd>
+                        </dl>
+                    </div>
+                    <p><label fieldname="user_value_default"></label>
+                        <input id="getPwd_form_name" type="text" class="text ico-user" name="user" value="" />
+                    </p>
+                    <p>
+                        <button id="getPwd_form_submitBtn" class="large-btn round-corner" fieldname="get_now"></button>
+                    </p>
+                    <p>
+                        <!-- <button class="large-btn round-corner" data-tap="go" data-target="#sign_psw" fieldname="cancel_default"></button> -->
+                   		<a class="hd-btn" href="#sign_psw" data-tap="go" data-target="#sign_psw" fieldname="back_templet"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="request_code" class="section">
+            <div class="inner">
+                <div class="sec-header">
+                    <div class="mid-region">
+                        <h2 fieldname="phone_check"></h2>
+                    </div>
+                </div>
+                <div class="form" id="requestCode_form">
+                	<p fieldname="ask_bind"></p>
+                    <div class="login_box_title login_box_msg" >
+                        <p></p>
+                        <dl class="login_box_msg" style="display:none">
+                            <dt></dt>
+                            <dd></dd>
+                        </dl>
+                    </div>
+                   <p><label id="requestCode_form_phone_label" fieldname="phone"></label>
+                        <input id="requestCode_form_phone" name="phone" type="text ico-phone" class="text w4s fleft ico-phone" />
+                        <button id="requestCode_form_postCodeBtn" class="large-btn w4 round-corner fright" fieldname="get_code"></button>
+                    </p>
+                    <p><label fieldname="sms_code"></label>
+                        <input id="requestCode_form_smscode" type="text" class="text ico-sms" name="smscode" value="" />
+                    </p>
+                    <p>
+                        <button id="requestCode_form_submitBtn" class="large-btn round-corner" fieldname="submit"></button>
+                    </p>
+                    <p>
+                        <!-- <button class="large-btn round-corner" data-tap="go" data-target="#sign_psw" fieldname="cancel_default"></button> -->
+                   		<a class="hd-btn" href="#sign_psw" data-tap="go" data-target="#sign_psw" fieldname="back_templet"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="modi_pswconfirm" class="section">
+            <div class="inner">
+                <div class="sec-header">
+                    <div class="mid-region">
+                        <h2 fieldname="change_pwd_default">修改密码</h2>
+                    </div>
+                </div>
+                <div class="form" id="changePwdConfirm_form">
+                    <div class="login_box_title login_box_msg" >
+                        <p></p>
+                        <dl class="login_box_msg" style="display:none">
+                            <dt></dt>
+                            <dd></dd>
+                        </dl>
+                    </div>
+                     <p><label fieldname="phone"></label>
+                        <input id="changePwdConfirm_form_phone" name="phone" type="text" class="text w4s fleft ico-phone" />
+                        <button id="changePwdConfirm_form_postCodeBtn" class="large-btn w4 round-corner fright" fieldname="get_code"></button>
+                    </p>
+                    <p><label fieldname="sms_code"></label>
+                        <input id="changePwdConfirm_form_smscode" type="text" class="text ico-sms" name="smscode" value="" />
+                    </p>
+                     <p id='changePwdConfirm_form_oldpwd_p'><label fieldname="old_pwd"></label>
+                        <input id="changePwdConfirm_form_oldpwd" type="password" class="text ico-pwd"  name="opsw" value="" />
+                    </p>
+                    <p><label fieldname="new_password_default"></label>
+                        <input id="changePwdConfirm_form_pwd" type="password"  class="text ico-pwd" name="npsw" value="" />
+                    </p>
+                     <p><label fieldname="required_password_default"></label>
+                        <input id="changePwdConfirm_form_pwdconfirm" type="password" class="text ico-pwd"  name="cpsw" value="" />
+                    </p>
+                    <p id='changePwdConfirm_form_email_p'><label fieldname="email_address">请输入邮箱地址</label>
+                        <input id="changePwdConfirm_form_email" type="text" class="text ico-mail"  value="" />
+                    </p>
+                    <p>
+                        <button id="changePwdConfirm_form_submitBtn" class="large-btn round-corner" fieldname="submit"></button>
+                    </p>
+                    <p id="changePwdConfirm_form_getBackBtn_p">
+                    	<a id="changePwdConfirm_form_getBackBtn" class="" fieldname="get_pwd"></a>
+                    </p>
+                    <p>
+                   		<a class="hd-btn" href="#sign_psw" data-tap="go" data-target="#modi_psw" fieldname="back_templet"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="active_account" class="section">
+             <div class="inner">
+                <div class="sec-header">
+                    <div class="mid-region">
+                        <h2 fieldname="active_account">账号激活</h2>
+                    </div>
+                </div>
+                <div class="form" id="activeAccount_form">
+                    <div class="login_box_title login_box_msg" >
+                        <p></p>
+                        <dl class="login_box_msg" style="display:none">
+                            <dt></dt>
+                            <dd></dd>
+                        </dl>
+                    </div>
+                    <p class='phoneAsName'>
+                        <input id="activeAccount_form_phoneAsName" type="checkbox"  checked isChecked='true'/>
+                    	<span   fieldname="phoneAsName">使用手机号作为登录用户名</span>
+                    </p>
+                    <p class='customName' style='display:none;'><label fieldname="new_username">自定义用户名</label>
+                        <input id="activeAccount_form_username" type="text" class="text ico-user"  name="username" value="" />
+                    </p>
+                    <p><label fieldname="phone_email"></label>
+                        <input id="activeAccount_form_phone" name="phone" type="text" class="text w4s fleft ico-phone-mail" />
+                        <button id="activeAccount_form_postCodeBtn" class="large-btn w4 round-corner fright" fieldname="get_code"></button>
+                    </p>
+                    <p><label fieldname="sms_code"></label>
+                        <input id="activeAccount_form_smscode" type="text" class="text ico-sms" name="smscode" value="" />
+                    </p>
+                    <p><label fieldname="new_password_default"></label>
+                        <input id="activeAccount_form_pwd" type="password"  class="text ico-pwd" name="npsw" value="" />
+                    </p>
+                     <p><label fieldname="required_password_default"></label>
+                        <input id="activeAccount_form_pwdconfirm" type="password" class="text ico-pwd"  name="cpsw" value="" />
+                    </p>
+                    <p>
+                        <button id="activeAccount_form_submitBtn" class="large-btn round-corner" fieldname="account_btn_text"></button>
+                    </p>
+                    <p>
+                   		<a class="hd-btn" href="#sign_psw" data-tap="go" fieldname="back_templet"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="modi_pswconfirm2" class="section">
+            <div class="inner">
+                <div class="sec-header">
+                    <div class="mid-region">
+                        <h2 fieldname="change_pwd_default">修改密码</h2>
+                    </div>
+                </div>
+                <div class="form" id="changePwdConfirm2_form">
+                    <div class="login_box_title login_box_msg" >
+                        <p></p>
+                        <dl class="login_box_msg" style="display:none">
+                            <dt></dt>
+                            <dd></dd>
+                        </dl>
+                    </div>
+                     <p><label fieldname="phone"></label>
+                        <input id="changePwdConfirm2_form_phone" name="phone" type="text" class="text w4s fleft ico-phone" />
+                        <button id="changePwdConfirm2_form_postCodeBtn" class="large-btn w4 round-corner fright" fieldname="get_code"></button>
+                    </p>
+                    <p><label fieldname="sms_code"></label>
+                        <input id="changePwdConfirm2_form_smscode" type="text" class="text ico-sms" name="smscode" value="" />
+                    </p>
+                    <p><label fieldname="new_password_default"></label>
+                        <input id="changePwdConfirm2_form_pwd" type="password"  class="text ico-pwd" name="npsw" value="" />
+                    </p>
+                     <p><label fieldname="required_password_default"></label>
+                        <input id="changePwdConfirm2_form_pwdconfirm" type="password" class="text ico-pwd"  name="cpsw" value="" />
+                    </p>
+                    <p>
+                        <button id="changePwdConfirm2_form_submitBtn" class="large-btn round-corner" fieldname="submit"></button>
+                    </p>
+                    <p>
+                   		<a class="hd-btn" href="#sign_psw" data-tap="go" data-target="#modi_psw" fieldname="back_templet"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="direct_set_new_password" class="section">
+            <div class="inner">
+                <div class="sec-header">
+                    <div class="mid-region">
+                        <h2 fieldname="set_new_password"></h2>
+                    </div>
+                </div>
+                <div class="form" id="directSetNewPassword_form">
+                	<div class="login_box_title login_box_msg" >
+                        <p></p>
+                        <dl class="login_box_msg" style="display:none">
+                            <dt></dt>
+                            <dd></dd>
+                        </dl>
+                    </div>
+                    <p id="directSetNewPassword_form_pwd_p"><label fieldname="old_password"></label>
+                        <input id="directSetNewPassword_form_oldpwd" type="password"  class="text ico-pwd" name="opsw" value="" />
+                    </p>
+               		<p><label fieldname="new_password_default"></label>
+                        <input id="directSetNewPassword_form_pwd" type="password"  class="text ico-pwd" name="npsw" value="" />
+                    </p>
+                     <p ><label fieldname="required_password_default"></label>
+                        <input id="directSetNewPassword_form_pwdconfirm" type="password" class="text ico-pwd"  name="cpsw" value="" />
+                    </p>
+                    <p id='directSetNewPassword_form_email_p'><label fieldname="email_address"></label>
+                        <input id="directSetNewPassword_form_email" type="text" class="text ico-mail"  value="" />
+                    </p>
+                    <p>
+                        <button id="directSetNewPassword_form_submitBtn" class="large-btn round-corner" fieldname="submit"></button>
+                    </p>
+                    <p id="directSetNewPassword_form_getBackBtn_p">
+                    	<a id="directSetNewPassword_form_getBackBtn" class="" fieldname="get_pwd"></a>
+                    </p>
+                    <p>
+	          			<a class="hd-btn back" href="#sign_psw" data-tap="go" data-target="#sign_psw" fieldname="back_templet"></a>
+	             	</p>
+                </div>
+            </div>
+        </div>
+        <div id="bind_email" class="section">
+            <div class="inner">
+                <div class="sec-header">
+                    <div class="mid-region">
+                        <h2 fieldname="bind_email">绑定邮箱</h2>
+                    </div>
+                </div>
+                <div class="form" id="bindEmail_form">
+                	<p id='bind_email_title' fieldname="chg_pwd_bind_email">首次登录需要修改密码并绑定邮箱</p>
+                	<div class="login_box_title login_box_msg" >
+                        <p></p>
+                        <dl class="login_box_msg" style="display:none">
+                            <dt></dt>
+                            <dd></dd>
+                        </dl>
+                    </div>
+               		<p  id="bindEmail_form_pwd_p"><label fieldname="new_password_default">新密码</label>
+                        <input id="bindEmail_form_pwd" type="password"  class="text ico-pwd" name="npsw" value="" />
+                    </p>
+                     <p  id="bindEmail_form_pwdconfirm_p"><label fieldname="required_password_default">确认密码</label>
+                        <input id="bindEmail_form_pwdconfirm" type="password" class="text ico-pwd"  name="cpsw" value="" />
+                    </p>
+                    <p ><label fieldname="email_address">邮箱地址</label>
+                        <input id="bindEmail_form_email_address" type="email"  class="text ico-mail" name="email_address" value="" />
+                    </p>
+                    <p>
+                        <button id="bindEmail_form_submitBtn" class="large-btn round-corner" fieldname="submit">提交</button>
+                    </p>
+                    <p>
+	          			<a class="hd-btn back" href="#sign_psw" data-tap="go" data-target="#sign_psw" fieldname="back_templet"></a>
+	             	</p>
+                </div>
+            </div>
+        </div>
+        <div id="request_handler" class="section">
+            <div class="inner">
+                <div class="sec-header">
+                    <div class="mid-region">
+                        <h2 fieldname="account_active" id='request_handler_title'></h2>
+                    </div>
+                </div>
+                <div class='display_center'>
+            	<div style="width:100%;height:2px;background-color:green;"></div>
+            	<strong fieldname="use_dd" class="display_top" style='display:none'></strong>
+            	<span  datatype="background" class="display_left icon_alert"></span>
+            	<strong fieldname="actived" class="display_right"></strong>
+	            </div>
+	          	<div style="clear:both;"></div>
+	             <p>
+	          		<a class="large-btn round-corner hander_back" href="#sign_psw" data-tap="go" data-target="#sign_psw" fieldname="back_sign">返回登录</a>
+	             	<a class="large-btn round-corner hander_back bind_account" href="##" id="bind_account">发送绑定消息</a>
+	             </p>
+            </div>
+        </div>
+        <div id="sign_sms" class="section">
+            <div class="inner">
+                <div class="sec-header">
+                    <div class="mid-region">
+                        <h2 fieldname="smsTabTitle"></h2>
+                    </div>
+                </div>
+                <div class="form" id="guest_sms_form">
+                    <div id="guest_sms_form_inputArea"> 
+                        <p fieldname="smsTabDesc"></p>
+                        <p>
+                        	<input id="guest_sms_form_country" class='country' type="text"/>
+                            <input id="guest_sms_form_name"  name="smsune" type="text" class="text w4s fleft ico-phone guest_sms_form_name" />
+                            <button id="guest_sms_form_postCodeBtn" class="large-btn w4 round-corner fright" fieldname="getSmsCodeBtnText"></button>
+                        </p>
+                        <p>
+                            <input type="password" id="guest_sms_form_pwd" name="smspass" class="text ico-pwd">
+                        </p>
+                        <p class="login_disclaimer">
+                            <input id="guest_sms_form_disclaimer" type="checkbox" name="legal">
+                            <label for="guest_sms_form_disclaimer" fieldname="disclaimer_link_text_view"></label>
+                            <span>《<span  data-tap="drop" fieldname="content_name"></span>》</span>
+                        </p>
+                    </div>    
+                    <div id="guest_sms_form_loginedArea" style="display:none">
+                        <h3 fieldname="logined_back"></h3>
+                    </div> 
+                    <dl class="login_box_msg" style="display:none">
+                        <dt></dt>
+                        <dd></dd>
+                    </dl> 
+                    <p>
+                        <button id="guest_sms_form_submitBtn" class="large-btn round-corner" fieldname="sms_btn_text"></button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="sign_swx" class="section">
+            <div class="inner">
+                <div class="sec-header">
+                    <div class="mid-region">
+                        <h2 fieldname="smsTabTitle" id="sign_swx_title_chg"></h2>
+                    </div>
+                </div>
+                <div class="form" id="guest_wx_sms_form">
+                    <div id="guest_wx_sms_form_inputArea">
+                        <p fieldname="smsTabDesc"></p>
+                        <p>
+                        	<input id="guest_wx_sms_form_country" class='country' type="text"/>
+                            <input id="guest_wx_sms_form_name" name="smsune" type="text" class="text w4s fleft ico-phone guest_sms_form_name" />
+                            <button id="guest_wx_sms_form_postCodeBtn" class="large-btn w4 round-corner fright" fieldname="getSmsCodeBtnText"></button>
+                        </p>
+                        <p>
+                            <input type="password" id="guest_wx_sms_form_pwd" name="smspass" class="text ico-pwd">
+                        </p>
+                        <p class="login_disclaimer">
+                            <input id="guest_wx_sms_form_disclaimer" type="checkbox" name="legal">
+                            <label for="guest_wx_sms_form_disclaimer" fieldname="disclaimer_link_text_view"></label>
+                            <span>《<span  data-tap="drop" fieldname="content_name"></span>》</span>
+                        </p>
+                    </div>
+                    <div id="guest_wx_sms_form_loginedArea" style="display:none">
+                        <h3 fieldname="logined_back"></h3>
+                    </div>
+                    <dl class="login_box_msg" style="display:none">
+                        <dt></dt>
+                        <dd></dd>
+                    </dl>
+                    <p>
+                        <button id="guest_wx_sms_form_submitBtn" class="large-btn round-corner" fieldname="sms_btn_text"></button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="sign_temp" class="section">
+            <div class="inner">
+                <div class="sec-header">
+                    <div class="mid-region">
+                    	<span class='guestuser_icon'></span>
+                        <h2 fieldname="guestTabTitle"></h2>
+                    </div>
+                </div>
+                <div class="form" id="guest_db_form">
+                       <div id="guest_db_form_inputArea">
+                        <p fieldname="guestTabDesc"></p>
+                        <p>
+                            <input id="guest_db_form_name" type="text" firstclear class="text ico-user" name="user" value=""/>
+                        </p>
+                        <p>
+                            <input id="guest_db_form_pwd" type="password" firstclear class="text ico-pwd" name="user" value=""/>
+                        </p>
+                        <p class="login_disclaimer">
+                            <input id="guest_db_form_disclaimer" type="checkbox" name="legal">
+                            <label for="guest_db_form_disclaimer" fieldname="disclaimer_link_text_view"></label>
+                            <span>《<span  data-tap="drop" fieldname="content_name"></span>》</span>
+                        </p>
+                        <dl class="login_box_msg" style="display:none">
+                            <dt></dt>
+                            <dd></dd>
+                        </dl>
+                    </div>
+                    <div id="guest_db_form_loginedArea" style="display:none">
+                        <h3 fieldname="logined_back"></h3>
+                    </div>
+                    <p>
+                        <button id="guest_db_form_submitBtn" class="large-btn round-corner" fieldname="guest_btn_text"></button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="sign_qr" class="section">
+            <div class="inner">
+                <div class="sec-header">
+                    <div class="mid-region">
+                        <h2 fieldname="qrCodeTabTitle"></h2>
+                    </div>
+                </div>
+                <div class="form qrbox" id="guest_qrcode_form" >
+                    <p id="qrcodeCt"><img style="display:none;" src="imgs/qr.png" /></p>
+                    <h3 fieldname="qrCodeTabDesc"></h3>
+                    <div id="guest_qrcode_form_inputArea">
+                        <ul class="ml" id="qrCodeTabInfo"></ul>
+                    </div>
+                    <div id="guest_qrcode_form_loginedArea" style="display:none">
+                        <div class="login_box_title">
+                            <h3 fieldname="logined_back"></h3>
+                            <dl class="login_box_msg" style="display:none">
+                                <dt></dt>
+                                <dd></dd>
+                            </dl>
+                        </div>
+                        <div class="btn_ok">
+                            <div class="login_btn login_btn_ok">
+                                <button id="guest_qrcode_form_submitBtn" class="large-btn active round-corner" fieldname="submitBtnText"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sign_any" class="section">
+            <div class="inner">
+                <div class="sec-header">
+                    <div class="mid-region">
+                        <h2 fieldname="nouserTabTitle"></h2>
+                    </div>
+                </div>
+                <div class="form" id="guest_nouser_form">
+                    <div class="access">
+                        <p fieldname="nouserTabDesc" datatype="html"></p>
+                    </div>
+                    <p style="display:none;">
+                        <input id="guest_nouser_form_name" name="une" class="input focus" type="text" value="guest" />
+                        <input id="guest_nouser_form_pwd" name="pass" class="input" value="guest" type="password" />
+                    </p>
+
+                    <p class="login_disclaimer">
+                        <input id="guest_nouser_form_disclaimer"  type="checkbox" name="legal">
+                        <label for="guest_nouser_form_disclaimer" fieldname="disclaimer_link_text_view"></label>
+                        <span>《<span  data-tap="drop" fieldname="content_name"></span>》</span>
+                    </p>
+                    <dl class="login_box_msg" style="display:none">
+                        <dt></dt>
+                        <dd></dd>
+                    </dl> 
+                    <p>
+                        <button id="guest_nouser_form_submitBtn" class="large-btn round-corner" fieldname="nouser_btn_text"></button>
+                    </p>        
+                </div>
+            </div>
+        </div>
+         <div id="sign_fb" class="section">
+            <div class="inner">
+            	<div class="sec-header">
+                    <div class="mid-region">
+                        <h2 fieldname="facebook_tab_title"></h2>
+                    </div>
+                </div>
+                <div class="form fbbox" id="guest_fb_form">
+	                <div id="guest_fb_text" fieldname="fb_text_view" class="form"></div>
+	                
+	                <p id="guest_fblike_text" fieldname="fblike_text_view" class="form" style="display: none;"></p>
+	                <p style="display:none"> 
+	                    <button id="fb_loginBtn" class="fb-btn active round-corner" onlogin="checkLoginState();"><div class='fb-btn-icon'></div><div class='fb-login-text'>Log in</div></button>
+	                </p>
+                	<div class="form fbbox" id="guest_fb_login">
+	                	<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+	                </div>
+                	<div class="fb-like" data-href="" style="display:none" data-layout="button_count" data-width="260px" data-height="100px" data-action="like" data-show-faces="true" data-share="false"></div>
+                	<div>
+	                    <button id="fb-authBtn" style="display:none" class="large-btn active round-corner" fieldname="authfication"></button>
+	                </div>
+                	<div id="guest_fb_form_loginedArea" style="display:none">
+                        <div class="login_box_title">
+                            <h3 fieldname="logined_back"></h3>
+                        </div>
+                        <div class="btn_ok">
+                            <div class="login_btn login_btn_ok">
+                                <button id="guest_fb_form_submitBtn" class="large-btn  round-corner" fieldname="facebook_tab_desc"></button>
+                            </div>
+                        </div>
+                    </div>
+                     <dl class="login_box_msg" style="display:none">
+	                     <dt></dt>
+	                     <dd></dd>
+	                 </dl> 
+                </div>
+            </div>
+        </div>
+        <div id="sign_wechat" class="section">
+            <div class="inner">
+                <div class="sec-header">
+                    <div class="mid-region">
+                        <h2 fieldname="wxTabTitle"></h2>
+                    </div>
+                </div>
+                <div id='qrcode_zone_div'>
+		            <div class="main_content_qrcode" id='qrcode_zone' ></div>
+		            <div class="main_content_info" fieldname='wxScanQrcode'>使用微信扫描二维码</div>
+		        </div>
+                <div class="form" id="guest_wx_form">
+                    <div class="access" style="display:none">
+                        <p><img src="imgs/wechat_access.png" /></p>
+                        <p fieldname="wechat_logined_txt" datatype="html"></p>
+                    </div>
+                    <p id='wechat_title_D1' fieldname="wxTabDesc"></p>
+                    <div id="guest_wx_form_inputArea">
+                    <div id='iwant_enable' style="display: none" fieldname="iwant_enable" datatype="show" class="lab">
+                        <a id="qrsc" href="#sign_wechat_qr"  data-tap="drop">
+                            <span fieldname="iwant_desImg" datatype="background" class="icon45 ico-qr ">
+                            </span>
+                            <strong fieldname="iwant_des_text" style="width: 185px; height:50px; overflow: hidden; word-wrap:break-word;"></strong>
+                        </a>
+                    </div>
+                    <div id="attention_enable" style="display: none" fieldname="attention_enable" datatype="show" class="lab">
+                        <a id="pub" href="#sign_wechat_pub" data-tap="drop">
+                            <span fieldname="attention_desImg" datatype="background" class="icon45 ico-public "></span>
+                            <strong fieldname="attention_des_text" style="width: 185px; height: 25px; overflow: hidden; word-wrap:break-word;"></strong>
+                            <br />
+                            <br />
+                            <span fieldname="wxAccount" id="public_account_id_container" style="padding-left:10px"></span>
+                        </a>
+                    </div>
+                    </div>
+                    <dl class="login_box_msg" style="display:none">
+                        <dt></dt>
+                        <dd></dd>
+                    </dl> 
+                    <p>
+                        <button id="guest_wx_form_submitBtn" fieldname="start_internet_btn_text" class="large-btn round-corner" style="display:none"></button>
+                    </p> 
+                </div></div>
+        </div>
+        <div id="sign_wechat_access" class="section"></div>
+        <div id="legal_box" class="dialog">
+            <div class="inner">
+                <div class="dlg-head">
+                    <h2 fieldname="content_name"></h2>
+                    <a href="#this" data-tap="hide" class="dlg-close">X</a>
+                </div>
+                <div class="dlg-body form legal">
+                    <div datatype="html" fieldname="content" class="content"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="sign_wechat_qr" class="steps">
+            <div class="inner" style="overflow-y:scroll">
+                <p><a href="#sign_wechat" data-tap="back" data-target="sign_wechat" class="btn" datatype="html" fieldname="back_templet"></a></p>
+                <div style="height: 400px;">
+                    <img datatype="imgurl" fieldname="iwant_iwImg" src="res/img/iwant_iwImg.png" />
+                </div>
+              </div>
+        </div>
+        <div id="sign_wechat_pub" class="steps">
+            <div class="inner" style="overflow-y:scroll">
+                <p><a href="#sign_wechat" data-tap="back" data-target="sign_wechat" datatype="html" class="btn" fieldname="back_templet">&lt; 返回</a></p>
+                <div style="height: 400px;">
+                    <img datatype="imgurl" fieldname="attention_gzImg" src="res/img/attention_gzImg.png" />
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="../share/language.js?v=2.0"></script>
+        <script type="text/javascript" src="../share/res/js/all.js?v=2.0"></script>
+        <script type="text/javascript" src="../share/res/js/jquery.bslider.js?v=2.0"></script>
+        <script type="text/javascript" src="../share/res/js/qrcode.js?v=2.0"></script>
+        <script type="text/javascript" src="js/common.js?v=2.0"></script>
+        <script type="text/javascript" src="js/pcauth.js?v=2.0"></script>
+        <script type="text/javascript" src="../share/res/js/fullad.js?v=2.1"></script>
+        <script type="text/javascript" src="../share/res/js/jquery.qrcode.min.js"></script>
+        <script src="js/countryCode.js" type="text/javascript"></script>
+        <script type="text/javascript">
+        initCountryCode();
+        var ACCOUNT_SMS_RELATED_FORMS={};
+        var PHONES={active_account:'',changepwd_confirm:'',changepwd_confirm2:'',request_code:''};
+        var LUACONFIG = {
+            tabs:["account","guest_sms","guest_wx","guest_qrcode", "guest_nouser","guest_db","guest_fb"],//要显示的tab，按顺序
+            qrcode_content:"http://test.com",//2维码内容
+            is_reg:false,//是否已经注册
+            need_sms:false,
+            enable_wechat:true, 
+            one_key:false, 
+            enable_country_code:true,
+            phone_num:"123456789",
+            tab_status:[false,false,false,false,false, false],
+            disaster_flag:false,
+            wx_wifi : false,
+            wx_no_jsapi : false
+        };
+        var page_detail_json = '{"tabs":["account"],"qrcode_content":"", "is_reg":false,"phone_num":"","need_sms":false,"enable_wechat":true, "one_key":false, "tab_status":[false],"disaster_flag":0,"wx_wifi":false ,"appId":"", "shopId":"",  "follow_flag":false, "extend":"", "mac":"", "ssid":"", "bssid":"","authUrl":"", "secretKey":"", "roam_flag":false,"activation_flag":false, "reset_flag": false, "local_server": false, "wx_auth_direct": false,"inner_portal":false, "fb_like_url": "", "fb_app_id": "", "enable_country_code":false}';
+
+        try{
+            LUACONFIG = $.parseJSON(page_detail_json);
+            $('.fb-like').attr('data-href',LUACONFIG.fb_like_url);      
+            var LUACONFIGTabs = LUACONFIG.tabs;
+        }catch(e){}
+        (function ($) {
+            $(document).ready(function(){
+                //SF.getTabsByUrl();
+                initFullQrCodeInfo();
+                //initTabView();
+                SF.initForms();
+                initDisclaimer();//免责声明
+                bindEvent();
+                if(PAGECONFIG.chText.notice_type==='other'){
+					$('.login_disclaimer').each(function(index){     
+						$(this).hide();
+					});
+				}
+                $("#lang_button").click($("#lang_button"),function(btn){
+                    changeLang.call(btn);
+                });
+                if('en'===PAGECONFIG.defLang){
+                	$("#lang_button").find("strong").text("English");
+                }else{
+                	$("#lang_button").find("strong").text("简体中文");
+                } 
+                changeLang();
+                if(navigator.appVersion.indexOf('MSIE 8.0')>-1){
+                	$('.form .text').removeClass('text').addClass('text_ie8');
+                	$('.ico-mail').removeClass('ico-mail').addClass('ico-mail-ie8');
+                	$('.ico-phone-mail').removeClass('ico-phone-mail').addClass('ico-phone-mail-ie8');
+                	$('.ico-sms').removeClass('ico-sms').addClass('ico-sms-ie8');
+                	$('.nav').css('float','none').css('margin','0 0 0 20%');
+	               	setTimeout(function(){
+	               		setLanguage({},PAGECONFIG.defLang=='zh'?'ch':'en');
+	               	},500);
+                }
+                document.onkeydown = function(e) {
+                    if (!e || !e.which) {return;}
+                    var curKey = e.which;
+                    if(curKey == 13) {enterlogin();return;}
+                }
+            });
+        })(jQuery);
+        </script>
+    </body>
+</html>

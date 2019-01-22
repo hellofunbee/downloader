@@ -18,8 +18,8 @@ public class MusicController extends Controller {
     final static int MAX_QUEUE_BATCH = 200;
     final static int MAX_RESULT_BATCH = 30;
 
-    final static int MAX_QUEUE = 10000;
-    final static int MAX_RESULT = 1000;
+    final static int MAX_QUEUE = 100000;
+    final static int MAX_RESULT = 200;
 
     public void index() throws Exception {
         render("sercher/searchAudio.html");
@@ -41,23 +41,29 @@ public class MusicController extends Controller {
     public void batchDownload() throws Exception {
         JSONArray aar = (JSONArray) JSONArray.parse(getPara("data"));
         List<Map> list = new ArrayList<Map>();
+        String name = null;
         for (int i = 0; i < aar.size(); i++) {
-            JSONObject obj = aar.getJSONObject(i);
+            try {
+                JSONObject obj = aar.getJSONObject(i);
 
-            String s = obj.getString("s");
-            String e = obj.getString("e");
-            String name = obj.getString("name");
-            String key = obj.getString("key");
-            String word = obj.getString("word");
-            name = getybid(name);
+                String s = obj.getString("s");
+                String e = obj.getString("e");
+                 name = obj.getString("name");
+                String key = obj.getString("key");
+                String word = obj.getString("word");
+                name = getybid(name);
 
-            Map m = new HashMap();
-            m.put("youtube_id", name);
-            m.put("key_word", key);
-            m.put("word", word);
-            m.put("s", s);
-            m.put("e", e);
-            list.add(m);
+                Map m = new HashMap();
+                m.put("youtube_id", name);
+                m.put("key_word", key);
+                m.put("word", word);
+                m.put("s", s);
+                m.put("e", e);
+                list.add(m);
+            } catch (Exception e) {
+                System.out.println(name);
+                e.printStackTrace();
+            }
 
         }
 
@@ -176,7 +182,6 @@ public class MusicController extends Controller {
                 CommonUtils.sort(videos, "type", 1);
                 JSONArray ps = new JSONArray();
                 int i = 0;
-
 
 
                 for (Map m : videos) {
