@@ -1,6 +1,0 @@
-jdbcUrl=jdbc:mysql://localhost:3306/talk?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
-jdbcDriver=com.mysql.jdbc.Driver
-user=talk
-password=talk
-devMode=true
-showSql=true

@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../subtitleConverter-master/subtitleConvert.iml" filepath="$PROJECT_DIR$/../subtitleConverter-master/subtitleConvert.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/test.iml" filepath="$PROJECT_DIR$/.idea/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/downloader/xwf-com.iml" filepath="$PROJECT_DIR$/downloader/xwf-com.iml" />
       <module fileurl="file://$PROJECT_DIR$/downloader/xwf-com.iml" filepath="$PROJECT_DIR$/downloader/xwf-com.iml" />
     </modules>
   </component>
