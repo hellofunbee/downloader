@@ -5,6 +5,7 @@
 *.iml
 *.ipr
 *.iws
-
- 
 dowwnloader/target
+dowwnloader/build
+subtitleConverter-master/target
+subtitleConverter-master/build
