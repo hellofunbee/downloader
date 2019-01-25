@@ -231,7 +231,7 @@ public class CloudMusicDownload implements Runnable {
                 if (writeSrt(lyric, baseName, srt_outPath)) {
                     //下载音乐
                     log("downloading..." + baseName);
-//                    HttpUtils.downLoad(song_url.replace("##", id), outPath);
+                    HttpUtils.downLoad(song_url.replace("##", id), outPath);
 
                     music.set("has_srt", 1);
                     music.set("srt_path", srt_outPath);

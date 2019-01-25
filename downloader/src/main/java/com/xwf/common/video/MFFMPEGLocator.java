@@ -8,6 +8,6 @@ import it.sauronsoftware.jave.FFMPEGLocator;
  */
 public class MFFMPEGLocator extends FFMPEGLocator {
     protected String getFFMPEGExecutablePath() {
-        return CommonUtils.getPathByKey("ffmpegPath");
+        return CommonUtils.getFfmpeg();
     }
 }

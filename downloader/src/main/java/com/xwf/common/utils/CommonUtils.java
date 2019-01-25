@@ -34,6 +34,7 @@ public class CommonUtils {
         return null;
     }
 
+
     /**
      * 毫秒转换成分秒
      *
@@ -359,7 +360,7 @@ public class CommonUtils {
 
         for (int i = 0; i < count; i++) {
 //            String url = "http://123.207.35.36:5010/get?key=thankyou";
-            String url = "http://127.0.0.1:5010/get?key=thankyou";
+            String url = "http://127.0.0.1:5051/get?key=thankyou";
             String ip = HttpUtils.sendGet(url, new HashMap<String, String>());
             if (ip != null) {
                 String ip_port[] = ip.split(":");
@@ -554,6 +555,9 @@ public class CommonUtils {
     }
 
 
+    public static String getFfmpeg() {
+        return getPathByKey("ffmpegPath");
+    }
 }
 
 

@@ -1,6 +1,5 @@
 package com.xwf.common.utils;
 
-import org.apache.commons.io.FileUtils;
 import org.junit.Test;
 import subtitleFile.FormatSRT;
 import subtitleFile.IOClass;
@@ -15,14 +14,12 @@ import java.util.List;
  * Created by weifengxu on 2018/9/6.
  */
 public class VTToSrt {
-    //    static String path = "/Users/weifengxu/Desktop/srt/";
-    static String path = "/Users/weifengxu/Downloads/srt";
+        static String path = "/Users/weifengxu/Desktop/srt/";
     ;
     static String ffmpeg = CommonUtils.getPathByKey("ffmpeg");
     static String temp = CommonUtils.getPathByKey("srt_path") + "temp.srt";
 
     public static void main(String[] args) throws Exception {
-//        path = "/Users/weifengxu/Downloads/srt/";
 
         ffmpeg = "/Users/weifengxu/Desktop/tool/jave_ffmpeg/ffmpeg";
 
@@ -142,66 +139,12 @@ public class VTToSrt {
     }
 
 
-    @Test
-    public void format() throws IOException {
-
-        path = "/Users/weifengxu/Downloads/voice src/服务器代码/vradata-结构.sql";
-
-        String sql = FileUtils.readFileToString(new File(path));
-        String[] sqls = sql.split("\n");
-
-        List tables = new ArrayList<Table>();
-
-        StringBuffer sb = new StringBuffer();
-        Table t=null ;
-        for (String srt : sqls) {
-            if (srt == null || srt.length() <= 1)
-                continue;
-            if (srt.indexOf("PRIMARY") != -1)
-                continue;
-            if (srt.indexOf("`id`") != -1)
-                continue;
-
-            if (srt.startsWith("CREATE")) {
-                srt = srt.replace("CREATE TABLE", "").replace(" (", "").replace("`","").replace(" ","");
-                sb.append("\n" + srt + "\n");
-                t = new Table();
-                t.table = srt;
-                tables.add(t);
-            }
-
-            if (srt.toLowerCase().indexOf("id") != -1) {
-
-                sb.append(srt + "\n");
-                t.ids.add(srt);
-            }
-
-
-        }
-
-        System.out.println(sb.toString());
-        System.out.println(tables.toString());
-
-    }
-
-    class Table {
-        String table;
-        List<String> ids = new ArrayList<String>();
-
-        @Override
-        public String toString() {
-            return "Table{" +
-                    "table='" + table + '\'' +
-                    ", ids=" + ids +
-                    "}\n";
-        }
-    }
 
 
     @Test
     public void dele() {
 
-        path = "/Users/weifengxu/Downloads/srt";
+//        path = "/Users/weifengxu/Downloads/srt";
         List<File> jpgs = CommonUtils.getMp4FileList(path, new ArrayList<File>(), "jpg");
         List<File> srts = CommonUtils.getMp4FileList(path, new ArrayList<File>(), "vtt");
         String srt_name = null;

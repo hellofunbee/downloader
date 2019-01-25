@@ -13,11 +13,12 @@ import com.xwf.common.crawler.VideoCrawler;
 import com.xwf.common.dao.TvDao;
 import com.xwf.common.utils.CommonUtils;
 import com.xwf.common.utils.Searcher;
-import com.xwf.common.utils.ZipCompressor;
 import us.codecraft.webmagic.Spider;
 
-import java.io.File;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created by weifengxu on 17/7/8.
@@ -70,7 +71,6 @@ public class HomeController extends Controller {
     }
 
 
-    @ActionKey("getWords")
     public void getWords() {
         List<Map> data = new ArrayList<Map>();
         JSONObject jo = new JSONObject();
@@ -126,37 +126,9 @@ public class HomeController extends Controller {
         renderJson(jo);
     }
 
-    @ActionKey("download_zip")
-    public void download_zip() {
-        String para = getPara("fileUrls");
-        if (para == null)
-            render("空空如也！");
-        else {
-            String zip_path = CommonUtils.getPathByKey("zip_path") + UUID.randomUUID() + ".zip";
-            String p = CommonUtils.tolocalUrl(para);
-
-            File[] fs;
-            if (p.indexOf(",") == -1) {
-                fs = new File[]{new File(p)};
-            } else {
-                String[] ps = p.split(",");
-                fs = new File[ps.length];
-                for (int i = 0; i < ps.length; i++) {
-                    fs[i] = new File(ps[i]);
-                }
-
-            }
-            ZipCompressor.zipFiles(fs, new File(zip_path));
-            renderFile(new File(zip_path));
-
-        }
-
-    }
-
     /**
      * 获取主目录
      */
-    @ActionKey("getDirs")
     public void getDirs() {
         JSONObject jo = new JSONObject();
 

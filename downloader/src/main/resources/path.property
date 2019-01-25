@@ -1,20 +1,28 @@
-//videopath \u76F8\u5F53\u4E8E\u540E\u9762\u52A0\u4E0Asrt\u7684\u540D\u5B57 \u518D\u52A0\u4E0A ".mp4"
+#videopath \u76F8\u5F53\u4E8E\u540E\u9762\u52A0\u4E0Asrt\u7684\u540D\u5B57 \u518D\u52A0\u4E0A ".mp4"
+#片段主目录
 base_path=/Users/weifengxu/Desktop/clips/
+
+#------视频----------
+ffmpegPath=/Users/weifengxu/Desktop/tool/jave_ffmpeg/ffmpeg
+#要截取片段的视频目录
 videoPath=/Users/weifengxu/Downloads/\u7535\u89C6/obama/
+#要截取片段的视频的字幕目录
 srtPath=/Users/weifengxu/Downloads/\u7535\u89C6/obama/srt/
+#截取片段后的输出目录
 outPath=/Users/weifengxu/Desktop/clips/obama/
 
-ffmpegPath=/Users/weifengxu/Desktop/tool/jave_ffmpeg/ffmpeg
+
+#------youtube----------
 youtube-dl=youtube-dl
+#YouTube 搜索srt下载片段
+srt_path=/Users/weifengxu/Desktop/srt/
+#youtube截取后的输出目录
 stream_out=/Users/weifengxu/Desktop/clips/
 
-
-
-zip_path=/Users/weifengxu/Desktop/clips/ziptemp/
-srt_path=/Users/weifengxu/Desktop/srt/
-
-
-
+#------音频----------
 audioPath=/Users/weifengxu/Downloads/music/
 a_outPath=/Users/weifengxu/Desktop/clips/music/
+#------下载----------
+zip_path=/Users/weifengxu/Desktop/clips/ziptemp/
+
 

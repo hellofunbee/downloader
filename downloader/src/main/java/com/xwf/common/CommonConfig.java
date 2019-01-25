@@ -5,9 +5,7 @@ import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
 import com.jfinal.plugin.druid.DruidPlugin;
 import com.jfinal.render.ViewType;
 import com.jfinal.template.Engine;
-import com.xwf.common.controller.HomeController;
-import com.xwf.common.controller.MusicController;
-import com.xwf.common.controller.TaskController;
+import com.xwf.common.controller.*;
 import com.xwf.common.dao.User;
 
 import java.sql.Connection;
@@ -30,6 +28,8 @@ public class CommonConfig extends JFinalConfig {
         routes.add("/", HomeController.class);
         routes.add("task", TaskController.class, "/");
         routes.add("music", MusicController.class, "/");
+        routes.add("yb", YoutubeController.class, "/");
+        routes.add("common", CommonController.class, "/");
 
     }
 

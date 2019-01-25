@@ -249,6 +249,7 @@ public class HttpUtils {
         }
 
         HttpGet httpGet = new HttpGet(apiUrl);
+        httpGet.setHeader("User-Agent", "Mozilla/5.1 (Windows NT 6.2; Win64; x86; rv:50.0) Gecko/22101191 Firefox/50.1");
 
         HttpResponse response = httpClient.execute(httpGet);
 

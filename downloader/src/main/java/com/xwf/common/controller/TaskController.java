@@ -1,5 +1,6 @@
 package com.xwf.common.controller;
 
+import com.jfinal.core.ActionKey;
 import com.jfinal.core.Controller;
 import com.xwf.common.dao.DbRefresh;
 import com.xwf.common.http.MusicDownload;
@@ -14,16 +15,16 @@ public class TaskController extends Controller {
     public void index() {
         String index = "/refresh:同步剪辑数据库\n"
                 + "/musicDownload?order=&s=&e=:下载音乐\n"
-                +"order{0:1倒叙：正序}\n"
-                +"s{开始}\n"
-                +"e{结束}\n"
+                + "order{0:1倒叙：正序}\n"
+                + "s{开始}\n"
+                + "e{结束}\n"
                 + "/videoCut?delay=:截取视频 前进ms\n"
                 + "/coverTake:截取cover\n";
 
         renderText(index);
     }
 
-
+    @ActionKey("refresh")
     public void refresh() {
 
         String tv_name = getPara("tv_name");
@@ -32,16 +33,16 @@ public class TaskController extends Controller {
         render("ok");
 
     }
-
+    @ActionKey("musicDownload")
     public void musicDownload() throws Exception {
 //        NetEaseCloudMusic.main(null);
         MusicDownload.main(new String[]{
-                getPara("order")==null?"1":getPara("order"),
-                getPara("s")==null?"0":getPara("s"),
-                getPara("e")==null?null:getPara("e")
+                getPara("order") == null ? "1" : getPara("order"),
+                getPara("s") == null ? "0" : getPara("s"),
+                getPara("e") == null ? null : getPara("e")
         });
     }
-
+    @ActionKey("videoCut")
     public void videoCut() throws Exception {
         VideoCutMain.main(new String[]{
                 getPara("delay"),
@@ -49,7 +50,7 @@ public class TaskController extends Controller {
                 getPara("tv_name"),
         });
     }
-
+    @ActionKey("coverTake")
     public void coverTake() throws Exception {
         MainExe.takeCover();
     }

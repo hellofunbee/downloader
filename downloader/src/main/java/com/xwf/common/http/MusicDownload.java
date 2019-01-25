@@ -22,7 +22,7 @@ public class MusicDownload {
     public static void main(String args[]) throws IOException {
         boolean isReverse = false;
         if ("0".equals(args[0])) {
-            isReverse = true;
+            isReverse = true;//倒序
         }
 
         int _s = Integer.parseInt(args[1]);

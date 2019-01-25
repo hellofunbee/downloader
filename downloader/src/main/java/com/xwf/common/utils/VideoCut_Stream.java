@@ -16,7 +16,7 @@ public class VideoCut_Stream {
     private static String out_type = ".mp4";//有可能是MP3
     public static int ajust = 0;//ms
     public static String threads = "2";//ms
-    private static String ffmpegPath = CommonUtils.getPathByKey("ffmpegPath");
+    private static String ffmpegPath = CommonUtils.getFfmpeg();
     private static String youtube_dl = CommonUtils.getPathByKey("youtube-dl");
     private static String stream_out = CommonUtils.getPathByKey("stream_out");
     static SshUtil sshUtil;
@@ -83,6 +83,7 @@ public class VideoCut_Stream {
 
     /**
      * 批量执行
+     *
      * @param list
      * @throws Exception
      */

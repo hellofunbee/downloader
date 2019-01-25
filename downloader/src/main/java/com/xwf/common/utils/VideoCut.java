@@ -11,7 +11,7 @@ import java.util.*;
  * Created by weifengxu on 2018/8/5.
  */
 public class VideoCut {
-    private static String ffmpegPath = CommonUtils.getPathByKey("ffmpegPath");
+    private static String ffmpegPath = CommonUtils.getFfmpeg();
     private static String videoPath = "";
     private static String outPath = "";
 
