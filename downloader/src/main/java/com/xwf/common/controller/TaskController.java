@@ -1,6 +1,5 @@
 package com.xwf.common.controller;
 
-import com.jfinal.core.ActionKey;
 import com.jfinal.core.Controller;
 import com.xwf.common.dao.DbRefresh;
 import com.xwf.common.http.MusicDownload;
@@ -24,7 +23,6 @@ public class TaskController extends Controller {
         renderText(index);
     }
 
-    @ActionKey("refresh")
     public void refresh() {
 
         String tv_name = getPara("tv_name");
@@ -33,7 +31,6 @@ public class TaskController extends Controller {
         render("ok");
 
     }
-    @ActionKey("musicDownload")
     public void musicDownload() throws Exception {
 //        NetEaseCloudMusic.main(null);
         MusicDownload.main(new String[]{
@@ -42,7 +39,6 @@ public class TaskController extends Controller {
                 getPara("e") == null ? null : getPara("e")
         });
     }
-    @ActionKey("videoCut")
     public void videoCut() throws Exception {
         VideoCutMain.main(new String[]{
                 getPara("delay"),
@@ -50,7 +46,6 @@ public class TaskController extends Controller {
                 getPara("tv_name"),
         });
     }
-    @ActionKey("coverTake")
     public void coverTake() throws Exception {
         MainExe.takeCover();
     }

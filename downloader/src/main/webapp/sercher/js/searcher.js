@@ -97,7 +97,7 @@ function search() {
                     input_name.push('rd-' + j);
 
                     var oneWord = words[j];
-                    str += ' <h4>' + oneWord.word + '</h4>';
+                    str += ' <div class="s_head">' + oneWord.word + '</div>';
                     str += '<div >';
                     str += '<table>';
                     str += '<tr>';
@@ -111,9 +111,8 @@ function search() {
                         var video = vs[i];
                         var poster = video.path.replace(".mp4", ".jpg")
                         str += '<td  width="20%">';
-                        str += '<div >';
+                        str += '<div class="of">';
                         str += '<video id="video_show" playsinline="" poster="' + poster + '" preload="none" src="' + video.path + '" controls="controls" type width="99% " style="float: left"/>';
-                        str += '<input type="radio" id="' + j + '-' + i + '" name="rd-' + j + '" position="top">';
                         str += '<span style="float: left">匹配：' + video.type + '</span>'
                         str += '</div>';
                         str += '</td>';
@@ -131,9 +130,7 @@ function search() {
                     var first = $(e).find('input:first')
                     first.attr('checked', 'checked');
                 });
-
-
-                $('#alldownload_a').css('display', 'inline-block');
+                // $('#alldownload_a').css('display', 'inline-block');
             } else {
                 $('#video_div').html("<a style='font-size: 2em;'>加载失败！</a>");
             }

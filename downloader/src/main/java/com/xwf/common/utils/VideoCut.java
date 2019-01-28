@@ -83,6 +83,8 @@ public class VideoCut {
 //        StringBuffer sb = new StringBuffer();
 //        List<String> words = new ArrayList<String>();
 
+        File f = new File(srtPath);
+        System.out.println(f.isDirectory());
         File[] files = new File(srtPath).listFiles();
         System.out.println(files);
         if (files != null && files.length > 0) {

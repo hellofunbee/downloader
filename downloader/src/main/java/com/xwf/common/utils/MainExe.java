@@ -319,5 +319,11 @@ public class MainExe {
         }
     }
 
+    @Test
+    public void test(){
+        File f = new File("/Users/weifengxu/Downloads/电视/龙猫/");
+        File[] files = f.listFiles();
+        System.out.println(files);
+    }
 
 }

@@ -1,0 +1,16 @@
+.s_head{
+    font-size: 16px;
+    line-height: 36px;
+    height: 36px;
+    background-color: #2aabd2;
+    text-align: center;
+    color: white;
+    margin-bottom: 5px;
+}
+.clear{
+    clear:both;
+}
+
+.of{
+    overflow:hidden
+}
