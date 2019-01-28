@@ -5,11 +5,11 @@ base_path=/Users/weifengxu/Desktop/clips/
 #------视频----------
 ffmpegPath=/Users/weifengxu/Desktop/tool/jave_ffmpeg/ffmpeg
 #要截取片段的视频目录
-videoPath=/Users/weifengxu/Downloads/电视/龙猫/
+videoPath=/Users/weifengxu/Downloads/电视/千与千寻/
 #要截取片段的视频的字幕目录
-srtPath=/Users/weifengxu/Downloads/电视/龙猫/srt/
+srtPath=/Users/weifengxu/Downloads/电视/千与千寻/srt/
 #截取片段后的输出目录
-outPath=/Users/weifengxu/Desktop/clips/龙猫/
+outPath=/Users/weifengxu/Desktop/clips/千与千寻/
 
 
 #------youtube----------
