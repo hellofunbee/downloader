@@ -6,6 +6,8 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import org.apache.commons.io.FileUtils;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
@@ -16,20 +18,53 @@ import java.io.IOException;
 public class DownMylike {
     static String dir = "/Users/weifengxu/Desktop/temp/douyin/xihuan/";
     static int cc = 0;
+
     public static void main(String args[]) throws InterruptedException, IOException {
         cc = 0;
         JSONObject jo = null;
-        JSONArray ja =   JSON.parseArray(FileUtils.readFileToString(new File(new DownMylike().getPath())));
-        for(int n = 0;n < ja.size();n++){
-            JSONObject obj = ja.getJSONObject(n);
-            String text = obj.getJSONObject("response").getJSONObject("body").getString("text");
-            jo = JSON.parseObject(text);
-            downloader(jo);
+        String text = null;
+        JSONArray ja = JSON.parseArray(FileUtils.readFileToString(new File(new DownMylike().getPath())));
+        for (int n = 0; n < ja.size(); n++) {
+            try {
+                JSONObject obj = ja.getJSONObject(n);
+                text = obj.getJSONObject("response").getJSONObject("body").getString("text");
+
+                jo = JSON.parseObject(text);
+                downloader(jo);
+            } catch (Exception e) {
+                e.printStackTrace();
+                System.out.println(text);
+            }
+        }
+        webp2png();
+    }
+
+    private static void webp2png() {
+
+        System.out.println(System.getProperty("java.library.path"));
+
+        File f = new File(dir);
+        File[] files = f.listFiles();
+        if (files != null && files.length > 0) {
+            for (File pic : files) {
+                String name = pic.getName();
+                if (name != null && name.endsWith(".webp")) {
+                    System.out.println(name);
+                    try {
+                        BufferedImage im = ImageIO.read(pic);
+                        ImageIO.write(im, "png", new File(pic.getAbsolutePath().replace(".webp", ".png")));
+
+                        pic.delete();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
         }
 
     }
 
-    public static void downloader(JSONObject jo) throws IOException {
+    public static void downloader(JSONObject jo) throws Exception {
         JSONArray jsonArray = null;
         jsonArray = jo.getJSONArray("aweme_list");
 
@@ -40,18 +75,27 @@ public class DownMylike {
             JSONObject jobject = null;
             JSONObject author = null;
             String fm = null;
+            String cfm = null;
             for (Object obj : jsonArray) {
                 cc++;
                 jobject = (JSONObject) obj;
                 desc = jobject.getString("desc");
                 author = jobject.getJSONObject("author");
                 desc = author.getString("uid") + "--" + author.getString("short_id") + "--" + desc;
-                JSONArray videos = jobject.getJSONObject("video").getJSONObject("download_addr").getJSONArray("url_list");
+                JSONArray videos = jobject.getJSONObject("video").getJSONObject("play_addr").getJSONArray("url_list");
+                JSONArray covers = jobject.getJSONObject("video").getJSONObject("origin_cover").getJSONArray("url_list");
 
                 //目录已经存在，则跳过
                 mkDirectory(dir);
+
+                cfm = dir + desc + ".webp";
                 fm = dir + desc + ".mp4";
+
                 int result = mkFile(fm);
+                int cresult = mkFile(cfm);
+
+                HttpUtils.downLoad(covers.getString(0), cfm);
+
                 if (result == -1) {//失败则换个名字
                     fm = dir + author.getString("short_id") + ".mp4";
                     result = mkFile(fm);
@@ -63,8 +107,8 @@ public class DownMylike {
                     continue;
                 }
 
-                System.out.println(cc+"--"+desc);
-                HttpUtils.downLoad(videos.getString(2).replace("watermark=1", "watermark=0"), fm);
+                System.out.println(cc + "--" + desc);
+                HttpUtils.downLoad(videos.getString(0), fm);
             }
         }
     }
@@ -113,7 +157,7 @@ public class DownMylike {
     }
 
     private String getPath() {
-        return  "/Users/weifengxu/Desktop/temp/xihuanjson/Untitled.chlsj";
+        return "/Users/weifengxu/Desktop/temp/xihuanjson/Untitled_2.chlsj";
     }
 
 }

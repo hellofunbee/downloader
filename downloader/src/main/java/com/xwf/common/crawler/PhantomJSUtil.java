@@ -16,7 +16,7 @@ import java.util.List;
 public class PhantomJSUtil {
     private static String projectPath = System.getProperty("user.dir");
     private static String jsPath = PhantomJSUtil.class.getClassLoader().getResource("all.js").getPath();
-    private static String exePath = "/Users/weifengxu/Downloads/tool/phantomjs-2.1.1-macosx/bin/phantomjs";
+    private static String exePath = "/Users/weifengxu/Desktop/tool/phantomjs-2.1.1-macosx/bin/phantomjs";
 //    private static String exePath = "/usr/java/phantomjs-2.1.1-linux-x86_64/bin/phantomjs";
     private static List<JSONObject> arr;
     private static Integer count = 0;
