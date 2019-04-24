@@ -91,24 +91,13 @@ public class DownMylike {
                 cfm = dir + desc + ".webp";
                 fm = dir + desc + ".mp4";
 
-                int result = mkFile(fm);
-                int cresult = mkFile(cfm);
+                mkFile(fm);
+                mkFile(cfm);
 
                 HttpUtils.downLoad(covers.getString(0), cfm);
-
-                if (result == -1) {//失败则换个名字
-                    fm = dir + author.getString("short_id") + ".mp4";
-                    result = mkFile(fm);
-                    if (result == 0) {
-                        continue;
-                    }
-
-                } else if (result == 0) {
-                    continue;
-                }
+                HttpUtils.downLoad(videos.getString(0), fm);
 
                 System.out.println(cc + "--" + desc);
-                HttpUtils.downLoad(videos.getString(0), fm);
             }
         }
     }
@@ -157,7 +146,7 @@ public class DownMylike {
     }
 
     private String getPath() {
-        return "/Users/weifengxu/Desktop/temp/xihuanjson/Untitled_2.chlsj";
+        return "/Users/weifengxu/Desktop/temp/xihuanjson/Untitled_3.chlsj";
     }
 
 }
