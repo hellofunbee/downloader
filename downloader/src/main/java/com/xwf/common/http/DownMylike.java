@@ -4,19 +4,25 @@ package com.xwf.common.http;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.xwf.common.http.product.DYProduct;
+import com.xwf.common.http.product.Elastic_images;
+import com.xwf.common.http.product.Visitor;
+import com.xwf.common.utils.CommonUtils;
 import org.apache.commons.io.FileUtils;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.math.BigDecimal;
+import java.util.List;
 
 
 /**
  * Created by weifengxu on 2018/4/10.
  */
 public class DownMylike {
-    static String dir = "/Users/weifengxu/Desktop/temp/douyin/xihuan/";
+    static String dir = "/Users/weifengxu/Desktop/temp/douyin/xihuan/product/";
     static int cc = 0;
 
     public static void main(String args[]) throws InterruptedException, IOException {
@@ -27,16 +33,115 @@ public class DownMylike {
         for (int n = 0; n < ja.size(); n++) {
             try {
                 JSONObject obj = ja.getJSONObject(n);
-                text = obj.getJSONObject("response").getJSONObject("body").getString("text");
+                text = obj.getJSONObject("response").getJSONObject("body").getString("encoded");
 
+                text = CommonUtils.decode(text, "utf-8");
                 jo = JSON.parseObject(text);
                 downloader(jo);
             } catch (Exception e) {
                 e.printStackTrace();
-                System.out.println(text);
+                System.out.println("JSON 错误！");
             }
         }
         webp2png();
+    }
+
+
+    public static void downloader(JSONObject jo) throws Exception {
+        JSONArray jsonArray = null;
+        jsonArray = jo.getJSONArray("aweme_list");
+
+        int i = 0;
+
+        if (jsonArray != null && jsonArray.size() > 0) {
+            String desc = "";
+            JSONObject jobject = null;
+            JSONObject author = null;
+            String fm = null;
+            String cfm = null;
+            String productDir = null;
+            for (Object obj : jsonArray) {
+                try {
+                    cc++;
+                    jobject = (JSONObject) obj;
+                    desc = jobject.getString("desc");
+                    author = jobject.getJSONObject("author");
+                    desc = author.getString("uid") + "--" + author.getString("short_id") + "--" + desc;
+
+                    JSONObject vUrl = jobject.getJSONObject("video").getJSONObject("play_addr");
+                    if (vUrl != null) {
+
+                        JSONArray videos = jobject.getJSONObject("video").getJSONObject("play_addr").getJSONArray("url_list");
+                        JSONArray covers = jobject.getJSONObject("video").getJSONObject("origin_cover").getJSONArray("url_list");
+
+                        //目录已经存在，则跳过
+                        CommonUtils.mkDirectory(dir);
+
+                        cfm = dir + desc + ".webp";
+                        fm = dir + desc + ".mp4";
+                        productDir = dir + desc + "/";
+
+                        CommonUtils.mkFile(fm);
+                        /*CommonUtils.mkFile(cfm);
+
+                        HttpUtils.downLoad(covers.getString(0), cfm);
+                        HttpUtils.downLoad(videos.getString(0), fm);*/
+
+                        /*simple_promotions*/
+                        if (jobject.get("simple_promotions") != null) {
+                            JSONArray products = JSONArray.parseArray(jobject.getString("simple_promotions"));
+                            if (products.size() > 0) {
+                                HttpUtils.downLoad(videos.getString(0), fm);
+                                saveProduct(productDir, products, videos.getString(0));
+                            }
+                        }
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+            }
+        }
+    }
+
+    /**
+     * 保存产品信息
+     *
+     * @param dir
+     * @param products
+     */
+    private static void saveProduct(String dir, JSONArray products, String videoUrl) throws IOException {
+        CommonUtils.mkDirectory(dir);
+        JSONObject jo;
+        for (Object obj : products) {
+            jo = (JSONObject) obj;
+            DYProduct p = JSONObject.parseObject(jo.toJSONString(), DYProduct.class);
+            int i = 0;
+            /*图片*/
+            for (Elastic_images img : p.getElastic_images()) {
+                i++;
+                String pic = img.getUrl_list().get(0);
+                HttpUtils.downLoad(pic, dir + i + ".jpg");
+            }
+            /*价格*/
+            BigDecimal price = p.getPrice();
+            String title = p.getElastic_title();
+            int sales = p.getSales();
+            Visitor visitor = p.getVisitor();
+            List<String> labels = p.getLabel();
+            String product_id = p.getProduct_id();
+            StringBuffer sb = new StringBuffer();
+            sb.append("price:" + price + "\n");
+            sb.append("title:" + title + "\n");
+            sb.append("sales:" + sales + "\n");
+            sb.append("visitor:" + visitor.getCount() + "\n");
+            sb.append("labels:" + (labels == null ? "" : labels.toString()) + "\n");
+            sb.append("product_id:" + product_id + "\n");
+
+            CommonUtils.writeString(sb.toString(), dir + "info.text");
+            HttpUtils.downLoad(videoUrl, dir + "video.mp4");
+            System.out.println(dir);
+        }
     }
 
     private static void webp2png() {
@@ -49,7 +154,6 @@ public class DownMylike {
             for (File pic : files) {
                 String name = pic.getName();
                 if (name != null && name.endsWith(".webp")) {
-                    System.out.println(name);
                     try {
                         BufferedImage im = ImageIO.read(pic);
                         ImageIO.write(im, "png", new File(pic.getAbsolutePath().replace(".webp", ".png")));
@@ -64,89 +168,8 @@ public class DownMylike {
 
     }
 
-    public static void downloader(JSONObject jo) throws Exception {
-        JSONArray jsonArray = null;
-        jsonArray = jo.getJSONArray("aweme_list");
-
-        int i = 0;
-
-        if (jsonArray != null && jsonArray.size() > 0) {
-            String desc = "";
-            JSONObject jobject = null;
-            JSONObject author = null;
-            String fm = null;
-            String cfm = null;
-            for (Object obj : jsonArray) {
-                cc++;
-                jobject = (JSONObject) obj;
-                desc = jobject.getString("desc");
-                author = jobject.getJSONObject("author");
-                desc = author.getString("uid") + "--" + author.getString("short_id") + "--" + desc;
-                JSONArray videos = jobject.getJSONObject("video").getJSONObject("play_addr").getJSONArray("url_list");
-                JSONArray covers = jobject.getJSONObject("video").getJSONObject("origin_cover").getJSONArray("url_list");
-
-                //目录已经存在，则跳过
-                mkDirectory(dir);
-
-                cfm = dir + desc + ".webp";
-                fm = dir + desc + ".mp4";
-
-                mkFile(fm);
-                mkFile(cfm);
-
-                HttpUtils.downLoad(covers.getString(0), cfm);
-                HttpUtils.downLoad(videos.getString(0), fm);
-
-                System.out.println(cc + "--" + desc);
-            }
-        }
-    }
-
-
-    public static boolean mkDirectory(String path) {
-        File file = null;
-        try {
-            file = new File(path);
-            if (!file.exists()) {
-                return file.mkdirs();
-            } else {
-                return false;
-            }
-        } catch (Exception e) {
-        } finally {
-            file = null;
-        }
-        return false;
-    }
-
-    /**
-     * -1:出现异常
-     * 0：应景存在
-     * 1：创建成功
-     *
-     * @param path
-     * @return
-     */
-    public static Integer mkFile(String path) {
-        File file = null;
-        try {
-            file = new File(path);
-            if (!file.exists()) {
-                file.createNewFile();
-                return 1;
-            } else {
-
-                return 0;
-            }
-        } catch (Exception e) {
-        } finally {
-            file = null;
-        }
-        return -1;
-    }
-
     private String getPath() {
-        return "/Users/weifengxu/Desktop/temp/xihuanjson/Untitled_3.chlsj";
+        return "/Users/weifengxu/Desktop/temp/xihuanjson/Untitled.chlsj";
     }
 
 }

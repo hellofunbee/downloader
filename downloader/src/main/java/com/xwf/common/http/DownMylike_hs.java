@@ -4,6 +4,7 @@ package com.xwf.common.http;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.xwf.common.utils.CommonUtils;
 import org.apache.commons.io.FileUtils;
 
 import java.io.File;
@@ -51,12 +52,12 @@ public class DownMylike_hs {
                 JSONArray videos = jobject.getJSONObject("video").getJSONArray("download_url");
 
                 //目录已经存在，则跳过
-                mkDirectory(dir);
+                CommonUtils.mkDirectory(dir);
                 fm = dir + desc + ".mp4";
-                int result = mkFile(fm);
+                int result = CommonUtils.mkFile(fm);
                 if (result == -1) {//失败则换个名字
                     fm = dir + author.getString("short_id") + ".mp4";
-                    result = mkFile(fm);
+                    result = CommonUtils.mkFile(fm);
                     if (result == 0) {
                         continue;
                     }
@@ -72,47 +73,6 @@ public class DownMylike_hs {
     }
 
 
-    public static boolean mkDirectory(String path) {
-        File file = null;
-        try {
-            file = new File(path);
-            if (!file.exists()) {
-                return file.mkdirs();
-            } else {
-                return false;
-            }
-        } catch (Exception e) {
-        } finally {
-            file = null;
-        }
-        return false;
-    }
-
-    /**
-     * -1:出现异常
-     * 0：应景存在
-     * 1：创建成功
-     *
-     * @param path
-     * @return
-     */
-    public static Integer mkFile(String path) {
-        File file = null;
-        try {
-            file = new File(path);
-            if (!file.exists()) {
-                file.createNewFile();
-                return 1;
-            } else {
-
-                return 0;
-            }
-        } catch (Exception e) {
-        } finally {
-            file = null;
-        }
-        return -1;
-    }
 
     private String getPath() {
         return  "/Users/weifengxu/Desktop/temp/xihuanjson/huoshan.chlsj";
