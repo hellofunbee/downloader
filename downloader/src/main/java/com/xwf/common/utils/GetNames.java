@@ -15,8 +15,8 @@ import java.util.List;
  */
 public class GetNames {
 
-    public static String path = "/Users/weifengxu/Downloads/音源/Mian Jin Ge/";
-    public static String pathA = "/Users/weifengxu/Desktop/music/学猫叫/xmj.txt";
+    public static String path = "/Volumes/自媒体/音源/Mian Jin Ge/";
+    public static String pathA = "/Volumes/自媒体/music/学猫叫/xmj.txt";
 
     public static void main(String args[]) throws Exception {
         String result = toA_B(listA(), listB());

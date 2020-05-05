@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class DeDubble {
 
-    public static String path = "/Users/weifengxu/Desktop/面筋歌词";
+    public static String path = "/Volumes/自媒体/面筋歌词";
 
     public static void main(String args[]) throws InterruptedException, IOException {
 

@@ -22,7 +22,8 @@ import java.util.List;
  * Created by weifengxu on 2018/4/10.
  */
 public class DownMylike {
-    static String dir = "/Users/weifengxu/Desktop/temp/douyin/xihuan/product/";
+    static String dir = "/Volumes/自媒体/temp/douyin/xihuan/08-31-product/";
+    static String dir2 = "/Volumes/自媒体/temp/douyin/xihuan/08-31-idle/";
     static int cc = 0;
 
     public static void main(String args[]) throws InterruptedException, IOException {
@@ -76,25 +77,31 @@ public class DownMylike {
 
                         //目录已经存在，则跳过
                         CommonUtils.mkDirectory(dir);
+                        CommonUtils.mkDirectory(dir2);
 
                         cfm = dir + desc + ".webp";
-                        fm = dir + desc + ".mp4";
+
                         productDir = dir + desc + "/";
 
-                        CommonUtils.mkFile(fm);
-                        /*CommonUtils.mkFile(cfm);
-
+                        /*
                         HttpUtils.downLoad(covers.getString(0), cfm);
                         HttpUtils.downLoad(videos.getString(0), fm);*/
+
+                        System.out.println(desc);
 
                         /*simple_promotions*/
                         if (jobject.get("simple_promotions") != null) {
                             JSONArray products = JSONArray.parseArray(jobject.getString("simple_promotions"));
                             if (products.size() > 0) {
+                                fm = dir + desc + ".mp4";
                                 HttpUtils.downLoad(videos.getString(0), fm);
                                 saveProduct(productDir, products, videos.getString(0));
                             }
+                        } else {
+                            fm = dir2 + desc + ".mp4";
+                            HttpUtils.downLoad(videos.getString(0), fm);
                         }
+
                     }
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -125,7 +132,7 @@ public class DownMylike {
             }
             /*价格*/
             BigDecimal price = p.getPrice();
-            String title = p.getElastic_title();
+            String title = p.getTitle();
             int sales = p.getSales();
             Visitor visitor = p.getVisitor();
             List<String> labels = p.getLabel();
@@ -140,7 +147,7 @@ public class DownMylike {
 
             CommonUtils.writeString(sb.toString(), dir + "info.text");
             HttpUtils.downLoad(videoUrl, dir + "video.mp4");
-            System.out.println(dir);
+            System.out.println(title);
         }
     }
 
@@ -169,7 +176,7 @@ public class DownMylike {
     }
 
     private String getPath() {
-        return "/Users/weifengxu/Desktop/temp/xihuanjson/Untitled.chlsj";
+        return "/Volumes/自媒体/temp/xihuanjson/Untitled.chlsj";
     }
 
 }

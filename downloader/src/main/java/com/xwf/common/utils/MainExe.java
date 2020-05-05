@@ -18,9 +18,9 @@ import java.util.UUID;
  * Created by weifengxu on 2018/8/10.
  */
 public class MainExe {
-    static String path = "/Users/weifengxu/Downloads/电视/水浒传1996/srt";
-    static String path_video = "/Users/weifengxu/Downloads/电视/水浒传1996/";
-    static String path_music = "/Users/weifengxu/Downloads/music/";
+    static String path = "/Volumes/自媒体/电视/水浒传1996/srt";
+    static String path_video = "/Volumes/自媒体/电视/水浒传1996/";
+    static String path_music = "/Volumes/自媒体/music/";
 
     public static void main(String args[]) throws Exception {
 
@@ -63,7 +63,7 @@ public class MainExe {
      */
     public static void copyAndZipTopBottom() {
 
-        String movie = "/Users/weifengxu/Desktop/clips/三国演义1994/";
+        String movie = "/Volumes/自媒体/clips/三国演义1994/";
         String zip_path = CommonUtils.getPathByKey("zip_path") + UUID.randomUUID() + ".zip";
         List<File> list = new ArrayList<File>();
         File[] video_paths = new File(movie).listFiles();
@@ -236,7 +236,7 @@ public class MainExe {
 
     @Test
     public void changeName() throws UnsupportedEncodingException {
-        String path = "/Users/weifengxu/Downloads/音源/窃格瓦拉1.0/";
+        String path = "/Volumes/自媒体/音源/窃格瓦拉1.0/";
         List<File> fs = CommonUtils.getMp4FileList(path, new ArrayList<File>(), ".uspec");
 
         HanyuPinyinHelper hp = new HanyuPinyinHelper();
@@ -259,7 +259,7 @@ public class MainExe {
 
     @Test
     public void changeFile() throws Exception {
-        String path = "/Users/weifengxu/Downloads/音源/窃格瓦拉1.0/oto.ini";
+        String path = "/Volumes/自媒体/音源/窃格瓦拉1.0/oto.ini";
         InputStreamReader isr = new InputStreamReader(new FileInputStream(path));
         BufferedReader br = new BufferedReader(isr);
         StringBuffer sb = new StringBuffer();
@@ -295,12 +295,12 @@ public class MainExe {
 
     @Test
     public void parseUrl() throws IOException {
-        String path_1 = "/Users/weifengxu/Desktop/youtube";
+        String path_1 = "/Volumes/自媒体/youtube";
         String exist = FileUtils.readFileToString(new File(path_1));
         List<String> urls = Arrays.asList(exist.split("\n"));
 
 
-        String path = "/Users/weifengxu/Desktop/president obama speeches - YouTube.html";
+        String path = "/Volumes/自媒体/president obama speeches - YouTube.html";
         String html = FileUtils.readFileToString(new File(path));
         Document doc = Jsoup.parse(html);
         Elements dls = doc.select("div h3 a");
@@ -321,7 +321,7 @@ public class MainExe {
 
     @Test
     public void test(){
-        File f = new File("/Users/weifengxu/Downloads/电视/龙猫/");
+        File f = new File("/Volumes/自媒体/电视/龙猫/");
         File[] files = f.listFiles();
         System.out.println(files);
     }

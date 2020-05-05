@@ -17,7 +17,7 @@ import java.util.List;
 public class Downloader {
 
 
-    static String dir = "/Users/weifengxu/Desktop/temp/douyin/yinyue/";
+    static String dir = "/Volumes/自媒体/temp/douyin/yinyue/";
     static boolean isAll=false;
     static boolean isAll_cat=false;//4006065500
     static long count = 200;//音乐个数

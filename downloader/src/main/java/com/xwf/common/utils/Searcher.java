@@ -18,7 +18,7 @@ public class Searcher {
     public static void main(String[] args) throws IOException {
 
 
-        List<Map> result = searchLrc(".lrc", "你的娇滴滴的娘子呢", false, "/Users/weifengxu/Downloads/music");
+        List<Map> result = searchLrc(".lrc", "你的娇滴滴的娘子呢", false, "/Volumes/自媒体/music");
         for (Map sb : result) {
             System.out.println(sb.get("str") + "--" + (300 - (Integer) sb.get("type")));
             System.out.println();

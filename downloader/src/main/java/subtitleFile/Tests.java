@@ -74,14 +74,14 @@ public class Tests {
 
 				//To test the correct implementation of the SRT parser and writer.
 				ttff = new FormatSRT();
-				File file = new File("/Users/weifengxu/Downloads/subtitleConverter-master/Subtitle Files/standards/SRT/Avengers.2012.Eng.Subs.srt");
+				File file = new File("/Volumes/自媒体/subtitleConverter-master/Subtitle Files/standards/SRT/Avengers.2012.Eng.Subs.srt");
 				InputStream is = new FileInputStream(file);
 				tto = ttff.parseFile(file.getName(), is);
 				IOClass.writeFileTxt("test.srt", tto.toSRT());
 
 				//To test the correct implementation of the ASS/SSA parser and writer.
 				ttff = new FormatASS();
-				file = new File("/Users/weifengxu/Downloads/subtitleConverter-master/Subtitle Files/standards/ASS/test.ssa");
+				file = new File("/Volumes/自媒体/subtitleConverter-master/Subtitle Files/standards/ASS/test.ssa");
 				is = new FileInputStream(file);
 				tto = ttff.parseFile(file.getName(), is);
 				IOClass.writeFileTxt("test.ssa", tto.toASS());

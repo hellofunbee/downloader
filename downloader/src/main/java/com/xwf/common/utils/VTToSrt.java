@@ -14,7 +14,7 @@ import java.util.List;
  * Created by weifengxu on 2018/9/6.
  */
 public class VTToSrt {
-        static String path = "/Users/weifengxu/Desktop/srt/";
+        static String path = "/Volumes/自媒体/srt/";
     ;
     static String ffmpeg = CommonUtils.getPathByKey("ffmpeg");
     static String temp = CommonUtils.getPathByKey("srt_path") + "temp.srt";
@@ -144,7 +144,7 @@ public class VTToSrt {
     @Test
     public void dele() {
 
-//        path = "/Users/weifengxu/Downloads/srt";
+//        path = "/Volumes/自媒体/srt";
         List<File> jpgs = CommonUtils.getMp4FileList(path, new ArrayList<File>(), "jpg");
         List<File> srts = CommonUtils.getMp4FileList(path, new ArrayList<File>(), "vtt");
         String srt_name = null;

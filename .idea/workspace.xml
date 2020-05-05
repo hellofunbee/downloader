@@ -1,0 +1,1247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="xwf-com:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="44e8dd08-5832-40ab-88ea-0c2844581bdc" name="Default" comment="bug 优化">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/CutRunnable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/controller/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/crawler/PhantomJSUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/crawler/PhantomJSUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/CloudMusicDownload.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/CloudMusicDownload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/DownMylike.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/DownMylike.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/DownMylike_hs.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/DownMylike_hs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/DownMylike_ks.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/DownMylike_ks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/Downloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/Downloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/DownloaderOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/DownloaderOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/NetEaseCloudMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/NetEaseCloudMusic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/CommonUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/DeDubble.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/DeDubble.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/GetNames.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/GetNames.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/MainExe.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/MainExe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/Searcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/Searcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/VTToSrt.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/VTToSrt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/VideoCut.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/VideoCut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/Youtube_dl.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/Youtube_dl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/video/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/video/FileUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/video/Refresh.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/video/Refresh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/subtitleFile/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/subtitleFile/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/src/main/resources/path.property" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/resources/path.property" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/target/classes/path.property" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/target/classes/path.property" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/target/xwf-com/WEB-INF/classes/path.property" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/target/xwf-com/WEB-INF/classes/path.property" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/downloader$Unnamed.ic" NAME="Unnamed Coverage Results" MODIFIED="1548211572537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="169" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="downloader" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="downloader" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="tool" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="$MAVEN_REPOSITORY$" />
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+        <option name="userSettingsFile" value="$USER_HOME$/.m2/settings2.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="lookForNested" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Zy2lACuGry653gycBGWYTNNIot" />
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>CorrectnessLintAndroid</id>
+          </State>
+          <State>
+            <id>Gradle</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>LintAndroid</id>
+          </State>
+          <State>
+            <id>Maven</id>
+          </State>
+          <State>
+            <id>OSGi</id>
+          </State>
+          <State>
+            <id>Probable bugsGradle</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="CommonUtils&#9;FILE&#9;file:///Users/weifengxu/Downloads/pro/downloader/downloader/src/main/java/com/xwf/common/utils/CommonUtils.java&#10;PrintStream&#9;PSI&#9;JAVA://com.xwf.common.utils.PrintStream&#10;path&#9;FILE&#9;file:///Users/weifengxu/Downloads/pro/downloader/downloader/src/main/resources/path.property&#10;Tas&#9;FILE&#9;file:///Users/weifengxu/Downloads/pro/downloader/downloader/src/main/java/com/xwf/common/controller/TaskController.java&#10;vide&#9;PSI&#9;JAVA://com.xwf.common.utils.VideoCutMain&#10;sear&#9;FILE&#9;file:///Users/weifengxu/Downloads/pro/downloader/downloader/src/main/webapp/sercher/js/searcher.js&#10;sea&#9;FILE&#9;file:///Users/weifengxu/Downloads/pro/downloader/downloader/src/main/java/com/xwf/common/utils/Searcher.java&#10;youtu&#9;FILE&#9;file:///Users/weifengxu/Downloads/pro/downloader/downloader/src/main/java/com/xwf/common/controller/YoutubeController.java&#10;musi&#9;FILE&#9;file:///Users/weifengxu/Downloads/pro/downloader/downloader/src/main/java/com/xwf/common/controller/MusicController.java&#10;searchAudio1&#9;FILE&#9;file:///Users/weifengxu/Downloads/pro/downloader/downloader/src/main/webapp/sercher/searchAudio1.html&#10;comm&#9;FILE&#9;file:///Users/weifengxu/Downloads/pro/downloader/downloader/src/main/java/com/xwf/common/utils/CommonUtils.java&#10;Co&#9;FILE&#9;file:///Users/weifengxu/Downloads/pro/downloader/downloader/src/main/java/com/xwf/common/CommonConfig.java&#10;task&#9;FILE&#9;file:///Users/weifengxu/Downloads/pro/downloader/downloader/src/main/java/com/xwf/common/controller/TaskController.java&#10;MusicController&#9;PSI&#9;JAVA://com.xwf.common.controller.MusicController&#10;IOClass&#9;PSI&#9;JAVA://subtitleFile.IOClass&#10;searchMain&#9;FILE&#9;file:///Users/weifengxu/Downloads/pro/downloader/downloader/src/main/webapp/sercher/searchMain.html&#10;homec&#9;PSI&#9;JAVA://com.xwf.common.controller.HomeController" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564238870568" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/downloader" />
+      <recent name="$PROJECT_DIR$/downloader/src" />
+      <recent name="$PROJECT_DIR$/downloader/src/main/resources" />
+      <recent name="$PROJECT_DIR$/downloader/src/main/webapp/sercher/js" />
+      <recent name="$PROJECT_DIR$/downloader/src/main/webapp/sercher" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xwf.common.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/product" />
+      <recent name="$PROJECT_DIR$/downloader/src/main/lib" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Unnamed">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="GAPID_DISABLE_PCS" value="false" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="GAPID_DISABLE_PCS" value="false" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration name="DownMylike" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xwf.common.http.DownMylike" />
+      <module name="xwf-com" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xwf.common.http.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DownMylike_ks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xwf.common.http.DownMylike_ks" />
+      <module name="xwf-com" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xwf.common.http.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VTToSrt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xwf.common.utils.VTToSrt" />
+      <module name="xwf-com" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xwf.common.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VideoCut" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xwf.common.utils.VideoCut" />
+      <module name="xwf-com" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xwf.common.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="grailsApplicationRoot" value="" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MainExe.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xwf-com" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xwf.common.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xwf.common.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.xwf.common.utils.MainExe" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="tool" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TORNADOFX_RUNCONFIGURATION" factoryName="TornadoFX Configuration Factory" run-type="App" live-views="false" live-stylesheets="false" dump-stylesheets="false">
+      <module name="tool" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.6" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="xwf-com:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_tool_2" />
+        <option name="DEPLOY_TOMCAT_APPS" value="true" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61235" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="xwf-com:war" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.6" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="xwf-com:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_tool" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61235" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="xwf-com:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="LOCAL" value="false" />
+      <deployment />
+      <server-settings>
+        <data>
+          <option name="targets">
+            <list>
+              <WatchedTargetModelImpl>
+                <option name="name" value="CONTEXT_XML" />
+                <name>CONTEXT_XML</name>
+              </WatchedTargetModelImpl>
+              <StagingTargetModelImpl>
+                <option name="name" value="STAGING" />
+                <name>STAGING</name>
+              </StagingTargetModelImpl>
+            </list>
+          </option>
+          <option name="transportHostId" value="" />
+          <host-id />
+        </data>
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="TOMCAT_LOCALHOST_LOG_ID" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61245" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.VTToSrt" />
+      <item itemvalue="Application.DownMylike" />
+      <item itemvalue="Application.DownMylike_ks" />
+      <item itemvalue="Application.VideoCut" />
+      <item itemvalue="JUnit.MainExe.test" />
+      <item itemvalue="Tomcat Server.Unnamed" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.VideoCut" />
+        <item itemvalue="Application.DownMylike" />
+        <item itemvalue="Application.DownMylike_ks" />
+        <item itemvalue="JUnit.MainExe.test" />
+        <item itemvalue="Application.VTToSrt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="44e8dd08-5832-40ab-88ea-0c2844581bdc" name="Default" comment="" />
+      <created>1534711940594</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1534711940594</updated>
+      <workItem from="1534711941946" duration="28000" />
+      <workItem from="1536904661143" duration="249000" />
+      <workItem from="1536986399937" duration="2000" />
+      <workItem from="1547301461129" duration="989000" />
+      <workItem from="1548173160968" duration="6807000" />
+      <workItem from="1548250239390" duration="3958000" />
+      <workItem from="1548254460036" duration="1000" />
+      <workItem from="1548256329316" duration="838000" />
+      <workItem from="1548339317135" duration="798000" />
+      <workItem from="1548405786664" duration="12431000" />
+      <workItem from="1548425129269" duration="479000" />
+      <workItem from="1548654214874" duration="1091000" />
+      <workItem from="1548672154419" duration="126000" />
+      <workItem from="1550321796901" duration="836000" />
+      <workItem from="1550481550361" duration="432000" />
+      <workItem from="1550658429975" duration="536000" />
+      <workItem from="1550659268040" duration="22000" />
+      <workItem from="1550659344319" duration="605000" />
+      <workItem from="1553066640223" duration="3875000" />
+      <workItem from="1553955783556" duration="336000" />
+      <workItem from="1553958927503" duration="642000" />
+      <workItem from="1555166275175" duration="1738000" />
+      <workItem from="1556084603645" duration="1294000" />
+      <workItem from="1558283128411" duration="623000" />
+      <workItem from="1558625085710" duration="8800000" />
+      <workItem from="1558946886576" duration="8000" />
+      <workItem from="1558966113801" duration="317000" />
+      <workItem from="1559127491945" duration="1129000" />
+      <workItem from="1559146854432" duration="27000" />
+      <workItem from="1559313643751" duration="652000" />
+      <workItem from="1559345060864" duration="789000" />
+      <workItem from="1559465318278" duration="680000" />
+      <workItem from="1559649643572" duration="486000" />
+      <workItem from="1559718594587" duration="236000" />
+      <workItem from="1559749476880" duration="949000" />
+      <workItem from="1559872418810" duration="391000" />
+      <workItem from="1560485273856" duration="433000" />
+      <workItem from="1561103308703" duration="429000" />
+      <workItem from="1561113679482" duration="328000" />
+      <workItem from="1561114017002" duration="724000" />
+      <workItem from="1561559466547" duration="511000" />
+      <workItem from="1562296218150" duration="584000" />
+      <workItem from="1564232922585" duration="542000" />
+      <workItem from="1566308322727" duration="367000" />
+      <workItem from="1567263778124" duration="482000" />
+      <workItem from="1581422158825" duration="1132000" />
+      <workItem from="1581423350683" duration="1107000" />
+      <workItem from="1582021362644" duration="37000" />
+      <workItem from="1585797165962" duration="683000" />
+      <workItem from="1588166486963" duration="3868000" />
+      <workItem from="1588479645230" duration="2428000" />
+      <workItem from="1588493641983" duration="1704000" />
+      <workItem from="1588512111983" duration="11117000" />
+      <workItem from="1588677104745" duration="30000" />
+      <workItem from="1588677355355" duration="3504000" />
+    </task>
+    <task id="LOCAL-00001" summary="变更目录">
+      <created>1548211447972</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1548211447972</updated>
+    </task>
+    <task id="LOCAL-00002" summary="优化结构">
+      <created>1548416186230</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1548416186230</updated>
+    </task>
+    <task id="LOCAL-00003" summary="合并字幕模块">
+      <created>1548654288830</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1548654288830</updated>
+    </task>
+    <task id="LOCAL-00004" summary="合并字幕模块-after">
+      <created>1548672255933</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1548672255934</updated>
+    </task>
+    <task id="LOCAL-00005" summary="webp 2 png">
+      <created>1555169637656</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1555169637656</updated>
+    </task>
+    <task id="LOCAL-00006" summary="bug 优化">
+      <created>1556085213937</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1556085213937</updated>
+    </task>
+    <task id="LOCAL-00007" summary="bug 优化">
+      <created>1559146868058</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1559146868058</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="MainExe_test - 2019.01.25 at 22h 07m 35s.xml">
+      <configuration name="MainExe.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainExe_test - 2019.01.25 at 22h 07m 51s.xml">
+      <configuration name="MainExe.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainExe_test - 2019.01.25 at 22h 08m 02s.xml">
+      <configuration name="MainExe.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainExe_test - 2019.01.25 at 22h 08m 12s.xml">
+      <configuration name="MainExe.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainExe_test - 2019.01.25 at 22h 10m 46s.xml">
+      <configuration name="MainExe.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainExe_test - 2019.01.25 at 22h 11m 03s.xml">
+      <configuration name="MainExe.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainExe_test - 2019.01.25 at 22h 11m 18s.xml">
+      <configuration name="MainExe.test" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="变更目录" />
+    <MESSAGE value="优化结构" />
+    <MESSAGE value="合并字幕模块" />
+    <MESSAGE value="合并字幕模块-after" />
+    <MESSAGE value="webp 2 png" />
+    <MESSAGE value="bug 优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug 优化" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="140" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588677832630">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state x="140" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog/54.23.1226.777@54.23.1226.777" timestamp="1588677832630" />
+    <state x="489" y="134" key="#com.intellij.ide.util.MemberChooser" timestamp="1588654669578">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state x="489" y="134" key="#com.intellij.ide.util.MemberChooser/54.23.1226.777@54.23.1226.777" timestamp="1588654669578" />
+    <state x="666" y="110" key="#xdebugger.evaluate" timestamp="1588511509120">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state x="666" y="110" key="#xdebugger.evaluate/54.23.1226.777@54.23.1226.777" timestamp="1588511509120" />
+    <state x="278" y="110" key="CommitChangelistDialog2" timestamp="1588168406714">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state x="278" y="110" key="CommitChangelistDialog2/54.23.1226.777@54.23.1226.777" timestamp="1588168406714" />
+    <state x="186" y="90" key="DiffContextDialog" timestamp="1588168405358">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state x="186" y="90" key="DiffContextDialog/54.23.1226.777@54.23.1226.777" timestamp="1588168405358" />
+    <state width="795" height="503" key="GridCell.Tab.0.bottom" timestamp="1588690748811">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state width="795" height="19" key="GridCell.Tab.0.bottom/52.23.1228.777@52.23.1228.777" timestamp="1588489672155" />
+    <state width="846" height="314" key="GridCell.Tab.0.bottom/54.0.1226.800@54.0.1226.800" timestamp="1588653495801" />
+    <state width="795" height="503" key="GridCell.Tab.0.bottom/54.23.1226.777@54.23.1226.777" timestamp="1588690748811" />
+    <state width="795" height="503" key="GridCell.Tab.0.center" timestamp="1588690748809">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state width="795" height="19" key="GridCell.Tab.0.center/52.23.1228.777@52.23.1228.777" timestamp="1588489672154" />
+    <state width="846" height="314" key="GridCell.Tab.0.center/54.0.1226.800@54.0.1226.800" timestamp="1588653495799" />
+    <state width="795" height="503" key="GridCell.Tab.0.center/54.23.1226.777@54.23.1226.777" timestamp="1588690748809" />
+    <state width="795" height="503" key="GridCell.Tab.0.left" timestamp="1588690748808">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state width="795" height="19" key="GridCell.Tab.0.left/52.23.1228.777@52.23.1228.777" timestamp="1588489672153" />
+    <state width="846" height="314" key="GridCell.Tab.0.left/54.0.1226.800@54.0.1226.800" timestamp="1588653495797" />
+    <state width="795" height="503" key="GridCell.Tab.0.left/54.23.1226.777@54.23.1226.777" timestamp="1588690748808" />
+    <state width="795" height="503" key="GridCell.Tab.0.right" timestamp="1588690748810">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state width="795" height="19" key="GridCell.Tab.0.right/52.23.1228.777@52.23.1228.777" timestamp="1588489672154" />
+    <state width="846" height="314" key="GridCell.Tab.0.right/54.0.1226.800@54.0.1226.800" timestamp="1588653495800" />
+    <state width="795" height="503" key="GridCell.Tab.0.right/54.23.1226.777@54.23.1226.777" timestamp="1588690748810" />
+    <state width="795" height="503" key="GridCell.Tab.1.bottom" timestamp="1588690748570">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state width="795" height="19" key="GridCell.Tab.1.bottom/52.23.1228.777@52.23.1228.777" timestamp="1588489672159" />
+    <state width="846" height="314" key="GridCell.Tab.1.bottom/54.0.1226.800@54.0.1226.800" timestamp="1588653495575" />
+    <state width="795" height="503" key="GridCell.Tab.1.bottom/54.23.1226.777@54.23.1226.777" timestamp="1588690748570" />
+    <state width="795" height="503" key="GridCell.Tab.1.center" timestamp="1588690748569">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state width="795" height="19" key="GridCell.Tab.1.center/52.23.1228.777@52.23.1228.777" timestamp="1588489672157" />
+    <state width="846" height="314" key="GridCell.Tab.1.center/54.0.1226.800@54.0.1226.800" timestamp="1588653495573" />
+    <state width="795" height="503" key="GridCell.Tab.1.center/54.23.1226.777@54.23.1226.777" timestamp="1588690748569" />
+    <state width="795" height="503" key="GridCell.Tab.1.left" timestamp="1588690748569">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state width="795" height="19" key="GridCell.Tab.1.left/52.23.1228.777@52.23.1228.777" timestamp="1588489672156" />
+    <state width="846" height="314" key="GridCell.Tab.1.left/54.0.1226.800@54.0.1226.800" timestamp="1588653495572" />
+    <state width="795" height="503" key="GridCell.Tab.1.left/54.23.1226.777@54.23.1226.777" timestamp="1588690748569" />
+    <state width="795" height="503" key="GridCell.Tab.1.right" timestamp="1588690748570">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state width="795" height="19" key="GridCell.Tab.1.right/52.23.1228.777@52.23.1228.777" timestamp="1588489672158" />
+    <state width="846" height="314" key="GridCell.Tab.1.right/54.0.1226.800@54.0.1226.800" timestamp="1588653495574" />
+    <state width="795" height="503" key="GridCell.Tab.1.right/54.23.1226.777@54.23.1226.777" timestamp="1588690748570" />
+    <state width="795" height="503" key="GridCell.Tab.2.bottom" timestamp="1588690748579">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state width="795" height="19" key="GridCell.Tab.2.bottom/52.23.1228.777@52.23.1228.777" timestamp="1588489672161" />
+    <state width="846" height="314" key="GridCell.Tab.2.bottom/54.0.1226.800@54.0.1226.800" timestamp="1588653495578" />
+    <state width="795" height="503" key="GridCell.Tab.2.bottom/54.23.1226.777@54.23.1226.777" timestamp="1588690748579" />
+    <state width="795" height="503" key="GridCell.Tab.2.center" timestamp="1588690748573">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state width="795" height="19" key="GridCell.Tab.2.center/52.23.1228.777@52.23.1228.777" timestamp="1588489672160" />
+    <state width="846" height="314" key="GridCell.Tab.2.center/54.0.1226.800@54.0.1226.800" timestamp="1588653495576" />
+    <state width="795" height="503" key="GridCell.Tab.2.center/54.23.1226.777@54.23.1226.777" timestamp="1588690748573" />
+    <state width="795" height="503" key="GridCell.Tab.2.left" timestamp="1588690748571">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state width="795" height="19" key="GridCell.Tab.2.left/52.23.1228.777@52.23.1228.777" timestamp="1588489672159" />
+    <state width="846" height="314" key="GridCell.Tab.2.left/54.0.1226.800@54.0.1226.800" timestamp="1588653495576" />
+    <state width="795" height="503" key="GridCell.Tab.2.left/54.23.1226.777@54.23.1226.777" timestamp="1588690748571" />
+    <state width="795" height="503" key="GridCell.Tab.2.right" timestamp="1588690748578">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state width="795" height="19" key="GridCell.Tab.2.right/52.23.1228.777@52.23.1228.777" timestamp="1588489672160" />
+    <state width="846" height="314" key="GridCell.Tab.2.right/54.0.1226.800@54.0.1226.800" timestamp="1588653495577" />
+    <state width="795" height="503" key="GridCell.Tab.2.right/54.23.1226.777@54.23.1226.777" timestamp="1588690748578" />
+    <state width="795" height="503" key="GridCell.Tab.3.bottom" timestamp="1588677844741">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state width="795" height="19" key="GridCell.Tab.3.bottom/52.23.1228.777@52.23.1228.777" timestamp="1588489672169" />
+    <state width="846" height="314" key="GridCell.Tab.3.bottom/54.0.1226.800@54.0.1226.800" timestamp="1588653305150" />
+    <state width="795" height="503" key="GridCell.Tab.3.bottom/54.23.1226.777@54.23.1226.777" timestamp="1588677844741" />
+    <state width="795" height="503" key="GridCell.Tab.3.center" timestamp="1588677844740">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state width="795" height="19" key="GridCell.Tab.3.center/52.23.1228.777@52.23.1228.777" timestamp="1588489672164" />
+    <state width="846" height="314" key="GridCell.Tab.3.center/54.0.1226.800@54.0.1226.800" timestamp="1588653305149" />
+    <state width="795" height="503" key="GridCell.Tab.3.center/54.23.1226.777@54.23.1226.777" timestamp="1588677844740" />
+    <state width="795" height="503" key="GridCell.Tab.3.left" timestamp="1588677844739">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state width="795" height="19" key="GridCell.Tab.3.left/52.23.1228.777@52.23.1228.777" timestamp="1588489672163" />
+    <state width="846" height="314" key="GridCell.Tab.3.left/54.0.1226.800@54.0.1226.800" timestamp="1588653305148" />
+    <state width="795" height="503" key="GridCell.Tab.3.left/54.23.1226.777@54.23.1226.777" timestamp="1588677844739" />
+    <state width="795" height="503" key="GridCell.Tab.3.right" timestamp="1588677844741">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state width="795" height="19" key="GridCell.Tab.3.right/52.23.1228.777@52.23.1228.777" timestamp="1588489672165" />
+    <state width="846" height="314" key="GridCell.Tab.3.right/54.0.1226.800@54.0.1226.800" timestamp="1588653305150" />
+    <state width="795" height="503" key="GridCell.Tab.3.right/54.23.1226.777@54.23.1226.777" timestamp="1588677844741" />
+    <state width="795" height="503" key="GridCell.Tab.4.bottom" timestamp="1588677844743">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state width="795" height="19" key="GridCell.Tab.4.bottom/52.23.1228.777@52.23.1228.777" timestamp="1588489672173" />
+    <state width="846" height="314" key="GridCell.Tab.4.bottom/54.0.1226.800@54.0.1226.800" timestamp="1588653305154" />
+    <state width="795" height="503" key="GridCell.Tab.4.bottom/54.23.1226.777@54.23.1226.777" timestamp="1588677844743" />
+    <state width="795" height="503" key="GridCell.Tab.4.center" timestamp="1588677844742">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state width="795" height="19" key="GridCell.Tab.4.center/52.23.1228.777@52.23.1228.777" timestamp="1588489672171" />
+    <state width="846" height="314" key="GridCell.Tab.4.center/54.0.1226.800@54.0.1226.800" timestamp="1588653305152" />
+    <state width="795" height="503" key="GridCell.Tab.4.center/54.23.1226.777@54.23.1226.777" timestamp="1588677844742" />
+    <state width="795" height="503" key="GridCell.Tab.4.left" timestamp="1588677844742">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state width="795" height="19" key="GridCell.Tab.4.left/52.23.1228.777@52.23.1228.777" timestamp="1588489672170" />
+    <state width="846" height="314" key="GridCell.Tab.4.left/54.0.1226.800@54.0.1226.800" timestamp="1588653305151" />
+    <state width="795" height="503" key="GridCell.Tab.4.left/54.23.1226.777@54.23.1226.777" timestamp="1588677844742" />
+    <state width="795" height="503" key="GridCell.Tab.4.right" timestamp="1588677844743">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state width="795" height="19" key="GridCell.Tab.4.right/52.23.1228.777@52.23.1228.777" timestamp="1588489672172" />
+    <state width="846" height="314" key="GridCell.Tab.4.right/54.0.1226.800@54.0.1226.800" timestamp="1588653305153" />
+    <state width="795" height="503" key="GridCell.Tab.4.right/54.23.1226.777@54.23.1226.777" timestamp="1588677844743" />
+    <state width="640" height="361" key="XDebugger.FullValuePopup" timestamp="1588512912958">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state width="640" height="361" key="XDebugger.FullValuePopup/54.23.1226.777@54.23.1226.777" timestamp="1588512912958" />
+    <state x="342" y="58" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588511145983">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state x="342" y="58" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/54.23.1226.777@54.23.1226.777" timestamp="1588511145983" />
+    <state x="472" y="171" key="extract.method.dialog" timestamp="1588651933500">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state x="472" y="171" key="extract.method.dialog/54.23.1226.777@54.23.1226.777" timestamp="1588651933500" />
+    <state x="334" y="168" width="816" height="550" key="find.popup" timestamp="1588678666922">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state x="332" y="168" width="667" height="486" key="find.popup/52.23.1228.777@52.23.1228.777" timestamp="1585797289434" />
+    <state x="334" y="168" width="816" height="550" key="find.popup/54.23.1226.777@54.23.1226.777" timestamp="1588678666922" />
+    <state x="324" y="62" width="670" height="676" key="search.everywhere.popup" timestamp="1588170160454">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state x="324" y="62" width="670" height="676" key="search.everywhere.popup/54.23.1226.777@54.23.1226.777" timestamp="1588170160454" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/CloudMusicDownload.java</url>
+          <line>233</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/VideoCutMain.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/controller/CommonController.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/DownMylike.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/DownMylike.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/DownMylike.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/DownMylike.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/DownMylike_ks.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/VTToSrt.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/VideoCut.java</url>
+          <line>137</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/VideoCut.java</url>
+          <line>26</line>
+          <properties class="com.xwf.common.utils.VideoCut" method="exe">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="((com.alibaba.fastjson.JSONObject)((HashMap.Node)((com.alibaba.fastjson.JSONObject)((com.alibaba.fastjson.JSONArray)((HashMap.Node)jo.entrySet().toArray()[6]).getValue()).get(0)).entrySet().toArray()[32]).getValue()).entrySet().toArray()[3]" custom="com.alibaba.fastjson.JSONArray,com.alibaba.fastjson.JSONObject,java.util.HashMap.Node" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>xwf-com:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="Copyright.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web (xwf-com)|Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>xwf-com</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: cglib:cglib-nodep:3.1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20075758" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

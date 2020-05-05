@@ -16,7 +16,7 @@ import java.io.IOException;
  * Created by weifengxu on 2018/4/10.
  */
 public class DownMylike_ks {
-    static String dir = "/Users/weifengxu/Desktop/temp/douyin/xihuan/";
+    static String dir = "/Volumes/自媒体/temp/douyin/xihuan/ks/";
     static int cc = 0;
     public static void main(String args[]) throws InterruptedException, IOException {
         cc = 0;
@@ -25,8 +25,8 @@ public class DownMylike_ks {
         JSONArray ja =   JSON.parseArray(FileUtils.readFileToString(new File(new DownMylike_ks().getPath())));
         for(int n = 0;n < ja.size();n++){
             JSONObject obj = ja.getJSONObject(n);
-            String text = obj.getJSONObject("response").getJSONObject("body").getString("encoded");
-            text= new String(base64.decode(text), "UTF-8");
+            String text = obj.getJSONObject("response").getJSONObject("body").getString("text");
+//            text=  CommonUtils.decode(text, "utf-8");
             jo = JSON.parseObject(text);
             downloader(jo);
         }
@@ -80,7 +80,7 @@ public class DownMylike_ks {
 
 
     private String getPath() {
-        return  "/Users/weifengxu/Desktop/temp/xihuanjson/kuaishou.chlsj";
+        return  "/Volumes/自媒体/temp/xihuanjson/ks-Untitled.chlsj";
     }
 
 }

@@ -15,7 +15,7 @@ import java.io.IOException;
  * Created by weifengxu on 2018/4/10.
  */
 public class DownMylike_hs {
-    static String dir = "/Users/weifengxu/Desktop/temp/douyin/xihuan/";
+    static String dir = "/Volumes/自媒体/temp/douyin/xihuan/";
     static int cc = 0;
     public static void main(String args[]) throws InterruptedException, IOException {
         cc = 0;
@@ -75,7 +75,7 @@ public class DownMylike_hs {
 
 
     private String getPath() {
-        return  "/Users/weifengxu/Desktop/temp/xihuanjson/huoshan.chlsj";
+        return  "/Volumes/自媒体/temp/xihuanjson/huoshan.chlsj";
     }
 
 }

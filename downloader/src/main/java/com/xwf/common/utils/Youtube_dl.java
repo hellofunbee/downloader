@@ -11,12 +11,12 @@ import java.util.List;
  * Created by weifengxu on 2018/8/15.
  */
 public class Youtube_dl {
-    static String path = "/Users/weifengxu/Desktop/tool/youtube-dl";
-    static String o_path = "/Users/weifengxu/Desktop/bz/test";
+    static String path = "/Volumes/自媒体/tool/youtube-dl";
+    static String o_path = "/Volumes/自媒体/bz/test";
 
     public static void main(String arg[]) throws Exception {
         if(1==1)return;
-        String urls = FileUtils.readFileToString(new File("/Users/weifengxu/Desktop/bilibili.sh"));
+        String urls = FileUtils.readFileToString(new File("/Volumes/自媒体/bilibili.sh"));
         List<String> vs = Arrays.asList(urls.split("\n"));
 
         for (String s : vs) {

@@ -23,6 +23,9 @@ public class TaskController extends Controller {
         renderText(index);
     }
 
+    /**
+     * 同步片段到数据库
+     */
     public void refresh() {
 
         String tv_name = getPara("tv_name");
@@ -31,6 +34,10 @@ public class TaskController extends Controller {
         render("ok");
 
     }
+
+    /**
+     * 采集网易云的音乐
+     */
     public void musicDownload() throws Exception {
 //        NetEaseCloudMusic.main(null);
         MusicDownload.main(new String[]{
@@ -39,6 +46,10 @@ public class TaskController extends Controller {
                 getPara("e") == null ? null : getPara("e")
         });
     }
+
+    /**
+     * 裁剪视频
+     */
     public void videoCut() throws Exception {
         VideoCutMain.main(new String[]{
                 getPara("delay"),
@@ -46,6 +57,10 @@ public class TaskController extends Controller {
                 getPara("tv_name"),
         });
     }
+
+    /**
+     * 裁剪封面图
+     */
     public void coverTake() throws Exception {
         MainExe.takeCover();
     }

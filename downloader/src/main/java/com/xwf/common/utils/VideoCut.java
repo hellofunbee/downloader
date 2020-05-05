@@ -6,6 +6,8 @@ import subtitleFile.TimedTextObject;
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * Created by weifengxu on 2018/8/5.
@@ -18,9 +20,9 @@ public class VideoCut {
     private static String srtPath = "";
     private static String out_type = ".mp4";//有可能是MP3
 
-    public static int ajust = 940;//ms
-    public static String threads = "2";//ms
-
+    public static int ajust = 500;//ms
+    public static String threads = "20";//ms
+    public static ExecutorService cachedThreadPool = Executors.newFixedThreadPool(2);
 
     public static void exe(String path, String outPath, String startTime, String lastTime) throws IOException, InterruptedException {
         String[] cmd;
@@ -66,7 +68,7 @@ public class VideoCut {
      * @throws IOException
      * @throws InterruptedException
      */
-    public void videoCut(String out_type_,  String videoPath_, String outPath_, String srtPath_) throws Exception {
+    public void videoCut(String out_type_, String videoPath_, String outPath_, String srtPath_) throws Exception {
         TimedTextObject ttff = null;
         videoPath = videoPath_;
         outPath = outPath_;
@@ -130,54 +132,13 @@ public class VideoCut {
             Set<Map.Entry<Integer, Caption>> set = ttff.captions.entrySet();
             Iterator iterator = set.iterator();
 
-
             while (iterator.hasNext()) {
-
                 Map.Entry<Integer, Caption> enty = (Map.Entry<Integer, Caption>) iterator.next();
-                Caption cp = enty.getValue();
 
-                String content = CommonUtils.v(strFormat(cp.content));
-                content = content.replaceAll("--"," ");//-- 为我们命名的关键字段
-
-                String st = CommonUtils.ms2mmss(cp.start.mseconds);
-                String et = CommonUtils.ms2mmss(cp.end.mseconds);
-
-
-                int s = cp.start.mseconds +ajust;
-                int e = cp.end.mseconds +ajust;
-
-                String clips = o + st + "&" + et + "--" + content + out_type;
-                File outFile = new File(clips);
-                if (!outFile.exists()) {
-                    exe(v, clips, CommonUtils.ms2hhmmss(s - 500), CommonUtils.ms2hhmmss(e - s + 1000));
-//                    Thread.sleep(100);
-                    System.out.println("切出:" + clips);
-                } else {
-//                    System.out.println("已存在:" +clips);
-                }
-
-
+                cachedThreadPool.execute(new CutRunnable(o, v, enty, ajust, out_type));
             }
 
-
         }
-
-    }
-
-
-
-
-
-    /**
-     * 去掉尖括号内内容
-     *
-     * @param str
-     * @return
-     */
-    public static String strFormat(String str) {
-        String pattern = "<([^<>]*)>";//括号内
-        str = str.replaceAll(pattern, "");
-        return str;
 
     }
 
@@ -190,5 +151,12 @@ public class VideoCut {
         return listNew;
     }
 
+    public static void main(String[] args) {
+        File f = new File("/Volumes/自媒体/clips/");
+        File[] files = f.listFiles();
+        for (File file:files){
+            System.out.println(file.getAbsoluteFile());
+        }
+    }
 
 }

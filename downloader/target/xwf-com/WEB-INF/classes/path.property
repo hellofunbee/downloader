@@ -1,28 +1,29 @@
 #videopath \u76F8\u5F53\u4E8E\u540E\u9762\u52A0\u4E0Asrt\u7684\u540D\u5B57 \u518D\u52A0\u4E0A ".mp4"
 #片段主目录
-base_path=/Users/weifengxu/Desktop/clips/
+base_path=/Volumes/自媒体/clips/
 
 #------视频----------
 ffmpegPath=/Users/weifengxu/Desktop/tool/jave_ffmpeg/ffmpeg
 #要截取片段的视频目录
-videoPath=/Users/weifengxu/Downloads/电视/千与千寻/
+videoPath=/Volumes/自媒体/电视/权力的游戏S02.mp4/
 #要截取片段的视频的字幕目录
-srtPath=/Users/weifengxu/Downloads/电视/千与千寻/srt/
+srtPath=/Volumes/自媒体/电视/权力的游戏S02.mp4/srt
 #截取片段后的输出目录
-outPath=/Users/weifengxu/Desktop/clips/千与千寻/
+outPath=/Volumes/自媒体/clips/权力的游戏S02.mp4/
 
 
 #------youtube----------
 youtube-dl=youtube-dl
 #YouTube 搜索srt下载片段
-srt_path=/Users/weifengxu/Desktop/srt/
+srt_path=/Volumes/自媒体/srt/
 #youtube截取后的输出目录
-stream_out=/Users/weifengxu/Desktop/clips/
+stream_out=/Volumes/自媒体/clips/
 
 #------音频----------
-audioPath=/Users/weifengxu/Downloads/music/
-a_outPath=/Users/weifengxu/Desktop/clips/music/
+audioPath=/Volumes/自媒体/music/
+a_outPath=/Volumes/自媒体/clips/music/
 #------下载----------
-zip_path=/Users/weifengxu/Desktop/clips/ziptemp/
+zip_path=/Volumes/自媒体/clips/ziptemp/
+
 
 

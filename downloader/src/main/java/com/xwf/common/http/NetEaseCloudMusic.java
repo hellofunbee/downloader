@@ -38,7 +38,7 @@ public class NetEaseCloudMusic {
 
     static String song_url = "http://music.163.com/song/media/outer/url?id=##.mp3";
     static String lrc_url = "http://music.163.com/api/song/lyric?os=pc&id=##&lv=-1&kv=-1&tv=-1";
-    static String save_path = "/Users/weifengxu/Downloads/music/";
+    static String save_path = "/Volumes/自媒体/music/";
     static String play_list = "https://music.163.com/playlist?id=##";
     static String temp = save_path + "temp.txt";
 

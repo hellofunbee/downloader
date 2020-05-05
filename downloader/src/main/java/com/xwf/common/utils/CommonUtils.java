@@ -176,7 +176,7 @@ public class CommonUtils {
     }
 
     public static String toWebUrl(String path) {
-
+//        return path;
         return path.replace(CommonUtils.getPathByKey("base_path"), "/usr/");
     }
 

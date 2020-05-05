@@ -22,8 +22,8 @@ import java.util.regex.Pattern;
  */
 public class FileUtils {
 
-    static String dir = "/Users/weifengxu/Desktop/temp/douyin/yinyue/";
-    static String dir_one = "/Users/weifengxu/Desktop/temp/douyin/xihuan/";
+    static String dir = "/Volumes/自媒体/temp/douyin/yinyue/";
+    static String dir_one = "/Volumes/自媒体/temp/douyin/xihuan/";
 
     public static void main(String args[]) throws Exception {
 //        getFolders(dir_one);

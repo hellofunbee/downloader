@@ -61,35 +61,40 @@ public class Refresh {
 
         int i = 0;
         for (File f : fileList) {
-            if (f.getAbsolutePath().indexOf(".mp4") == -1)
-                continue;
+            try {
+                if (f.getAbsolutePath().indexOf(".mp4") == -1)
+                    continue;
 
 
-            String name = f.getName();
+                String name = f.getName();
 
-            Record clips = new Record();
-            clips.set("clips_id", UUID.randomUUID().toString().replace("-", ""));
-            clips.set("clips_md5", CommonUtils.backMD5(video_id + name));
-            clips.set("video_id", video_id);
-            clips.set("clips_name", name);
-            clips.set("order_num", i);
-            clips.set("clips_addr", f.getAbsolutePath());
-            clips.set("clips_cover", f.getAbsolutePath().replace(".mp4", ".jpg"));
+                Record clips = new Record();
+                clips.set("clips_id", UUID.randomUUID().toString().replace("-", ""));
+                clips.set("clips_md5", CommonUtils.backMD5(video_id + name));
+                clips.set("video_id", video_id);
+                clips.set("clips_name", name);
+                clips.set("order_num", i);
+                clips.set("clips_addr", f.getAbsolutePath());
+                clips.set("clips_cover", f.getAbsolutePath().replace(".mp4", ".jpg"));
 
-            clips.set("lang_type", lang_type);
+                clips.set("lang_type", lang_type);
 
-            String word = name.substring(name.indexOf("--") + 2, name.lastIndexOf("."));
-            if (lang_type == 1)
-                clips.set("en", word);
-            if (lang_type == 0)
-                clips.set("cn", word);
+                String word = name.substring(name.indexOf("--") + 2, name.lastIndexOf("."));
+                if (lang_type == 1)
+                    clips.set("en", word);
+                if (lang_type == 0)
+                    clips.set("cn", word);
 
 
 //            ClipsDao.save(clips);
 
-            i++;
+                i++;
 
-            res.add(clips);
+                res.add(clips);
+            }catch (Exception r){
+                r.printStackTrace();
+                System.out.println("insert clips failed ： " + f.getAbsolutePath());
+            }
 
         }
 

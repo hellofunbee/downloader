@@ -14,7 +14,7 @@ import java.io.IOException;
 public class DownloaderOne {
 
 
-    static String dir = "/Users/weifengxu/Desktop/temp/douyin/yinyue/";
+    static String dir = "/Volumes/自媒体/temp/douyin/yinyue/";
     static boolean isAll_cat = false;//4006065500
     static long count_percat = 100;//每个音乐下的视频个数
 
