@@ -3,6 +3,8 @@ package com.xwf.common.video;
 
 import com.spreada.utils.chinese.ZHConverter;
 import com.xwf.common.utils.CommonUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import subtitleFile.FormatSRT;
 import subtitleFile.IOClass;
 import subtitleFile.TimedTextObject;
@@ -21,6 +23,7 @@ import java.util.regex.Pattern;
  * Created by weifengxu on 2018/4/12.
  */
 public class FileUtils {
+    static Logger log = LoggerFactory.getLogger(FileUtils.class);
 
     static String dir = "/Volumes/自媒体/temp/douyin/yinyue/";
     static String dir_one = "/Volumes/自媒体/temp/douyin/xihuan/";
@@ -58,7 +61,7 @@ public class FileUtils {
                 videos.add(vb);
             }
         }
-        System.out.println("共计：" + j + "个视频");
+        log.info("共计：" + j + "个视频");
         divid(videos);
     }
 
@@ -86,7 +89,7 @@ public class FileUtils {
             }
             videos.add(vb);
         }
-        System.out.println("共计：" + j + "个视频");
+        log.info("共计：" + j + "个视频");
         divid(videos);
     }
 
@@ -108,7 +111,7 @@ public class FileUtils {
             TimedTextObject tto = ttff.parseFile(file.getName(), is);
             IOClass.writeFileTxt(vb.fold + "/title.srt", tto.toSRT());
 
-            System.out.println(vb.fold.getName());
+            log.info(vb.fold.getName());
 //            break;
 
         }

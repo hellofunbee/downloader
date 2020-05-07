@@ -7,6 +7,8 @@ import com.jfinal.plugin.activerecord.IAtom;
 import com.jfinal.plugin.druid.DruidPlugin;
 import com.xwf.common.utils.CommonUtils;
 import com.xwf.common.video.Refresh;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -21,14 +23,12 @@ import java.util.Properties;
 public class DbRefresh {
     static int m = 0;//此变量是为了切换数据源
 
+    static Logger log = LoggerFactory.getLogger(DbRefresh.class);
+
     public static void main(String[] args) {
 
-
 //        insert("", false);
-
-
         insert_music("", false);
-
 //        test(false);
 
 
@@ -41,7 +41,7 @@ public class DbRefresh {
 
         List<String> records = MusicDao.isIn(Arrays.asList(new String[]{"348804151", "10769156"}));
 
-        System.out.println(records.size());
+        log.info(""+records.size());
 
 
         if (!isWeb) {
@@ -71,7 +71,7 @@ public class DbRefresh {
         long count_1 = Db.queryLong("select count(*) from clips");
 
 
-        System.out.println("执行前共计:" + count_1 + "条数据");
+        log.info("执行前共计:" + count_1 + "条数据");
 
         for (final File file : files) {
 
@@ -91,23 +91,22 @@ public class DbRefresh {
                     int lang_type = 0;
                     try {
 
+                        File confFile = new File(file.getAbsolutePath() + "/conf.txt");
 
-                        Properties conf = new Properties();
-                        BufferedReader e = new BufferedReader(new InputStreamReader(new FileInputStream(file.getAbsolutePath() + "/conf.txt")));
-                        conf.load(e);
-                        e.close();
-                        String lt = (String) conf.get("lang_type");
-                        if (lt != null && lt != "")
-                            lang_type = Integer.parseInt(lt);
+                        if (confFile.exists()) {
+                            Properties conf = new Properties();
+                            BufferedReader e = new BufferedReader(new InputStreamReader(new FileInputStream(file.getAbsolutePath() + "/conf.txt")));
+                            conf.load(e);
+                            e.close();
+                            String lt = (String) conf.get("lang_type");
+                            if (lt != null && lt != "") {
+                                lang_type = Integer.parseInt(lt);
+                            }
+                        }
 
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-                    if ("异形,阿甘正传".indexOf(file.getName()) != -1)
-                        lang_type = 1;
-                    System.out.println(file.getName()+"--lang_type:"+lang_type);
-
-
                     //demo
                     Refresh.refresh(file.getPath(), lang_type);
                     return true;
@@ -116,10 +115,10 @@ public class DbRefresh {
         }
         long count_2 = Db.queryLong("select count(*) from clips");
 
-        System.out.println("执行之后共计:" + count_2 + "条数据");
+        log.info("执行之后共计:" + count_2 + "条数据");
 
 
-        System.out.println("本次共计插入：" + (count_2 - count_1));
+        log.info("本次共计插入：" + (count_2 - count_1));
 
 
         if (!isWeb) {
@@ -144,7 +143,7 @@ public class DbRefresh {
         File[] files = new File(CommonUtils.getPathByKey("audioPath")).listFiles();
 
         long count_1 = Db.queryLong("select count(*) from music");
-        System.out.println("执行前共计:" + count_1 + "条数据");
+        log.info("执行前共计:" + count_1 + "条数据");
         for (final File file : files) {
 
             if (!file.isDirectory())
@@ -178,10 +177,10 @@ public class DbRefresh {
 
         long count_2 = Db.queryLong("select count(*) from music");
 
-        System.out.println("执行之后共计:" + count_2 + "条数据");
+        log.info("执行之后共计:" + count_2 + "条数据");
 
 
-        System.out.println("本次共计插入：" + (count_2 - count_1));
+        log.info("本次共计插入：" + (count_2 - count_1));
 
 
         if (arp != null) {
@@ -189,10 +188,10 @@ public class DbRefresh {
         }
 
 
-        System.out.println("异常：" + es.size() + "个");
+        log.warn("异常：" + es.size() + "个");
         for (Exception e : es) {
 
-            System.out.println(e.getMessage());
+            log.warn(e.getMessage());
         }
 
     }

@@ -1,16 +1,17 @@
 package com.xwf.common.utils;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.File;
 
 /**
  * Created by weifengxu on 2018/8/6.
  */
 public class VideoCutMain {
+    static Logger log = LoggerFactory.getLogger(VideoCutMain.class);
 
-    /**
-     * @param args
-     * @throws Exception
-     */
+
     public static void main(String[] args) throws Exception {
         VideoCut.ajust = (args[0] == null ? 0 : Integer.parseInt(args[0]));
         VideoCut.threads = (args[1] == null ? "1" : args[1]);
@@ -19,9 +20,9 @@ public class VideoCutMain {
     }
 
     private static void video() throws Exception {
-        System.out.println(CommonUtils.getPathByKey("videoPath"));
-        System.out.println(CommonUtils.getPathByKey("outPath"));
-        System.out.println(CommonUtils.getPathByKey("srtPath"));
+       log.info(CommonUtils.getPathByKey("videoPath"));
+       log.info(CommonUtils.getPathByKey("outPath"));
+       log.info(CommonUtils.getPathByKey("srtPath"));
         VideoCut videoCut = new VideoCut();
         videoCut.videoCut(".mp4", CommonUtils.getPathByKey("videoPath"), CommonUtils.getPathByKey("outPath"), CommonUtils.getPathByKey("srtPath"));
     }

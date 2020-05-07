@@ -1,5 +1,7 @@
 package com.xwf.common.utils;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import subtitleFile.Caption;
 import subtitleFile.TimedTextObject;
 
@@ -13,6 +15,7 @@ import java.util.concurrent.Executors;
  * Created by weifengxu on 2018/8/5.
  */
 public class VideoCut {
+    static Logger log = LoggerFactory.getLogger(VideoCut.class);
     private static String ffmpegPath = CommonUtils.getFfmpeg();
     private static String videoPath = "";
     private static String outPath = "";
@@ -98,9 +101,8 @@ public class VideoCut {
 //        List<String> words = new ArrayList<String>();
 
         File f = new File(srtPath);
-        System.out.println(f.isDirectory());
+        log.info("是文件夹吗？："+f.isDirectory());
         File[] files = new File(srtPath).listFiles();
-        System.out.println(files);
         if (files != null && files.length > 0) {
             for (File file : files) {
                 if (CommonUtils.isSrt(file)) {
@@ -110,9 +112,9 @@ public class VideoCut {
 
                     String o = outPath + name + "/";
                     String v = CommonUtils.getVideo(videoPath + name);
-                    System.out.println("out path" + o);
+                    log.info("out path" + o);
                     if (v == null) {
-                        System.out.println("文件(" + videoPath + name + "不存在)");
+                        log.info("文件(" + videoPath + name + "不存在)");
                         continue;
                     }
                     preCut(ttff, o, v);
@@ -123,7 +125,7 @@ public class VideoCut {
 //            pastLeep5(words);
         }
 
-//        System.out.println(DeDubble.deDubble(sb.toString()));
+//        log.info(DeDubble.deDubble(sb.toString()));
 
 
     }
@@ -139,7 +141,7 @@ public class VideoCut {
 
         CommonUtils.mkDirectory(o);
         if (ttff == null || ttff.captions == null || ttff.captions.size() == 0) {
-            System.out.println(ttff.fileName + "***************:some thing goes wrong!");
+            log.info(ttff.fileName + "***************:some thing goes wrong!");
         } else {
             Set<Map.Entry<Integer, Caption>> set = ttff.captions.entrySet();
             Iterator iterator = set.iterator();
@@ -156,9 +158,9 @@ public class VideoCut {
 
     //去重并按自然顺序排序
     public static List<String> pastLeep5(List<String> list) {
-        System.out.println("list = [" + list.size() + "]");
+        log.info("list = [" + list.size() + "]");
         List<String> listNew = new ArrayList<String>(new TreeSet<String>(list));
-        System.out.println("listNew = [" + listNew.size() + "]");
+        log.info("listNew = [" + listNew.size() + "]");
 
         return listNew;
     }
@@ -167,7 +169,7 @@ public class VideoCut {
         File f = new File("/Volumes/自媒体/clips/");
         File[] files = f.listFiles();
         for (File file:files){
-            System.out.println(file.getAbsoluteFile());
+            log.info(""+file.getAbsoluteFile());
         }
     }
 

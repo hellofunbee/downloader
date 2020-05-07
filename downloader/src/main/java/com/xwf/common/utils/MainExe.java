@@ -7,6 +7,8 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -18,6 +20,9 @@ import java.util.UUID;
  * Created by weifengxu on 2018/8/10.
  */
 public class MainExe {
+
+    static Logger log = LoggerFactory.getLogger(MainExe.class);
+
     static String path = "/Volumes/自媒体/电视/水浒传1996/srt";
     static String path_video = "/Volumes/自媒体/电视/水浒传1996/";
     static String path_music = "/Volumes/自媒体/music/";
@@ -48,9 +53,9 @@ public class MainExe {
             File file = new File(name_ + name_srt + ".avi");
 
 //            files_video[i].renameTo(file);
-            System.out.println(name_srt + "-->" + file);
+            log.info(name_srt + "-->" + file);
 
-            System.out.println(files_srt[i].getName());
+            log.info(files_srt[i].getName());
 
 
         }
@@ -101,7 +106,7 @@ public class MainExe {
             String i = file.getAbsolutePath();
             String o = CommonUtils.mp42Jpg(i);
             if (new File(o).exists()) {
-                System.out.println("已存在：" + o);
+                log.info("已存在：" + o);
                 continue;
             }
             MultimediaInfo mi = CommonUtils.readVideoTime(file);
@@ -111,7 +116,7 @@ public class MainExe {
             Process process = new ProcessBuilder(Arrays.asList(cmd)).redirectErrorStream(true).start();
             new PrintStream(process.getInputStream(), false).start();
             process.waitFor();
-            System.out.println("cover：" + o);
+            log.info("cover：" + o);
         }
     }
 
@@ -132,7 +137,7 @@ public class MainExe {
                 //匹配算法
 
                 if (word.length() == 7) {
-                    System.out.println(word);
+                    log.info(word);
                 }
 
             }
@@ -150,18 +155,18 @@ public class MainExe {
 //        List<File> fileList = Arrays.asList(new File(path_music).listFiles());
 
 
-        System.out.println("共计【" + fileList.size() + "】srt歌词");
+        log.info("共计【" + fileList.size() + "】srt歌词");
 
         for (File file : fileList) {
 
             if (file.exists()) {
                 file.delete();
-                System.out.println(file.getAbsolutePath());
+                log.info(file.getAbsolutePath());
 
                /* List<File> ff = CommonUtils.getMp4FileList(file.getAbsolutePath(), new ArrayList<File>(), ".lrc");
 
                 if (ff.size() == 0) {
-                    System.out.println(file);
+                    log.info(file);
                     CommonUtils.deleteFile(file);
                 }
                */
@@ -169,13 +174,13 @@ public class MainExe {
                 String name = CommonUtils.v(file.getName());
                 name = name.replaceAll(" lrc", ".lrc");
 
-                System.out.println(file.getName());
-                System.out.println(CommonUtils.v(file.getName()));
+                log.info(file.getName());
+                log.info(CommonUtils.v(file.getName()));
                 file.renameTo(new File(file.getParent() + "/" + name));
 
 
-                System.out.println(file.getName());
-                System.out.println(name);
+                log.info(file.getName());
+                log.info(name);
             }
 
            /* File[] fs = file.listFiles();
@@ -194,7 +199,7 @@ public class MainExe {
             BufferedReader br = new BufferedReader(isr);
             while (null != (strLine = br.readLine())) {
                 if (strLine.split("]").length > 2) {
-                    System.out.println(file);
+                    log.info(file);
 
                     file.delete();
                     new File((file.getAbsolutePath().replace("/lrc/", "/srt/")).replace(".lrc", ".srt")).delete();
@@ -214,10 +219,10 @@ public class MainExe {
 
                 if (tto.captions.size() ==10) {
                     file.delete();
-                    System.out.println(file);
+                    log.info(file);
                 }
 
-//                System.out.println(name);
+//                log.info(name);
 
             }
 
@@ -249,7 +254,7 @@ public class MainExe {
             f.renameTo(new File(f.getParent() + "/" + name + o_name));
 
 
-            System.out.println(f.getName());
+            log.info(f.getName());
 
         }
 
@@ -288,7 +293,7 @@ public class MainExe {
         }
 
 
-        System.out.println(str);
+        log.info(str);
 
     }
 
@@ -305,15 +310,14 @@ public class MainExe {
         Document doc = Jsoup.parse(html);
         Elements dls = doc.select("div h3 a");
 
-        System.out.println();
         for (Element e : dls) {
             String url = e.attr("href");
             if (urls.indexOf(url) != -1) {
-//                System.out.println("exist:" + url);
+//                log.info("exist:" + url);
                 continue;
             }
 
-            System.out.println(e.attr("href"));
+            log.info(e.attr("href"));
 
 
         }
@@ -323,7 +327,6 @@ public class MainExe {
     public void test() {
         File f = new File("/Volumes/自媒体/电视/龙猫/");
         File[] files = f.listFiles();
-        System.out.println(files);
     }
 
 }

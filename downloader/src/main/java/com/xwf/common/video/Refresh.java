@@ -3,6 +3,8 @@ package com.xwf.common.video;
 import com.jfinal.plugin.activerecord.Record;
 import com.xwf.common.dao.*;
 import com.xwf.common.utils.CommonUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -13,6 +15,7 @@ import java.util.UUID;
  * Created by weifengxu on 2018/8/9.
  */
 public class Refresh {
+    static Logger log = LoggerFactory.getLogger(Refresh.class);
     /**
      * @param path
      * @param lang_type 语言类型0：1 中：英
@@ -24,7 +27,7 @@ public class Refresh {
         tv.set("type", 0);//电视电影 0：1
         tv.set("lang_type", lang_type);//中英文0：1
         if (TvDao.isExist(tv)) {
-            System.out.println("电视剧已存在：" + new File(path).getName());
+            log.info("电视剧已存在：" + new File(path).getName());
 //            return;
         }
 
@@ -46,7 +49,7 @@ public class Refresh {
             String video_id = VideoDao.save(v);
             i++;
 
-            System.out.println(video);
+            log.info(video.getAbsolutePath());
             saveVideos(video, video_id, lang_type);
         }
 
@@ -93,7 +96,7 @@ public class Refresh {
                 res.add(clips);
             }catch (Exception r){
                 r.printStackTrace();
-                System.out.println("insert clips failed ： " + videoPath);
+                log.info("insert clips failed ： " + videoPath);
             }
 
         }
@@ -112,7 +115,7 @@ public class Refresh {
 
 
         if (path.lastIndexOf("--") == -1) {
-            System.out.println("播单id为空!!!!");
+            log.info("播单id为空!!!!");
             CommonUtils.deleteFile(new File(path));
             return;
         }
@@ -121,14 +124,14 @@ public class Refresh {
         String playlist_id = path.substring(path.lastIndexOf("--") + 2);
         if (CommonUtils.strType(playlist_id) != 1) {
 
-            System.out.println(playlist_id + "错误");
+            log.warn(playlist_id + "错误");
             CommonUtils.deleteFile(new File(path));
             return;
         }
 
 
         if (i++ % 100 == 0)
-            System.out.println("播单:" + playlist_id);
+            log.info("播单:" + playlist_id);
 
 
         Record play_list = new Record();
@@ -152,7 +155,7 @@ public class Refresh {
 
             if (CommonUtils.strType(music_id) != 1) {
 
-                System.out.println(playlist_id + "错误");
+                log.warn(playlist_id + "错误");
                 CommonUtils.deleteFile(music);
                 return;
             }

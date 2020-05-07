@@ -2,6 +2,8 @@ package com.xwf.common.utils;
 
 import com.jfinal.plugin.activerecord.Record;
 import com.xwf.common.dao.ClipsDao;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import subtitleFile.Caption;
 import subtitleFile.TimedTextObject;
 
@@ -12,7 +14,7 @@ import java.util.*;
  * Created by weifengxu on 2018/8/8.
  */
 public class Searcher {
-
+    static Logger log = LoggerFactory.getLogger(Searcher.class);
     static List<File> fileList = null;
 
     public static void main(String[] args) throws IOException {
@@ -20,8 +22,8 @@ public class Searcher {
 
         List<Map> result = searchLrc(".lrc", "你的娇滴滴的娘子呢", false, "/Volumes/自媒体/music");
         for (Map sb : result) {
-            System.out.println(sb.get("str") + "--" + (300 - (Integer) sb.get("type")));
-            System.out.println();
+            log.info(sb.get("str") + "--" + (300 - (Integer) sb.get("type")));
+
         }
 
     }
@@ -35,31 +37,19 @@ public class Searcher {
      * @return
      */
 
-    public static List<Map> search2(String content, boolean isperfect, Record tv) {
-        content = content.replaceAll("[^\\u4e00-\\u9fa5a-zA-Z^0-9]", " ").replaceAll(" +", " ");
-        int str_type = CommonUtils.strType(content);
+    public static List<Map> search2(String searchWord, boolean isperfect, Record tv) {
+        searchWord = searchWord.replaceAll("[^\\u4e00-\\u9fa5a-zA-Z^0-9]", " ").replaceAll(" +", " ");
+        int str_type = CommonUtils.strType(searchWord);
         int lang_type = 0;
         if (tv != null)
             lang_type = tv.getInt("lang_type");
 
         List<Map> result = new ArrayList<Map>();
 
-        List<Record> clips = ClipsDao.selectByTv(tv == null ? null : tv.getStr("tv_id"), content);
+        List<Record> clips = ClipsDao.selectByTv(tv == null ? null : tv.getStr("tv_id"), searchWord);
 
         for (Record clip : clips) {
-            or(lang_type, result, clip, content, str_type, isperfect);
-
-            /*//匹配算法
-            Map m = null;
-            if (lang_type == 0)
-                m = match(content, word, isperfect);
-            else if (lang_type == 1)
-                m = match2(content, word, isperfect);
-            if (m != null) {
-                m.put("file", clip.get("clips_addr"));
-                result.add(m);
-
-            }*/
+            doFilterNeeded(lang_type, result, clip, searchWord, str_type, isperfect);
         }
         return result;
     }
@@ -69,11 +59,11 @@ public class Searcher {
      * @param maps      匹配到的结果数组
      * @param clip      剪辑
      * @param content   关键词
-     * @param c         关键词的中英文
+     * @param wordType         关键词的中英文
      * @param isperfect 是否完全匹配
      */
 
-    private static void or(int lang_type, List<Map> maps, Record clip, String content, int c, boolean isperfect) {
+    private static void doFilterNeeded(int lang_type, List<Map> maps, Record clip, String content, int wordType, boolean isperfect) {
         String word = null;
         if (clip.getInt("lang_type") == 1) {
             word = clip.getStr("en");
@@ -86,18 +76,17 @@ public class Searcher {
 
 
         int w = CommonUtils.strType(word);
-        Map m = null;
 
         //英文中招汉语 pass掉
-        if (lang_type == 1 && c == 0) {
+        if (lang_type == 1 && wordType == 0) {
             return;
         }
 
         //汉字
-        if (c == 0 && w == 0) {
+        if (wordType == 0 && w == 0) {
             doAdd(maps, match(content, word, isperfect), clip);
             //英文
-        } else if (c == 1 && w == 1) {
+        } else if (wordType == 1 && w == 1) {
             doAdd(maps, match2(content, word, isperfect), clip);
         } else {
             doAdd(maps, match(content, word, isperfect), clip);
@@ -323,7 +312,7 @@ public class Searcher {
 
 
             if (ttff == null || ttff.captions == null || ttff.captions.size() == 0) {
-                System.out.println(ttff.fileName + "***************:some thing goes wrong!");
+                log.info(ttff.fileName + "***************:some thing goes wrong!");
             } else {
                 Set<Map.Entry<Integer, Caption>> set = ttff.captions.entrySet();
                 Iterator iterator = set.iterator();
@@ -380,7 +369,7 @@ public class Searcher {
             TimedTextObject ttff = CommonUtils.readSrt(file.getAbsolutePath());
 
             if (ttff == null || ttff.captions == null || ttff.captions.size() == 0) {
-                System.out.println(ttff.fileName + "***************:some thing goes wrong!");
+                log.info(ttff.fileName + "***************:some thing goes wrong!");
             } else {
                 Set<Map.Entry<Integer, Caption>> set = ttff.captions.entrySet();
                 Iterator iterator = set.iterator();
