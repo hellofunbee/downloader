@@ -567,16 +567,21 @@ public class CommonUtils {
      * @author lifq
      * @date 2015-3-4 上午09:24:26
      */
-    public static String decode(String s,String charSet) {
+    public static String decode(String s, String charSet) {
         if (s == null)
             return null;
         BASE64Decoder decoder = new BASE64Decoder();
         try {
             byte[] b = decoder.decodeBuffer(s);
-            return new String(b,charSet);
+            return new String(b, charSet);
         } catch (Exception e) {
             return null;
         }
+    }
+
+    /*把路径mp4转成 jpg路径*/
+    public static String mp42Jpg(String videoPath) {
+        return videoPath.substring(0, videoPath.length() - 4) + ".jpg";
     }
 }
 

@@ -99,7 +99,7 @@ public class MainExe {
             }
 
             String i = file.getAbsolutePath();
-            String o = file.getAbsolutePath().replace(".mp4", ".jpg");
+            String o = CommonUtils.mp42Jpg(i);
             if (new File(o).exists()) {
                 System.out.println("已存在：" + o);
                 continue;
@@ -320,7 +320,7 @@ public class MainExe {
     }
 
     @Test
-    public void test(){
+    public void test() {
         File f = new File("/Volumes/自媒体/电视/龙猫/");
         File[] files = f.listFiles();
         System.out.println(files);

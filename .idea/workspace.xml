@@ -7,34 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44e8dd08-5832-40ab-88ea-0c2844581bdc" name="Default" comment="bug 优化">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/CutRunnable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/controller/TaskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/crawler/PhantomJSUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/crawler/PhantomJSUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/CloudMusicDownload.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/CloudMusicDownload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/DownMylike.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/DownMylike.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/DownMylike_hs.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/DownMylike_hs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/DownMylike_ks.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/DownMylike_ks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/Downloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/Downloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/DownloaderOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/DownloaderOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/NetEaseCloudMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/http/NetEaseCloudMusic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/CommonUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/DeDubble.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/DeDubble.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/GetNames.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/GetNames.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/CutRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/CutRunnable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/MainExe.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/MainExe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/Searcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/Searcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/VTToSrt.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/VTToSrt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/VideoCut.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/VideoCut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/Youtube_dl.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/Youtube_dl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/video/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/video/FileUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/video/Refresh.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/video/Refresh.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/subtitleFile/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/subtitleFile/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/src/main/java/subtitleFile/FormatSRT.java" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/java/subtitleFile/FormatSRT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/downloader/src/main/resources/path.property" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/resources/path.property" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/src/main/webapp/sercher/js/searcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/src/main/webapp/sercher/js/searcher.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/downloader/target/classes/path.property" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/target/classes/path.property" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/downloader/target/xwf-com/WEB-INF/classes/path.property" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/target/xwf-com/WEB-INF/classes/path.property" afterDir="false" />
     </list>
@@ -109,6 +91,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -792,7 +775,11 @@
       <workItem from="1588493641983" duration="1704000" />
       <workItem from="1588512111983" duration="11117000" />
       <workItem from="1588677104745" duration="30000" />
-      <workItem from="1588677355355" duration="3504000" />
+      <workItem from="1588677355355" duration="4739000" />
+      <workItem from="1588738335495" duration="6081000" />
+      <workItem from="1588752126230" duration="15000" />
+      <workItem from="1588823738555" duration="5377000" />
+      <workItem from="1588859035402" duration="1685000" />
     </task>
     <task id="LOCAL-00001" summary="变更目录">
       <created>1548211447972</created>
@@ -843,7 +830,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559146868058</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="bug 优化">
+      <created>1588696840617</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1588696840617</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -910,155 +904,163 @@
       <screen x="54" y="23" width="1226" height="777" />
     </state>
     <state x="489" y="134" key="#com.intellij.ide.util.MemberChooser/54.23.1226.777@54.23.1226.777" timestamp="1588654669578" />
-    <state x="666" y="110" key="#xdebugger.evaluate" timestamp="1588511509120">
+    <state x="666" y="110" key="#xdebugger.evaluate" timestamp="1588825010295">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
-    <state x="666" y="110" key="#xdebugger.evaluate/54.23.1226.777@54.23.1226.777" timestamp="1588511509120" />
-    <state x="278" y="110" key="CommitChangelistDialog2" timestamp="1588168406714">
+    <state x="666" y="110" key="#xdebugger.evaluate/54.23.1226.777@54.23.1226.777" timestamp="1588825010295" />
+    <state x="278" y="110" key="CommitChangelistDialog2" timestamp="1588696959357">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
-    <state x="278" y="110" key="CommitChangelistDialog2/54.23.1226.777@54.23.1226.777" timestamp="1588168406714" />
+    <state x="278" y="110" key="CommitChangelistDialog2/54.23.1226.777@54.23.1226.777" timestamp="1588696959357" />
     <state x="186" y="90" key="DiffContextDialog" timestamp="1588168405358">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
     <state x="186" y="90" key="DiffContextDialog/54.23.1226.777@54.23.1226.777" timestamp="1588168405358" />
-    <state width="795" height="503" key="GridCell.Tab.0.bottom" timestamp="1588690748811">
+    <state width="795" height="368" key="GridCell.Tab.0.bottom" timestamp="1588860698283">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
     <state width="795" height="19" key="GridCell.Tab.0.bottom/52.23.1228.777@52.23.1228.777" timestamp="1588489672155" />
     <state width="846" height="314" key="GridCell.Tab.0.bottom/54.0.1226.800@54.0.1226.800" timestamp="1588653495801" />
-    <state width="795" height="503" key="GridCell.Tab.0.bottom/54.23.1226.777@54.23.1226.777" timestamp="1588690748811" />
-    <state width="795" height="503" key="GridCell.Tab.0.center" timestamp="1588690748809">
+    <state width="795" height="368" key="GridCell.Tab.0.bottom/54.23.1226.777@54.23.1226.777" timestamp="1588860698283" />
+    <state width="795" height="368" key="GridCell.Tab.0.center" timestamp="1588860698281">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
     <state width="795" height="19" key="GridCell.Tab.0.center/52.23.1228.777@52.23.1228.777" timestamp="1588489672154" />
     <state width="846" height="314" key="GridCell.Tab.0.center/54.0.1226.800@54.0.1226.800" timestamp="1588653495799" />
-    <state width="795" height="503" key="GridCell.Tab.0.center/54.23.1226.777@54.23.1226.777" timestamp="1588690748809" />
-    <state width="795" height="503" key="GridCell.Tab.0.left" timestamp="1588690748808">
+    <state width="795" height="368" key="GridCell.Tab.0.center/54.23.1226.777@54.23.1226.777" timestamp="1588860698281" />
+    <state width="795" height="368" key="GridCell.Tab.0.left" timestamp="1588860698280">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
     <state width="795" height="19" key="GridCell.Tab.0.left/52.23.1228.777@52.23.1228.777" timestamp="1588489672153" />
     <state width="846" height="314" key="GridCell.Tab.0.left/54.0.1226.800@54.0.1226.800" timestamp="1588653495797" />
-    <state width="795" height="503" key="GridCell.Tab.0.left/54.23.1226.777@54.23.1226.777" timestamp="1588690748808" />
-    <state width="795" height="503" key="GridCell.Tab.0.right" timestamp="1588690748810">
+    <state width="795" height="368" key="GridCell.Tab.0.left/54.23.1226.777@54.23.1226.777" timestamp="1588860698280" />
+    <state width="795" height="368" key="GridCell.Tab.0.right" timestamp="1588860698282">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
     <state width="795" height="19" key="GridCell.Tab.0.right/52.23.1228.777@52.23.1228.777" timestamp="1588489672154" />
     <state width="846" height="314" key="GridCell.Tab.0.right/54.0.1226.800@54.0.1226.800" timestamp="1588653495800" />
-    <state width="795" height="503" key="GridCell.Tab.0.right/54.23.1226.777@54.23.1226.777" timestamp="1588690748810" />
-    <state width="795" height="503" key="GridCell.Tab.1.bottom" timestamp="1588690748570">
+    <state width="795" height="368" key="GridCell.Tab.0.right/54.23.1226.777@54.23.1226.777" timestamp="1588860698282" />
+    <state width="795" height="368" key="GridCell.Tab.1.bottom" timestamp="1588860697978">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
     <state width="795" height="19" key="GridCell.Tab.1.bottom/52.23.1228.777@52.23.1228.777" timestamp="1588489672159" />
     <state width="846" height="314" key="GridCell.Tab.1.bottom/54.0.1226.800@54.0.1226.800" timestamp="1588653495575" />
-    <state width="795" height="503" key="GridCell.Tab.1.bottom/54.23.1226.777@54.23.1226.777" timestamp="1588690748570" />
-    <state width="795" height="503" key="GridCell.Tab.1.center" timestamp="1588690748569">
+    <state width="795" height="368" key="GridCell.Tab.1.bottom/54.23.1226.777@54.23.1226.777" timestamp="1588860697978" />
+    <state width="795" height="368" key="GridCell.Tab.1.center" timestamp="1588860697977">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
     <state width="795" height="19" key="GridCell.Tab.1.center/52.23.1228.777@52.23.1228.777" timestamp="1588489672157" />
     <state width="846" height="314" key="GridCell.Tab.1.center/54.0.1226.800@54.0.1226.800" timestamp="1588653495573" />
-    <state width="795" height="503" key="GridCell.Tab.1.center/54.23.1226.777@54.23.1226.777" timestamp="1588690748569" />
-    <state width="795" height="503" key="GridCell.Tab.1.left" timestamp="1588690748569">
+    <state width="795" height="368" key="GridCell.Tab.1.center/54.23.1226.777@54.23.1226.777" timestamp="1588860697977" />
+    <state width="795" height="368" key="GridCell.Tab.1.left" timestamp="1588860697976">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
     <state width="795" height="19" key="GridCell.Tab.1.left/52.23.1228.777@52.23.1228.777" timestamp="1588489672156" />
     <state width="846" height="314" key="GridCell.Tab.1.left/54.0.1226.800@54.0.1226.800" timestamp="1588653495572" />
-    <state width="795" height="503" key="GridCell.Tab.1.left/54.23.1226.777@54.23.1226.777" timestamp="1588690748569" />
-    <state width="795" height="503" key="GridCell.Tab.1.right" timestamp="1588690748570">
+    <state width="795" height="368" key="GridCell.Tab.1.left/54.23.1226.777@54.23.1226.777" timestamp="1588860697976" />
+    <state width="795" height="368" key="GridCell.Tab.1.right" timestamp="1588860697977">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
     <state width="795" height="19" key="GridCell.Tab.1.right/52.23.1228.777@52.23.1228.777" timestamp="1588489672158" />
     <state width="846" height="314" key="GridCell.Tab.1.right/54.0.1226.800@54.0.1226.800" timestamp="1588653495574" />
-    <state width="795" height="503" key="GridCell.Tab.1.right/54.23.1226.777@54.23.1226.777" timestamp="1588690748570" />
-    <state width="795" height="503" key="GridCell.Tab.2.bottom" timestamp="1588690748579">
+    <state width="795" height="368" key="GridCell.Tab.1.right/54.23.1226.777@54.23.1226.777" timestamp="1588860697977" />
+    <state width="795" height="368" key="GridCell.Tab.2.bottom" timestamp="1588860697980">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
     <state width="795" height="19" key="GridCell.Tab.2.bottom/52.23.1228.777@52.23.1228.777" timestamp="1588489672161" />
     <state width="846" height="314" key="GridCell.Tab.2.bottom/54.0.1226.800@54.0.1226.800" timestamp="1588653495578" />
-    <state width="795" height="503" key="GridCell.Tab.2.bottom/54.23.1226.777@54.23.1226.777" timestamp="1588690748579" />
-    <state width="795" height="503" key="GridCell.Tab.2.center" timestamp="1588690748573">
+    <state width="795" height="368" key="GridCell.Tab.2.bottom/54.23.1226.777@54.23.1226.777" timestamp="1588860697980" />
+    <state width="795" height="368" key="GridCell.Tab.2.center" timestamp="1588860697979">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
     <state width="795" height="19" key="GridCell.Tab.2.center/52.23.1228.777@52.23.1228.777" timestamp="1588489672160" />
     <state width="846" height="314" key="GridCell.Tab.2.center/54.0.1226.800@54.0.1226.800" timestamp="1588653495576" />
-    <state width="795" height="503" key="GridCell.Tab.2.center/54.23.1226.777@54.23.1226.777" timestamp="1588690748573" />
-    <state width="795" height="503" key="GridCell.Tab.2.left" timestamp="1588690748571">
+    <state width="795" height="368" key="GridCell.Tab.2.center/54.23.1226.777@54.23.1226.777" timestamp="1588860697979" />
+    <state width="795" height="368" key="GridCell.Tab.2.left" timestamp="1588860697978">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
     <state width="795" height="19" key="GridCell.Tab.2.left/52.23.1228.777@52.23.1228.777" timestamp="1588489672159" />
     <state width="846" height="314" key="GridCell.Tab.2.left/54.0.1226.800@54.0.1226.800" timestamp="1588653495576" />
-    <state width="795" height="503" key="GridCell.Tab.2.left/54.23.1226.777@54.23.1226.777" timestamp="1588690748571" />
-    <state width="795" height="503" key="GridCell.Tab.2.right" timestamp="1588690748578">
+    <state width="795" height="368" key="GridCell.Tab.2.left/54.23.1226.777@54.23.1226.777" timestamp="1588860697978" />
+    <state width="795" height="368" key="GridCell.Tab.2.right" timestamp="1588860697979">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
     <state width="795" height="19" key="GridCell.Tab.2.right/52.23.1228.777@52.23.1228.777" timestamp="1588489672160" />
     <state width="846" height="314" key="GridCell.Tab.2.right/54.0.1226.800@54.0.1226.800" timestamp="1588653495577" />
-    <state width="795" height="503" key="GridCell.Tab.2.right/54.23.1226.777@54.23.1226.777" timestamp="1588690748578" />
-    <state width="795" height="503" key="GridCell.Tab.3.bottom" timestamp="1588677844741">
+    <state width="795" height="368" key="GridCell.Tab.2.right/54.23.1226.777@54.23.1226.777" timestamp="1588860697979" />
+    <state width="795" height="369" key="GridCell.Tab.3.bottom" timestamp="1588829006169">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
     <state width="795" height="19" key="GridCell.Tab.3.bottom/52.23.1228.777@52.23.1228.777" timestamp="1588489672169" />
     <state width="846" height="314" key="GridCell.Tab.3.bottom/54.0.1226.800@54.0.1226.800" timestamp="1588653305150" />
-    <state width="795" height="503" key="GridCell.Tab.3.bottom/54.23.1226.777@54.23.1226.777" timestamp="1588677844741" />
-    <state width="795" height="503" key="GridCell.Tab.3.center" timestamp="1588677844740">
+    <state width="795" height="369" key="GridCell.Tab.3.bottom/54.23.1226.777@54.23.1226.777" timestamp="1588829006169" />
+    <state width="795" height="369" key="GridCell.Tab.3.center" timestamp="1588829006168">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
     <state width="795" height="19" key="GridCell.Tab.3.center/52.23.1228.777@52.23.1228.777" timestamp="1588489672164" />
     <state width="846" height="314" key="GridCell.Tab.3.center/54.0.1226.800@54.0.1226.800" timestamp="1588653305149" />
-    <state width="795" height="503" key="GridCell.Tab.3.center/54.23.1226.777@54.23.1226.777" timestamp="1588677844740" />
-    <state width="795" height="503" key="GridCell.Tab.3.left" timestamp="1588677844739">
+    <state width="795" height="369" key="GridCell.Tab.3.center/54.23.1226.777@54.23.1226.777" timestamp="1588829006168" />
+    <state width="795" height="369" key="GridCell.Tab.3.left" timestamp="1588829006167">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
     <state width="795" height="19" key="GridCell.Tab.3.left/52.23.1228.777@52.23.1228.777" timestamp="1588489672163" />
     <state width="846" height="314" key="GridCell.Tab.3.left/54.0.1226.800@54.0.1226.800" timestamp="1588653305148" />
-    <state width="795" height="503" key="GridCell.Tab.3.left/54.23.1226.777@54.23.1226.777" timestamp="1588677844739" />
-    <state width="795" height="503" key="GridCell.Tab.3.right" timestamp="1588677844741">
+    <state width="795" height="369" key="GridCell.Tab.3.left/54.23.1226.777@54.23.1226.777" timestamp="1588829006167" />
+    <state width="795" height="369" key="GridCell.Tab.3.right" timestamp="1588829006168">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
     <state width="795" height="19" key="GridCell.Tab.3.right/52.23.1228.777@52.23.1228.777" timestamp="1588489672165" />
     <state width="846" height="314" key="GridCell.Tab.3.right/54.0.1226.800@54.0.1226.800" timestamp="1588653305150" />
-    <state width="795" height="503" key="GridCell.Tab.3.right/54.23.1226.777@54.23.1226.777" timestamp="1588677844741" />
-    <state width="795" height="503" key="GridCell.Tab.4.bottom" timestamp="1588677844743">
+    <state width="795" height="369" key="GridCell.Tab.3.right/54.23.1226.777@54.23.1226.777" timestamp="1588829006168" />
+    <state width="795" height="369" key="GridCell.Tab.4.bottom" timestamp="1588829006171">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
     <state width="795" height="19" key="GridCell.Tab.4.bottom/52.23.1228.777@52.23.1228.777" timestamp="1588489672173" />
     <state width="846" height="314" key="GridCell.Tab.4.bottom/54.0.1226.800@54.0.1226.800" timestamp="1588653305154" />
-    <state width="795" height="503" key="GridCell.Tab.4.bottom/54.23.1226.777@54.23.1226.777" timestamp="1588677844743" />
-    <state width="795" height="503" key="GridCell.Tab.4.center" timestamp="1588677844742">
+    <state width="795" height="369" key="GridCell.Tab.4.bottom/54.23.1226.777@54.23.1226.777" timestamp="1588829006171" />
+    <state width="795" height="369" key="GridCell.Tab.4.center" timestamp="1588829006170">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
     <state width="795" height="19" key="GridCell.Tab.4.center/52.23.1228.777@52.23.1228.777" timestamp="1588489672171" />
     <state width="846" height="314" key="GridCell.Tab.4.center/54.0.1226.800@54.0.1226.800" timestamp="1588653305152" />
-    <state width="795" height="503" key="GridCell.Tab.4.center/54.23.1226.777@54.23.1226.777" timestamp="1588677844742" />
-    <state width="795" height="503" key="GridCell.Tab.4.left" timestamp="1588677844742">
+    <state width="795" height="369" key="GridCell.Tab.4.center/54.23.1226.777@54.23.1226.777" timestamp="1588829006170" />
+    <state width="795" height="369" key="GridCell.Tab.4.left" timestamp="1588829006169">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
     <state width="795" height="19" key="GridCell.Tab.4.left/52.23.1228.777@52.23.1228.777" timestamp="1588489672170" />
     <state width="846" height="314" key="GridCell.Tab.4.left/54.0.1226.800@54.0.1226.800" timestamp="1588653305151" />
-    <state width="795" height="503" key="GridCell.Tab.4.left/54.23.1226.777@54.23.1226.777" timestamp="1588677844742" />
-    <state width="795" height="503" key="GridCell.Tab.4.right" timestamp="1588677844743">
+    <state width="795" height="369" key="GridCell.Tab.4.left/54.23.1226.777@54.23.1226.777" timestamp="1588829006169" />
+    <state width="795" height="369" key="GridCell.Tab.4.right" timestamp="1588829006170">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
     <state width="795" height="19" key="GridCell.Tab.4.right/52.23.1228.777@52.23.1228.777" timestamp="1588489672172" />
     <state width="846" height="314" key="GridCell.Tab.4.right/54.0.1226.800@54.0.1226.800" timestamp="1588653305153" />
-    <state width="795" height="503" key="GridCell.Tab.4.right/54.23.1226.777@54.23.1226.777" timestamp="1588677844743" />
-    <state width="640" height="361" key="XDebugger.FullValuePopup" timestamp="1588512912958">
+    <state width="795" height="369" key="GridCell.Tab.4.right/54.23.1226.777@54.23.1226.777" timestamp="1588829006170" />
+    <state x="276" y="151" key="Vcs.Push.Dialog.v2" timestamp="1588697480325">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
-    <state width="640" height="361" key="XDebugger.FullValuePopup/54.23.1226.777@54.23.1226.777" timestamp="1588512912958" />
+    <state x="276" y="151" key="Vcs.Push.Dialog.v2/54.23.1226.777@54.23.1226.777" timestamp="1588697480325" />
+    <state width="640" height="361" key="XDebugger.FullValuePopup" timestamp="1588824440034">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state width="640" height="361" key="XDebugger.FullValuePopup/54.23.1226.777@54.23.1226.777" timestamp="1588824440034" />
     <state x="342" y="58" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588511145983">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
     <state x="342" y="58" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/54.23.1226.777@54.23.1226.777" timestamp="1588511145983" />
+    <state x="465" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588696944959">
+      <screen x="54" y="23" width="1226" height="777" />
+    </state>
+    <state x="465" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/54.23.1226.777@54.23.1226.777" timestamp="1588696944959" />
     <state x="472" y="171" key="extract.method.dialog" timestamp="1588651933500">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
     <state x="472" y="171" key="extract.method.dialog/54.23.1226.777@54.23.1226.777" timestamp="1588651933500" />
-    <state x="334" y="168" width="816" height="550" key="find.popup" timestamp="1588678666922">
+    <state x="334" y="168" width="816" height="550" key="find.popup" timestamp="1588860359526">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
     <state x="332" y="168" width="667" height="486" key="find.popup/52.23.1228.777@52.23.1228.777" timestamp="1585797289434" />
-    <state x="334" y="168" width="816" height="550" key="find.popup/54.23.1226.777@54.23.1226.777" timestamp="1588678666922" />
+    <state x="334" y="168" width="816" height="550" key="find.popup/54.23.1226.777@54.23.1226.777" timestamp="1588860359526" />
     <state x="324" y="62" width="670" height="676" key="search.everywhere.popup" timestamp="1588170160454">
       <screen x="54" y="23" width="1226" height="777" />
     </state>
@@ -1114,8 +1116,28 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/VideoCut.java</url>
-          <line>137</line>
+          <line>149</line>
           <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/VideoCut.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/downloader/src/main/java/subtitleFile/FormatSRT.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/MainExe.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/MainExe.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/downloader/src/main/java/com/xwf/common/utils/VideoCut.java</url>

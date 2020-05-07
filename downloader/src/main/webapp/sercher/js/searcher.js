@@ -109,7 +109,8 @@ function search() {
                             str += '</tr><tr>';
                         }
                         var video = vs[i];
-                        var poster = video.path.replace(".mp4", ".jpg")
+                        var poster = video.path.substr(0,video.path.length -4) +'.jpg';
+
                         str += '<td  width="20%">';
                         str += '<div class="of">';
                         str += '<video id="video_show" playsinline="" poster="' + poster + '" preload="none" src="' + video.path + '" controls="controls" type width="99% " style="float: left"/>';

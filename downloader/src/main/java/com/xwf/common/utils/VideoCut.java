@@ -39,7 +39,7 @@ public class VideoCut {
 
             };
         } else {
-            cmd = new String[]{
+            /*cmd = new String[]{
                     ffmpegPath,
                     "-ss", String.valueOf(startTime),
                     String.valueOf("-t"), String.valueOf(lastTime),
@@ -47,6 +47,18 @@ public class VideoCut {
                     "-i", path,
                     "-vcodec", "h264", "-acodec", "aac",
                     "-threads", threads,
+                    outPath
+
+            };*/
+
+
+            cmd = new String[]{
+                    ffmpegPath,
+                    "-ss", String.valueOf(startTime),
+                    String.valueOf("-t"), String.valueOf(lastTime),
+                    "-accurate_seek",
+                    "-i", path,
+                    "-vcodec", "copy", "-acodec", "copy","-avoid_negative_ts","1",
                     outPath
 
             };

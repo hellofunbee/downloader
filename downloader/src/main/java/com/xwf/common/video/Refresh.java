@@ -61,10 +61,10 @@ public class Refresh {
 
         int i = 0;
         for (File f : fileList) {
+            String videoPath = f.getAbsolutePath();
             try {
-                if (f.getAbsolutePath().indexOf(".mp4") == -1)
+                if (!f.getName().endsWith(".mp4"))
                     continue;
-
 
                 String name = f.getName();
 
@@ -74,8 +74,8 @@ public class Refresh {
                 clips.set("video_id", video_id);
                 clips.set("clips_name", name);
                 clips.set("order_num", i);
-                clips.set("clips_addr", f.getAbsolutePath());
-                clips.set("clips_cover", f.getAbsolutePath().replace(".mp4", ".jpg"));
+                clips.set("clips_addr", videoPath);
+                clips.set("clips_cover", CommonUtils.mp42Jpg(videoPath));
 
                 clips.set("lang_type", lang_type);
 
@@ -93,7 +93,7 @@ public class Refresh {
                 res.add(clips);
             }catch (Exception r){
                 r.printStackTrace();
-                System.out.println("insert clips failed ： " + f.getAbsolutePath());
+                System.out.println("insert clips failed ： " + videoPath);
             }
 
         }

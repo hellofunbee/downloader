@@ -51,7 +51,7 @@ public class FormatSRT implements TimedTextFileFormat {
 		//the file name is saved
 		tto.fileName = fileName;
 
-		String line = br.readLine();
+		String line = br.readLine().trim();
 
 		int lineCounter = 0;
 		try {
