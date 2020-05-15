@@ -45,6 +45,7 @@ public class CommonUtils {
 
         long minute = mseconds / (60000);
         long second = (mseconds % 60000) / 1000;
+        long last = mseconds % 1000;
 
         String sm, ss;
 
@@ -58,7 +59,7 @@ public class CommonUtils {
         } else {
             ss = String.valueOf(second);
         }
-        return sm + "*" + ss;
+        return sm + "*" + ss +"." +last;
 
     }
 

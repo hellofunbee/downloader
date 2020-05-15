@@ -39,7 +39,7 @@ public class CutRunnable implements Runnable {
             String clips = o + st + "&" + et + "--" + content + out_type;
             File outFile = new File(clips);
             if (!outFile.exists()) {
-                VideoCut.exe(v, clips, CommonUtils.ms2hhmmss(s ), CommonUtils.ms2hhmmss(e - s + 1000));
+                VideoCut.exe(v, clips, s, e);
                 System.out.println("切出:" + clips);
             } else {
                 System.out.println("已存在:" + clips);

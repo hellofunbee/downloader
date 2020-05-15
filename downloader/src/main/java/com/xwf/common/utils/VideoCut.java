@@ -27,7 +27,12 @@ public class VideoCut {
     public static String threads = "20";//ms
     public static ExecutorService cachedThreadPool = Executors.newFixedThreadPool(2);
 
-    public static void exe(String path, String outPath, String startTime, String lastTime) throws IOException, InterruptedException {
+    public static void exe(String path, String outPath, int s, int e) throws IOException, InterruptedException {
+
+
+        String startTime = CommonUtils.ms2hhmmss(s);
+        String lastTime = CommonUtils.ms2hhmmss(e - s + 1000);
+
         String[] cmd;
         if (out_type.endsWith(".mp3")) {
             cmd = new String[]{
@@ -42,6 +47,8 @@ public class VideoCut {
 
             };
         } else {
+            startTime = CommonUtils.ms2hhmmss(s - 1000);//后退一秒
+            lastTime = CommonUtils.ms2hhmmss(e - s + 2000);//前进一秒
             /*cmd = new String[]{
                     ffmpegPath,
                     "-ss", String.valueOf(startTime),
@@ -58,9 +65,9 @@ public class VideoCut {
             cmd = new String[]{
                     ffmpegPath,
                     "-ss", String.valueOf(startTime),
-                    String.valueOf("-t"), String.valueOf(lastTime),
                     "-accurate_seek",
                     "-i", path,
+                    String.valueOf("-t"), String.valueOf(lastTime),
                     "-vcodec", "copy", "-acodec", "copy","-avoid_negative_ts","1",
                     outPath
 
@@ -101,7 +108,7 @@ public class VideoCut {
 //        List<String> words = new ArrayList<String>();
 
         File f = new File(srtPath);
-        log.info("是文件夹吗？："+f.isDirectory());
+        log.info("是文件夹吗？：" + f.isDirectory());
         File[] files = new File(srtPath).listFiles();
         if (files != null && files.length > 0) {
             for (File file : files) {
@@ -168,8 +175,8 @@ public class VideoCut {
     public static void main(String[] args) {
         File f = new File("/Volumes/自媒体/clips/");
         File[] files = f.listFiles();
-        for (File file:files){
-            log.info(""+file.getAbsoluteFile());
+        for (File file : files) {
+            log.info("" + file.getAbsoluteFile());
         }
     }
 

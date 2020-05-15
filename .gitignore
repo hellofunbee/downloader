@@ -9,3 +9,5 @@ dowwnloader/target
 dowwnloader/build
 subtitleConverter-master/target
 subtitleConverter-master/build
+/.idea/
+/.idea/workspace.xml

@@ -28,6 +28,11 @@ public class HomeController extends Controller {
         render("sercher/searchMain.html");
 //        render("downloader/pic.html");
     }
+    @ActionKey("video")
+    public void seekVideo() throws Exception {
+        render("sercher/searchMain2.html");
+//        render("downloader/pic.html");
+    }
 
     @ActionKey("picurl")
     public void getPicurl() {

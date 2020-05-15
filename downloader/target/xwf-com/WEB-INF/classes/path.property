@@ -1,29 +1,29 @@
 #videopath \u76F8\u5F53\u4E8E\u540E\u9762\u52A0\u4E0Asrt\u7684\u540D\u5B57 \u518D\u52A0\u4E0A ".mp4"
-#片段主目录
-base_path=/Volumes/自媒体/clips/
+#\u7247\u6BB5\u4E3B\u76EE\u5F55
+base_path=/Volumes/\u81EA\u5A92\u4F53/clips/
 
-#------视频----------
+#------\u89C6\u9891----------
 ffmpegPath=/Users/weifengxu/Desktop/tool/jave_ffmpeg/ffmpeg
-#要截取片段的视频目录
-videoPath=/Volumes/自媒体/电视/权力的游戏S08.mp4/
-#要截取片段的视频的字幕目录
-srtPath=/Volumes/自媒体/电视/权力的游戏S08.mp4/srt
-#截取片段后的输出目录
-outPath=/Volumes/自媒体/clips/权力的游戏S08.mp4/
+#\u8981\u622A\u53D6\u7247\u6BB5\u7684\u89C6\u9891\u76EE\u5F55
+videoPath=/Volumes/\u81EA\u5A92\u4F53/\u7535\u89C6/\u7F8E\u5973\u4E0E\u91CE\u517D2017/
+#\u8981\u622A\u53D6\u7247\u6BB5\u7684\u89C6\u9891\u7684\u5B57\u5E55\u76EE\u5F55
+srtPath=/Volumes/\u81EA\u5A92\u4F53/\u7535\u89C6/\u7F8E\u5973\u4E0E\u91CE\u517D2017/
+#\u622A\u53D6\u7247\u6BB5\u540E\u7684\u8F93\u51FA\u76EE\u5F55
+outPath=/Volumes/\u81EA\u5A92\u4F53/clips/\u7F8E\u5973\u4E0E\u91CE\u517D2017/
 
 
 #------youtube----------
 youtube-dl=youtube-dl
-#YouTube 搜索srt下载片段
-srt_path=/Volumes/自媒体/srt/
-#youtube截取后的输出目录
-stream_out=/Volumes/自媒体/clips/
+#YouTube \u641C\u7D22srt\u4E0B\u8F7D\u7247\u6BB5
+srt_path=/Volumes/\u81EA\u5A92\u4F53/srt/
+#youtube\u622A\u53D6\u540E\u7684\u8F93\u51FA\u76EE\u5F55
+stream_out=/Volumes/\u81EA\u5A92\u4F53/clips/
 
-#------音频----------
-audioPath=/Volumes/自媒体/music/
-a_outPath=/Volumes/自媒体/clips/music/
-#------下载----------
-zip_path=/Volumes/自媒体/clips/ziptemp/
+#------\u97F3\u9891----------
+audioPath=/Volumes/\u81EA\u5A92\u4F53/music/
+a_outPath=/Volumes/\u81EA\u5A92\u4F53/clips/music/
+#------\u4E0B\u8F7D----------
+zip_path=/Volumes/\u81EA\u5A92\u4F53/clips/ziptemp/
 
 
 
