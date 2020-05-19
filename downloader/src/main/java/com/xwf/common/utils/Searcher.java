@@ -2,13 +2,14 @@ package com.xwf.common.utils;
 
 import com.jfinal.plugin.activerecord.Record;
 import com.xwf.common.dao.ClipsDao;
+import com.xwf.common.utils.Beans.Clip;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import subtitleFile.Caption;
-import subtitleFile.TimedTextObject;
 
-import java.io.*;
-import java.util.*;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by weifengxu on 2018/8/8.
@@ -17,53 +18,42 @@ public class Searcher {
     static Logger log = LoggerFactory.getLogger(Searcher.class);
     static List<File> fileList = null;
 
-    public static void main(String[] args) throws IOException {
-
-
-        List<Map> result = searchLrc(".lrc", "你的娇滴滴的娘子呢", false, "/Volumes/自媒体/music");
-        for (Map sb : result) {
-            log.info(sb.get("str") + "--" + (300 - (Integer) sb.get("type")));
-
-        }
-
-    }
+    static List<Clip> result = new ArrayList<Clip>();
 
 
     /**
      * 关键词查找 完全匹配 包含 关系 [文件]
      *
-     * @param content
      * @param isperfect 完全匹配
      * @return
      */
 
-    public static List<Map> search2(String searchWord, boolean isperfect, Record tv) {
+    public static List<Clip> search2(String searchWord, boolean isperfect, Record tv) {
         searchWord = searchWord.replaceAll("[^\\u4e00-\\u9fa5a-zA-Z^0-9]", " ").replaceAll(" +", " ");
         int str_type = CommonUtils.strType(searchWord);
         int lang_type = 0;
         if (tv != null)
             lang_type = tv.getInt("lang_type");
 
-        List<Map> result = new ArrayList<Map>();
 
         List<Record> clips = ClipsDao.selectByTv(tv == null ? null : tv.getStr("tv_id"), searchWord);
 
+        result.clear();
         for (Record clip : clips) {
-            doFilterNeeded(lang_type, result, clip, searchWord, str_type, isperfect);
+            doFilterNeeded(lang_type, clip, searchWord, str_type, isperfect);
         }
         return result;
     }
 
     /**
      * @param lang_type 电视剧的语言
-     * @param maps      匹配到的结果数组
      * @param clip      剪辑
      * @param content   关键词
-     * @param wordType         关键词的中英文
+     * @param wordType  关键词的中英文
      * @param isperfect 是否完全匹配
      */
 
-    private static void doFilterNeeded(int lang_type, List<Map> maps, Record clip, String content, int wordType, boolean isperfect) {
+    private static void doFilterNeeded(int lang_type, Record clip, String content, int wordType, boolean isperfect) {
         String word = null;
         if (clip.getInt("lang_type") == 1) {
             word = clip.getStr("en");
@@ -81,108 +71,34 @@ public class Searcher {
         if (lang_type == 1 && wordType == 0) {
             return;
         }
-
+        Clip clips = new Clip();
+        clips.setFile("" + clip.get("clips_addr"));
+        int index = 0;
         //汉字
         if (wordType == 0 && w == 0) {
-            doAdd(maps, match(content, word, isperfect), clip);
+            index = match(content, word, isperfect);
             //英文
         } else if (wordType == 1 && w == 1) {
-            doAdd(maps, match2(content, word, isperfect), clip);
+            index = match2(content, word, isperfect);
         } else {
-            doAdd(maps, match(content, word, isperfect), clip);
-            doAdd(maps, match2(content, word, isperfect), clip);
+            int index1 = match(content, word, isperfect);
+            int index2 = match2(content, word, isperfect);
 
-        }
+            if(index1 > index2){
+                index = index1;
+            }else {
+                index = index2;
 
-    }
-
-    private static void doAdd(List<Map> maps, Map m, Record clip) {
-        if (m != null) {
-            m.put("file", clip.get("clips_addr"));
-            maps.add(m);
-        }
-    }
-
-
-    /**
-     * 关键词查找 完全匹配 包含 关系 [文件]
-     *
-     * @param content
-     * @param isperfect 完全匹配
-     * @return
-     */
-
-    public static List<Map> search(String type, String content, boolean isperfect, String path) {
-        content = content.replace(" ", "");
-
-        List<Map> result = new ArrayList<Map>();
-        List<File> fileList = CommonUtils.getMp4FileList(path, new ArrayList<File>(), type);
-
-        for (File file : fileList) {
-            String name = file.getName();
-            String word = "";
-            if (name != null && name.indexOf("--") != -1) {
-                word = name.substring(name.indexOf("--") + 2);
-                word = word.replace(type, "");
-                word = word.replace(" ", "");
-                //匹配算法
-                Map m = match(content, word, isperfect);
-                if (m != null) {
-                    m.put("file", file);
-                    result.add(m);
-                }
             }
+
         }
-        return result;
-    }
+        if (index > 0) {
+            clips.setType(index);
 
-    /**
-     * 关键词查找 完全匹配 包含 关系【歌词内容】
-     *
-     * @param content
-     * @param isperfect 完全匹配
-     * @return
-     */
-
-    public static List<Map> searchLrc(String type, String content, boolean isperfect, String path) throws IOException {
-        content = content.replace(" ", "");
-
-        List<Map> result = new ArrayList<Map>();
-        List<File> fileList = CommonUtils.getMp4FileList(path, new ArrayList<File>(), type);
-
-        InputStreamReader isr = null;
-        for (File file : fileList) {
-
-            try {
-
-
-                String strLine = null;
-                isr = new InputStreamReader(new FileInputStream(
-                        file));
-                BufferedReader br = new BufferedReader(isr);
-                while (null != (strLine = br.readLine())) {
-                    strLine = strLine.replaceAll("\\[[^\\]]+\\]", "").replace(" ", "");
-
-                    //匹配算法
-                    Map m = match(content, strLine, isperfect);
-                    if (m != null) {
-                        m.put("str", strLine);
-                        result.add(m);
-                    }
-                }
-                isr.close();
-
-            } catch (Exception e) {
-                e.printStackTrace();
-
-            } finally {
-                if (isr != null)
-                    isr.close();
-            }
+            result.add(clips);
         }
-        return result;
-    }
 
+    }
 
     /**
      * @param content   要查询的内容
@@ -191,35 +107,28 @@ public class Searcher {
      * @return
      */
 
-    public static Map match(String content, String word, boolean isperfect) {
-
-        Map m = new HashMap();
+    public static int match(String content, String word, boolean isperfect) {
         //完全匹配
         if (word.equals(content)) {
-            m.put("type", 100);
+            return 100;
             //完全包含
         } else if (!isperfect && word.indexOf(content) != -1) {
             int l = LevenShtein.getSimilarityRatio(content, word, false);
-            m.put("type", 150 - l / 2);//75 - 100
+            return 150 - l / 2;//75 - 100
             //跳跃包含
         } else if (!isperfect && LevenShtein.isIn(content, word)) {
             int l = LevenShtein.getSimilarityRatio(content, word, false);
-            m.put("type", 180 - l * 10 / 33);//60-75
+            return 180 - l * 10 / 33;//60-75
             //相似度
         } else {
             int l = LevenShtein.getSimilarityRatio(content, word, true);
 
-            if (l >= 60)
-                m.put("type", 230 - l / 2); //35 -60
-            else
-                return null;
+            if (l >= 60) {
+                return 230 - l / 2; //35 -60
+            }
             //相似度
-
-
         }
-
-
-        return m;
+        return 0;
     }
 
     /**
@@ -234,7 +143,7 @@ public class Searcher {
      * @return
      */
 
-    public static Map match2(String content, String word, boolean isperfect) {
+    public static int match2(String content, String word, boolean isperfect) {
 
 
         content = content.toLowerCase();
@@ -261,157 +170,27 @@ public class Searcher {
             }
         }
 
-        Map m = new HashMap();
         //完全匹配
         if (word.equals(content)) {
-            m.put("type", 100);
+            return 100;
             //完全包含
         } else if (!isperfect && word.indexOf(content) != -1) {
             int l = LevenShtein.getSimilarityRatio_En(lc, lw, false);
-            m.put("type", 150 - l / 2);//75 - 100
+            return 150 - l / 2;//75 - 100
             //跳跃包含
         } else if (!isperfect && LevenShtein.isIn_En(lc, lw)) {
             int l = LevenShtein.getSimilarityRatio_En(lc, lw, false);
-            m.put("type", 180 - l * 10 / 33);//60-75
+            return 180 - l * 10 / 33;//60-75
             //相似度
         } else {
             int l = LevenShtein.getSimilarityRatio_En(lc, lw, true);
 
-            if (l >= 60)
-                m.put("type", 230 - l / 2); //35 -60
-            else
-                return null;
-            //相似度
-
-        }
-
-
-        return m;
-    }
-
-
-    /**
-     * 关键词查找 完全匹配 包含 关系 [文件]
-     *
-     * @param content
-     * @param type      字幕类型 srt，ass ，ssa，。。。
-     * @param isperfect 完全匹配
-     * @return
-     */
-
-    public static List<Map> search_subs(String type, String content, boolean isperfect, String path, int top) throws IOException {
-        content = content.replaceAll("[^\\u4e00-\\u9fa5a-zA-Z^0-9]", " ").replaceAll(" +", " ");
-        List<Map> result = new ArrayList<Map>();
-        if (fileList == null)
-            fileList = CommonUtils.getMp4FileList(path, new ArrayList<File>(), type);
-
-        int count = 0;
-
-        for (File file : fileList) {
-            TimedTextObject ttff = CommonUtils.readSrt(file.getAbsolutePath());
-
-
-            if (ttff == null || ttff.captions == null || ttff.captions.size() == 0) {
-                log.info(ttff.fileName + "***************:some thing goes wrong!");
-            } else {
-                Set<Map.Entry<Integer, Caption>> set = ttff.captions.entrySet();
-                Iterator iterator = set.iterator();
-
-                while (iterator.hasNext()) {
-                    if (count > top)
-                        return result;
-                    Map.Entry<Integer, Caption> enty = (Map.Entry<Integer, Caption>) iterator.next();
-                    Caption cp = enty.getValue();
-
-                    if (pass(cp))
-                        continue;
-
-                    String word = CommonUtils.v(cp.content);
-                    //匹配算法
-                    Map m = match2(content, word, isperfect);
-                    if (m != null) {
-                        count++;
-                        m.put("file", file);
-                        m.put("word", word);
-                        m.put("s", CommonUtils.ms2hhmmss(cp.start.mseconds - 500));
-                        m.put("e", CommonUtils.ms2hhmmss(cp.end.mseconds + 500));
-                        result.add(m);
-                    }
-                }
-
+            if (l >= 60) {
+                return 230 - l / 2; //35 -60
             }
-
         }
-        return result;
-    }
 
-
-    /**
-     * 关键词查找 完全匹配 包含 关系 [文件]
-     *
-     * @param type      字幕类型 srt，ass ，ssa，。。。
-     * @param isperfect 完全匹配
-     * @return
-     */
-
-    public static List<List<Map>> search_subs_batch(String type, String[] contents, boolean isperfect, String path, int top) throws IOException {
-
-        List<List<Map>> result = new ArrayList<List<Map>>();
-        for (int i = 0; i < contents.length; i++) {
-            result.add(new ArrayList<Map>());
-        }
-        if (fileList == null)
-            fileList = CommonUtils.getMp4FileList(path, new ArrayList<File>(), type);
-
-        int count = 0;
-
-        for (File file : fileList) {
-            TimedTextObject ttff = CommonUtils.readSrt(file.getAbsolutePath());
-
-            if (ttff == null || ttff.captions == null || ttff.captions.size() == 0) {
-                log.info(ttff.fileName + "***************:some thing goes wrong!");
-            } else {
-                Set<Map.Entry<Integer, Caption>> set = ttff.captions.entrySet();
-                Iterator iterator = set.iterator();
-
-                while (iterator.hasNext()) {
-                    Map.Entry<Integer, Caption> enty = (Map.Entry<Integer, Caption>) iterator.next();
-                    Caption cp = enty.getValue();
-
-                    if (pass(cp))
-                        continue;
-
-
-                    String word = CommonUtils.v(cp.content);
-
-                    boolean ready = true;
-                    //匹配算法
-                    for (int c = 0; c < contents.length; c++) {
-                        if (result.get(c).size() > top) continue;
-                        ready = false;
-
-                        String content = contents[c];
-                        content = content.replaceAll("[^\\u4e00-\\u9fa5a-zA-Z^0-9]", " ").replaceAll(" +", " ");
-
-                        Map m = match2(content, word, isperfect);
-                        if (m != null) {
-                            count++;
-                            m.put("file", file);
-                            m.put("word", word);
-                            m.put("s", CommonUtils.ms2hhmmss(cp.start.mseconds - 500));
-                            m.put("e", CommonUtils.ms2hhmmss(cp.end.mseconds + 500));
-                            result.get(c).add(m);
-                        }
-                    }
-
-                    if (ready)
-                        return result;
-                }
-
-            }
-
-        }
-        return result;
+        return 0;
     }
 
     private static boolean pass(Caption cp) {

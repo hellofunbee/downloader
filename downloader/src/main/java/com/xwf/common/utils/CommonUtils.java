@@ -1,6 +1,7 @@
 package com.xwf.common.utils;
 
 import com.xwf.common.http.HttpUtils;
+import com.xwf.common.utils.Beans.Clip;
 import com.xwf.common.video.MFFMPEGLocator;
 import it.sauronsoftware.jave.Encoder;
 import it.sauronsoftware.jave.MultimediaInfo;
@@ -59,7 +60,7 @@ public class CommonUtils {
         } else {
             ss = String.valueOf(second);
         }
-        return sm + "*" + ss +"." +last;
+        return sm + "*" + ss + "." + last;
 
     }
 
@@ -334,12 +335,12 @@ public class CommonUtils {
      * @param type 1正序 -1 倒叙
      */
 
-    public static void sort(List<Map> list, final String key, final int type) {
+    public static void sort(List<Clip> list, final String key, final int type) {
 
-        Collections.sort(list, new Comparator<Map>() {
-            public int compare(Map o1, Map o2) {
-                Integer num1 = (Integer) o1.get(key);//name1是从你list里面拿出来的一个
-                Integer num2 = (Integer) o2.get(key); //name1是从你list里面拿出来的第二个name
+        Collections.sort(list, new Comparator<Clip>() {
+            public int compare(Clip o1, Clip o2) {
+                Integer num1 = o1.getType();//name1是从你list里面拿出来的一个
+                Integer num2 = o2.getType(); //name1是从你list里面拿出来的第二个name
 
                 if (type == 1) {
                     return num1.compareTo(num2);

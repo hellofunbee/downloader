@@ -27,8 +27,6 @@ public class CommonConfig extends JFinalConfig {
     public void configRoute(Routes routes) {
         routes.add("/", HomeController.class);
         routes.add("task", TaskController.class, "/");
-        routes.add("music", MusicController.class, "/");
-        routes.add("yb", YoutubeController.class, "/");
         routes.add("common", CommonController.class, "/");
 
     }

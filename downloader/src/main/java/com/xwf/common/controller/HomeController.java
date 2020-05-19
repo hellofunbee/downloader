@@ -11,6 +11,7 @@ import com.xwf.common.crawler.PhantomJSUtil;
 import com.xwf.common.crawler.PicCrawler;
 import com.xwf.common.crawler.VideoCrawler;
 import com.xwf.common.dao.TvDao;
+import com.xwf.common.utils.Beans.Clip;
 import com.xwf.common.utils.CommonUtils;
 import com.xwf.common.utils.Searcher;
 import us.codecraft.webmagic.Spider;
@@ -100,7 +101,7 @@ public class HomeController extends Controller {
             for (String w : words) {
 
                 //查询
-                List<Map> videos = Searcher.search2(w, false, tv);
+                List<Clip> videos = Searcher.search2(w, false, tv);
                 CommonUtils.sort(videos, "type", 1);
                 //TODO
                 //过滤
@@ -108,12 +109,12 @@ public class HomeController extends Controller {
                     videos = videos.subList(0, 100);
                 }
                 JSONArray ps = new JSONArray();
-                for (Map m : videos) {
+                for (Clip clip : videos) {
 
-                    String path = (String) m.get("file");
+                    String path = clip.getFile();
                     JSONObject o = new JSONObject();
                     o.put("path", CommonUtils.toWebUrl(path));
-                    o.put("type", (300 - (Integer) m.get("type")) / 2);
+                    o.put("type", (300 - (Integer) clip.getType()) / 2);
                     ps.add(o);
 
                 }
